@@ -2,13 +2,18 @@
   margin-top: 10rem; 
 }
 
-.logo{
-  letter-spacing: 0.1em;
+.logo-phi{
+  font-size: 1.2em;
+  color: red;
+}
+
+.logo-hi{
+  color: red;
 }
 
 .logo-software{
   font-weight: normal;
-  color: #999;
+  color: #888;
 }
 
 .footer{
