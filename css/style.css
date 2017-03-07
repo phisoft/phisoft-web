@@ -1,13 +1,21 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
+
 .header{
   margin-top: 10rem; 
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .header{
+    text-align: left;
+  }
 }
 
 .logo-phi{
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  font-size: 6rem;
   color: red;
 }
 
@@ -21,8 +29,9 @@ body{
 }
 
 .tagline{
-  margin-top: -1.8rem;
-  margin-left: 4rem;
+  font-size: 1.4rem;
+  margin-top: -2rem;
+  margin-left: 3em;
 }
 
 .footer{
