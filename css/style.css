@@ -1,8 +1,12 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
 .header{
   margin-top: 10rem; 
 }
 
 .logo-phi{
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   color: red;
 }
