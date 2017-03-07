@@ -20,6 +20,11 @@ body{
   color: #888;
 }
 
+.tagline{
+  margin-top: -1.8rem;
+  margin-left: 4rem;
+}
+
 .footer{
   margin-top: 18rem;
 }
