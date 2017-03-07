@@ -1,0 +1,22 @@
+.header{
+  margin-top: 10rem; 
+}
+
+.logo{
+  letter-spacing: 0.1em;
+}
+
+.logo-software{
+  font-weight: normal;
+  color: #999;
+}
+
+.footer{
+  margin-top: 18rem;
+}
+
+.copyright{
+  margin-top: 10rem;
+  font-size: small;
+  color: silver;
+}
