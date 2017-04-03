@@ -3,7 +3,8 @@ body{
 }
 
 .header{
-  margin-top: 10rem; 
+  margin-top: 5rem; 
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -29,9 +30,26 @@ body{
 }
 
 .tagline{
-  font-size: 1.4rem;
-  margin-top: -2rem;
-  margin-left: 3em;
+  padding-top: 3em;
+  font-size: 25pt;
+}
+
+.mission{
+  font-size: 15pt;
+}
+
+.product{
+  margin-top: 50px;
+}
+
+@media (min-width: 1000px){
+  .tagline{
+    font-size: 28pt;
+  } 
+
+  .mission{
+    font-size: 18pt;
+  }
 }
 
 .footer{
@@ -42,4 +60,23 @@ body{
   margin-top: 10rem;
   font-size: small;
   color: silver;
+}
+
+.services{
+  font-size: 1.1em;
+}
+
+.content{
+  font-size: 1.4em;
+  padding: 1em;
+  height: 400px;
+  background-color: #333;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer{
+  border-top: 1px solid #eee;
+  background-color: #f0f0f0;
+  padding-top: 3em;
 }
