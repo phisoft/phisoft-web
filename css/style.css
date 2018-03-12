@@ -1,82 +1,145 @@
-body{
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Raleway', sans-serif;
 }
 
-.header{
-  margin-top: 5rem; 
-  margin-bottom: 5rem;
-  text-align: center;
+.container {
+  max-width: 960px;
+  margin: 0 auto; 
+  padding: 0 20px;
 }
 
-@media (min-width: 550px) {
-  .header{
-    text-align: left;
-  }
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.logo-phi{
-  font-family: 'Roboto', sans-serif;
-  font-size: 6rem;
-  color: red;
+.logo {
+  flex: 2;
+  margin-top: 1.5em; 
+  margin-bottom: 1.5em;
 }
 
-.logo-hi{
-  color: red;
+.nav-trigger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  text-decoration: none; 
+  border: 1px solid silver;
+  border-radius: 0.2em;
+  font-size: 0.9em;
+  padding: 0.4em 0.8em 0.4em 0.8em;
+  background-color: #fafafa;
 }
 
-.logo-software{
-  font-weight: normal;
-  color: #888;
+nav {
+  flex: 5;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+nav li {
+  flex: 1
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.header {
+  background-color: #2e1818;
+  color: white;
 }
 
 .tagline{
   padding-top: 3em;
-  font-size: 25pt;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
 }
 
-.mission{
-  font-size: 15pt;
+.tagline-info {
+  font-size: 1em;
+  padding-bottom: 5em;
 }
 
-.product{
-  margin-top: 50px;
+.services {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 5fr 1fr 5fr;
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
-@media (min-width: 1000px){
-  .tagline{
-    font-size: 28pt;
-  } 
-
-  .mission{
-    font-size: 18pt;
-  }
+.services i {
+  font-size: 2.5em;
+  color: #666;
 }
 
-.footer{
-  margin-top: 18rem;
+.inquiry {
+  padding: 1.5em;
+  text-align: center;
+  border-top: 1px solid #eee;
 }
 
-.copyright{
-  margin-top: 10rem;
-  font-size: small;
-  color: silver;
-}
-
-.services{
-  font-size: 1.1em;
-}
-
-.content{
-  font-size: 1.4em;
-  padding: 1em;
-  height: 400px;
-  background-color: #333;
-  margin-top: 10px;
-  color: white;
-}
-
-.footer{
+.footer-container{
   border-top: 1px solid #eee;
   background-color: #f0f0f0;
   padding-top: 3em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer div {
+  flex: 1;
+  margin-bottom: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #666;
+}
+
+.copyright{
+  color: silver;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+@media (min-width: 750px){
+  .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-trigger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
 }
