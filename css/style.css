@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -66,11 +66,11 @@ nav a {
 .tagline{
   padding-top: 4em;
   padding-bottom: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .tagline-info {
-  font-size: 1em;
+  font-size: 1.1em;
   padding-bottom: 6em;
 }
 
