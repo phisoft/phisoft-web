@@ -6,18 +6,21 @@
 <meta name="description" content="phi software sdn bhd">
 <meta name="author" content="phisoft.my">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/fontawesome-all.min.css" />
 </head>
 <body>
-<div class="container">
-  <div class="menu">
+
+<div class="menu">
     <div class="logo">
-      <a href="/"><img src="img/phisoft-logo-v3.png" width="200" /></a>
-      <a href="#" class="nav-trigger"> MENU </a>
-    </div>
+      <a href="/"><img src="img/phisoft-logo-v3.png" width="200" height="auto" /></a></div>
+      <a class="nav-trigger" href="#" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
     <nav>
       <ul>
         <li><a href="/"> Home </a></li>
@@ -27,39 +30,58 @@
       </ul>
     </nav>
   </div>
-</div>
-
-<section class="header">
-  <div class="container">
-    <div class="tagline"> Leading business forward. </div>
-    <div class="tagline-info"> We strive for simplicity and intuitive design in our software to empower your business moving forward. </div>
+<hr>
+  <div class="slideshow-container">
+    <div class="missionSlides fade">
+     <div class="tagline"> We inspire business to grow and achieve greater efficiency, profit and values. </div>
+     <img src="slide2.jpeg">
+    </div>
+    <div class="missionSlides fade">
+     <div class="tagline"> We promote software adoption for small companies. </div>
+     <img src="slide2.jpeg">
+    </div>
+    <div class="missionSlides fade">
+     <div class="tagline"> We value creative talents and encourage innovations. </div>
+     <img src="slide2.jpeg">
+    </div>
+    <div class="missionSlides fade">
+     <div class="tagline"> We support small company to grow and compete in global marketplace. </div>
+     <img src="slide2.jpeg">
+    </div>
   </div>
-</section>
+    <div style="text-align:center;">
+     <span class="dot"></span>
+     <span class="dot"></span>
+     <span class="dot"></span>
+     <span class="dot"></span>
+    </div>
 
 <div class="container">
+  <h3> About Us </h3>
+  <p>We help company organise business records and utomate business process and reporting.</p>
+  <br/><br/>
+  <h3>Our Values</h3>
+  <h4> Result driven </h4>
+  <p>We make software that deliver real business values.</p><br/><br/>
+  <h4> Simple and practical </h4>
+  <p>Easy to use software that can be use right away with minimal training.</p><br/><br/>
+  <h4> Co-Innovation </h4>
+  <p>Work together to create better software.</p><br/><br/>
+  <h4> Respect for people </h4>
+  <p>We value talents and committed to provide good working environment and proper recognition and credit to our employees. </p><br/><br/>
+  <h4> Client Centricity </h4>
+  <p>Our clients' success is our success.</p><br/><br/>
   <a name="solution"></a>
   <h3> Cloud Solutions </h3>
   <p> Solutions we come up with close colaboration with industry leading partners.
       We maintain and update our software to help our clients stay competitive in their business practice.</p>
   <div class="product">
-    <div>
-      Property Management For Hostels <br/> 
-      www.roompillow.com
-      <br/><br/>
-    </div>
-    <div>
-      Legal Management Software <br/>
-      www.colead.my
-      <br/><br/>
-    </div>
-    <div>
-      Practical Dental Software <br/>
-      www.dentallink.my
-      <br/><br/>
-    </div>
+    <img src="roompillow_white.png" alt="Property Management For Hostels" style="width:48px;height:48px;" href="www.roompillow.com">
+    <img src="colead.png" alt="Legal Management Software" style="width:48px;height:48px;" href="www.colead.my">
+    <img src="dentallink.png" alt="Practical Dental Software" style="width:48px;height:48px;" href="www.dentallink.my">
   </div>
 </div>
-<div class="container">
+<div class="container" style="display:flex; flex-direction:column;max-width:100%;">
   <a name="services"></a>
   <h3> Services </h3>
   <p> Contact us for free consultation on how we can leverage our software expertise to bring your business forward.</p>
@@ -114,10 +136,10 @@
       Graphic/UX Designer <br/>
       Sales &amp; Marketing <br/>
       Internship <br/><br/>
-      Email your CV to &#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121; 
+      Email your CV to &#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121;
     </div>
     <div>
-      <strong> Office </strong> <br/>   
+      <strong> Office </strong> <br/>
       Unit No L-96, Linked Bridge, Star City, <br/>
       88000 Kota Kinabalu, Sabah, Malaysia. <br/><br/>
       <a href="https://goo.gl/maps/akGYbStgbT12" target="_blank"> View Location Map </a> <br/>
@@ -134,10 +156,37 @@
 <script>
   $(document).ready(function(){
     $('.nav-trigger').click(function(){
-      $('nav').slideToggle(); 
+      $('nav').slideToggle();
       return false;
     })
   })
 </script>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("missionSlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000);
+}
+</script>
+
 </body>
 </html>

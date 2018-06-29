@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Armata';
 }
 
 h3 {
@@ -12,34 +12,45 @@ h3 {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto; 
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .menu {
+  position: fixed;
+  background-color:white;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  z-index: 1;
+  top: 0px;
 }
 
 .logo {
-  flex: 2;
-  margin-top: 1.5em; 
-  margin-bottom: 1.5em;
+  margin: 1em;
+  float:left;
 }
 
 .nav-trigger {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  text-decoration: none; 
-  border: 1px solid silver;
-  border-radius: 0.2em;
-  font-size: 0.9em;
-  padding: 0.4em 0.8em 0.4em 0.8em;
-  background-color: #fafafa;
-}
+      display: inline-block;
+      cursor: pointer;
+      float: right;
+      margin: 20px;
+      margin-left: 40px;
+  }
+
+.bar1, .bar2, .bar3 {
+      width: 33px;
+      height: 3px;
+      background-color: #333;
+      border-radius:0.4em;
+      margin: 6px 0px;
+      transition: 0.4s;
+  }
+
+.change .bar1,.change .bar3 {opacity:0;
+  }
+
+.change .bar2 {opacity: 1;}
 
 nav {
   flex: 5;
@@ -53,7 +64,7 @@ nav ul {
 }
 
 nav li {
-  flex: 1
+  flex: 1;
 }
 
 nav a {
@@ -63,20 +74,60 @@ nav a {
   color: #333;
 }
 
-.header {
-  background-color: #2e1818;
-  color: white;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height:300;
+  margin-bottom:0px;
+}
+
+.missionSlides {display: none;}
+
+img {
+  width:100%;
+  height:auto;
 }
 
 .tagline{
-  padding-top: 4em;
-  padding-bottom: 0.5em;
-  font-size: 1.8em;
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 0px 0px;
+  position: absolute;
+  top:50%;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+
 }
 
-.tagline-info {
-  font-size: 1.1em;
-  padding-bottom: 6em;
+.active {
+  background-color: #717171;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-colour 0.6s ease;
 }
 
 .services {
@@ -102,8 +153,9 @@ nav a {
 
 .footer-container{
   border-top: 1px solid #eee;
-  background-color: #f0f0f0;
+  background-color: #EAECEF;
   padding-top: 3em;
+  color:black;
 }
 
 .footer {
@@ -118,7 +170,7 @@ nav a {
 
 .footer a {
   text-decoration: none;
-  color: #666;
+  color: black;
 }
 
 .copyright{
