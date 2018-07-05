@@ -6,7 +6,7 @@
 <meta name="description" content="phi software sdn bhd">
 <meta name="author" content="phisoft.my">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
@@ -31,71 +31,75 @@
       </ul>
     </nav>
   </div>
+</div>
 
   <div class="slideshow-container">
-    <div class="missionSlides fade">
+    <div class="missionSlides slide-right"  style="background-color:#320D04;">
      <div class="tagline"> We inspire business to grow and achieve greater efficiency, profit and values. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <img class="slidePic" src="">
     </div>
-    <div class="missionSlides fade">
+    <div class="missionSlides slide-right" style="background-color:#7D1934;">
      <div class="tagline"> We promote software adoption for small companies. </div>
-     <img  class="slidePic" src="slide2.jpeg">
+     <img  class="slidePic" src="">
     </div>
-    <div class="missionSlides fade">
+    <div class="missionSlides slide-right" style="background-color:#540E57;">
      <div class="tagline"> We value creative talents and encourage innovations. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <img class="slidePic" src="">
     </div>
-    <div class="missionSlides fade">
+    <div class="missionSlides slide-right" style="background-color:#271955;">
      <div class="tagline"> We support small company to grow and compete in global marketplace. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <img class="slidePic" src="">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div style="text-align:center;">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
     </div>
   </div>
-    <div style="text-align:center;">
-     <span class="dot"></span>
-     <span class="dot"></span>
-     <span class="dot"></span>
-     <span class="dot"></span>
-    </div>
-</div>
 
   <div class="main-info">
-  <h3> About Us </h3>
-  <p>We help company organise business records and automate business process and reporting.</p>
+   <h2> About Us </h2>
+   <p>We help company organise business records and automate business process and reporting.</p>
   <br/>
-</div>
+  </div>
+
 <div class="container">
   <div class="values">
-      <h3>Our Values</h3>
+      <h2>Our Values</h2>
     <div>
       <img class="values1" src="result.png" alt="result-driven">
-      <h4> Result Driven </h4>
+      <h3> Result Driven </h3>
       <p>We make software that deliver real business values.</p><br/>
    </div>
    <div>
       <img class="values2" src="practical.png" alt="simple-and-practical">
-      <h4> Simple and Practical </h4>
+      <h3> Simple and Practical </h3>
       <p>Easy to use software that can be use right away with minimal training.</p><br/>
    </div>
    <div>
       <img class="values1" src="co-innovative.png" alt="co-innovation">
-      <h4> Co-Innovation </h4>
+      <h3> Co-Innovation </h3>
       <p>Work together to create better software.</p><br/>
    </div>
    <div>
       <img class="values2" src="respect.png" alt="respect">
-      <h4> Respect for People </h4>
+      <h3> Respect for People </h3>
       <p>We value talents and committed to provide good working environment and proper recognition and credit to our employees. </p><br/>
    </div>
     <div>
       <img class="values1" src="centricity.png" alt="centricity">
-      <h4> Client Centricity </h4>
+      <h3> Client Centricity </h3>
       <p>Our clients' success is our success.</p><br/>
     </div>
 </div>
-  <h3> Our Vision </h3>
+  <h2> Our Vision </h2>
   <p> Become an innovative software company capable to support local business to grow and compete globally. </p><br/>
   <a name="solution"></a>
-  <h3> Cloud Solutions </h3>
+  <h2> Cloud Solutions </h2>
   <p> Solutions we come up with close colaboration with industry leading partners.
       We maintain and update our software to help our clients stay competitive in their business practice.</p>
   <div class="product">
@@ -108,7 +112,7 @@
 <section class="services-container" >
   <div class="container">
   <a name="services"></a>
-  <h3> Services </h3>
+  <h2> Services </h2>
   <p> Contact us for free consultation on how we can leverage our software expertise to bring your business forward.</p>
   <div class="services">
     <div><i class="fal fa-credit-card"></i><br/>
@@ -187,6 +191,35 @@ function myFunction(x) {
 }
 </script>
 <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("missionSlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--
+<script>
 var slideIndex = 0;
 showSlides();
 
@@ -204,9 +237,9 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 6000);
+    setTimeout(showSlides, 10000);
 }
-</script>
+</script>-->
 
 </body>
 </html>
