@@ -76,14 +76,9 @@ nav a {
 
 .slideshow-container {
   max-width: 100%;
-  height: 500px;
   margin-bottom:0px;
-  padding-top: 70px;
 }
 
-.missionSlides {
-  display: block;
-  height:60%;}
 
 .slide-right{
   position:relative;
@@ -101,26 +96,28 @@ nav a {
 img.slidePic{
   max-width:100%;
   z-index: -1;
+  margin-bottom: 10px;
 }
+
 .tagline{
   color: #f2f2f2;
-  font-size: 20px;
-  padding: 0px 0px;
+  font-size: auto;
+  margin: 0px;
   position: absolute;
-  margin: 80px 30px 70px 30px;
   text-align: center;
+  display: block;
+  padding: 35% 20% 10% 20%;
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 35%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
   color: gray;
   font-weight: bold;
-  font-size: 18px;
   transition: 0.2s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -137,7 +134,7 @@ img.slidePic{
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2px;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid black;
@@ -260,23 +257,14 @@ img.values1, img.values2{
    font-size: 0.8em;
   }
   .tagline{
-   font-size: 2.1em;
-   padding: 200px 30px 100px 30px;
-   margin:70px 600px 70px 70px;
+   font-size: 2em;
    text-align: left;
+   padding: 25% 50% 10% 10%;
  }
-  .slideshow-container{
-  padding-top: 0px;
-  height:600px;
-}
-  .missionSlides{
-  height:600px;
-}
-  img.slidePic{
-  height:600px;
-}
+
 .prev, .next {
-  top: 40%;
+  top: 50%;
+  font-size: 1.5em;
 }
 
 .main-info{
