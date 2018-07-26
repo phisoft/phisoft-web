@@ -77,70 +77,52 @@ nav a {
 .slideshow-container {
   max-width: 100%;
   margin-bottom:0px;
+  height:400px;
 }
 
 
 .slide-right{
   position:relative;
-  animation:animateright 0.4s;
+  animation:animateright 0.5s;
 }
 @keyframes animateright{
   from{right:-300px;opacity:0.8;}
   to{right:0;opacity:1;}
 }
 
-  img {
+img {
   width:100%;
   height:auto;
 }
 img.slidePic{
-  max-width:100%;
+  object-fit:cover;
   z-index: -1;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  height:300px;
+  object-position:left;
 }
 
 .tagline{
-  color: #f2f2f2;
-  font-size: auto;
+  color: #2F2F2F;
+  font-size: 1.6em;
   margin: 0px;
   position: absolute;
   text-align: center;
   display: block;
-  padding: 35% 20% 10% 20%;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 35%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: gray;
-  font-weight: bold;
-  transition: 0.2s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0px;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  color: black;
+  margin: 120px 5%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 2px;
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid black;
   display: inline-block;
   transition: ease;
-  z-index: 0;
+  z-index: 1;
 }
 
 .dot:hover {
@@ -156,8 +138,13 @@ img.slidePic{
   font-family: 'Antic';
 }
 img.values1, img.values2{
-  margin-bottom: 0px;
-  width:250px;
+  margin:0px 15%;
+  width:60%;
+}
+
+.description{
+  padding:5%;
+  text-align:justify;
 }
 
 .product{
@@ -259,18 +246,20 @@ img.values1, img.values2{
   .tagline{
    font-size: 2em;
    text-align: left;
-   padding: 25% 50% 10% 10%;
- }
+   margin: 150px 0% 10% 10%;
+   width: 600px;
+   padding:0.5%;
+  }
 
-.prev, .next {
-  top: 50%;
-  font-size: 1.5em;
-}
+  .main-info{
+   padding:5% 25%;
+   font-size: 1.6em;
+  }
 
-.main-info{
-  padding:10px 400px 10px 400px;
-  font-size: 1.6em;
-}
+  .description {
+    padding:0;
+  }
+
   img.values1, img.values2 {
     width:30%;
     height: auto;
@@ -282,45 +271,50 @@ img.values1, img.values2{
     float:right;
   }
 
-.values{
-  display:grid;
-  grid-row-gap: 20px;
-  padding: 50px;
-}
+  .values{
+   display:grid;
+   grid-row-gap: 20px;
+   padding: 50px;
+  }
 
-.product {
-  padding: 10px;
-  margin: 10px;
-  width:70%;
-}
-.services-container{
-  padding:30px;
-  height:500px;
-  font-size: 0.8em;
-}
-.services{
-  display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-  grid-template-columns: 1fr 5fr 1fr 5fr;
-  grid-template-rows: repeat(4, 1fr);
-  max-width: 100%;
-  margin-top: 20px;
-  padding-bottom: 0px;
-}
-.inquiry{
-  height: 250px;
-  padding: 80px;
+  .product {
+   padding: 10px;
+   margin: 10px;
+   width:70%;
+  }
 
-}
-.button {
-  margin:40px;
-  margin-left: 44%;
-  width:100px;
-  align-items: center;
-}
-.footer{
-  display: flex;
-  flex-direction: row;
-  font-size: 0.8em;
+  .services-container{
+   padding:30px;
+   height:500px;
+   font-size: 0.8em;
+  }
+
+  .services{
+   display: grid;
+   grid-column-gap: 10px;
+   grid-row-gap: 20px;
+   grid-template-columns: 1fr 5fr 1fr 5fr;
+   grid-template-rows: repeat(4, 1fr);
+   max-width: 100%;
+   margin-top: 20px;
+   padding-bottom: 0px;
+  }
+
+  .inquiry{
+   height: 250px;
+   padding: 80px;
+  }
+
+  .button {
+   margin:40px;
+   margin-left: 44%;
+   width:100px;
+   align-items: center;
+  }
+
+  .footer{
+   display: flex;
+   flex-direction: row;
+   font-size: 0.8em;
+  }
 }

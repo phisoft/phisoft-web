@@ -35,24 +35,21 @@
 
   <div class="slideshow-container">
     <div class="missionSlides slide-right" >
-     <div class="tagline"  style="background-color:#320D04;"> We inspire business to grow and achieve greater efficiency, profit and values. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <div class="tagline" > We inspire business to grow and achieve greater efficiency, profit and values. </div>
+     <img class="slidePic" src="img/inspire-to-grow.jpg">
     </div>
     <div class="missionSlides slide-right">
-     <div class="tagline"  style="background-color:#7D1934;"> We promote software adoption for small companies. </div>
-     <img  class="slidePic" src="slide2.jpeg">
+     <div class="tagline"> We promote software adoption for small companies. </div>
+     <img  class="slidePic" src="img/promote-software-adaption.jpg">
     </div>
     <div class="missionSlides slide-right" >
-     <div class="tagline" style="background-color:#540E57;"> We value creative talents and encourage innovations. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <div class="tagline"> We value creative talents and encourage innovations. </div>
+     <img class="slidePic" src="img/value-talents-innovation.jpg">
     </div>
     <div class="missionSlides slide-right">
-     <div class="tagline" style="background-color:#271955;"> We support small company to grow and compete in global marketplace. </div>
-     <img class="slidePic" src="slide2.jpeg">
+     <div class="tagline"> We support small company to grow and compete in global marketplace. </div>
+     <img class="slidePic" src="img/grow-compete-globally.jpg">
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     <div style="text-align:center;">
      <span class="dot" onclick="currentSlide(1)"></span>
      <span class="dot" onclick="currentSlide(2)"></span>
@@ -63,7 +60,7 @@
 
   <div class="main-info">
    <h2> About Us </h2>
-   <p>We help company organise business records and automate business process and reporting.</p>
+   <p> We help company organise business records and automate business process and reporting.</p>
   <br/>
   </div>
 
@@ -71,41 +68,41 @@
   <div class="values">
       <h2>Our Values</h2>
     <div>
-      <img class="values1" src="result.png" alt="result-driven">
+      <img class="values1" src="img/result.png" alt="result-driven">
       <h3> Result Driven </h3>
-      <p>We make software that deliver real business values.</p><br/>
+      <p class="description">We make software that deliver real business values.</p><br/>
    </div>
    <div>
-      <img class="values2" src="practical.png" alt="simple-and-practical">
+      <img class="values2" src="img/practical.png" alt="simple-and-practical">
       <h3> Simple and Practical </h3>
-      <p>Easy to use software that can be use right away with minimal training.</p><br/>
+      <p class="description">Easy to use software that can be use right away with minimal training.</p><br/>
    </div>
    <div>
-      <img class="values1" src="co-innovative.png" alt="co-innovation">
+      <img class="values1" src="img/co-innovative.png" alt="co-innovation">
       <h3> Co-Innovation </h3>
-      <p>Work together to create better software.</p><br/>
+      <p class="description">Work together to create better software.</p><br/>
    </div>
    <div>
-      <img class="values2" src="respect.png" alt="respect">
+      <img class="values2" src="img/respect.png" alt="respect">
       <h3> Respect for People </h3>
-      <p>We value talents and committed to provide good working environment and proper recognition and credit to our employees. </p><br/>
+      <p class="description">We value talents and committed to provide good working environment and proper recognition and credit to our employees. </p><br/>
    </div>
     <div>
-      <img class="values1" src="centricity.png" alt="centricity">
+      <img class="values1" src="img/centricity.png" alt="centricity">
       <h3> Client Centricity </h3>
-      <p>Our clients' success is our success.</p><br/>
+      <p class="description">Our clients' success is our success.</p><br/>
     </div>
 </div>
   <h2> Our Vision </h2>
-  <p> Become an innovative software company capable to support local business to grow and compete globally. </p><br/>
+  <p class="description"> Become an innovative software company capable to support local business to grow and compete globally. </p><br/>
   <a name="solution"></a>
   <h2> Cloud Solutions </h2>
-  <p> Solutions we come up with close colaboration with industry leading partners.
+  <p class="description"> Solutions we come up with close colaboration with industry leading partners.
       We maintain and update our software to help our clients stay competitive in their business practice.</p>
   <div class="product">
-    <img src="roompillow_white.png" alt="Property Management For Hostels" style="background-color:lightblue;" href="www.roompillow.com"></span>
-    <img src="colead.png" alt="Legal Management Software" href="www.colead.my"></span>
-    <img src="dentallink.png" alt="Practical Dental Software" href="www.dentallink.my"></span>
+    <img src="img/roompillow_white.png" alt="Property Management For Hostels" style="margin-right:5%;background-color:lightblue;" href="www.roompillow.com"></span>
+    <img src="img/colead.png" alt="Legal Management Software" href="www.colead.my" style="margin-right:5%;"></span>
+    <img src="img/dentallink.png" alt="Practical Dental Software" href="www.dentallink.my"></span>
   </div>
 </div>
 <br/>
@@ -190,7 +187,7 @@ function myFunction(x) {
     x.classList.toggle("change");
 }
 </script>
-<script>
+<!--script>
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -217,8 +214,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-</script>
-<!--
+</script-->
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -237,9 +234,9 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000);
+    setTimeout(showSlides, 6000);
 }
-</script>-->
+</script>
 
 </body>
 </html>
