@@ -91,6 +91,7 @@ nav a {
   position: relative;
   margin-top: 5em;
   border-radius: 0.1em;
+  display: none;
 }
 
 .our-values {
