@@ -20,57 +20,109 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/"> Home </a></li>
+        <li><a href="/"> What We Do </a></li>
+        <li><a href="#our-values"> Our Values </a></li>
         <li><a href="#solution"> Solutions </a></li>
         <li><a href="#services"> Services </a></li>
-        <li><a href="#contact"> Contact </a></li>
+        <li><a href="#clients"> Clients </a></li>
+        <li><a href="#contact"> Contact us</a></li>
       </ul>
     </nav>
   </div>
 </div>
 
-<section class="header">
+<section class="what-we-do">
   <div class="container">
-    <div class="tagline"> Leading business forward. </div>
-    <div class="tagline-info"> We strive for simplicity and intuitive design in our software to empower your business moving forward. </div>
+    <div class="tagline"> What we do </div>
+    <div class="tagline-info"> 
+      We help company organise business records and automate business process and reporting
+    </div>
+    <div class="action">
+      <a href="#"> Learn More </a>
+    </div>
   </div>
 </section>
 
-<div class="container">
-  <a name="solution"></a>
-  <h3> Cloud Solutions </h3>
+<section class="our-values">
+  <div class="container">
+    <a name="our-values"></a>
+    <div class="title"> Our values </div>
+    <div class="item">
+      <div class="tagline">  Result driven </div>
+      <div class="tagline-info"> We make software that deliver real business values </div>
+    </div>
+    <div class="item">
+      <div class="tagline">  Simple and practical </div>
+      <div class="tagline-info"> Simple software made according to your business needs </div>
+    </div>
+    <div class="item">
+      <div class="tagline">  Respect for people </div>
+      <div class="tagline-info"> 
+        We value talents and commited to provide good working environment and 
+        proper recognition and credit to our employees
+      </div>
+    </div>
+    <div class="item">
+      <div class="tagline"> Teamwork </div>
+      <div class="tagline-info"> 
+        We collaborate and share our passion to create great software
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solutions">
+  <div class="container">
+    <a name="solution"></a>
+    <h3> Solutions </h3>
   <p> Solutions we come up with close colaboration with industry leading partners.
-      We maintain and update our software to help our clients stay competitive in their business practice.</p>
+      We maintain and update our software to help our clients stay competitive in their business and practice.</p>
   <div class="product">
     <div>
       Property Management For Hostels <br/> 
-      www.roompillow.com
+      <a target="_blank" href="https://www.roompillow.com">www.roompillow.com </a>
       <br/><br/>
     </div>
     <div>
       Legal Management Software <br/>
-      www.colead.my
+      <a target="_blank" href="https://colead.my"> www.colead.my </a>
       <br/><br/>
     </div>
     <div>
       Practical Dental Software <br/>
-      www.dentallink.my
+      <a target="_blank" href="https://www.dentallink.my"> www.dentallink.my </a>
       <br/><br/>
     </div>
   </div>
-</div>
-<div class="container">
+  </div>
+</section>
+
+<section class="clients">
+  <div class="container">
+  <a name="clients"></a>
+    <h3> Clients </h3>
+    <div>
+      <img src="img/ums.png" width="70">
+      <img src="img/permai.png" width="200">
+      <img src="img/azmi.png" width="200">
+      <img src="img/rycolawfirm.png" width="100">
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
   <a name="services"></a>
   <h3> Services </h3>
   <p> Contact us for free consultation on how we can leverage our software expertise to bring your business forward.</p>
-  <div class="services">
+  <div class="service-container">
     <div><i class="fal fa-credit-card"></i></div>
     <div>
-      Payment gateway integration.
+      Payment gateway integration
     </div>
     <div><i class="fal fa-briefcase"></i></div>
     <div>
-      Business Integration.
+      Business Integration
     </div>
     <div><i class="fal fa-at"></i></div>
     <div>
@@ -78,29 +130,29 @@
     </div>
     <div><i class="fal fa-envelope"></i></div>
     <div>
-      Email services.
+      Email services
     </div>
     <div><i class="fal fa-database"></i></div>
     <div>
-      Database Systems.
+      Database Systems
     </div>
     <div><i class="fab fa-android"></i></div>
     <div>
-      Mobile Applications.
+      Mobile Applications
     </div>
     <div><i class="fal fa-location-arrow"></i></div>
     <div>
-      SMS Integration.
+      SMS Integration
     </div>
     <div><i class="fal fa-desktop"></i></div>
     <div>
-      Web Applications.
+      Web Applications
     </div>
   </div>
-</div>
+</section>
 
-<a name="contact"></a>
 <section class="inquiry">
+  <a name="contact"></a>
   <div class="container">
     <a name="contact"></a>
     <div class="inquiry-phone"> For enquiry ? <i class="fal fa-envelope" aria-hidden="true"></i> &#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121;</div>
@@ -109,6 +161,12 @@
 
 <section class="footer-container">
   <div class="container footer">
+    <div>
+      <strong> Products </strong><br/>
+      <a href="https://www.roompillow.com"> Backpackers Hostel</a><br/>
+      <a href="https://www.colead.my"> Legal Firm </a><br/>
+      <a href="https://www.dentallink.my"> Dental Clinic </a><br/>
+    </div>
     <div>
       <strong> We are hiring </strong> <br/>
       Graphic/UX Designer <br/>
@@ -134,7 +192,7 @@
 <script>
   $(document).ready(function(){
     $('.nav-trigger').click(function(){
-      $('nav').slideToggle(); 
+      $('nav').slideToggle("slow"); 
       return false;
     })
   })

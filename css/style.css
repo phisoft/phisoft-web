@@ -8,11 +8,11 @@ body {
 
 h3 {
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 .container {
-  max-width: 960px;
+  padding: 0.5em;
   margin: 0 auto; 
   padding: 0 20px;
 }
@@ -36,7 +36,7 @@ h3 {
   text-decoration: none; 
   border: 1px solid silver;
   border-radius: 0.2em;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 0.4em 0.8em 0.4em 0.8em;
   background-color: #fafafa;
 }
@@ -53,7 +53,8 @@ nav ul {
 }
 
 nav li {
-  flex: 1
+  flex: 1;
+  padding: 0.2em;
 }
 
 nav a {
@@ -63,23 +64,79 @@ nav a {
   color: #333;
 }
 
-.header {
-  background-color: #2e1818;
+.what-we-do {
+  padding-top: 12em;
+  padding-bottom: 12em;
   color: white;
+  background-color: #333;
 }
 
-.tagline{
-  padding-top: 4em;
+.what-we-do .tagline{
   padding-bottom: 0.5em;
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.what-we-do .tagline-info {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+.what-we-do .action a {
+  background-color: #eee;
+  padding: 0.5em;
+  text-decoration: none;
+  position: relative;
+  margin-top: 5em;
+  border-radius: 0.1em;
+}
+
+.our-values {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border-top: 1px solid white;
+}
+
+.our-values .title {
   font-size: 1.8em;
+  margin-bottom: 1em;
 }
 
-.tagline-info {
-  font-size: 1.1em;
-  padding-bottom: 6em;
+.our-values .item {
+  margin-bottom: 1.5em;
 }
 
-.services {
+.our-values .tagline {
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.solutions {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #eee;
+}
+
+.solutions a {
+  text-decoration: none;
+  color: #333;
+}
+
+.clients {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.clients img {
+  margin: 0.5em;
+  filter: grayscale(2);
+}
+
+.service-container {
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -87,17 +144,19 @@ nav a {
   grid-template-rows: repeat(4, 1fr);
   margin-top: 2em;
   margin-bottom: 4em;
+  font-size: 0.9em;
 }
 
-.services i {
-  font-size: 2.5em;
+.service-container i {
+  font-size: 2.0em;
   color: #666;
 }
 
 .inquiry {
   padding: 1.5em;
   text-align: center;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .footer-container{
@@ -118,16 +177,23 @@ nav a {
 
 .footer a {
   text-decoration: none;
-  color: #666;
+  color: #333;
 }
 
 .copyright{
-  color: silver;
+  border-top: 1px solid #ccc;
+  color: #666;
   padding: 0.5em;
   font-size: 0.9em;
 }
 
-@media (min-width: 750px){
+@media (min-width: 40rem){
+  .container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 90%;
+  }
+
   .menu {
     flex-direction: row;
     align-items: center;
