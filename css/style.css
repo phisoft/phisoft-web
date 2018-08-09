@@ -200,16 +200,18 @@ nav a {
 
 .services {
   border-top: 1px solid #eee;
-  background-color: #f6f6f6;
+  background-color: #444;
+  background-color: #1a1a1a;
   padding-top: 2em;
   padding-bottom: 2em;
+  color: white;
 }
 
 .service-container {
   display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-columns: 1fr 5fr 1fr 5fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr 6fr 1fr 6fr;
   grid-template-rows: repeat(4, 1fr);
   margin-top: 2em;
   margin-bottom: 4em;
@@ -217,23 +219,23 @@ nav a {
 }
 
 .service-container i {
-  font-size: 2.0em;
-  color: #666;
+  font-size: 1.5em;
+  color: #fff;
 }
 
 .inquiry {
   padding: 1.5em;
   text-align: center;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px dotted #aaa;
+  border-bottom: 1px dotted #aaa;
+  background-color: #7c0c00;
+  color: white;
 }
 
 .footer-container{
-  font-family: 'Lato';
-  border-top: 1px solid #eee;
-  background-color: #f0f0f0;
-  background-color: #1a1a1a;
+  font-size: 0.9em;
   padding-top: 3em;
+  background-color: #1a1a1a;
 }
 
 .footer {
@@ -244,17 +246,16 @@ nav a {
 .footer div {
   flex: 1;
   margin-bottom: 2em;
-  color: #eee;
+  color: #aaa;
 }
 
 .footer a {
   text-decoration: none;
-  color: #333;
-  color: #eee;
+  color: #aaa;
 }
 
 .copyright{
-  border-top: 1px solid #ccc;
+  border-top: 1px dotted #ccc;
   color: #666;
   padding: 0.5em;
   font-size: 0.9em;
