@@ -154,6 +154,13 @@ nav a {
   filter: grayscale(1);
 }
 
+.services {
+  border-top: 1px solid #eee;
+  background-color: #f6f6f6;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .service-container {
   display: grid;
   grid-column-gap: 20px;
