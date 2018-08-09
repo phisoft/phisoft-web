@@ -224,10 +224,10 @@ nav a {
 }
 
 .inquiry {
-  padding: 1.5em;
+  padding: 1.0em;
   text-align: center;
-  border-top: 1px dotted #aaa;
-  border-bottom: 1px dotted #aaa;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
   background-color: #7c0c00;
   color: white;
 }
@@ -236,16 +236,17 @@ nav a {
   font-size: 0.9em;
   padding-top: 3em;
   background-color: #1a1a1a;
+  padding-bottom: 2em;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer div {
   flex: 1;
-  margin-bottom: 2em;
+  padding: 0.5em;
   color: #aaa;
 }
 
@@ -384,6 +385,7 @@ nav a {
   }
 
   .footer {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
