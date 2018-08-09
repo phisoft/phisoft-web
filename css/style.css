@@ -65,8 +65,8 @@ nav a {
 }
 
 .what-we-do {
-  padding-top: 12em;
-  padding-bottom: 12em;
+  padding-top: 10em;
+  padding-bottom: 8em;
   color: white;
   background-color: #333;
   background-color: #0f6588;
@@ -87,6 +87,10 @@ nav a {
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 2em;
+}
+
+.what-we-do .apps {
+  display: none;
 }
 
 .what-we-do .action a {
@@ -120,11 +124,12 @@ nav a {
 }
 
 .solutions {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: #eee;
+  background-color: #f6f6f6;
 }
 
 .solutions a {
@@ -168,6 +173,7 @@ nav a {
 .footer-container{
   border-top: 1px solid #eee;
   background-color: #f0f0f0;
+  background-color: #1a1a1a;
   padding-top: 3em;
 }
 
@@ -179,11 +185,13 @@ nav a {
 .footer div {
   flex: 1;
   margin-bottom: 2em;
+  color: #eee;
 }
 
 .footer a {
   text-decoration: none;
   color: #333;
+  color: #eee;
 }
 
 .copyright{
@@ -193,7 +201,7 @@ nav a {
   font-size: 0.9em;
 }
 
-@media (min-width: 40rem){
+@media screen and (min-width:40rem) {
   .container {
     margin: 0 auto;
     max-width: 1024px;
@@ -215,6 +223,62 @@ nav a {
 
   nav ul {
     flex-direction: row;
+  }
+
+  .what-we-do .action a {
+    display: none;
+  }
+
+  .what-we-do .apps {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  .what-we-do .item {
+    text-align: center;
+    margin: 1.5em;
+    width: 120px;
+    z-index: 2;
+  }
+
+  .what-we-do .apps .circle{
+    background-color: darkred;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.7em;
+    font-size: 1.1em;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin-bottom: 0.5em;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+  }
+
+  .what-we-do .line {
+    margin-left: 160px;
+    border-top: 1px solid #eee;
+    width: 680px;
+    position: relative;
+    bottom: 6em;
+    z-index: 1;
+  }
+
+  .our-values .values {
+    display: flex;
+  }
+
+  .our-values .item {
+    width: 25%;
+    padding: 1em;
+    padding-left: 0px;
+  }
+
+  .our-values .tagline-info {
+    margin-top: 0.5em;
+    color: #333;
   }
 
   .footer {
