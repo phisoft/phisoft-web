@@ -124,17 +124,15 @@ nav a {
 }
 
 .solutions {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: #eee;
-  background-color: #f6f6f6;
+  background-color: #03153e;
+  color: white;
 }
 
 .solutions a {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 .solutions .item {
@@ -153,7 +151,7 @@ nav a {
 
 .clients img {
   margin: 0.5em;
-  filter: grayscale(2);
+  filter: grayscale(1);
 }
 
 .service-container {
