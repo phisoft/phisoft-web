@@ -72,6 +72,8 @@ nav a {
   background-color: #0f6588;
   background-color: #00374d;
   background-color: #2a2120;
+  background-position: center center;
+  background-image: url('img/bg.png');
 }
 
 .what-we-do .tagline{
@@ -88,13 +90,13 @@ nav a {
 }
 
 .what-we-do .action a {
-  background-color: #eee;
+  background-color: green;
+  color: white;
   padding: 0.5em;
   text-decoration: none;
   position: relative;
   margin-top: 5em;
   border-radius: 0.1em;
-  display: none;
 }
 
 .our-values {
