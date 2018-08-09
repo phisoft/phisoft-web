@@ -137,8 +137,17 @@ nav a {
   color: #333;
 }
 
+.solutions .item {
+  padding: 0.5em;
+  display: flex;
+}
+
+.solutions .icon {
+  margin-right: 1em;
+}
+
 .clients {
-  margin-top: 8em;
+  margin-top: 3em;
   margin-bottom: 8em;
 }
 
@@ -280,6 +289,16 @@ nav a {
   .our-values .tagline-info {
     margin-top: 0.5em;
     color: #333;
+  }
+
+  .solutions .product {
+    display: flex;
+  }
+
+  .solutions .item {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 0.5em;
   }
 
   .footer {
