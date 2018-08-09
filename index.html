@@ -256,6 +256,16 @@
       return false;
     })
   })
+
+  var color = ['darkblue', 'darkorange', 'darkred', 'darkpurple']; 
+  var i = 0;
+  setInterval(function(){
+    let co = color[i % color.length] || color[0];
+    console.debug('color', co);
+    $('.what-we-do').css('background-color', co)
+    i++;
+  }, 5000);
+
 </script>
 </body>
 </html>
