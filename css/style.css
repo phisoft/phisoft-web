@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Quickand', 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 h3 {
@@ -110,11 +111,12 @@ nav a {
 }
 
 .our-missions .values {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
 }
 
 .our-missions .item {
-  width: 25%;
   padding: 1em;
   padding-left: 0px;
 }
@@ -146,11 +148,22 @@ nav a {
 }
 
 .our-values .item {
+  padding: 0.5em;
   margin-bottom: 1.5em;
 }
 
+.our-values .tagline-info {
+  margin-top: 0.5em;
+  color: #333;
+}
+
+.our-values .values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .our-values .tagline {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 0.2em;
 }
 
@@ -313,13 +326,43 @@ nav a {
     z-index: 1;
   }
 
+  .our-missions {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px solid white;
+  }
+
+  .our-missions .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .our-missions .item {
+    padding: 1em;
+    padding-left: 0px;
+  }
+
+  .our-missions .tagline-info {
+    margin-top: 0.5em;
+    color: #333;
+  }
+
+  .our-missions .title {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  .our-missions .tagline {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+  }
 
   .our-values .values {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .our-values .item {
-    width: 25%;
     padding: 1em;
     padding-left: 0px;
   }
