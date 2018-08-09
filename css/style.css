@@ -103,8 +103,39 @@ nav a {
   border-radius: 0.1em;
 }
 
+.our-missions {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid white;
+}
+
+.our-missions .values {
+  display: flex;
+}
+
+.our-missions .item {
+  width: 25%;
+  padding: 1em;
+  padding-left: 0px;
+}
+
+.our-missions .tagline-info {
+  margin-top: 0.5em;
+  color: #333;
+}
+
+.our-missions .title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.our-missions .tagline {
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
 .our-values {
-  padding-top: 5em;
+  padding-top: 1em;
   padding-bottom: 5em;
   border-top: 1px solid white;
 }
@@ -281,6 +312,7 @@ nav a {
     bottom: 6em;
     z-index: 1;
   }
+
 
   .our-values .values {
     display: flex;
