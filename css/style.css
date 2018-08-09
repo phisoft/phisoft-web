@@ -258,9 +258,10 @@ nav a {
   }
 
   .what-we-do .line {
-    margin-left: 160px;
+    margin: 0 auto;
     border-top: 1px solid #eee;
-    width: 680px;
+    width: 80%;
+    max-width: 680px;
     position: relative;
     bottom: 6em;
     z-index: 1;
