@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', 'Lato', sans-serif;
 }
 
 h3 {
@@ -180,6 +180,7 @@ nav a {
 }
 
 .footer-container{
+  font-family: 'Lato';
   border-top: 1px solid #eee;
   background-color: #f0f0f0;
   background-color: #1a1a1a;
