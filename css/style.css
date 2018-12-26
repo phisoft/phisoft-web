@@ -149,10 +149,11 @@ dialog {
 
 .ps-about {
   background-color: #fefefe;
+  border-top: 1px solid white;
 }
 
 .ps-about-image {
-  background: url('../img/roof.jpg') bottom / cover;
+  background: url('../img/tunnel.jpg') bottom / cover;
 }
 
 .ps-about-text {
