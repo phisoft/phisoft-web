@@ -144,15 +144,15 @@ dialog {
 }
 
 .ps-services-image {
-  background: url('../img/services.jpg') bottom / cover;
+  background: url('../img/programmer.jpg') bottom / cover;
 }
 
 .ps-about {
-  background-color: #efefef;
+  background-color: #fefefe;
 }
 
 .ps-about-image {
-  background: url('../img/greysky.jpg') bottom / cover;
+  background: url('../img/roof.jpg') bottom / cover;
 }
 
 .ps-about-text {
