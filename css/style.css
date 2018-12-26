@@ -9,7 +9,7 @@ dialog {
 }
 
 .mdl-dialog {
-  min-width: 500px;
+  width: 85%;
   max-width: 600px;
 }
 
@@ -133,19 +133,22 @@ dialog {
   padding: 1.5em;
 }
 
-@media screen and (min-width: 900px) {
-  .mdl-layout__drawer-button {
-    display: none !important;
-  }
+.ps-services {
+  background-color: #88716a;
+  color: #f0f0f0;
 }
 
 .ps-services-text {
-  background-color: #eee;
   padding: 0.5em;
+  margin-bottom: 25px;
 }
 
 .ps-services-image {
   background: url('../img/services.jpg') bottom / cover;
+}
+
+.ps-about {
+  background-color: #efefef;
 }
 
 .ps-about-image {
@@ -153,13 +156,11 @@ dialog {
 }
 
 .ps-about-text {
-  background-color: #eee;
   text-align: justify;
   padding: 0.5em;
+  margin-bottom: 25px;
 }
 
-@media screen and (max-width: 900px) {
-  .ps-services-text h3, .ps-about-text h3 {
-    text-align: center;
-  }
+.ps-services-text h3, .ps-about-text h3 {
+  text-align: center;
 }

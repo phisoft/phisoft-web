@@ -14,7 +14,7 @@
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout">
+<div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title ps-logo">
       <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="150" /></a>
@@ -23,14 +23,14 @@
       <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
       <a class="mdl-navigation__link" href="#services"> Services </a></li>
       <a class="mdl-navigation__link" href="#about"> About Us</a></li>
-      <a class="mdl-navigation__link" href="#contact"> Contact Us</a></li>
+      <a class="mdl-navigation__link" id="nav-show-dialog" href="#contact"> Contact Us</a></li>
     </nav>
   </div>
 
 <main class="mdl-layout__content">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">
+      <span class="mdl-layout__title">
         <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="180" /></a>
       </span>
       <div class="mdl-layout-spacer"></div>
@@ -38,7 +38,7 @@
         <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
         <a class="mdl-navigation__link" href="#services"> Services </a></li>
         <a class="mdl-navigation__link" href="#about"> About Us</a></li>
-        <a class="mdl-navigation__link" id="show-dialog" href="#contact"> Contact Us</a></li>
+        <a class="mdl-navigation__link" id="toolbar-show-dialog" href="#contact"> Contact Us</a></li>
       </nav>
     </div>
   </header>
@@ -209,7 +209,7 @@
   </div>
   </div>
 
-  <div class="mdl-grid ps-services">
+  <div class="mdl-grid ps-services mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--8-col">
       <a name="services"></a>
       <div class="ps-services-text">
@@ -248,7 +248,7 @@
     </div> 
   </div>
 
-  <div class="mdl-grid ps-about">
+  <div class="mdl-grid ps-about mdl-grid--no-spacing">
   <div class="mdl-cell mdl-cell--4-col ps-about-image">
   </div>
   <div class="mdl-cell mdl-cell--8-col ps-about-text">
@@ -371,19 +371,28 @@
 </dialog>
 <script src="dialog-polyfill.js"></script>
 <script>
-var button = document.querySelector('#show-dialog')
-var dialog = document.querySelector('#dialog')
-dialog.addEventListener('click', function(event) {
+function showDialog(event) {
   var rect = dialog.getBoundingClientRect();
   var isInDialog = (rect.top < event.clientY && event.clientY <= rect.top + rect.height && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
   if(!isInDialog){
     dialog.close();
   }
-})
+}
+
+var toolbarBtn = document.querySelector('#toolbar-show-dialog')
+var navBtn = document.querySelector('#nav-show-dialog')
+var dialog = document.querySelector('#dialog')
+dialog.addEventListener('click', showDialog)
+
 if(!dialog.showModal){
   dialogPolyfill.registerDialog(dialog)
 }
-button.addEventListener('click', function(){
+
+toolbarBtn.addEventListener('click', function(){
+  dialog.showModal()
+})
+
+navBtn.addEventListener('click', function(){
   dialog.showModal()
 })
 </script>
