@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/material.min.css">
 <link rel="stylesheet" href="css/fontawesome-all.min.css" />
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dialog-polyfill.css">
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
         <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
         <a class="mdl-navigation__link" href="#services"> Services </a></li>
         <a class="mdl-navigation__link" href="#about"> About Us</a></li>
-        <a class="mdl-navigation__link" href="#contact"> Contact Us</a></li>
+        <a class="mdl-navigation__link" id="show-dialog" href="#contact"> Contact Us</a></li>
       </nav>
     </div>
   </header>
@@ -46,9 +47,14 @@
       <h3> We are small company with big dreams </h3>
       <h6> Our dream is to help you company grow by providing necessary
       know how in information technology expertise and innovations.</h6>
+      <div>
+        <a href="#about" class="mdl-button mdl-js-button"> <i class="material-icons">chevron_right</i>Learn More </a>
+      </div>
   </div>
 
+  <a name="solutions"></a>
   <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-colead">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
@@ -59,12 +65,13 @@
         Colead Legal Management Software for highly mobile laywer firm team.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://colead.my" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-roompillow">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
@@ -75,12 +82,13 @@
         Cloud solutions designed to manage room booking for backpacker's hostel.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://www.roompillow.com" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-dental">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
@@ -91,32 +99,34 @@
         Dental software to simplify dental clinic everyday operations.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://www.dentallink.my" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-pestplanner">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
-          <img src="img/colead_icon.svg" width="30" />&nbsp;Pestplanner
+          <img src="img/pestplanner_icon.svg" width="30" />&nbsp;Pestplanner
         </h2>
       </div> 
       <div class="mdl-card__supporting-text">
         Schdeduling and record management for software for pest control company.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://www.pestplanner.com" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-selloca">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
-          <img src="img/colead_icon.svg" width="30" />&nbsp;Selloca
+          <img src="img/selloca_icon.svg" width="30" />&nbsp;Selloca
         </h2>
       </div> 
       <div class="mdl-card__supporting-text">
@@ -128,15 +138,16 @@
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-rentgoer">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
-          <img src="img/colead_icon.svg" width="30" />&nbsp;Rentgoer
+          <img src="img/rentgoer_icon.svg" width="30" />&nbsp;Rentgoer
         </h2>
       </div> 
       <div class="mdl-card__supporting-text">
-        A marketplac for vendors to manage their rental inventory.
+        A marketplace for vendors to manage their rental inventory.
       </div>
       <div class="mdl-card__actions mdl-card--border">
         <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
@@ -144,7 +155,8 @@
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-panelclaim">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
@@ -160,23 +172,144 @@
         </a>
       </div>
     </div>
-
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card mdl-shadow--2dp ps-thesisprint">
       <div class="mdl-card__title mdl-card--expand">
         <h2 class="mdl-card__title-text">
-          <img src="img/colead_icon.svg" width="30" />&nbsp;Thesisprint
+          <img src="img/thesisprint_icon.svg" width="30" />&nbsp;Thesisprint
         </h2>
       </div> 
       <div class="mdl-card__supporting-text">
         Online thesis printing and binding service for final year students.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://www.thesisprint.my" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
     </div>
+  </div>
+  <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
+    <div class="mdl-card mdl-shadow--2dp ps-nunukragang">
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">
+          <img src="img/nunukragang_icon.svg" width="30" />&nbsp;Nunukragang
+        </h2>
+      </div> 
+      <div class="mdl-card__supporting-text">
+        Empower people to collaborate and build their own native language dictionary.
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://www.nunukragang.org" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+          More info
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
 
+  <div class="mdl-grid ps-services">
+    <div class="mdl-cell mdl-cell--8-col">
+      <a name="services"></a>
+      <div class="ps-services-text">
+        <h3> Services </h3>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Business process automation </h5>
+            We help company organise business records and automate business process and reporting.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Web and mobile application development </h5>
+            We develop web application and mobile application prototype to meet our client's idea and vision.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Cloud Solutions </h5>
+            We manage a range of software as services software tailored for specific industry.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Web development and hosting </h5>
+            We provide website development together with reliable and secure web hosting service.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Software Integration </h5>
+            We do third party software integration including payment gateway integration, dropbox integration,
+            google gapi, facebook and xero accounting software.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Consultation </h5>
+            Let's get in touch and tell us your vision and we will work together on how to make it into reality.
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col ps-services-image">
+    </div> 
+  </div>
+
+  <div class="mdl-grid ps-about">
+  <div class="mdl-cell mdl-cell--4-col ps-about-image">
+  </div>
+  <div class="mdl-cell mdl-cell--8-col ps-about-text">
+    <div class="ps-about-text">
+      <a name="about"></a>
+      <h3> About us </h3>
+      <h6>
+        Phi Software Sdn Bhd is a software company based in Kota Kinabalu, Sabah. Establish in 2017, it started with
+        a mission to promote technology adoption to grow and improve business operation for small company.
+        What make our company different is our persistant toward continously improving our solutions and we are willing
+        to go extra miles to make sure our software solutions exceed our client expected return of investment.
+      </h6>
+    </div>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+        <a href="#missions" class="mdl-tabs__tab is-active"> Our Missions </a>
+        <a href="#values" class="mdl-tabs__tab"> Our Values </a>
+      </div>
+      <div class="mdl-tabs__panel is-active" id="missions">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Inspire Growth </h5>
+            To inspire business to grow and achieve greater efficiency, profit and values.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Promote Technology Adoption </h5>
+            To promote software adoption for small company.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Encourage Innovation </h5>
+            To value creative talents and encourage innovations.
+          </div> 
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Support </h5>
+            To support small company to grow and compete in global marketplace.
+          </div>
+        </div>
+      </div>
+      <div class="mdl-tabs__panel" id="values">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Result driven </h5>
+            We make software that deliver real business values.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Practical solutions </h5>
+            Simple software made according to your business needs.
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5> Respect for people </h5>
+            We value talents and commited to provide good working environment, proper
+            recognition and credit to our employees
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <h5>Teamwork </h5>
+            We collaborate and share our passion to create great software.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <footer class="mdl-mega-footer">
@@ -194,7 +327,9 @@
         <h1 class="mdl-mega-footer__heading"> Office </h1>
         <ul class="mdl-mega-footer__link-list">
           <li> No L-96, Linked Bridge, Star City,<br/>
-               88000 Kota Kinabalu, Sabah, Malaysia </li>
+               88000 Kota Kinabalu, Sabah, Malaysia. <br/><br/>
+               <a href="https://goo.gl/maps/akGYbStgbT12"> Google Map </a>
+          </li>
         </ul>
       </div>
       <div class="mdl-mega-footer__drop-down-section"> 
@@ -204,9 +339,54 @@
           <li> GMT+8 </li>
         </ul>
       </div>
+      <div class="mdl-mega-footer__drop-down-section"> 
+        <h1 class="mdl-mega-footer__heading"> Contact Us </h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="https://wa.me/&#054;&#048;&#049;&#050;&#056;&#054;&#054;&#057;&#054;&#057;&#053;?text=hi%20Jeffry"> Whatsapp +&#054;&#048;&#049;&#050;&#056;&#054;&#054;&#057;&#054;&#057;&#053;</a></li>
+          <li><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121;">Email &#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121;</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="mdl-mega-footer__bottom-section">
+      <div class="mdl-logo"> &copy; Phi Software Sdn Bhd </div>
     </div>
   </footer>
 </main>
 </div>
+
+<dialog id="dialog" class="mdl-dialog">
+  <h4 class="mdl-dialog__title"> Contact us </h4>
+  <div class="mdl-dialog__content">
+    Thank you for you interest to get in touch with us.
+    We are looking forward to work with you on your next venture. <br/><br/>
+    Please email us at <strong> &#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121; </strong> and
+    also you can whatsapp us directly at <strong> +&#054;&#048;&#049;&#050;&#056;&#054;&#054;&#057;&#054;&#057;&#053; </strong>. <br/><br/>
+    We will get back to you as soon as possible.
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#112;&#104;&#105;&#115;&#111;&#102;&#116;&#046;&#109;&#121;" class="mdl-button"> Email </a>
+    <a href="https://wa.me/&#054;&#048;&#049;&#050;&#056;&#054;&#054;&#057;&#054;&#057;&#053;?text=hi%20Jeffry" class="mdl-button"> Whatsapp </a>
+  </div>
+</dialog>
+<script src="dialog-polyfill.js"></script>
+<script>
+var button = document.querySelector('#show-dialog')
+var dialog = document.querySelector('#dialog')
+dialog.addEventListener('click', function(event) {
+  var rect = dialog.getBoundingClientRect();
+  var isInDialog = (rect.top < event.clientY && event.clientY <= rect.top + rect.height && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+  if(!isInDialog){
+    dialog.close();
+  }
+})
+if(!dialog.showModal){
+  dialogPolyfill.registerDialog(dialog)
+}
+button.addEventListener('click', function(){
+  dialog.showModal()
+})
+
+</script>
 </body>
 </html>

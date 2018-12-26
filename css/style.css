@@ -2,6 +2,22 @@ header {
   background-color: #eee !important;
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.mdl-dialog {
+  min-width: 500px;
+  max-width: 600px;
+}
+
+.mdl-card {
+  min-height: 300px;
+  width: 95%;
+}
+
 .ps-logo {
   padding: 0.5em;
 }
@@ -102,6 +118,17 @@ header {
   color: white;
 }
 
+.ps-nunukragang {
+  margin: 0.5em;
+}
+
+.ps-nunukragang > .mdl-card__title {
+  height: 176px;
+  background: url('../img/sumandak.jpg') bottom / cover;
+  background-color: gray;
+  color: white;
+}
+
 .banner {
   padding: 1.5em;
 }
@@ -109,5 +136,30 @@ header {
 @media screen and (min-width: 900px) {
   .mdl-layout__drawer-button {
     display: none !important;
+  }
+}
+
+.ps-services-text {
+  background-color: #eee;
+  padding: 0.5em;
+}
+
+.ps-services-image {
+  background: url('../img/services.jpg') bottom / cover;
+}
+
+.ps-about-image {
+  background: url('../img/greysky.jpg') bottom / cover;
+}
+
+.ps-about-text {
+  background-color: #eee;
+  text-align: justify;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .ps-services-text h3, .ps-about-text h3 {
+    text-align: center;
   }
 }
