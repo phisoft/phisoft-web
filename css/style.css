@@ -134,7 +134,7 @@ dialog {
 }
 
 .ps-services {
-  background-color: #88716a;
+  background-color: #0f1338;
   color: #f0f0f0;
 }
 
@@ -165,4 +165,8 @@ dialog {
 
 .ps-services-text h3, .ps-about-text h3 {
   text-align: center;
+}
+
+.mdl-mega-footer {
+  background-color: #0c0b0b;
 }
