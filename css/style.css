@@ -135,7 +135,7 @@ dialog {
 
 .ps-services {
   background-color: #0d0f23;
-  color: #f0f0f0;
+  color: #888888;
 }
 
 .ps-services-text {
@@ -151,7 +151,7 @@ dialog {
   background-color: #063348;
   border-top: 1px solid #474747;
   border-bottom: 1px solid #474747;
-  color: #cbcbcb;
+  color: #aaa;
 }
 
 .ps-about-image {
