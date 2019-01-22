@@ -148,9 +148,10 @@ dialog {
 }
 
 .ps-about {
-  background-color: #fefefe;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  background-color: #063348;
+  border-top: 1px solid #474747;
+  border-bottom: 1px solid #474747;
+  color: #cbcbcb;
 }
 
 .ps-about-image {
@@ -169,4 +170,16 @@ dialog {
 
 .mdl-mega-footer {
   background-color: #0c0b0b;
+}
+
+.mdl-tabs__tab-bar {
+  border-bottom: none;
+}
+
+.mdl-tabs__tab {
+  color: #b3b3b3;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: #fff;
 }
