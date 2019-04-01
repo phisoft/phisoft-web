@@ -139,7 +139,7 @@ dialog {
 }
 
 .ps-services i {
-  font-size: 30pt;
+  font-size: 38pt;
 }
 
 .ps-services-text {
@@ -186,4 +186,10 @@ dialog {
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
   color: #fff;
+}
+
+@media(max-width:768px) {
+.ps-services {
+text-align: center;
+}
 }
