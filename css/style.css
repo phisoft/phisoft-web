@@ -138,6 +138,10 @@ dialog {
   color: #888888;
 }
 
+.ps-services i {
+  font-size: 30pt;
+}
+
 .ps-services-text {
   padding: 0.5em;
   margin-bottom: 25px;
