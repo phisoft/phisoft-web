@@ -286,6 +286,24 @@ dialog {
   max-width: 1024px;
 }
 
+.ps-solutions .title {
+  text-align: center;
+  font-size: 22pt;
+  color: #333;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.ps-solutions .subtitle {
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 3em;
+  color: #666;
+  padding: 0.3em;
+}
+
 .mdl-mega-footer {
   background-color: #0c0b0b;
 }
