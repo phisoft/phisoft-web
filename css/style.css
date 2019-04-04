@@ -136,15 +136,37 @@ dialog {
 .ps-services {
   background-color: #0d0f23;
   color: #888888;
+  padding-bottom: 5em;
+}
+
+.ps-services .mdl-cell p {
+    display: none;
+}
+
+@media screen and (min-width: 40.0em) {
+  .ps-services .mdl-cell {
+    padding: 2.2em;
+  }
+
+  .ps-services .mdl-cell p {
+    display: block;
+  }
 }
 
 .ps-services i {
-  font-size: 38pt;
+  font-size: 48pt;
 }
 
 .ps-services-text {
   padding: 0.5em;
   margin-bottom: 25px;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.ps-services-text .icons {
+  text-align: center;
 }
 
 .ps-services-image {
