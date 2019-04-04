@@ -39,8 +39,20 @@ dialog {
 }
 */
 
+.mdl-layout__header-row {
+  height: 80px;
+}
+
 .ps-menu {
   background-color: white !important;
+}
+
+.ps-menu-icon {
+  margin-right: 1em;
+}
+
+.ps-menu-icon i{
+  font-size: 1.8em !important;
 }
 
 .ps-logo {
@@ -84,11 +96,13 @@ dialog {
   background-image: url('../img/splash-building.jpg');
   background-size: cover;
   background-position: top 40% center;
-  text-align: right;
+  text-align: center;
   padding: 0.5em;
   padding-top: 50px;
   padding-bottom: 80px;
   height: 380px;
+  color: white;
+  font-style: italic;
 }
 
 .ps-colead {

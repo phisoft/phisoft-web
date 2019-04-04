@@ -18,11 +18,11 @@
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--no-drawer-button">
+<div class="mdl-layout mdl-js-layout mdl-layout--no-drawer-button mdl-layout--fixed-header">
   <header class="mdl-layout__header ps-menu mdl-layout__header-scroll">
     <div class="mdl-layout__header-row">
       <span class="mdl-layout__title">
-        <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="180" /></a>
+        <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo.png" width="180" /></a>
       </span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation hide-on-phone">
@@ -31,6 +31,7 @@
         <a class="mdl-navigation__link" href="#about"> About Us</a></li>
         <a class="mdl-navigation__link" id="toolbar-show-dialog" href="#contact"> Contact Us</a></li>
       </nav>
+      <div class="ps-menu-icon"><i class="material-icons">mail_outline</i></div>
     </div>
   </header>
 
@@ -49,7 +50,7 @@
       <h3> Worry free software </h3>
     </div>
     <div class="ps-banner4">
-      <h3> Worry free software </h3>
+      <h3> Moving business forward </h3>
     </div>
   </div>
 
@@ -58,7 +59,7 @@
     <a name="services"></a>
     <div class="ps-services-text">
       <div class="title"> Dedicated To Support Your Growing Business</div>
-      <div class="subtitle"> Our company monitor and make sure our software running effectively and always available.</div>
+      <div class="subtitle"> We monitor and make sure our software running effectively and always available.</div>
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
         <div class="icons"><i class="material-icons">business_center</i></div>
@@ -399,7 +400,15 @@ toolbarBtn.addEventListener('click', function(){
   dialog.showModal()
 })
 
-var banner = new Siema()
+var banner = new Siema({
+  duration: 200,
+  easing: 'ease-out',
+  loop: true
+})
+
+setInterval(() => banner.next(), 2500)
+document.querySelector('.siema').addEventListener('click', () => banner.next())
+
 </script>
 </body>
 </html>
