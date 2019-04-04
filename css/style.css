@@ -18,16 +18,77 @@ dialog {
   width: 95%;
 }
 
+.mdl-navigation {
+  text-align: center;
+}
+
+@media screen and (max-width: 40em) {
+  .hide-on-phone {
+    display: none;
+  }
+}
+
+/*
+.mdl-layout__drawer-button, .mdl-layout__drawer{
+  left: initial;
+  right: 0;
+}
+
+.mdl-layout__drawer{    
+  transform:translateX(250px);
+}
+*/
+
+.ps-menu {
+  background-color: white !important;
+}
+
 .ps-logo {
   padding: 0.5em;
 }
 
-.ps-banner {
-  background-color: #eee !important;
+.ps-banner1 {
+  background-image: url('../img/splash-present.jpg');
+  background-size: cover;
+  background-position: top 20% center;
   text-align: center;
   padding: 0.5em;
   padding-top: 50px;
   padding-bottom: 80px;
+  height: 380px;
+}
+
+.ps-banner2 {
+  background-image: url('../img/splash-meeting.jpg');
+  background-size: cover;
+  background-position: top 40% center;
+  text-align: right;
+  padding: 0.5em;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 380px;
+}
+
+.ps-banner3 {
+  background-image: url('../img/splash-discuss.jpg');
+  background-size: cover;
+  background-position: top 40% center;
+  text-align: right;
+  padding: 0.5em;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 380px;
+}
+
+.ps-banner4 {
+  background-image: url('../img/splash-building.jpg');
+  background-size: cover;
+  background-position: top 40% center;
+  text-align: right;
+  padding: 0.5em;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 380px;
 }
 
 .ps-colead {
@@ -163,6 +224,18 @@ dialog {
   max-width: 80%;
   margin: auto;
   text-align: center;
+}
+
+.ps-services-text .title {
+  font-size: 19pt;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.ps-services-text .subtitle {
+  margin-bottom: 2em;
 }
 
 .ps-services-text .icons {

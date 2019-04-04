@@ -18,49 +18,47 @@
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
+<div class="mdl-layout mdl-js-layout mdl-layout--no-drawer-button">
+  <header class="mdl-layout__header ps-menu mdl-layout__header-scroll">
     <div class="mdl-layout__header-row">
       <span class="mdl-layout__title">
         <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="180" /></a>
       </span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
+      <nav class="mdl-navigation hide-on-phone">
         <a class="mdl-navigation__link" href="#services"> Services </a></li>
+        <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
         <a class="mdl-navigation__link" href="#about"> About Us</a></li>
         <a class="mdl-navigation__link" id="toolbar-show-dialog" href="#contact"> Contact Us</a></li>
       </nav>
     </div>
   </header>
 
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title ps-logo">
-      <a href="/"><img alt="phi software sdn bhd" src="img/phisoft-logo-v3.png" width="150" /></a>
-    </span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#solutions"> Solutions </a></li>
-      <a class="mdl-navigation__link" href="#services"> Services </a></li>
-      <a class="mdl-navigation__link" href="#about"> About Us</a></li>
-      <a class="mdl-navigation__link" id="nav-show-dialog" href="#contact"> Contact Us</a></li>
-    </nav>
-  </div>
-
 <main class="mdl-layout__content">
-  <div class="ps-banner">
+  <div class="siema">
+    <div class="ps-banner1">
       <h3> We are a small company driven by innovations and big dreams. </h3>
       <h6>
         Our dream is to help your business grow and achieve greater efficiency, profit and values through our domain expertise.
       </h6>
-      <div>
-        <a href="#about" class="mdl-button mdl-js-button"> <i class="material-icons">chevron_right</i>Learn More </a>
-      </div>
+    </div>
+    <div class="ps-banner2">
+      <h3> Worry free software </h3>
+    </div>
+    <div class="ps-banner3">
+      <h3> Worry free software </h3>
+    </div>
+    <div class="ps-banner4">
+      <h3> Worry free software </h3>
+    </div>
   </div>
+
  <!-- Service section-->
  <div class="ps-services">
     <a name="services"></a>
     <div class="ps-services-text">
-      <h3> Services </h3>
+      <div class="title"> Dedicated To Support Your Growing Business</div>
+      <div class="subtitle"> Our company monitor and make sure our software running effectively and always available.</div>
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
         <div class="icons"><i class="material-icons">business_center</i></div>
@@ -69,7 +67,7 @@
         </div>
         <div class="mdl-cell mdl-cell--4-col">
           <div class="icons"><i class="material-icons">mobile_friendly</i></div>
-          <h5> Mobile Application Aevelopment </h5>
+          <h5> Mobile Application Development </h5>
           <p> We develop web application and mobile application prototype to meet our client's idea and vision. </p>
         </div>
         <div class="mdl-cell mdl-cell--4-col">
@@ -179,7 +177,7 @@
         Managed property web portal for property agency.
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <a href="https://www.selloca.com" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
+        <a href="https://demo.selloca.com" class="mdl-button mdl-button-colored mdl-js-button mdl-js-ripple-effect">
           More info
         </a>
       </div>
@@ -265,7 +263,7 @@
       <a name="about"></a>
       <h3> About us </h3>
       <h7>
-        Phi Software Sdn Bhd incorporated with a mission to promote technology adoption, to grow and improve business operations.
+        Phi Software Sdn Bhd incorporated with a mission to promote technology adoption, to grow and to improve business operations.
         What make our company different is our persistant toward continously improving our solutions and we are willing
         to go extra miles to make sure our software solutions exceed our client expected return of investment.
       </h7>
@@ -378,7 +376,8 @@
     <a href="https://wa.me/&#054;&#048;&#049;&#050;&#056;&#054;&#054;&#057;&#054;&#057;&#053;?text=hi%20Jeffry" class="mdl-button"> Whatsapp </a>
   </div>
 </dialog>
-<script src="dialog-polyfill.js"></script>
+<script src="js/siema.min.js"></script>
+<script src="js/dialog-polyfill.js"></script>
 <script>
 function showDialog(event) {
   var rect = dialog.getBoundingClientRect();
@@ -389,7 +388,6 @@ function showDialog(event) {
 }
 
 var toolbarBtn = document.querySelector('#toolbar-show-dialog')
-var navBtn = document.querySelector('#nav-show-dialog')
 var dialog = document.querySelector('#dialog')
 dialog.addEventListener('click', showDialog)
 
@@ -401,9 +399,7 @@ toolbarBtn.addEventListener('click', function(){
   dialog.showModal()
 })
 
-navBtn.addEventListener('click', function(){
-  dialog.showModal()
-})
+new Siema()
 </script>
 </body>
 </html>
