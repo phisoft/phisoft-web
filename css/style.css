@@ -14,8 +14,8 @@ dialog {
 }
 
 .mdl-card {
-  min-height: 300px;
-  width: 95%;
+  min-height: 315px;
+  width: 99%;
 }
 
 .mdl-navigation {
@@ -279,6 +279,11 @@ dialog {
 
 .ps-services-text h3, .ps-about-text h3 {
   text-align: center;
+}
+
+.ps-solutions {
+  margin: auto;
+  max-width: 1024px;
 }
 
 .mdl-mega-footer {
