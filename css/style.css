@@ -58,51 +58,84 @@ dialog {
 .ps-logo {
   padding: 0.5em;
 }
+.siema h5 {
+  font-weight: 150;
+  font-family: Open Sans;
+}
+
+.overlay{
+  position: center;
+  padding-left: 100px;
+  padding-top: 45px;
+  width: 100%;
+  height: 30%;
+  margin-top:200px;
+  background: rgba(87, 87, 87, 0.5);
+}
+
+.big-header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-style: bold;
+  font-weight: 700;
+  line-height:1;
+}
 
 .ps-banner1 {
-  background-image: url('../img/splash-present.jpg');
+  background-image: url('../img/building.jpg');
   background-size: cover;
-  background-position: top 20% center;
-  text-align: center;
+  background-position: top 40% center;
+  text-align: left;
   padding: 0.5em;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-left: 0px;
   padding-bottom: 80px;
   height: 380px;
+  font-family: Open Sans;
+  color:  	 rgb(255, 255, 255);
 }
 
 .ps-banner2 {
-  background-image: url('../img/splash-meeting.jpg');
+  background-image: url('../img/bussinesswoman.jpg');
   background-size: cover;
   background-position: top 40% center;
-  text-align: right;
+  text-align: left;
   padding: 0.5em;
-  padding-top: 50px;
+  padding-left: 0px;
+  padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
+  font-family: Open Sans;
+  color: rgb(255, 255, 255);
 }
 
 .ps-banner3 {
-  background-image: url('../img/splash-discuss.jpg');
+  background-image: url('../img/handphone.jpg');
   background-size: cover;
   background-position: top 40% center;
-  text-align: right;
+  text-align: left;
   padding: 0.5em;
-  padding-top: 50px;
+  padding-left: 0px;
+  padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
+  font-family: Open Sans;
+  color: rgb(255, 255, 255);
 }
 
 .ps-banner4 {
-  background-image: url('../img/splash-building.jpg');
+  background-image: url('../img/splash-discuss.jpg');
   background-size: cover;
   background-position: top 40% center;
-  text-align: center;
+  text-align: left;
   padding: 0.5em;
-  padding-top: 50px;
+  padding-left: 0px;
+  padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  color: white;
-  font-style: italic;
+  font-family: Open Sans;
+  color: rgb(255, 255, 255);
+
 }
 
 .ps-colead {
