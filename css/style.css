@@ -40,7 +40,7 @@ dialog {
 */
 
 .mdl-layout__header-row {
-  height: 80px;
+  height: 65px;
 }
 
 .ps-menu {
@@ -60,17 +60,19 @@ dialog {
 }
 .siema h5 {
   font-weight: 150;
-  font-family: Open Sans;
 }
 
-.overlay{
+.overlay {
+  display: inline-block;
   position: center;
-  padding-left: 100px;
-  padding-top: 45px;
-  width: 100%;
-  height: 30%;
+  background: #000;
+  opacity: 0.6;
+  padding: 1.5em;
+  padding-top: 2em;
+  margin: 0.3em;
   margin-top:200px;
-  background: rgba(87, 87, 87, 0.5);
+  margin-left: 100px;
+  border-radius: 0.5em;
 }
 
 .big-header{
@@ -91,7 +93,6 @@ dialog {
   padding-left: 0px;
   padding-bottom: 80px;
   height: 380px;
-  font-family: Open Sans;
   color:  	 rgb(255, 255, 255);
 }
 
@@ -105,7 +106,6 @@ dialog {
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  font-family: Open Sans;
   color: rgb(255, 255, 255);
 }
 
@@ -119,7 +119,6 @@ dialog {
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  font-family: Open Sans;
   color: rgb(255, 255, 255);
 }
 
@@ -133,9 +132,7 @@ dialog {
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  font-family: Open Sans;
   color: rgb(255, 255, 255);
-
 }
 
 .ps-colead {
