@@ -252,17 +252,9 @@ dialog {
   padding-bottom: 5em;
 }
 
-.ps-services .mdl-cell p {
-    display: none;
-}
-
 @media screen and (min-width: 40.0em) {
   .ps-services .mdl-cell {
     padding: 2.2em;
-  }
-
-  .ps-services .mdl-cell p {
-    display: block;
   }
 }
 
