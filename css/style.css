@@ -299,10 +299,10 @@ dialog {
 }
 
 .ps-about {
-  background-color: #424242;
+  background-color: #363636;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #757575;
-  color: #e9e9e9;
+  color: #bdbdbd;
 }
 
 .ps-about-image {
@@ -355,7 +355,7 @@ dialog {
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
-  color: #fff;
+  color: #bdbdbd;
 }
 
 @media(max-width:768px) {
