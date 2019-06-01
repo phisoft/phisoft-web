@@ -92,9 +92,9 @@ dialog {
 }
 
 .ps-banner1 {
-  background-image: url('../img/banner4.jpg');
+  background-image: url('../img/banner3.jpg');
   background-size: cover;
-  background-position: top 40% center;
+  background-position: bottom 20% center;
   text-align: left;
   padding: 0.5em;
   padding-top: 100px;
@@ -105,7 +105,7 @@ dialog {
 }
 
 .ps-banner2 {
-  background-image: url('../img/banner3.jpg');
+  background-image: url('../img/banner4.jpg');
   background-size: cover;
   background-position: top 40% center;
   text-align: left;
@@ -248,6 +248,7 @@ dialog {
 
 .ps-services {
   background-color: #0d0f23;
+  background-color: #1f2237;
   color: #ddd;
   padding-bottom: 5em;
 }
@@ -291,10 +292,9 @@ dialog {
 }
 
 .ps-about {
-  background-color: #363636;
+  background-color: #054055;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #757575;
-  color: #bdbdbd;
+  color: #d5d5d5;
 }
 
 .ps-about-image {
@@ -302,9 +302,23 @@ dialog {
 }
 
 .ps-about-text {
-  text-align: justify;
-  padding: 0.5em;
-  margin-bottom: 25px;
+  font-size: 12pt;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.ps-about-desc {
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.ps-about-desc h4 {
+  margin-left: 0.5em;
+  text-transform: uppercase;
 }
 
 .ps-services-text h3, .ps-about-text h3 {
@@ -313,7 +327,7 @@ dialog {
 
 .ps-solutions {
   margin: auto;
-  max-width: 1024px;
+  max-width: 1080px;
 }
 
 .ps-solutions .title {
@@ -335,7 +349,25 @@ dialog {
 }
 
 .mdl-mega-footer {
-  background-color: #0c0b0b;
+  border-top: 1px solid #ccc;
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+.mdl-mega-footer__middle-section {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.mdl-mega-footer__bottom-section {
+  margin: 0 auto;
+  max-width: 1080px;
+  color: #555;
+}
+
+.mdl-mega-footer__heading {
+  font-size: 14pt;
+  color: #333;
 }
 
 .mdl-tabs__tab-bar {
