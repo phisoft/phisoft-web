@@ -311,7 +311,7 @@ dialog {
 }
 
 .ps-about {
-  background-color: #054055;
+  background-color: #08324a;
   border-top: 1px solid #ddd;
   color: #d5d5d5;
 }
@@ -322,6 +322,7 @@ dialog {
 
 .ps-about-text {
   font-size: 12pt;
+  padding: 1em;
   padding-top: 2em;
   padding-bottom: 5em;
   margin: 0 auto;
