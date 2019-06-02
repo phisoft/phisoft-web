@@ -72,7 +72,7 @@ dialog {
   max-width: 380px;
   margin-top: 120px;
   margin-left: 100px;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
 }
 
 .big-header {
@@ -132,6 +132,18 @@ dialog {
   color: #333;
 }
 
+@media screen and (max-width: 40.0em) {
+  .ps-banner3 {
+    background-position: top 10% right 30%;
+  } 
+
+  .ps-banner2 .overlay {
+    background-color: #eee;
+    opacity: 0.8;
+    color: #000;
+  }
+}
+
 .ps-banner4 {
   background-image: url('../img/asian4.jpg');
   background-size: cover;
@@ -145,8 +157,8 @@ dialog {
 }
 
 .ps-banner4 .overlay, .ps-banner1 .overlay {
-  background-color: #ccc;
-  opacity: 0.7;
+  background-color: #eee;
+  opacity: 0.8;
   color: #000;
 }
 
