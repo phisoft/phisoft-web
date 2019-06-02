@@ -58,6 +58,7 @@ dialog {
 .ps-logo {
   padding: 0.5em;
 }
+
 .siema h5 {
   font-weight: 150;
 }
@@ -68,14 +69,15 @@ dialog {
   padding: 1.5em;
   padding-top: 2em;
   margin: 0.3em;
-  margin-top:200px;
+  max-width: 380px;
+  margin-top: 120px;
   margin-left: 100px;
   border-radius: 0.5em;
 }
 
 .big-header {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   line-height:1;
 }
@@ -92,9 +94,9 @@ dialog {
 }
 
 .ps-banner1 {
-  background-image: url('../img/banner3.jpg');
+  background-image: url('../img/asian1.jpg');
   background-size: cover;
-  background-position: bottom 40% center;
+  background-position: top 35% center;
   text-align: left;
   padding: 0.5em;
   padding-top: 100px;
@@ -105,42 +107,47 @@ dialog {
 }
 
 .ps-banner2 {
-  background-image: url('../img/banner4.jpg');
+  background-image: url('../img/asian2.jpg');
   background-size: cover;
-  background-position: top 40% center;
+  background-position: top 65% center;
   text-align: left;
   padding: 0.5em;
   padding-left: 0px;
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  color: rgb(255, 255, 255);
+  color: #333;
 }
 
 .ps-banner3 {
-  background-image: url('../img/banner1.jpg');
+  background-image: url('../img/asian3.jpg');
   background-size: cover;
-  background-position: top 40% center;
+  background-position: top 10% center;
   text-align: left;
   padding: 0.5em;
   padding-left: 0px;
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  color: rgb(255, 255, 255);
+  color: #333;
 }
 
 .ps-banner4 {
-  background-image: url('../img/banner2.jpg');
+  background-image: url('../img/asian4.jpg');
   background-size: cover;
-  background-position: top 40% center;
+  background-position: top 35% center;
   text-align: left;
   padding: 0.5em;
   padding-left: 0px;
   padding-top: 100px;
   padding-bottom: 80px;
   height: 380px;
-  color: rgb(255, 255, 255);
+}
+
+.ps-banner4 .overlay, .ps-banner1 .overlay {
+  background-color: #ccc;
+  opacity: 0.7;
+  color: #000;
 }
 
 .ps-colead {
