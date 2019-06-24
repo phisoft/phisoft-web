@@ -401,7 +401,7 @@ function showDialog(event) {
   }
 }
 
-var toolbarBtn = document.querySelector('#toolbar-show-dialog')
+/*
 var dialog = document.querySelector('#dialog')
 dialog.addEventListener('click', showDialog)
 
@@ -409,17 +409,17 @@ if(!dialog.showModal){
   dialogPolyfill.registerDialog(dialog)
 }
 
+var toolbarBtn = document.querySelector('#toolbar-show-dialog')
 toolbarBtn.addEventListener('click', function(){
   dialog.showModal()
 })
-
+*/
 var banner = new Siema({
   loop: true
 })
 
 setInterval(() => banner.next(), 5000)
 document.querySelector('.siema').addEventListener('click', () => banner.next())
-
 </script>
 </body>
 </html>
