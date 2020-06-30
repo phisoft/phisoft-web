@@ -22,6 +22,21 @@ dialog {
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > img {
+  width: 130px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding-bottom: 3em;
+}
+
 @media screen and (max-width: 40em) {
   .hide-on-phone {
     display: none;
@@ -160,6 +175,17 @@ dialog {
   background-color: #eee;
   opacity: 0.8;
   color: #000;
+}
+
+.ps-sabahpark {
+  margin: 0.5em;
+}
+
+.ps-sabahpark > .mdl-card__title {
+  height: 176px;
+  background: url('../img/sabahparks.png') center / cover;
+  background-color: gray;
+  color: white;
 }
 
 .ps-colead {
@@ -368,6 +394,24 @@ dialog {
   padding: 0.3em;
 }
 
+.ps-client {
+  background-color: #1f2237;
+  border-top: 1px solid #ddd;
+  color: #d5d5d5;
+}
+
+.ps-client .title {
+  text-align: center;
+  font-size: 22pt;
+  color: white;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin: 1em;
+  padding-top: 2em;
+}
+
+
+
 .mdl-mega-footer {
   border-top: 1px solid #ccc;
   background-color: #f7f7f7;
@@ -402,8 +446,12 @@ dialog {
   color: #bdbdbd;
 }
 
+
 @media(max-width:768px) {
 .ps-services {
 text-align: center;
 }
 }
+
+
+
