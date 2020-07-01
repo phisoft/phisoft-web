@@ -31,9 +31,6 @@ dialog {
 .flex-container > img {
   width: 130px;
   margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
   padding-bottom: 3em;
 }
 
@@ -407,7 +404,7 @@ dialog {
   text-transform: capitalize;
   line-height: 1.2em;
   margin: 1em;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 
