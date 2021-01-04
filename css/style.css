@@ -94,6 +94,39 @@ dialog {
   line-height:1;
 }
 
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#0088cc;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+.img-v {
+  background-image: url('../img/value.jpg');
+  background-size: cover;
+  width: 550px;
+  height: 400px;
+  padding-left: 40px;
+}
+
+.img-m {
+  background-image: url('../img/mission.jpg');
+  background-size: cover;
+  width: 500px;
+  height: 380px;
+}
+
 @media screen and (max-width: 40.0em) {
   .overlay {
     margin: 0.5em;  
@@ -103,6 +136,21 @@ dialog {
   .big-header {
     font-size: 32px;
   }
+
+  .img-v {
+    background-image: url('../img/value.jpg');
+    background-size: cover;
+    width: 370px;
+    height: 250px;
+  }
+  
+  .img-m {
+    background-image: url('../img/mission.jpg');
+    background-size: cover;
+    width: 400px;
+    height: 330px;
+  }
+
 }
 
 .ps-banner1 {
