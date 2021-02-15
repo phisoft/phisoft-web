@@ -40,7 +40,8 @@ dialog {
   }
 }
 
-/*
+
+/* 
 .mdl-layout__drawer-button, .mdl-layout__drawer{
   left: initial;
   right: 0;
@@ -48,8 +49,9 @@ dialog {
 
 .mdl-layout__drawer{    
   transform:translateX(250px);
-}
+} 
 */
+
 
 .mdl-layout__header-row {
   height: 65px;
@@ -338,8 +340,7 @@ dialog {
 }
 
 .ps-services {
-  background-color: #0d0f23;
-  background-color: #1f2237;
+  background-color: #8B0000;
   color: #ddd;
   padding-bottom: 5em;
 }
@@ -383,7 +384,7 @@ dialog {
 }
 
 .ps-about {
-  background-color: #08324a;
+  background-color: #8B0000;
   border-top: 1px solid #ddd;
   color: #d5d5d5;
 }
@@ -406,7 +407,7 @@ dialog {
   max-width: 1100px;
   margin-top: 3em;
   margin-bottom: 5em;
-  background-color: #f0f0f0;
+  background-color: #FFF;
 }
 
 .ps-about-desc h4 {
@@ -442,7 +443,7 @@ dialog {
 }
 
 .ps-client {
-  background-color: #1f2237;
+  background-color: #8B0000;
   border-top: 1px solid #ddd;
   color: #d5d5d5;
 }
