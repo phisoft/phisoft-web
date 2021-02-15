@@ -119,19 +119,21 @@ dialog {
 }
 
 .img-v {
-  background-image: url('https://previews.123rf.com/images/rawpixel/rawpixel1510/rawpixel151021234/46875153-marketing-analysis-accounting-team-business-meeting-concept.jpg');
-  background-size: cover;
-  width: 510px;
-  height: 380px;
-  padding-left: 40px;
-}
-
-.img-m {
-  background-image: url('https://previews.123rf.com/images/everythingpossible/everythingpossible1501/everythingpossible150100128/35589533-hand-drawing-creative-business-strategy-with-light-bulb-as-concept.jpg');
+  background-image: url('../img/core.svg');
   background-size: cover;
   width: 540px;
   height: 360px;
   transform: scaleX(-1);
+  filter: drop-shadow(2px 4px 8px #696969)
+}
+
+.img-m {
+  background-image: url('../img/mission1.svg');
+  background-size: cover;
+  width: 540px;
+  height: 360px;
+  transform: scaleX(-1);
+  filter: drop-shadow(2px 4px 8px #696969)
 }
 
 @media screen and (max-width: 40.0em) {
@@ -145,14 +147,14 @@ dialog {
   }
 
   .img-v {
-    background-image: url('https://previews.123rf.com/images/rawpixel/rawpixel1510/rawpixel151021234/46875153-marketing-analysis-accounting-team-business-meeting-concept.jpg');
+    background-image: url('../img/core.jpg');
     background-size: cover;
     width: 370px;
     height: 250px;
   }
   
   .img-m {
-    background-image: url('https://previews.123rf.com/images/everythingpossible/everythingpossible1501/everythingpossible150100128/35589533-hand-drawing-creative-business-strategy-with-light-bulb-as-concept.jpg');
+    background-image: url('../img/mission1.jpg');
     background-size: cover;
     width: 420px;
     height: 250px;
@@ -416,7 +418,7 @@ dialog {
 
 .ps-about-desc h4 {
   margin-left: 0.5em;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .ps-services-text h3, .ps-about-text h3 {
