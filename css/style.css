@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #eee !important;
 }
@@ -102,7 +106,6 @@ dialog {
   height:60px;
   bottom:40px;
   right:40px;
-  background-color:#0088cc;
   color:#FFF;
   border-radius:50px;
   text-align:center;
@@ -112,6 +115,7 @@ dialog {
 
 .my-float{
   margin-top:16px;
+  filter: drop-shadow(2px 4px 8px #696969)
 }
 
 .img-v {
