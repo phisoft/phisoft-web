@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #eee !important;
 }
@@ -40,7 +44,8 @@ dialog {
   }
 }
 
-/*
+
+/* 
 .mdl-layout__drawer-button, .mdl-layout__drawer{
   left: initial;
   right: 0;
@@ -48,8 +53,9 @@ dialog {
 
 .mdl-layout__drawer{    
   transform:translateX(250px);
-}
+} 
 */
+
 
 .mdl-layout__header-row {
   height: 65px;
@@ -100,7 +106,6 @@ dialog {
   height:60px;
   bottom:40px;
   right:40px;
-  background-color:#0088cc;
   color:#FFF;
   border-radius:50px;
   text-align:center;
@@ -110,18 +115,20 @@ dialog {
 
 .my-float{
   margin-top:16px;
+  filter: drop-shadow(2px 4px 8px #696969)
 }
 
 .img-v {
-  background-image: url('https://previews.123rf.com/images/rawpixel/rawpixel1510/rawpixel151021234/46875153-marketing-analysis-accounting-team-business-meeting-concept.jpg');
+  background-image: url('../img/core.svg');
   background-size: cover;
-  width: 510px;
-  height: 380px;
-  padding-left: 40px;
+  width: 540px;
+  height: 360px;
+  transform: scaleX(-1);
+  filter: drop-shadow(2px 4px 8px #696969)
 }
 
 .img-m {
-  background-image: url('https://previews.123rf.com/images/everythingpossible/everythingpossible1501/everythingpossible150100128/35589533-hand-drawing-creative-business-strategy-with-light-bulb-as-concept.jpg');
+  background-image: url('../img/mission1.svg');
   background-size: cover;
   width: 540px;
   height: 360px;
@@ -139,17 +146,22 @@ dialog {
   }
 
   .img-v {
-    background-image: url('https://previews.123rf.com/images/rawpixel/rawpixel1510/rawpixel151021234/46875153-marketing-analysis-accounting-team-business-meeting-concept.jpg');
+    background-image: url('../img/core.svg');
     background-size: cover;
     width: 370px;
     height: 250px;
+    transform: scaleX(-1);
+    filter: drop-shadow(2px 4px 8px #696969);
+    transform: scaleX(-1);
   }
   
   .img-m {
-    background-image: url('https://previews.123rf.com/images/everythingpossible/everythingpossible1501/everythingpossible150100128/35589533-hand-drawing-creative-business-strategy-with-light-bulb-as-concept.jpg');
+    background-image: url('../img/mission1.svg');
     background-size: cover;
-    width: 420px;
+    width: 370px;
     height: 250px;
+    filter: drop-shadow(2px 4px 8px #696969);
+    transform: scaleX(-1);
   }
 
 }
@@ -338,8 +350,7 @@ dialog {
 }
 
 .ps-services {
-  background-color: #0d0f23;
-  background-color: #1f2237;
+  background-color: #8B0000;
   color: #ddd;
   padding-bottom: 5em;
 }
@@ -383,7 +394,7 @@ dialog {
 }
 
 .ps-about {
-  background-color: #08324a;
+  background-color: #8B0000;
   border-top: 1px solid #ddd;
   color: #d5d5d5;
 }
@@ -406,12 +417,12 @@ dialog {
   max-width: 1100px;
   margin-top: 3em;
   margin-bottom: 5em;
-  background-color: #f0f0f0;
+  background-color: #FFF;
 }
 
 .ps-about-desc h4 {
   margin-left: 0.5em;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .ps-services-text h3, .ps-about-text h3 {
@@ -442,7 +453,7 @@ dialog {
 }
 
 .ps-client {
-  background-color: #1f2237;
+  background-color: #8B0000;
   border-top: 1px solid #ddd;
   color: #d5d5d5;
 }
