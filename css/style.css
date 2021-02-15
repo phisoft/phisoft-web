@@ -133,7 +133,6 @@ dialog {
   width: 540px;
   height: 360px;
   transform: scaleX(-1);
-  filter: drop-shadow(2px 4px 8px #696969)
 }
 
 @media screen and (max-width: 40.0em) {
@@ -147,17 +146,22 @@ dialog {
   }
 
   .img-v {
-    background-image: url('../img/core.jpg');
+    background-image: url('../img/core.svg');
     background-size: cover;
     width: 370px;
     height: 250px;
+    transform: scaleX(-1);
+    filter: drop-shadow(2px 4px 8px #696969);
+    transform: scaleX(-1);
   }
   
   .img-m {
-    background-image: url('../img/mission1.jpg');
+    background-image: url('../img/mission1.svg');
     background-size: cover;
-    width: 420px;
+    width: 370px;
     height: 250px;
+    filter: drop-shadow(2px 4px 8px #696969);
+    transform: scaleX(-1);
   }
 
 }
