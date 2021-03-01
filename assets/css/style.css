@@ -562,6 +562,10 @@ section {
   padding: 60px 100px 0 100px;
 }
 
+#why-us .animated {
+  animation: left-right 2s ease-in-out infinite alternate-reverse both;
+}
+
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
