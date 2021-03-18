@@ -239,8 +239,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   top: 55px;
+  /* bottom: 20px; */
   right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #47b2e4;
+  color: #860000;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
