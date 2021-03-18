@@ -220,7 +220,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  min-height: 80px !important;
   top: 0;
   right: 0;
   left: 0;
@@ -297,7 +296,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
-  min-height: 80px !important;
 }
 
 /*--------------------------------------------------------------
