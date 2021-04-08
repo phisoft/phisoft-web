@@ -801,6 +801,10 @@ section {
   display: none;
 }
 
+.our-mission .mission-bg {
+  
+}
+
 @media (max-width: 1024px) {
   .our-mission .content, .our-mission .accordion-list {
     padding-left: 0;
