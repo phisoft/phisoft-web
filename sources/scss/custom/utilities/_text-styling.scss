@@ -1,0 +1,69 @@
+/** @section Text styling */
+
+// Text styles
+.text-italic {
+	font-style: italic;
+}
+
+.text-normal {
+	font-style: normal;
+}
+
+// Text decoration
+.text-underline {
+	text-decoration: underline;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+// Text weight
+.fw-thin {
+	font-weight: $font-weight-thin;
+}
+
+.fw-extra-light {
+	font-weight: $font-weight-extra-light;
+}
+
+.fw-light {
+	font-weight: $font-weight-light;
+}
+
+.fw-regular {
+	font-weight: $font-weight-regular;
+}
+
+.fw-medium {
+	font-weight: $font-weight-medium;
+}
+
+.fw-semi-bold {
+	font-weight: $font-weight-semi-bold;
+}
+
+.fw-bold {
+	font-weight: $font-weight-bold;
+}
+
+.fw-extra-bold {
+	font-weight: $font-weight-extra-bold;
+}
+
+.fw-black {
+	font-weight: $font-weight-black;
+}
+
+// Text spacing
+.text-spacing-0 {
+	letter-spacing: 0;
+}
+
+.text-primary {
+	color: $primary !important;
+}
+
+.text-gray {
+	color: $gray-400;
+}

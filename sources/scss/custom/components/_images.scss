@@ -1,0 +1,55 @@
+/** @section Images */
+
+// Standard img style
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.img-responsive {
+	width: 100%;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.box-img {
+	display: none;
+}
+@include media-breakpoint-up(md) {
+	.box-img {
+		display: block;
+		position: absolute;
+		bottom: 0;
+	}
+	.box-img-01 {
+		right: -2%;
+		width: 60%;
+	}
+	.box-img-02 {
+		right: 54%;
+		bottom: -20px;
+	}
+	.box-img-03 {
+		left: 55%;
+		bottom: 0;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.box-img-01 {
+		width: 50%;
+	}
+	.box-img-02 {
+
+	}
+}
+
+@include media-breakpoint-between(xl, xxl) {
+	.box-img-02 img{
+		max-width: 90%;
+	}
+}
+
+
+

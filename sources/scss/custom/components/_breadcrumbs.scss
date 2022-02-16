@@ -1,0 +1,85 @@
+/** @section Breadcrumbs */
+
+// Local variables
+$breadcrumb-padding-vertical: 30px;
+$breadcrumb-padding-horizontal: 30px;
+$breadcrumb-bg: transparent;
+$breadcrumb-color: $body-color;
+$breadcrumb-active-color: $primary;
+$breadcrumb-separator: "\f105";
+
+// Base styles
+.breadcrumbs-custom {
+	position: relative;
+	padding-top: 20px;
+	background-color: $breadcrumb-bg;
+	background-position: center;
+	font-size: 0;
+}
+
+.breadcrumbs-custom-path {
+	@include spacingX($breadcrumb-padding-horizontal*2);
+	a {
+		display: inline;
+		vertical-align: middle;
+		&,
+		&:active,
+		&:focus {
+			color: $breadcrumb-color;
+		}
+	}
+
+	li {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		line-height: 1.6;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			top: 50%;
+			right: 0;
+			background: $primary-light;
+			transform: translate(50%, -50%);
+		}
+	}
+
+	li:last-child {
+		&:after {
+			display: none;
+		}
+	}
+
+	a:hover {
+		color: $breadcrumb-active-color;
+	}
+
+	li.active {
+	}
+}
+
+* + .breadcrumbs-custom-path {
+	margin-top: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+	.breadcrumbs-custom {
+		@include spacingX(30px);
+	}
+
+	* + .breadcrumbs-custom-path {
+		margin-top: 18px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.breadcrumbs-custom {
+		padding-top: $breadcrumb-padding-vertical;
+		@include spacingX(50px);
+	}
+}

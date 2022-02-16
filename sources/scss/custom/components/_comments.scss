@@ -1,0 +1,103 @@
+/** @section Comments */
+
+.comment-classic {
+	display: flex;
+	align-items: flex-start;
+	text-align: left;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $gray-200;
+
+	> * + * { margin-left: 20px; }
+}
+
+.comment-classic-figure {
+	position: relative;
+	flex-shrink: 0;
+	width: $form-input-height;
+	height: $form-input-height;
+}
+
+.comment-classic-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	border-radius: 50%;
+	max-width: none;
+
+	@supports (object-fit: cover) {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transform: none;
+		object-fit: cover;
+		object-position: center center;
+	}
+}
+
+.comment-classic-main {
+	flex-grow: 1;
+}
+
+.comment-classic-name {
+	font-weight: 500;
+	color: $primary;
+}
+
+.comment-classic-meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 18px;
+	time {
+		color: $gray-400;
+	}
+}
+
+.comment-classic-reply {
+	font-size: 24px;
+	line-height: 1;
+	color: $gray-300;
+
+	&::before {
+		content: '\f549';
+		font-family: 'Material Design Icons';
+	}
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+* + .comment-classic-text { margin-top: 8px; }
+* + .comment-classic-meta { margin-top: 5px; }
+
+@include media-breakpoint-up(sm) {
+	.comment-classic {
+		> * + * { margin-left: 25px; }
+	}
+
+	.comment-classic-reply {
+		font-size: 28px;
+	}
+}
+
+// Comment Classic Group
+.comment-classic-group {
+	.comment-classic-group { margin-left: 25px; }
+	* + .comment-classic-group { margin-top: 30px; }
+}
+
+* + .comment-classic-group { margin-top: 50px; }
+.comment-classic-group + .comment-classic-group { margin-top: 30px; }
+
+@include media-breakpoint-up(md) {
+	.comment-classic-group {
+		.comment-classic-group { margin-left: 75px; }
+	}
+}

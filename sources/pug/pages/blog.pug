@@ -1,0 +1,51 @@
+extends ../_skeleton
+include ../components/post
+include ../components/pagination
+block variables
+	- pageName = 'Blog'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	section.section.section-xs
+		+post-modern({
+			title: 'Improving your confidence and self defence skills',
+			text:  'Today we would like to touch the topic which is gaining popularity among employees of big and small companies as well as students, teachers and other strata of the population. If you have experienced assault and aggression of your colleagues, coworkers or roommates, then this set of courses and tutorials...',
+			tags: ['Services'],
+			author: 'admin',
+			mask: 'bg-03'
+		})
+		+post-modern({
+			title: 'LINKEDIN STOCK DOWNGRADED AFTER MICROSOFT DEAL',
+			text:  'Fox TV Channel is showcasing the most successful series and full-length films of 20th Century Fox this month in all American cinemas with wide promotional campaign of their upcoming projects. Fox TV Channel is showcasing the most successful series and full-length films of 20th Century Fox this month in all...',
+			tags: ['Services'],
+			author: 'admin',
+			mask: 'bg-04'
+		})
+		+post-modern({
+			title: 'JAMES R. BERNARD IS GOING TO VISIT LOS ANGELES THIS SPRING',
+			text:  'James Richard Bernard, the genius of contemporary art, is visiting Los Angeles with his new exhibition at LA Art Center on March, 30. The exhibition is called “The Evolving World”, and introduces an absolutely new vision of the modern world including various spheres of our life – social, political, economical,...',
+			tags: ['Services'],
+			author: 'admin',
+			mask: 'bg-05'
+		})
+		+post-modern({
+			title: 'THINGS I\'VE LEARNED ABOUT INVESTING AND BUSINESS',
+			text:  'The North American Auto Show, one of the most important annual events that influence the international automotive industry and exhibits its main achievements, is eventually confirmed to take place in Chicago, IL. Located on the southwestern coast of Lake Michigan, this city will host representatives of vehicle manufacturers from all...',
+			tags: ['Services'],
+			author: 'admin',
+			mask: 'bg-06'
+		})
+
+	.container
+		.row.justify-content-center: .col-auto
+			+pagination-bootstrap([
+				{prev: '#', disabled: true},
+				{link: '#', active: true},
+				{link: '#'},
+				{next: '#'}
+			])
+
+	include ../sections/_footer-classic

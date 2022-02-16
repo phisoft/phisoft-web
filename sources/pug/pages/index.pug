@@ -1,0 +1,228 @@
+extends ../_skeleton
+include ../components/counter
+
+block page
+	include ../sections/_header-classic
+
+	// Intro
+	section.section.section-intro.bg-gradient.position-relative.overflow-hidden
+		.box-img.box-img-01
+			+img('person-01-805x900.png')
+		.container.position-relative
+			.row
+				.col-md-7
+					h6.header-decor consulting services
+					h1 IT Consulting services
+					p.lead Current state of it does not align with your business strategy? Request our it consulting services now.
+					a.btn-link-creative(href='single-service.html')
+						span.icon.icon-fill-primary-halo.mdi.mdi-trending-neutral
+						| Free consultation
+	="\n"
+
+	// About
+	section.section.section-xl.bg-default
+		.container
+			.row.row-40.row-md-70.align-items-lg-center
+				.col-lg-5.order-1.order-lg-0.text-center
+					+img('home-01-500x624').rounded.shadow-lg
+				.col-lg-6.offset-lg-1.order-0.order-lg-1
+					h6.header-decor about us
+					h2 IT strategy consulting.
+						br
+						| The latest tech.
+					p.lead IT consulting company helps to solve different problems which you face when starts up new project or when improve an existing one.
+					a.btn-link-creative(href='about-us.html')
+						span.icon.icon-fill-primary.mdi.mdi-trending-neutral
+						| Talk to us
+	="\n"
+
+	// Client success
+	section.section.section-xl.bg-default
+		.container
+			.row.row-40.row-md-70.align-items-center
+				.col-lg-6
+					h6.header-decor client success
+					h2 Over a decade of stellar software solutions
+					p.lead We find the best solutions for our clients because we value their reputation. We have more than 1500 satisfied clients that have chosen us.
+					blockquote.quote-minimal
+						q.quote-minimal-main They're committed to ensuring the success of our business.
+						.quote-footer
+							+img('testimonial-01-60x60').quote-minimal-avatar
+							.quote-cite
+								cite Adam Smith
+								.quote-position CEO of StrategyTech
+				.col-lg-5.offset-lg-1.text-center
+					+img('home-02-500x624').rounded.shadow-lg
+	="\n"
+
+	// Statistics
+	section.section.section-xl.bg-gradient-02
+		.container
+			.row.row-30
+				.col-lg-6
+					h6.header-decor.mt-xl-5 Join facts & figures
+					h2 IT strategy consulting.
+						br
+						| The latest tech.
+					p.lead In the Information Age, finding an effective IT partner is a paramount. So join our team to increase your success. We know all about the technologies
+					a.btn-link-creative(href='about-us.html')
+						span.icon.icon-fill-primary.mdi.mdi-trending-neutral
+						| Talk to us
+				.col-lg-6
+					.counter-group.counter-group-grid
+						+counter({
+							title: 'Improvement work',
+							value: 70,
+							postfix: '%'
+						})
+						+counter({
+							title: "Happy clients and <br> HR Teams",
+							value: 1500,
+							postfix: '+'
+						})
+						+counter({
+							title: 'Great team members',
+							value: 120,
+						})
+						+counter({
+							title: 'Full-time employees',
+							value: 350,
+						})
+	="\n"
+
+	// Offers
+	section.section.section-xl.bg-default
+		.container
+			.row.row-40.row-md-80
+				.col-md-10
+					h6.header-decor What we offer
+					h2 Our IT consulting services
+					p.lead We offer IT consulting services that can help you improve your software, create a successful digital strategy, and improve operations by optimising your software portfolio.
+				.col-xl-11.offset-xl-1
+					#tabs-2.tabs-custom.tabs-vertical.tabs-corporate
+						//Nav tabs
+						ul.nav.nav-tabs
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-1' data-bs-toggle='tab') Emergency support
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-2' data-bs-toggle='tab') Remote office support
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-3' data-bs-toggle='tab') Network administration
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-4' data-bs-toggle='tab') Office systems
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-5' data-bs-toggle='tab') Cloud configuration
+
+						//Tab panes
+						.tab-content
+							div#tabs-2-1.tab-pane.fade
+								h5 Choosing us you choose a business success
+								p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+								ul.list-marked
+									li Improve your software
+									li Create a successful digital strategy
+									li Improve operations
+								h5 Make your first steps
+								p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills
+
+							div#tabs-2-2.tab-pane.fade
+								h5 Make your first steps
+								p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills.
+								ul.list-marked
+									li Improve your software
+									li Create a successful digital strategy
+									li Improve operations
+								h5 Choosing us you choose a business success
+								p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+
+
+							div#tabs-2-3.tab-pane.fade
+								h5 Choosing us you choose a business success
+								p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+								ul.list-marked
+									li Improve your software
+									li Create a successful digital strategy
+									li Improve operations
+								h5 Make your first steps
+								p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills.
+
+
+							div#tabs-2-4.tab-pane.fade
+								h5 Make your first steps
+								p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills.
+								ul.list-marked
+									li Improve your software
+									li Create a successful digital strategy
+									li Improve operations
+								h5 Choosing us you choose a business success
+								p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+
+							div#tabs-2-5.tab-pane.fade
+								h5 Choosing us you choose a business success
+								p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+								ul.list-marked
+									li Improve your software
+									li Create a successful digital strategy
+									li Improve operations
+								h5 Make your first steps
+								p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills.
+
+	="\n"
+
+	// CtA #1
+	include ../sections/_cta-1
+
+	// Clients
+	include ../sections/_clients
+
+	// Testimonials
+	include ../sections/_testimonials
+
+	// Get in touch
+	section.section.section-xl.bg-default.section-on-top
+		.container
+			.row.row-30
+				.col-lg-5
+					.box-content
+						h6.header-decor Get in touch
+						h2 Tell us about your project
+						p.lead Write short company description to let us make an acquaintance with your business and to create the first consulting steps
+				.col-lg-6.offset-lg-1.position-relative
+					.box-form
+						.box-form-inner
+							//RD Mailform
+							form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+								.form-wrap
+									input#contact-2-name.form-input(type='text' name='name' data-constraints='@Required')
+									label.form-label(for='contact-2-name') Name*
+								.form-wrap
+									input#contact-2-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+									label.form-label(for='contact-2-email') Email*
+								.form-wrap
+									input#contact-2-phone.form-input(type='text' name='phone' data-constraints='@Numeric')
+									label.form-label(for='contact-2-phone') Phone number*
+								.form-wrap
+									label.form-label(for='contact-2-message') Project description
+									textarea#contact-2-message.form-input(name='message' data-constraints='@Required')
+								button.btn.btn-lg.btn-primary.btn-icon.btn-icon-right(type='submit')
+									span.icon.mdi.mdi-trending-neutral
+									| Talk to us
+								p.small By sending this form I confirm that I have read and accept
+									br
+									| Intellectsoft&nbsp;
+									a.link-text.text-decoration-underline(href='privacy-policy.html') Privacy Policy
+	="\n"
+
+	// CtA #2
+	section.section.section-xxl.bg-gradient-03.position-relative.overflow-hidden
+		.box-img.box-img-02
+			+img('person-02-705x900.png')
+		.container.position-relative
+			.row.justify-content-md-end
+				.col-md-7.col-lg-6
+					h2.h1 IT consulting in&nbsp;
+						br.d-none.d-xl-block
+						| a 360° manner
+					p.lead Eliminate the pain points in your IT operations by using our decade-long expertise.
+					a.btn-link-creative(href='single-service.html')
+						span.icon.icon-fill-primary-halo.mdi.mdi-trending-neutral
+						| Free consultation
+	="\n"
+
+
+	include ../sections/_footer-classic

@@ -1,0 +1,132 @@
+extends ../_skeleton
+include ../components/team-member
+block variables
+	- pageName = 'About us'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	// Story
+	section.section.section-lg.bg-default
+		.container
+			.row.row-30.row-md-90
+				.col-md-10
+					h6.header-decor Our story
+					h2 Best services and consulting for business
+					p.lead We are an IT ideas IT consulting company that was founded in 2007 year. We have worked with both successful and newcomer companies. In our work, we use only the newest techniques that help our clients to increase their popularity among the audience.
+				.col-12
+					+img('about-01-1270x600').rounded.shadow-lg
+	="\n"
+
+	// Support
+	section.section.section-xl.bg-default
+		.container.position-relative
+			.decor-01
+				+img('map-decor.png')
+			.row.row-40
+				.col-xl-6.position-relative
+					.box-content-sm
+						h6.header-decor JOIN facts & figures
+						h2 We’re global,
+							br
+							| wherever you are
+						p.lead Ut eros nulla, sodales ut turpis quis, rhoncus lobortis velit. In sem lorem. Mauris metus velit, porttitorio vel est ultrices, vehicula tincidunt.
+						.box-rating
+							ul.list-rating
+								li: span.icon.icon-xl.icon-primary.mdi.mdi-star
+								li: span.icon.icon-xl.icon-primary.mdi.mdi-star
+								li: span.icon.icon-xl.icon-primary.mdi.mdi-star
+								li: span.icon.icon-xl.icon-primary.mdi.mdi-star
+								li: span.icon.icon-xl.icon-primary.mdi.mdi-star
+							.box-rating-bottom
+								span.box-rating-title Glassdoor
+								span.box-rating-info Average rating (as Sept 19, 2019)
+				.col-xl-6.position-relative
+					.box-chat
+						.box-chat-msg
+							.box-chat-main
+								.box-chat-meta
+									.box-chat-user Adam Smith
+									.box-chat-time 10:23am
+								.box-chat-text I need a successful strategy for my company.
+							.box-chat-bottom
+								+img('user-01-70x70').box-chat-avatar
+						.box-chat-msg
+							.box-chat-main
+								.box-chat-meta
+									.box-chat-user Dan Green
+									.box-chat-time 10:24am
+								.box-chat-text Our ability to use research to inform strategy is the best and changes from different consulting companies.
+							.box-chat-bottom
+								+img('user-02-70x70').box-chat-avatar
+	="\n"
+
+	// Clients
+	include ../sections/_clients
+
+	// Testimonials
+	include ../sections/_testimonials
+
+	// Team
+	section.section.section-xl.bg-default
+		.container
+			.row: .col-12
+				h6.header-decor meet our professional
+				h2 We want to improve your business
+			.row.row-xl.row-40.row-md-70.row-xl-100
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-01-390x487',
+						name: 'Ricardo Cooper',
+						position: 'Co-Founder and CSO'
+					})
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-02-390x487',
+						name: 'Leslie Howard',
+						position: 'SVP of engineering'
+					})
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-03-390x487',
+						name: 'Jorge Edwards',
+						position: 'VP of sales'
+					})
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-04-390x487',
+						name: 'Wendy Lane',
+						position: 'Managing director'
+					})
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-05-390x487',
+						name: 'Evan Hawkins',
+						position: 'Business analyst'
+					})
+				.col-md-6.col-lg-4
+					+team-member({
+						img: 'team-member-06-390x487',
+						name: 'Bessie Mccoy',
+						position: 'SVP of engineering'
+					})
+
+	="\n"
+
+	// CtA #3
+	section.section.section-xxl.bg-gradient-03.position-relative.overflow-hidden
+		.box-img.box-img-03
+			+img('person-03-880x832.png')
+		.container
+			.row
+				.col-md-7.col-xl-5
+					h2.h1 We are hiring, join the team
+					p.lead Join us, and work in a challenging, fast-paced, and exciting environment
+					a.btn-link-creative(href='contacts.html')
+						span.icon.icon-fill-primary-halo.mdi.mdi-email
+						| Get in touch
+	="\n"
+
+	include ../sections/_footer-classic
