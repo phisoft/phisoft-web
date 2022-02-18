@@ -1,0 +1,22 @@
+/** @section Decor */
+
+.decor-01 {
+	position: absolute;
+	top: 3%;
+	right: -2%;
+}
+.header-decor {
+	position: relative;
+	padding-left: 25px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 8px;
+		display: block;
+		width: 4px;
+		height: 30px;
+		background-color: $primary-light;
+	}
+}

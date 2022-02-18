@@ -1,0 +1,66 @@
+extends ../_skeleton
+include ../components/box-card
+include ../components/card
+
+block variables
+	- pageName = 'Services'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	// Services
+	section.section.section-lg.section-counter-reset.bg-default
+		.container
+			.row
+				.col-md-10
+					h6.header-decor what we offer
+					h2 Our IT consulting services
+					p.lead We offer a huge number of different services to improve your business. A great experience in this sphere helps us to use the best techniques
+			.row.row-lg.g-0
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 1,
+						title: 'Emergency <br> support',
+						text: 'The emergency support scheme was set up by the Royal Borough of Greenwich to provide discretionary support to local residents in difficult times.'
+					})
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 2,
+						title: 'Remote office <br> support',
+						text: 'Remote office support can be incredibly convenient compared to traditional office support. We provide quite a wide variety of options, all dependent on the personal needs.'
+					})
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 3,
+						title: 'Network <br> administration',
+						text: 'A network administration is a technique which includes responsibility maintaining computer infrastructures with emphasis on networking.'
+					})
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 4,
+						title: 'Office systems<br> instalations',
+						text: 'Specializes in office furniture installations, specifically installation and disassembly, relocation and reconfiguration of cubicles, office workstations and wall panel systems.'
+					})
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 5,
+						title: 'Cloud <br> configuration',
+						text: 'Cloud configuration is the process of setting hardware and software details for elements of a cloud environment to ensure that they can interoperate and communicate.'
+					})
+				.col-md-6.col-xl-4
+					+box-card({
+						number: 6,
+						title: 'Niche-specific hw/sf <br> solutions',
+						text: 'We’ve worked with multiple kinds of businesses, so we have a set of niche-specific IT systems at our command.'
+					})
+	="\n"
+
+	// CtA #2
+	include ../sections/_cta-1
+
+	// FAQ
+	include ../sections/_faq
+
+	include ../sections/_footer-classic

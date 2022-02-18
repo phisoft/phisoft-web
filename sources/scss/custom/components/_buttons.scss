@@ -1,0 +1,225 @@
+/** @section Buttons */
+
+// Button General Styles
+.btn {
+	position: relative;
+	overflow: hidden;
+	text-transform: $btn-text-transform;
+	text-overflow: ellipsis;
+	font-weight: 500;
+}
+
+.page {
+	.btn {
+		&:not([class*='shadow']) {
+			box-shadow: none;
+		}
+
+		&:not(:disabled):not(.disabled):active:focus,
+		&:not(:disabled):not(.disabled).active:focus{
+			&:not([class*='shadow']) {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+// Appearance style
+.btn-primary {
+	@include btn-variant($white, $primary, $primary, $white, $gray-700, $gray-700);
+}
+.btn-light {
+	@include btn-variant($primary, $white, $white, $white, $gray-700, $gray-700);
+}
+
+.btn-gray-100 {
+	@include btn-variant($gray-800, $gray-100, $gray-100, $gray-800, darken($gray-100, 5%), darken($gray-100, 5%));
+}
+
+// Outline
+.btn-default-outline {
+	@include btn-variant($gray-300, transparent, $gray-700, $white, $primary, $primary);
+}
+
+.btn-ghost {
+	border: 0;
+	background-color: transparent;
+
+	&:hover {
+		color: $white;
+		background: $primary;
+	}
+}
+
+// Social
+.btn-facebook {
+	@include btn-variant($white, $facebook, $facebook, $white, $facebook-darken, $facebook-darken);
+}
+
+.btn-twitter {
+	@include btn-variant($white, $twitter, $twitter, $white, $twitter-darken, $twitter-darken);
+}
+
+.btn-google {
+	@include btn-variant($white, $google, $google, $white, $google-darken, $google-darken);
+}
+
+// Btn with shadow
+.btn-shadow {
+	box-shadow: $shadow-area-3;
+
+	&:hover {
+		box-shadow: $shadow-area-4;
+	}
+
+	&:focus,
+	&:active {
+		box-shadow: none;
+	}
+}
+
+// Button effects
+.btn-ujarak {
+	position: relative;
+	z-index: 0;
+	transition: background .4s, border-color .4s, color .4s;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $primary;
+		z-index: -1;
+		opacity: 0;
+		transform: scale3d(0.7, 1, 1);
+		transition: transform 0.42s, opacity 0.42s;
+		border-radius: inherit;
+	}
+
+	&,
+	&::before {
+		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	}
+
+	&:hover {
+		transition: background .4s .4s, border-color .4s 0s, color .2s 0s;
+
+		&::before {
+			opacity: 1;
+			transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+		}
+	}
+}
+
+// Btn Link
+.btn-link-creative:hover {
+	color: $primary-dark;
+	text-decoration: none;
+	.icon {
+		box-shadow: $shadow-area-4;
+	}
+}
+
+.btn-link-creative {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 500;
+	text-decoration: none;
+	color: $primary;
+
+	> .icon{
+		margin-right: 20px;
+	}
+	&:hover {
+		color: $primary-dark;
+		.icon-fill-primary {
+			background-color: $primary-dark;
+			box-shadow: $shadow-area-4;
+		}
+		.icon-fill-primary-halo {
+			background-color: rgba($primary-light, .5);
+		}
+	}
+}
+
+.btn-link-creative-reverse {
+	flex-direction: row-reverse;
+	> .icon {
+		margin-left: 20px;
+		margin-right: 0;
+	}
+}
+
+// Button Sizes
+
+// Button Shapes
+.btn-circle {
+	border-radius: 30px;
+}
+
+.btn-round-1 {
+	border-radius: 5px;
+}
+
+.btn-round-2 {
+	border-radius: 10px;
+}
+
+// Button Icon styles
+.btn {
+	&.btn-icon {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		vertical-align: middle;
+
+		.icon {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: inherit;
+			font-size: 1.55em;
+			line-height: 1em;
+		}
+
+		&-left {
+			.icon {
+				padding-right: 11px;
+			}
+		}
+
+		&-right {
+			flex-direction: row-reverse;
+
+			.icon {
+				padding-left: 11px;
+			}
+		}
+
+		&.btn-link {
+			.icon {
+				top: 5px;
+				font-size: 1em;
+			}
+		}
+
+		&.btn-xs {
+			.icon {
+				top: .05em;
+				font-size: 1.2em;
+				padding-right: 8px;
+			}
+
+			.btn-icon-right {
+				padding-left: 8px;
+			}
+		}
+	}
+}
+
+
+
+

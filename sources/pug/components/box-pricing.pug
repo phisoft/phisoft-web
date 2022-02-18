@@ -1,0 +1,20 @@
+//- Box Pricing
+	@param {object} obj             - object
+	@param {string} obj.title       - pricing title
+	@param {string} obj.description - pricing description
+	@param {number} obj.price       - pricing price
+	@param {object} obj.options     - pricing options
+mixin box-pricing(obj)
+	article.box-pricing&attributes(attributes)
+		h4.box-pricing-title= obj.title
+		.box-pricing-desc= obj.description
+		.box-pricing-price= '$' + obj.price
+			span /for month
+		.box-pricing-options
+			ul.list-marked
+				each option in obj.options
+					li= option
+		.d-grid
+			a.btn.btn-lg.btn-primary.btn-shadow.btn-icon.btn-icon-right(href='#')
+				span.icon.mdi.mdi-trending-neutral
+				| Select plan

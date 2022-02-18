@@ -1,0 +1,78 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Contacts'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	// Get in touch
+	section.section.section-xl-2.bg-default
+		.container
+			.row.row-40
+				.col-lg-5
+					.box-content
+						h6.header-decor Get in touch
+						h2 Tell us about your project
+						p.lead Ut eros nulla, sodales ut turpis quis, rhoncus lobortis velit. In sem lorem. Mauris metus velit, porttitorio vel est ultrices, vehicula.
+				.col-lg-6.offset-lg-1.position-relative
+					.box-form
+						.box-form-inner
+							//RD Mailform
+							form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+								.form-wrap
+									input#contact-2-name.form-input(type='text' name='name' data-constraints='@Required')
+									label.form-label(for='contact-2-name') Name*
+								.form-wrap
+									input#contact-2-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+									label.form-label(for='contact-2-email') Email*
+								.form-wrap
+									input#contact-2-phone.form-input(type='text' name='phone' data-constraints='@Numeric')
+									label.form-label(for='contact-2-phone') Phone number*
+								.form-wrap
+									label.form-label(for='contact-2-message') Project description
+									textarea#contact-2-message.form-input(name='message' data-constraints='@Required')
+								button.btn.btn-lg.btn-primary.btn-icon.btn-icon-right(type='submit')
+									span.icon.mdi.mdi-trending-neutral
+									| Talk to us
+								p.small By sending this form I confirm that I have read and accept
+									br
+									| Intellectsoft&nbsp;
+									a.link-text.text-decoration-underline(href='privacy-policy.html') Privacy Policy
+	="\n"
+
+	// Contacts
+	section.section.section-xl.bg-gradient
+		.container
+			.row.row-50.row-md-70
+				.col-md-6.col-lg-4
+					.box-contact
+						.box-contact-icon.icon.icon-fill-primary.mdi.mdi-email
+						h5.box-contact-title.text-uppercase Email us
+						.box-contact-content
+							p Email us for general queries, including marketing and partnership opportunities
+							.box-contact-bottom
+								a.link-primary-underline(href='mailto:#') youremail@gmail.com
+				.col-md-6.col-lg-4
+					.box-contact
+						.box-contact-icon.icon.icon-fill-primary.mdi.mdi-phone
+						h5.box-contact-title.text-uppercase Call us
+						.box-contact-content
+							p Call us to speak to a member of our team
+							.box-contact-bottom
+								a.link-phone(href="tel:#") +1 000 10 87 000;
+								a.link-phone(href="tel:#") +1 000 11 64 001
+				.col-md-6.col-lg-4
+					.box-contact
+						.box-contact-icon.icon.icon-fill-primary.mdi.mdi-map-marker
+						h5.box-contact-title.text-uppercase Head office
+						address.box-contact-address 178 West 27th Street, Suite 527 #[br] New York NY 10012
+						.box-contact-bottom
+							ul.list-xs
+								li Monday – Friday: 9am – 5pm
+								li Saturday: 11am – 4pm
+	="\n"
+
+	include ../sections/_footer-classic

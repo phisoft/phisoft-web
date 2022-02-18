@@ -1,0 +1,171 @@
+/** @section Sections */
+
+// Section Spacing
+.section-xs {
+	padding: 25px 0;
+}
+.section-intro {
+	padding: 40px 0 60px;
+}
+.section-sm,
+.section-md,
+.section-lg,
+.section-xl,
+.section-xl-2,
+.section-xxl{
+	padding: 60px 0;
+}
+
+// Section collapse
+.section-collapse + .section-collapse {
+	padding-top: 0;
+}
+
+.section-collapse:last-child {
+	padding-bottom: 0;
+}
+
+// Section with bottom zero padding
+html [class*='section-'].section-bottom-0 {
+	padding-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+	.section-sm {
+		padding: 60px 0;
+	}
+
+	.section-md {
+		padding: 70px 0;
+	}
+
+	.section-lg {
+		padding: 85px 0;
+	}
+
+	.section-intro,
+	.section-xl,
+	.section-xl-2,
+	.section-xxl {
+		padding: 100px 0;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.section-md {
+		padding: 90px 0;
+	}
+
+	.section-lg {
+		padding: 110px 0;
+	}
+
+	.section-xl,
+	.section-xl-2,
+	.section-intro {
+		padding: 140px 0;
+	}
+
+	.section-xxl {
+		padding: 180px 0;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.section-md {
+		padding: 120px 0;
+	}
+
+	.section-lg {
+		padding: 140px 0;
+	}
+
+	.section-xl-2 {
+		padding: 140px 0 160px;
+	}
+
+	.section-xl,
+	.section-intro {
+		padding: 160px 0;
+	}
+
+	.section-xxl {
+		padding: 200px 0;
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	.section-xl {
+		padding: 200px 0;
+	}
+	.section-xl-2 {
+		padding: 140px 0 200px;
+	}
+	.section-intro {
+		padding: 254px 0;
+	}
+	.section-xxl {
+		padding: 265px 0 220px;
+	}
+}
+
+// Section single
+.section-single {
+	display: flex;
+	text-align: center;
+
+	p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	* + .rights {
+		margin-top: 35px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		* + .rights {
+			margin-top: 60px;
+		}
+	}
+
+	.rd-mailform-wrap {
+		max-width: 670px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	* + .rd-mailform-wrap {
+		margin-top: 20px;
+	}
+}
+
+.section-single-header {
+	padding: calc(1em + 3vh) 0 calc(1em + 2vh);
+}
+
+.section-single-main {
+	padding: calc(1em + 4vh) 0;
+}
+
+.section-single-footer {
+	padding: calc(1em + 2vh) 0 calc(1em + 3vh);
+}
+
+.section-single-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+
+	> * {
+		width: 100%;
+	}
+}
+.section-on-top {
+	position: relative;
+	z-index: 1;
+}

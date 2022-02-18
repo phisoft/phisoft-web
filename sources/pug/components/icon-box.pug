@@ -1,0 +1,9 @@
+//- Icon box
+	@param {object} obj - object
+	@param {string} obj.class - icon class
+	@param {string} obj.name - icon name
+mixin icon-box( obj )
+	// Icon box
+	.icon-box&attributes( attributes )
+		.icon-box-icon.novi-icon( class= obj.class )
+		.icon-box-text= obj.name

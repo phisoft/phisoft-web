@@ -1,0 +1,251 @@
+/** @section Quotes */
+
+// Quote primary
+.quote-primary {
+}
+
+.quote-primary-mark {
+	position: relative;
+	top: 6px;
+	display: block;
+	width: 37px;
+	height: 27px;
+	fill: $primary;
+	flex-shrink: 0;
+}
+
+.quote-primary-body {
+	position: relative;
+	padding: 25px 0;
+	border-top: 1px solid $gray-200;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 13px;
+		border-style: solid;
+		border-color: $gray-200;
+	}
+
+	&::before {
+		left: 0;
+		width: 78px;
+		border-width: 1px 1px 0 0;
+	}
+
+	&::after {
+		right: 0;
+		width: calc(100% - 78px - 12px);
+		border-width: 1px 0 0 1px;
+		transform-origin: 0 0;
+		transform: skew(-45deg);
+	}
+}
+
+.quote-primary-text {
+	padding-top: 20px;
+}
+
+.quote-primary-cite {
+	font-weight: 700;
+}
+
+.quote-primary-footer {
+	padding-left: 5px;
+}
+
+* + .quote-primary {
+	margin-top: 30px;
+}
+
+* + .quote-primary-footer {
+	margin-top: 8px;
+}
+
+// Quote Minimal
+.quote-minimal {
+	display: block;
+	max-width: 500px;
+	margin-top: 40px;
+}
+.quote-minimal-main {
+	font-size: 20px;
+	line-height: $lead-line-height;
+	font-weight: 500;
+	color: $primary;
+	@include media-breakpoint-up(md) {
+		font-size: $lead-font-size;
+	}
+}
+
+.quote-footer {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	@include media-breakpoint-up(md) {
+		margin-top: 25px;
+	}
+}
+
+.quote-cite {
+	margin-left: 25px;
+	line-height: 1.2;
+	cite {
+		font-weight: 500;
+		color: $primary-dark;
+	}
+}
+
+.quote-position {
+	color: $primary-lighter;
+}
+
+.quote-minimal-avatar {
+	border-radius: 50%;
+}
+
+@include media-breakpoint-up(sm) {
+	.quote-primary-body {
+		display: flex;
+		padding: 32px 20px 40px 30px;
+	}
+
+	.quote-primary-text {
+		padding-top: 0;
+		padding-left: 20px;
+	}
+
+	.quote-primary-footer {
+		padding-left: 30px;
+	}
+}
+
+// Quote Modern
+.quote-modern {
+	.quote-footer {
+		margin-left: 50px;
+		margin-top: 60px;
+	}
+}
+.quote-modern-main {
+	display: block;
+	padding: 30px;
+	border-radius: $border-radius;
+	background: $gradient-03;
+	position: relative;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: $lead-line-height;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 110px;
+		border: 10px solid transparent;
+		border-left: 10px solid #fdf1f1;
+		border-top: 10px solid #fdf1f1;
+	}
+	@include media-breakpoint-up(md) {
+		font-size: $lead-font-size;
+	}
+}
+
+
+
+@include media-breakpoint-up(md) {
+	.quote-modern .quote-footer {
+		margin-top: 60px;
+		margin-left: 80px;
+	}
+	.quote-modern-main {
+		padding:50px 200px 50px 50px ;
+		&::after {
+			left: 140px;
+		}
+	}
+	.quote-primary-body {
+		padding-right: 40px;
+	}
+	.quote-minimal {
+		margin-top: 50px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.quote-modern-main {
+		padding: 80px 250px 70px 80px;
+	}
+	.quote-minimal {
+		margin-top: 80px;
+	}
+}
+
+//
+// Quote Light
+//
+.quote-light {
+}
+
+.quote-light-mark {
+	fill: $primary-light;
+}
+
+.quote-light-cite {
+	font-size: 20px;
+	color: $primary;
+}
+
+.quote-light-caption {
+	line-height: 1.2;
+}
+
+.quote-light-text {
+	font-size: 22px;
+	line-height: 1.5;
+	letter-spacing: 0;
+	color: $primary;
+}
+
+html img.quote-light-image {
+	display: inline-block;
+}
+
+* + .quote-light { margin-top: 30px; }
+* + .quote-light-caption { margin-top: 3px; }
+* + .quote-light-mark { margin-top: 15px; }
+* + .quote-light-text { margin-top: 8px; }
+* + .quote-light-footer { margin-top: 20px; }
+
+@include media-breakpoint-up(sm) {
+	.quote-light-cite {
+		font-size: 20px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.quote-light { }
+
+	.quote-light-cite {
+		font-size: 24px;
+	}
+
+	* + .quote-light { margin-top: 40px; }
+	* + .quote-light-mark { margin-top: 35px; }
+	* + .quote-light-text { margin-top: 15px; }
+	* + .quote-light-footer { margin-top: 30px; }
+}
+
+@include media-breakpoint-up(xxl) {
+
+	.quote-light-text {
+		font-size: 26px;
+		line-height: 1.3;
+	}
+
+	* + .quote-light { margin-top: 50px; }
+	* + .quote-light-mark { margin-top: 50px; }
+	* + .quote-light-footer { margin-top: 45px; }
+}

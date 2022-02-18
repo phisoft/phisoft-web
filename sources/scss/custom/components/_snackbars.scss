@@ -1,0 +1,48 @@
+/** @section Snackbars */
+
+.snackbars {
+	padding: 9px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	color: $body-color;
+	text-align: left;
+	background-color: $white;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba($primary, 0.3);
+
+	font-size: 14px;
+	a {
+		@include link( $primary, $primary-dark);
+	}
+	.icon-xxs {
+		font-size: 18px;
+	}
+
+	// padding on text
+	p span:last-child {
+		padding-left: 14px;
+	}
+
+	// snackbar icon on the left side
+	&-left {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	// snackbar link or button on the right side
+	&-right {
+		display: inline-block;
+		float: right;
+		text-transform: uppercase;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		max-width: 540px;
+		padding: 12px 15px;
+		font-size: 15px;
+	}
+}

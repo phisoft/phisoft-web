@@ -1,0 +1,84 @@
+extends ../_skeleton
+include ../components/box-card
+include ../components/box-pricing
+include ../components/card
+
+block variables
+	- pageName = 'Single Service'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	// Offers
+	section.section.section-lg.bg-default
+		.container
+			.row.row-40
+				.col-lg-6
+					h6.header-decor What we offer
+					h2 Emergency support
+					h5 Choosing us you choose a business success
+					p Our software specialists can help to finish the digital transformation trip through the right planning and effective achievement of the outlined IT strategy.
+					ul.list-marked
+						li Improve your software
+						li Create a successful digital strategy
+						li Improve operations
+					h5 Make your first steps
+					p If you face the IT consulting for the first time, our professional specialists are ready to introduce this sphere to you. They also work with your consulting literacy and improve your digital skills
+				.col-lg-5.offset-lg-1
+					+img('single-service-01-500x564').rounded.shadow-lg
+	="\n"
+
+	.container.mt-0: hr
+	="\n"
+
+	// Pricing
+	section.section.section-lg.bg-default
+		.container
+			.row
+				.col-md-10
+					h2 Select the most appropriate #[br.d-none.d-xl-block] plan for you!
+					p Here we offer several packadges for starting your business progress. You can choose one the most availiable to you from the list below:
+			.row.row-30
+				.col-md-6.col-xl-4
+					+box-pricing({
+						title: 'Growth',
+						description: 'Make your first steps with IT idea',
+						price: 83,
+						options: [
+							'Consultation',
+							'Simple strategy',
+							'Support'
+						]
+					})
+				.col-md-6.col-xl-4
+					+box-pricing({
+						title: 'Professional',
+						description: 'Intermediate program for your business',
+						price: 149,
+						options: [
+							'Consultation',
+							'Simple strategy',
+							'Support',
+							'Trainings'
+						]
+					})
+				.col-md-6.col-xl-4
+					+box-pricing({
+						title: 'Premium',
+						description: 'Advanced program to increase the success',
+						price: 199,
+						options: [
+							'Consultation',
+							'Simple strategy',
+							'Support',
+							'Trainings',
+							'Testing'
+						]
+					})
+	="\n"
+
+	include ../sections/_faq
+
+	include ../sections/_footer-classic

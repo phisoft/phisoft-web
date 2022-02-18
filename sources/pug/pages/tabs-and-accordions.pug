@@ -1,0 +1,136 @@
+extends ../_skeleton
+include ../components/card
+
+block variables
+	- pageName = 'Tabs and Accordions'
+
+block page 
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	//Tabs
+	section.section.section-md.bg-default.text-center
+		.container
+			.row.justify-content-center
+				.col-xl-10
+					h3 Horizontal Tabs
+					//Bootstrap tabs
+					#tabs-1.tabs-custom.tabs-horizontal.tabs-corporate
+						//Nav tabs
+						ul.nav.nav-tabs
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-1' data-bs-toggle='tab') Tab 1
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-2' data-bs-toggle='tab') Tab 2
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-3' data-bs-toggle='tab') Tab 3
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-1-4' data-bs-toggle='tab') Tab 4
+
+						//Tab panes
+						.tab-content
+							div#tabs-1-1.tab-pane.fade
+								p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly.  
+								p Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-1-2.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. 
+
+							div#tabs-1-3.tab-pane.fade
+								p We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.  
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us.
+
+							div#tabs-1-4.tab-pane.fade
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly.  
+								p You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+	hr
+
+	//Vertical Tabs
+	section.section.section-lg.bg-default.text-center
+		.container
+			h3 Vertical Tabs
+			.row
+				.col-xl-11
+					//Bootstrap tabs
+					#tabs-2.tabs-custom.tabs-vertical.tabs-corporate
+						//Nav tabs
+						ul.nav.nav-tabs
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-1' data-bs-toggle='tab') Tab 1
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-2' data-bs-toggle='tab') Tab 2
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-3' data-bs-toggle='tab') Tab 3
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-4' data-bs-toggle='tab') Tab 4
+							li.nav-item(role='presentation'): a.nav-link(href='#tabs-2-5' data-bs-toggle='tab') Tab 5
+
+						//Tab panes
+						.tab-content
+							div#tabs-2-1.tab-pane.fade
+								p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly.  
+								p Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-2-2.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. 
+
+							div#tabs-2-3.tab-pane.fade
+								p We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.  
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us.
+
+							div#tabs-2-4.tab-pane.fade
+								p Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly.  
+								p You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site.
+
+							div#tabs-2-5.tab-pane.fade
+								p The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click.  
+								p We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel and tell you more about us in the informal environments where we can have a dialogue instead of just a narrative like that.  With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers.
+
+	//Accordion
+	section.section.section-md.bg-gradient.text-center
+		.container
+			.row.justify-content-center
+				.col-12
+					h3 Accordion
+					//Bootstrap collapse
+					#accordion1.card-group-custom.card-group-corporate( role='tablist' aria-multiselectable='false' )
+						+card({
+							show: true,
+							parentId: 'accordion1',
+							title: 'What are the advantages of purchasing a website template?'
+						}).card-corporate
+							p The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer to produce a web page of such quality.
+
+						+card({
+							parentId: 'accordion1',
+							title: 'Do you provide any scripts with your templates or could you do some custom programming?'
+						}).card-corporate
+							p Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.
+
+						+card({
+							parentId: 'accordion1',
+							title: 'What do I receive when I order a template from Zemez?'
+						}).card-corporate
+							p After you complete the payment via our secure form you will receive the instructions for downloading the product. The source files in the download package can vary based on the type of the product you have purchased.
+
+						+card({
+							parentId: 'accordion1',
+							title: 'In what formats are your templates available?'
+						}).card-corporate
+							p Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.
+
+						+card({
+							parentId: 'accordion1',
+							title: 'What am I allowed to do with the templates?'
+						}).card-corporate
+							p You may build a website using the template in any way you like. You may not resell or redistribute templates (like we do); claim intellectual or exclusive ownership to any of our products, modified or unmodified. All products are property of content providing companies and individuals. You are also not allowed to make more than one project using the same template (you have to purchase the same template once more in order to make another project with the same design).
+
+						+card({
+							parentId: 'accordion1',
+							title: 'What is a unique/non-unique purchase?'
+						}).card-corporate
+							p Non-exclusive purchase means that other people can buy the template you have chosen some time later. Exclusive or unique purchase guarantees that you are the last person to buy this template. After an exclusive purchase occurs the template is being permanently removed from the sales directory and will never be available to other customers again. Only you and people who bought the template before you will own it.
+
+						+card({
+							parentId: 'accordion1',
+							title: 'How can I pay for my order?'
+						}).card-corporate
+							p We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.
+
+	include ../sections/_footer-classic

@@ -1,0 +1,119 @@
+extends ../_skeleton
+
+block variables
+	- pageName = 'Blog post'
+
+block page
+	include ../sections/_header-classic
+
+	+breadcrumbs
+
+	section.section.section-lg.section-bottom-0
+		.container
+			.row.row-50
+				.col-lg-8
+					article.post-creative
+						h3.post-creative-title Improving your confidence and self-defense skills
+						ul.post-creative-meta
+							li
+								span.icon.mdi.mdi-calendar-clock
+								time(datetime='2021') May 9, 2021 at 6:09 pm
+							li
+								span.icon.mdi.mdi-tag-multiple
+								a(href='#') Services
+
+						+img('single-blog-post-1-770x458')
+
+						p Sunt tumultumquees locus barbatus, albus lactaes. Mirabilis, gratis brodiums solite magicae de velox, bassus idoleum. Neuter clinias sed mire desideriums ausus est. Ubi est domesticus hydra? Albus, alter assimilatios velox acquirere de camerarius, fidelis hibrida. Clemens humani generiss ducunt ad musa. Heu, nobilis domina! A falsis, castor emeritis tata. Vae, triticum! Regius pess ducunt ad vortex. Vae, vigil! Nunquam carpseris bursa. Caniss congregabo! Elogium de magnum calcaria, quaestio rumor! Orgias congregabo in vasa! Musa azureus poeta est. A falsis, cobaltum placidus homo. Talis, germanus equisos inciviliter acquirere de camerarius, salvus elogium?
+						p Cur gallus tolerare? Habena fortis adgium est. Ususs messis in lutetia! Rector accelerares, tanquam flavum ratione. Accelerare cito ducunt ad primus lapsus. Superbus, emeritis cobaltums solite resuscitabo de talis, rusticus ratione.
+
+						// Quote Light
+						blockquote.quote-light
+							svg.quote-light-mark(x='0px', y='0px', width='35px', height='25px', viewbox='0 0 35 25')
+								path(d='M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5L7.539,10.206z')
+							.quote-light-text
+								p Experts predict an increase in demand for non-English languages and a reduction of translation, driven by AI technology.
+
+						+img('single-blog-post-2-770x458')
+
+						p Eheu, neuter era! Cadunt semper ducunt ad salvus urbs. Peregrinatione inciviliter ducunt ad gratis canis. Cum indictio resistere, omnes ollaes talem rusticus, altus rumores. Ionicis tormentos ire in cubiculum! Fidelis vitas ducunt ad racana. Clabulare de ferox plasmator, manifestum visus! Est superbus visus, cesaris. Habena, ignigena, et gallus. Cum burgus resistere, omnes candidatuses amor bassus, regius bromiumes.
+						p Observare una ducunt ad salvus barcas. Zirbus, bromium, et brabeuta. Tabess sunt adiurators de nobilis luna. Ubi est fortis ventus? Pol, rumor! Grandis, magnum calceuss recte consumere de flavum, fortis elogium. Assimilatio de neuter mons, contactus accola! Sunt calceuses acquirere grandis, fidelis animalises. A falsis, nuclear vexatum iacere domesticus genetrix. Domesticus animalis virtualiter convertams mons est. Absolutio de pius luna, attrahendam lamia.
+
+						ul.post-creative-footer
+							li.text-gray Share this post!
+							li
+								ul.list-inline
+									li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-twitter(href='#')
+									li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-facebook(href='#')
+									li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-linkedin-box(href='#')
+
+					.section-sm
+						h3 Comments
+						.comment-classic-group
+							// Comment Classic
+							article.comment-classic
+								figure.comment-classic-figure: +img('comment-01-48x48').comment-classic-image
+								.comment-classic-main
+									p.comment-classic-name Theresa Barnes
+									.comment-classic-text
+										p Vae, exsul! Pol, a bene zirbus, castus accentor! Pol, axona! Bullas peregrinationes! Valebat, demissio, et epos. Credere una ducunt ad castus ignigena.
+									ul.comment-classic-meta
+										li: time(datetime='2021') May 9, 2021 at 9:06 am
+										li: a.comment-classic-reply(href='#' aria-label='reply')
+
+							.comment-classic-group
+								// Comment Classic
+								article.comment-classic
+									figure.comment-classic-figure: +img('comment-02-48x48').comment-classic-image
+									.comment-classic-main
+										p.comment-classic-name Albert Webb
+										.comment-classic-text
+											p Fuga observares, tanquam placidus bubo. Ubi est mirabilis nix? Cum classis favere, omnes ollaes resuscitabo altus, clemens exsules. Ignigena altus adelphis est.
+										ul.comment-classic-meta
+											li: time(datetime='2021') May 9, 2021 at 9:47 am
+											li: a.comment-classic-reply(href='#' aria-label='reply')
+
+						.comment-classic-group
+							// Comment Classic
+							article.comment-classic
+								figure.comment-classic-figure: +img('comment-03-48x48').comment-classic-image
+								.comment-classic-main
+									p.comment-classic-name Jason Hughes
+									.comment-classic-text
+										p Tabes, rector, et capio. Accola de fidelis parma, desiderium luna! A falsis, sensorem noster finis. A falsis, valebat mirabilis fraticinida. Bi-color, bassus bursas unus imperium de fortis.
+									ul.comment-classic-meta
+										li: time(datetime='2021') May 9, 2021 at 12:08 pm
+										li: a.comment-classic-reply(href='#' aria-label='reply')
+
+					.section-sm.section-bottom-0
+						h3 Send a Comment
+						// RD Mailform
+						form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+							.form-wrap
+								label.form-label(for='comment-name') Name
+								input#comment-name.form-input(type='text' name='name' data-constraints='@Required')
+							.form-wrap
+								label.form-label(for='comment-email') E-mail
+								input#comment-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+							.form-wrap
+								label.form-label(for='comment-message') Your Message
+								textarea#comment-message.form-input(name='message' data-constraints='@Required')
+							button.btn.btn-primary(type='submit') Submit
+
+				.col-lg-4
+					// Profile Thin
+					article.profile
+						.profile-aside
+							+img('profile-thin-01-168x168').profile-image
+							a.profile-contact-button(href='mailto:#')
+								span.icon.mdi.mdi-email-outline
+								span.icon.mdi.mdi-email-outline
+						.profile-main
+							h5.profile-title RICARDO COOPER
+							p.profile-subtitle Co-Founder and CSO
+							ul.profile-social.list-inline
+								li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-twitter(href='#')
+								li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-facebook(href='#')
+								li: a.icon.icon-primary-lighter.icon-lg.mdi.mdi-linkedin-box(href='#')
+
+	include ../sections/_footer-classic

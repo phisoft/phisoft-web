@@ -1,0 +1,85 @@
+/** @section Countdown */
+
+.countdown {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2;
+	text-align: center;
+	@include group(15px);
+
+	@include media-breakpoint-up(md) {
+		@include group(30px);
+	}
+}
+
+.countdown-block {
+	position: relative;
+	flex: 0 1 auto;
+}
+
+.countdown-block-seconds {
+	display: none;
+
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+}
+
+.countdown-wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.countdown-circle {
+	fill: transparent;
+	width: 100%;
+	height: auto;
+}
+
+.countdown-circle-bg {
+	stroke: white;
+	stroke-width: 5px;
+}
+
+.countdown-circle-fg {
+	stroke: $primary;
+	stroke-width: 10px;
+}
+
+.countdown-counter {
+	line-height: 1;
+	letter-spacing: 0;
+}
+
+.countdown-title {
+	font-size: 13px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: $gray-600;
+}
+
+* + .countdown {
+	margin-top: 35px;
+}
+
+.countdown + * {
+	margin-top: 35px;
+}
+
+@include media-breakpoint-up(md) {
+
+	.countdown-circle-bg {
+		stroke-width: 3px;
+	}
+
+	.countdown-circle-fg {
+		stroke-width: 5px;
+	}
+}
