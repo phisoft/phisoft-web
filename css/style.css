@@ -742,6 +742,11 @@ html [class*='section-'].section-bottom-0 {
 	z-index: 1;
 }
 
+@media (max-width: 768px) {
+	.container.map.d-flex {
+	  flex-direction: column;
+	}
+}
 /** @section Grid modules */
 .grid-demo {
 	letter-spacing: 0;
@@ -8057,3 +8062,4 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	width: 100%;
 	height: 100%;
 }
+
