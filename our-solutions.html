@@ -1,406 +1,549 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Our Solutions</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&amp;display=swap">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="preloader">
-      <div class="preloader-body">
-         <div class="phi">
-            <svg class="phi__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-               <g class="phi__icon-group" transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" stroke="none" >
-                  <path d="M0 2500 l0 -2500 2500 0 2500 0 0 2500 0 2500 -2500 0 -2500 0 0 -2500z m2256 2145 c181 -32 345 -102 484 -207 140 -106 1672 -1470 1736 -1546 237 -283 245 -632 21 -878 -53 -59 -703 -584 -722 -584 -21 0 -440 379 -440 398 0 12 85 87 250 219 266 213 354 296 385 365 26 57 25 92 -5 157 -41 87 -117 172 -298 334 -428 381 -1061 939 -1148 1012 -161 134 -316 207 -408 190 -126 -22 -182 -58 -588 -381 l-302 -241 1417 -1253 c779 -689 1418 -1258 1420 -1265 3 -14 -384 -317 -414 -323 -16 -3 -343 281 -1416 1230 -767 678 -1506 1330 -1641 1448 -135 118 -246 221 -246 227 -1 7 52 55 117 106 64 51 225 179 357 283 132 105 354 281 493 391 259 206 319 245 432 283 147 50 350 64 516 35z " />
-               </g>
-               <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#696969" stroke="none">
-                  <path d="M549 1551 c-91 -97 -168 -179 -170 -182 -7 -11 925 -829 1009 -885 212 -143 483 -213 715 -185 121 15 251 55 339 104 61 35 622 473 627 491 3 8 -408 376 -420 376 -3 0 -91 -68 -195 -151 -299 -238 -377 -283 -509 -296 -104 -10 -221 36 -356 139 -31 24 -225 192 -430 374 -206 182 -390 344 -409 361 l-35 30 -166 -176z"/>
-               </g>
-            </svg>
-            <div class="fill"></div>
-         </div>
-         <div class="preloader-text">Loading</div>
+
+<head>
+  <title>Our Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="phi">
+        <svg class="phi__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000"
+          preserveAspectRatio="xMidYMid meet">
+          <g class="phi__icon-group" transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path
+              d="M0 2500 l0 -2500 2500 0 2500 0 0 2500 0 2500 -2500 0 -2500 0 0 -2500z m2256 2145 c181 -32 345 -102 484 -207 140 -106 1672 -1470 1736 -1546 237 -283 245 -632 21 -878 -53 -59 -703 -584 -722 -584 -21 0 -440 379 -440 398 0 12 85 87 250 219 266 213 354 296 385 365 26 57 25 92 -5 157 -41 87 -117 172 -298 334 -428 381 -1061 939 -1148 1012 -161 134 -316 207 -408 190 -126 -22 -182 -58 -588 -381 l-302 -241 1417 -1253 c779 -689 1418 -1258 1420 -1265 3 -14 -384 -317 -414 -323 -16 -3 -343 281 -1416 1230 -767 678 -1506 1330 -1641 1448 -135 118 -246 221 -246 227 -1 7 52 55 117 106 64 51 225 179 357 283 132 105 354 281 493 391 259 206 319 245 432 283 147 50 350 64 516 35z " />
+          </g>
+          <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#696969" stroke="none">
+            <path
+              d="M549 1551 c-91 -97 -168 -179 -170 -182 -7 -11 925 -829 1009 -885 212 -143 483 -213 715 -185 121 15 251 55 339 104 61 35 622 473 627 491 3 8 -408 376 -420 376 -3 0 -91 -68 -195 -151 -299 -238 -377 -283 -509 -296 -104 -10 -221 36 -356 139 -31 24 -225 192 -430 374 -206 182 -390 344 -409 361 l-35 30 -166 -176z" />
+          </g>
+        </svg>
+        <div class="fill"></div>
       </div>
-   </div>
-    <div class="page">
-      <header class="section page-header">
-        <!--RD Navbar-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!--RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!--RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!--RD Navbar Brand-->
-                  <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/phisoft-logo.png" alt="" width="165" height="33" loading="lazy"/><img class="brand-logo-light" src="images/logo-inverse-165x33.svg" alt="" width="165" height="33" loading="lazy"/></a>
-                  </div>
+      <div class="preloader-text">Loading</div>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+          data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed"
+          data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand">
+                  <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark"
+                      src="images/phisoft-logo.png" alt="" width="165" height="33" loading="lazy" /><img
+                      class="brand-logo-light" src="images/logo-inverse-165x33.svg" alt="" width="165" height="33"
+                      loading="lazy" /></a>
                 </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="our-services.html">Services</a>
-                      </li>
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="our-solutions.html">Solutions</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--RD Navbar Search-->
-                  <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-                  <div class="rd-navbar-collapse">
-                    <div class="rd-navbar-info"><a class="btn-link-creative" href="contacts.html"><span class="icon icon-fill-primary mdi mdi-email"></span>Get in touch</a></div>
-                  </div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="our-services.html">Services</a>
+                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="our-solutions.html">Solutions</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--RD Navbar Search-->
+                <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                  data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-collapse">
+                  <div class="rd-navbar-info"><a class="btn-link-creative" href="contacts.html"><span
+                        class="icon icon-fill-primary mdi mdi-email"></span>Get in touch</a></div>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-      <!-- Breadcrumbs-->
-      <section class="breadcrumbs-custom">
-        <div class="container">
-          <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Solutions</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Solution 1-->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <h6 class="header-decor"> Document Tracking System</h6>
-              <h2>KertasDMS</h2>
-              <h5>Create, track, and manage your document</h5>
-              <p>KertasDMS provides document digitization and centralized storage, to insightful analytics of business operations. KertasDMS technology will help to lead your business towards digital transformation to open for improved operation efficiency and transparency of workflow.
-              </p>
-              <h5>
-                KertasDMS offers:
-            </h5>
-              <ul class="list-marked">
-                <li class="list-checked__item"><span><b>Document Management</b><span class="color-secondary"> — Upload document, index document, and assign assignee.</span></span></li>
-                <li class="list-checked__item"><span><b>Document Tagging</b><span class="color-secondary"> — Assign tagging to related document.</span></span></li>
-                <li class="list-checked__item"><span><b>OCR</b><span class="color-secondary"> — Search text in images, search metadata in images.</span></span></li>
-                <li class="list-checked__item"><span><b>QR Code</b><span class="color-secondary"> — Unique QR code generator, document finder.</span></span></li>
-                <li class="list-checked__item"><span><b>User Management</b><span class="color-secondary"> — Create user, department and assign document approver.</span></span></li>
-                <li class="list-checked__item"><span><b>Document Search</b><span class="color-secondary"> — File search, metadata search, QR code finder.</span></span></li>
-              </ul>
-            </div>
-            <div class="col-lg-5 offset-lg-1"><img class="rounded shadow-lg" src="images/kertasdms_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
           </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
+        </nav>
       </div>
-      <!-- Solution 2 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <img class="rounded shadow-lg" src="images/linkexpres_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-            <div class="col-lg-6">
-              <h6 class="header-decor">Logistics</h6>
-              <h2>Linkexpres</h2>
-              <h5>Optimize business processes from beginning to end</h5>
-              <p>Linkexpres is a software tool that will help you increase efficiency in order processing, inventory management, transporting orders to customers, and returning orders as needed. </p>
-              <p>Moreover, it
-                will also benefit your business by providing prompt, high-quality, and accurate service to your customers, thereby improving their experience.
-                It will also improve your supply chain visibility, assist you in cost reduction, and streamline your logistics strategy. 
-              </p>
-            <h5>
-                Linkexpres offers:
-            </h5>
-            <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Order management system</b><span class="color-secondary"> — streamlines and automates the fulfilment process, reducing errors and allowing customers to get what they need faster. </span></span></li>
-              <li class="list-checked__item"><span><b>Logistics analytics</b><span class="color-secondary"> — Analyze shipping history and improve client operations to reduce logistical costs and shipment delivery times.</span></span></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
+    </header>
+    <!-- Breadcrumbs-->
+    <section class="breadcrumbs-custom">
+      <div class="container">
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Solutions</li>
+        </ul>
       </div>
-      <!-- Solution 3 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <h6 class="header-decor">Contract Management System</h6>
-              <h2>8planner</h2>
-              <h5>Easy scheduling and reporting solutions for your company </h5>
-              <p>8planner is designed to lighten the load on administrative staff who are responsible for daily scheduling and planning. 
-            <h5>
-                8planner offers:
-            </h5>
-            <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Schedule Planning</b><span class="color-secondary"> — Plan your technician visit months ahead so you can distribute workload effectively.</span></span></li>
-              <li class="list-checked__item"><span><b>Renewal Service Reminder</b><span class="color-secondary"> — 8planner will remind you about upcoming renewal contract.</span></span></li>
-              <li class="list-checked__item"><span><b>Instant Report</b><span class="color-secondary"> — Print updated daily, monthly and summary report quickly. </span></span></li>
-              <li class="list-checked__item"><span><b>Client Database</b><span class="color-secondary"> — Get client's information and overview of the existing contract status.</span></span></li>
-            </ul>
-            </div>
-            <div class="col-lg-5 offset-lg-1">
-              <img class="rounded shadow-lg" src="images/8Planner_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
-      </div>
-      <!-- Solution 4 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <img class="rounded shadow-lg" src="images/roompillow_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-            <div class="col-lg-6">
-              <h6 class="header-decor">Property Management System</h6>
-              <h2>RoompillowPMS</h2>
-              <h5>A property management system that helps you run your business more efficiently </h5>
-              <p>RoompillowPMS assists hotels in improving the guest experience.
-                Less time at the keyboard means more time for the visitor.
-              </p>          
-              <p>Communication between departments is seamless.
-                Billing and invoicing functions aid in keeping track of all transactions. 
-              </p>
-            <h5>
-                RoompillowPMS offers:
-            </h5>
-            <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Reservation</b><span class="color-secondary"> — Easy interface and quick booking process.</span></span></li>
-              <li class="list-checked__item"><span><b>Front Desk</b><span class="color-secondary"> — Quick and simple access to key hotel functions like check-in and check-out. </span></span></li>
-              <li class="list-checked__item"><span><b>Housekeeping</b><span class="color-secondary"> — Smooth housekeeping management enable room marked "clean" and sell it faster. </span></span></li>
-              <li class="list-checked__item"><span><b>Billing & Invoicing</b><span class="color-secondary"> — Invoice creation that is simple to use and comprehensive.</span></span></li>
-              <li class="list-checked__item"><span><b>Restaurant</b><span class="color-secondary"> — Allow for the addition of consumptions to a specific room for easy billing.</span></span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
-      </div>
-      <!-- Solution 5 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <h6 class="header-decor">Tours Package Management</h6>
-              <h2>Toursbloom</h2>
-              <h5>Package Management is simplified with Toursbloom</h5>
-              <p>
-                The package management process is broken down into individual steps, with each step scrutinised to ensure maximum efficiency.
-                Toursbloom enables you to deal with all functions in real time, from creating packages to connecting with third-party suppliers at different prices.
-              </p>
-              <h5>
-                Toursbloom offers:
-            </h5>
-            <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Packages</b><span class="color-secondary"> — Customize packages to meet the demands of your consumers.</span></span></li>
-              <li class="list-checked__item"><span><b>Dashboard</b><span class="color-secondary"> — Obtain beneficial insights from dashboard data overview.</span></span></li>
-              <li class="list-checked__item"><span><b>Bookings</b><span class="color-secondary"> — Easy and fast booking process for guest.</span></span></li>
-              <li class="list-checked__item"><span><b>Promotions</b><span class="color-secondary"> — Enable to add promotions for packages. </span></span></li>
-            </ul>
-            </div>
-            <div class="col-lg-5 offset-lg-1">
-              <img class="rounded shadow-lg" src="images/toursbloom_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
-      </div>
-      <!-- Solution 6 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <img class="rounded shadow-lg" src="images/assetsware_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-            <div class="col-lg-6">
-              <h6 class="header-decor">Assets Tracking System</h6>
-              <h2>Assetsware</h2>
-              <h5>Delivering world class asset tracking solutions</h5>
-            <p>Assetsware makes it simple for businesses to manage their fixed asset base, saving time and effort while providing accurate and timely data for reporting. 
+    </section>
+    <!-- Solution 1-->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <h6 class="header-decor"> Document Tracking System</h6>
+            <h2>KertasDMS</h2>
+            <h5>Create, track, and manage your document</h5>
+            <p>KertasDMS provides document digitization and centralized storage, to insightful analytics of business
+              operations. KertasDMS technology will help to lead your business towards digital transformation to open
+              for improved operation efficiency and transparency of workflow.
             </p>
             <h5>
-                Assetsware offers:
+              KertasDMS offers:
             </h5>
             <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Asset Capture</b><span class="color-secondary"> — Assets are rapidly and readily added to asset records using a number of asset templates to fill the essential asset information. </span></span></li>
-              <li class="list-checked__item"><span><b>Asset moves</b><span class="color-secondary"> — Record asset movements using asset identifiers, barcodes, or RFID tags to maintain your fixed asset register locations and cost centres up to date. </span></span></li>
-              <li class="list-checked__item"><span><b>Asset disposals</b><span class="color-secondary"> — The search feature makes it easier to find assets that aren't clearly identifiable or whose tags have been damaged.</span></span></li>
-              <li class="list-checked__item"><span><b>Full asset details</b><span class="color-secondary"> — On the mobile device, the user has access to a wide range of asset information. 
-                As routine transactions are completed, the data can be updated.</span></span></li>
+              <li class="list-checked__item"><span><b>Document Management</b><span class="color-secondary"> — Upload
+                    document, index document, and assign assignee.</span></span></li>
+              <li class="list-checked__item"><span><b>Document Tagging</b><span class="color-secondary"> — Assign
+                    tagging to related document.</span></span></li>
+              <li class="list-checked__item"><span><b>OCR</b><span class="color-secondary"> — Search text in images,
+                    search metadata in images.</span></span></li>
+              <li class="list-checked__item"><span><b>QR Code</b><span class="color-secondary"> — Unique QR code
+                    generator, document finder.</span></span></li>
+              <li class="list-checked__item"><span><b>User Management</b><span class="color-secondary"> — Create user,
+                    department and assign document approver.</span></span></li>
+              <li class="list-checked__item"><span><b>Document Search</b><span class="color-secondary"> — File search,
+                    metadata search, QR code finder.</span></span></li>
             </ul>
-            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1"><img class="rounded shadow-lg" src="images/kertasdms_logo.png" alt=""
+              width="500" height="564" loading="lazy" />
           </div>
         </div>
-      </section>
-       <!-- Solution 7 -->
-       <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <h6 class="header-decor">Practical Dental Software</h6>
-              <h2>Dentallink</h2>
-              <h5>Manage, monitor and streamline daily clinics' operations </h5>
-            <p>Dental practise management is a difficult task that is frequently assigned to a dentist who is already preoccupied with patient care.
+      </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
+    <!-- Solution 2 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <img class="rounded shadow-lg" src="images/linkexpres_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6">
+            <h6 class="header-decor">Logistics</h6>
+            <h2>Linkexpres</h2>
+            <h5>Optimize business processes from beginning to end</h5>
+            <p>Linkexpres is a software tool that will help you increase efficiency in order processing, inventory
+              management, transporting orders to customers, and returning orders as needed. </p>
+            <p>Moreover, it
+              will also benefit your business by providing prompt, high-quality, and accurate service to your customers,
+              thereby improving their experience.
+              It will also improve your supply chain visibility, assist you in cost reduction, and streamline your
+              logistics strategy.
+            </p>
+            <h5>
+              Linkexpres offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Order management system</b><span class="color-secondary"> —
+                    streamlines and automates the fulfilment process, reducing errors and allowing customers to get what
+                    they need faster. </span></span></li>
+              <li class="list-checked__item"><span><b>Logistics analytics</b><span class="color-secondary"> — Analyze
+                    shipping history and improve client operations to reduce logistical costs and shipment delivery
+                    times.</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
+    <!-- Solution 3 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <h6 class="header-decor">Contract Management System</h6>
+            <h2>8planner</h2>
+            <h5>Easy scheduling and reporting solutions for your company </h5>
+            <p>8planner is designed to lighten the load on administrative staff who are responsible for daily scheduling
+              and planning.
+            <h5>
+              8planner offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Schedule Planning</b><span class="color-secondary"> — Plan your
+                    technician visit months ahead so you can distribute workload effectively.</span></span></li>
+              <li class="list-checked__item"><span><b>Renewal Service Reminder</b><span class="color-secondary"> —
+                    8planner will remind you about upcoming renewal contract.</span></span></li>
+              <li class="list-checked__item"><span><b>Instant Report</b><span class="color-secondary"> — Print updated
+                    daily, monthly and summary report quickly. </span></span></li>
+              <li class="list-checked__item"><span><b>Client Database</b><span class="color-secondary"> — Get client's
+                    information and overview of the existing contract status.</span></span></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <img class="rounded shadow-lg" src="images/8Planner_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
+    <!-- Solution 4 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <img class="rounded shadow-lg" src="images/roompillow_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6">
+            <h6 class="header-decor">Property Management System</h6>
+            <h2>RoompillowPMS</h2>
+            <h5>A property management system that helps you run your business more efficiently </h5>
+            <p>RoompillowPMS assists hotels in improving the guest experience.
+              Less time at the keyboard means more time for the visitor.
+            </p>
+            <p>Communication between departments is seamless.
+              Billing and invoicing functions aid in keeping track of all transactions.
+            </p>
+            <h5>
+              RoompillowPMS offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Reservation</b><span class="color-secondary"> — Easy interface and
+                    quick booking process.</span></span></li>
+              <li class="list-checked__item"><span><b>Front Desk</b><span class="color-secondary"> — Quick and simple
+                    access to key hotel functions like check-in and check-out. </span></span></li>
+              <li class="list-checked__item"><span><b>Housekeeping</b><span class="color-secondary"> — Smooth
+                    housekeeping management enable room marked "clean" and sell it faster. </span></span></li>
+              <li class="list-checked__item"><span><b>Billing & Invoicing</b><span class="color-secondary"> — Invoice
+                    creation that is simple to use and comprehensive.</span></span></li>
+              <li class="list-checked__item"><span><b>Restaurant</b><span class="color-secondary"> — Allow for the
+                    addition of consumptions to a specific room for easy billing.</span></span></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
+    <!-- Solution 5 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <h6 class="header-decor">Tours Package Management</h6>
+            <h2>Toursbloom</h2>
+            <h5>Package Management is simplified with Toursbloom</h5>
+            <p>
+              The package management process is broken down into individual steps, with each step scrutinised to ensure
+              maximum efficiency.
+              Toursbloom enables you to deal with all functions in real time, from creating packages to connecting with
+              third-party suppliers at different prices.
+            </p>
+            <h5>
+              Toursbloom offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Packages</b><span class="color-secondary"> — Customize packages to
+                    meet the demands of your consumers.</span></span></li>
+              <li class="list-checked__item"><span><b>Dashboard</b><span class="color-secondary"> — Obtain beneficial
+                    insights from dashboard data overview.</span></span></li>
+              <li class="list-checked__item"><span><b>Bookings</b><span class="color-secondary"> — Easy and fast booking
+                    process for guest.</span></span></li>
+              <li class="list-checked__item"><span><b>Promotions</b><span class="color-secondary"> — Enable to add
+                    promotions for packages. </span></span></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <img class="rounded shadow-lg" src="images/toursbloom_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
+    <!-- Solution 6 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <img class="rounded shadow-lg" src="images/assetsware_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6">
+            <h6 class="header-decor">Assets Tracking System</h6>
+            <h2>Assetsware</h2>
+            <h5>Delivering world class asset tracking solutions</h5>
+            <p>Assetsware makes it simple for businesses to manage their fixed asset base, saving time and effort while
+              providing accurate and timely data for reporting.
+            </p>
+            <h5>
+              Assetsware offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Asset Capture</b><span class="color-secondary"> — Assets are
+                    rapidly and readily added to asset records using a number of asset templates to fill the essential
+                    asset information. </span></span></li>
+              <li class="list-checked__item"><span><b>Asset moves</b><span class="color-secondary"> — Record asset
+                    movements using asset identifiers, barcodes, or RFID tags to maintain your fixed asset register
+                    locations and cost centres up to date. </span></span></li>
+              <li class="list-checked__item"><span><b>Asset disposals</b><span class="color-secondary"> — The search
+                    feature makes it easier to find assets that aren't clearly identifiable or whose tags have been
+                    damaged.</span></span></li>
+              <li class="list-checked__item"><span><b>Full asset details</b><span class="color-secondary"> — On the
+                    mobile device, the user has access to a wide range of asset information.
+                    As routine transactions are completed, the data can be updated.</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Solution 7 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <h6 class="header-decor">Practical Dental Software</h6>
+            <h2>Dentallink</h2>
+            <h5>Manage, monitor and streamline daily clinics' operations </h5>
+            <p>Dental practise management is a difficult task that is frequently assigned to a dentist who is already
+              preoccupied with patient care.
             </p>
             <p>
-              Dentallink is the right tools to assist with management in order to reduce errors and oversights, allowing you to attract new patients and expand your operation. 
+              Dentallink is the right tools to assist with management in order to reduce errors and oversights, allowing
+              you to attract new patients and expand your operation.
             </p>
             <h5>
-                System offers:
+              System offers:
             </h5>
             <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Dental Record Management </b><span class="color-secondary"> — Search patient's data, view treatment history and related files.  </span></span></li>
-              <li class="list-checked__item"><span><b>Appointment Management </b><span class="color-secondary"> — Easy to schedule appointment, confirm patient attendance and follow up patient for dental review.  </span></span></li>
-              <li class="list-checked__item"><span><b>Payment and Billing Tools </b><span class="color-secondary"> — The search feature makes it easier to find assets that aren't clearly identifiable or whose tags have been damaged.</span></span></li>
-              <li class="list-checked__item"><span><b>Support and Data Protection </b><span class="color-secondary"> — Security compliant, 24/7 monitoring and daily data backup and automatic software update. </span></span></li>
-              <li class="list-checked__item"><span><b>Inventory Control  </b><span class="color-secondary"> — Minimum stock reminder for drugs, medicine and dental affiliated products. </span></span></li>
-              <li class="list-checked__item"><span><b>Multiple Branch Support  </b><span class="color-secondary"> — Share patient records across multiple clinics.</span></span></li>
+              <li class="list-checked__item"><span><b>Dental Record Management </b><span class="color-secondary"> —
+                    Search patient's data, view treatment history and related files. </span></span></li>
+              <li class="list-checked__item"><span><b>Appointment Management </b><span class="color-secondary"> — Easy
+                    to schedule appointment, confirm patient attendance and follow up patient for dental review.
+                  </span></span></li>
+              <li class="list-checked__item"><span><b>Payment and Billing Tools </b><span class="color-secondary"> — The
+                    search feature makes it easier to find assets that aren't clearly identifiable or whose tags have
+                    been damaged.</span></span></li>
+              <li class="list-checked__item"><span><b>Support and Data Protection </b><span class="color-secondary"> —
+                    Security compliant, 24/7 monitoring and daily data backup and automatic software update.
+                  </span></span></li>
+              <li class="list-checked__item"><span><b>Inventory Control </b><span class="color-secondary"> — Minimum
+                    stock reminder for drugs, medicine and dental affiliated products. </span></span></li>
+              <li class="list-checked__item"><span><b>Multiple Branch Support </b><span class="color-secondary"> — Share
+                    patient records across multiple clinics.</span></span></li>
             </ul>
-            </div>
-            <div class="col-lg-5 offset-lg-1">
-              <img class="rounded shadow-lg" src="images/dentallink_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <img class="rounded shadow-lg" src="images/dentallink_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
           </div>
         </div>
-      </section>
-      <!-- Solution 8 -->
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-40">
-            <div class="col-lg-6">
-              <img class="rounded shadow-lg" src="images/jurismanager_logo.png" alt="" width="500" height="564" loading="lazy"/>
-            </div>
-            <div class="col-lg-6">
-              <h6 class="header-decor">Legal Management Software</h6>
-              <h2>Juris Manager</h2>
-              <h5>Software designed with close collaboration with local legal firm</h5>
-            <p>Juris Manager streamlines your daily operations and manages all aspects of your firm like client and case records, documents, appointments, schedules and deadlines.</p>
-            <p>
-              If you or your team are currently managing these tasks manually or with many tools, Juris Manager is an all-in-one legal software, can fundamentally revolutionise the way your firm operates. 
-            </p>
-            <h5>
-                Juris Manager offers:
-            </h5>
-            <ul class="list-marked">
-              <li class="list-checked__item"><span><b>Customizable for your firm </b><span class="color-secondary"> — Flexible fields allow you to customized the record you want to track to suit your practice area and your jurisdiction. </span></span></li>
-              <li class="list-checked__item"><span><b>Monitor case progress</b><span class="color-secondary"> — Dashboard provides instant view on the tasks needed to be done to see the case in progress.  </span></span></li>
-              <li class="list-checked__item"><span><b>Easy file management </b><span class="color-secondary"> — Integrated with dropbox to leverage security, easy access and device support.</span></span></li>
-              <li class="list-checked__item"><span><b>Document Template </b><span class="color-secondary"> — Generate document from your existing Microsoft Word document. </span></span></li>
-              <li class="list-checked__item"><span><b>Increase your productivity  </b><span class="color-secondary"> — For simple task like searching for client records to handling client files, we make it easy available with two clicks away. </span></span></li>
-              <li class="list-checked__item"><span><b>Task Template </b><span class="color-secondary"> — One click to assign a list of task to matter. </span></span></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Seperator -->
-      <div class="container mt-0">
-        <hr>
       </div>
+    </section>
+    <!-- Solution 8 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <img class="rounded shadow-lg" src="images/jurismanager_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6">
+            <h6 class="header-decor">Legal Management Software</h6>
+            <h2>Juris Manager</h2>
+            <h5>Software designed with close collaboration with local legal firm</h5>
+            <p>Juris Manager streamlines your daily operations and manages all aspects of your firm like client and case
+              records, documents, appointments, schedules and deadlines.</p>
+            <p>
+              If you or your team are currently managing these tasks manually or with many tools, Juris Manager is an
+              all-in-one legal software, can fundamentally revolutionise the way your firm operates.
+            </p>
+            <h5>
+              Juris Manager offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Customizable for your firm </b><span class="color-secondary"> —
+                    Flexible fields allow you to customized the record you want to track to suit your practice area and
+                    your jurisdiction. </span></span></li>
+              <li class="list-checked__item"><span><b>Monitor case progress</b><span class="color-secondary"> —
+                    Dashboard provides instant view on the tasks needed to be done to see the case in progress.
+                  </span></span></li>
+              <li class="list-checked__item"><span><b>Easy file management </b><span class="color-secondary"> —
+                    Integrated with dropbox to leverage security, easy access and device support.</span></span></li>
+              <li class="list-checked__item"><span><b>Document Template </b><span class="color-secondary"> — Generate
+                    document from your existing Microsoft Word document. </span></span></li>
+              <li class="list-checked__item"><span><b>Increase your productivity </b><span class="color-secondary"> —
+                    For simple task like searching for client records to handling client files, we make it easy
+                    available with two clicks away. </span></span></li>
+              <li class="list-checked__item"><span><b>Task Template </b><span class="color-secondary"> — One click to
+                    assign a list of task to matter. </span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Solution 9 -->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <div class="col-lg-6">
+            <h6 class="header-decor">Online Dictionary Platform</h6>
+            <h2>Nunukragang</h2>
+            <h5>Learn, create and collaborate with Nunukragang</h5>
+            <p>To ensure richness of Borneo indigenous language continue and impart the future culture, Nunukragang
+              dedicated to empowering people in collaborating and building their own native language inside this
+              platform.
+            </p>
+            <p>Nunukragang is a borderless space
+              where everyone can learn and discover indigenous language at anywhere and anytime.</p>
+            <h5>
+              System offers:
+            </h5>
+            <ul class="list-marked">
+              <li class="list-checked__item"><span><b>Online Dictionary</b><span class="color-secondary"> —
+                    Easy ease your words searching with Nunukragang as every indigenous language has become refined and
+                    arranged in organized way.</span></span>
+              </li>
+              <li class="list-checked__item"><span><b>Top Contributor Support</b><span class="color-secondary"> —
+                    Nunukragang acknowledge top contributors by providing income in every successful words
+                    contributed.
+                  </span></span></li>
+              <li class="list-checked__item"><span><b>Moderator Review</b><span class="color-secondary"> — Get yourself
+                    connect to administrative learners and native speakers where they provide instant
+                    feedback and review towards your latest added words.
+                  </span></span></li>
+              <li class="list-checked__item"><span><b>Sponsorship Programme</b><span class="color-secondary"> — Allow
+                    more
+                    sponsor to become a part of
+                    Nunukragang journey where it encourage more community to join and contribute their own indigenous
+                    language.
+                  </span></span></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <img class="rounded shadow-lg" src="images/nunukragang_logo.png" alt="" width="500" height="564"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seperator -->
+    <div class="container mt-0">
+      <hr>
+    </div>
 
-          <!-- CtA #1-->
-          <section class="section section-md bg-image" style="background-image: url(images/service-bg.png);">
-            <div class="container">
-              <div class="box-banner">
-                <h6>Making great things possible</h6>
-                <h2>Transform your business today.</h2><a class="btn btn-lg btn-light btn-icon btn-icon-right" href="contacts.html"><span class="icon mdi mdi-trending-neutral"></span>Talk to us</a>
-              </div>
-            </div>
-          </section>
+    <!-- CtA #1-->
+    <section class="section section-md bg-image" style="background-image: url(images/service-bg.png);">
+      <div class="container">
+        <div class="box-banner">
+          <h6>Making great things possible</h6>
+          <h2>Transform your business today.</h2><a class="btn btn-lg btn-light btn-icon btn-icon-right"
+            href="contacts.html"><span class="icon mdi mdi-trending-neutral"></span>Talk to us</a>
+        </div>
+      </div>
+    </section>
 
-          <footer class="section section-xl footer-classic bg-default">
-            <div class="container">
-              <div class="row row-40">
-                <!-- <div class="col-md-6 col-xl-3 offset-xl-2"> -->
-                  <div class="col-sm-6 col-xl-3">
-                  <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/phisoft-logo.png" alt="" width="165" height="33" loading="lazy"/><img class="brand-logo-light" src="images/logo-inverse-165x33.svg" alt="" width="165" height="33" loading="lazy"/></a>
-                  <address>H-8-10, Aeropod Commercial Square,
-                    Jalan Aeropod Off Jalan Kepayan,
-                    88200 Kota Kinabalu,
-                    Sabah, MY.</address>
-                  <a class="link-phone" href="tel:#">+60 12 866 9695</a><a class="footer-mail link-primary-underline" href="mailto:#">info@phisoft.my</a>
-                </div>
-    
-                <div class="col-sm-6 col-xl-3">
-                  <h6 class="footer-title">Currently Hiring</h6>
-                  <ul class="list">
-                    <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a href="mailto:info@phisoft.my?subject=Business Executive Application">Business Executive</a></li>
-                    <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a href="mailto:info@phisoft.my?subject=System Analyst Application">System Analyst</a></li>
-                    <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a href="mailto:info@phisoft.my?subject=Programmer Application">Programmer</a></li>
-                    <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a href="mailto:info@phisoft.my?subject=Internship Application">Internship</a></li>
-                  </ul>
-                </div>
-    
-                <div class="col-sm-6 col-xl-3">
-                  <h6 class="footer-title">Business Hours</h6>
-                  <p>Monday to Friday</p>
-                  <p>9:00 AM to 5:00 PM</p>
-                </div>
-    
-                <div class="col-sm-6 col-xl-3">
-                  <h6 class="footer-title">Follow Us</h6>
-                  <ul class="list-inline footer-list">
-                    <li><a class="icon icon-primary-lighter icon-lg mdi mdi-facebook" href="https://facebook.com/phisoft.my/"></a></li>
-                    <li><a class="icon icon-primary-lighter icon-lg mdi mdi-instagram" href="https://instagram.com/phisoft.my"></a></li>
-                    <li><a class="icon icon-primary-lighter icon-lg mdi mdi-linkedin-box" href="https://www.linkedin.com/company/phisoft-my/mycompany/"></a></li>
-                  </ul>
-                </div>
-    
-                <div class="col-md-6 col-xl-3">
-                  <!-- <h6 class="footer-title">Services</h6> -->
-                  <!-- <ul class="list">
+    <footer class="section section-xl footer-classic bg-default">
+      <div class="container">
+        <div class="row row-40">
+          <!-- <div class="col-md-6 col-xl-3 offset-xl-2"> -->
+          <div class="col-sm-6 col-xl-3">
+            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/phisoft-logo.png"
+                alt="" width="165" height="33" loading="lazy" /><img class="brand-logo-light"
+                src="images/logo-inverse-165x33.svg" alt="" width="165" height="33" loading="lazy" /></a>
+            <address>H-8-10, Aeropod Commercial Square,
+              Jalan Aeropod Off Jalan Kepayan,
+              88200 Kota Kinabalu,
+              Sabah, MY.</address>
+            <a class="link-phone" href="tel:#">+60 12 866 9695</a><a class="footer-mail link-primary-underline"
+              href="mailto:#">info@phisoft.my</a>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <h6 class="footer-title">Currently Hiring</h6>
+            <ul class="list">
+              <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a
+                  href="mailto:info@phisoft.my?subject=Business Executive Application">Business Executive</a></li>
+              <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a
+                  href="mailto:info@phisoft.my?subject=System Analyst Application">System Analyst</a></li>
+              <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a
+                  href="mailto:info@phisoft.my?subject=Programmer Application">Programmer</a></li>
+              <li><i class="icon icon-primary-lighter icon-lg mdi mdi-chevron-right"></i> <a
+                  href="mailto:info@phisoft.my?subject=Internship Application">Internship</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <h6 class="footer-title">Business Hours</h6>
+            <p>Monday to Friday</p>
+            <p>9:00 AM to 5:00 PM</p>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <h6 class="footer-title">Follow Us</h6>
+            <ul class="list-inline footer-list">
+              <li><a class="icon icon-primary-lighter icon-lg mdi mdi-facebook"
+                  href="https://facebook.com/phisoft.my/"></a></li>
+              <li><a class="icon icon-primary-lighter icon-lg mdi mdi-instagram"
+                  href="https://instagram.com/phisoft.my"></a></li>
+              <li><a class="icon icon-primary-lighter icon-lg mdi mdi-linkedin-box"
+                  href="https://www.linkedin.com/company/phisoft-my/mycompany/"></a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <!-- <h6 class="footer-title">Services</h6> -->
+            <!-- <ul class="list">
                     <li><a href="single-service.html">Web Development & Hosting</a></li>
                     <li><a href="single-service.html">Mobile App Development</a></li>
                     <li><a href="single-service.html">Document Management</a></li>
                     <li><a href="single-service.html">ERP Management</a></li>
                     <li><a href="single-service.html">Asset Management Solution</a></li>
                   </ul> -->
-                </div>
-              
-              </div>
-              <div class="row row-30">
-                <div class="col-12">
-                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Phi Software Sdn. Bhd.</span><span>. All Rights Reserved.</span></p>
-                </div>
-                <div class="col-lg-11">
-                </div>
-              </div>
-            </div>
-          </footer>
+          </div>
+
         </div>
-        <div class="snackbars" id="form-output-global"></div>
-        <script src="js/core.min.js"></script>
-        <script src="js/script.js"></script>  
-  </body>
+        <div class="row row-30">
+          <div class="col-12">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Phi
+                Software Sdn. Bhd.</span><span>. All Rights Reserved.</span></p>
+          </div>
+          <div class="col-lg-11">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
