@@ -1464,6 +1464,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-image {
+	background-image: url(images/bg-02.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -8063,3 +8064,6 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	height: 100%;
 }
 
+.display-none{
+	display: none;
+}
