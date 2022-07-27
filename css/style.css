@@ -6794,7 +6794,7 @@ html.rd-navbar-fixed-linked .page {
 
 @media (min-width: 1200px) {
 	.rd-navbar-classic.rd-navbar-static .rd-navbar-main-element {
-		margin-left: 95px;
+		margin-left: 70px;
 	}
 }
 
@@ -8066,4 +8066,20 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .display-none{
 	display: none;
+}
+
+.body-decor {
+	position: relative;
+	/* padding-left: 25px; */
+}
+
+.body-decor::before{
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: -20px;
+	display: block;
+	width: 225px;
+	height: 4px;
+	background-color: #e79d9d;
 }
