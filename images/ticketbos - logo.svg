@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1393.561" height="413.311" viewBox="0 0 1393.561 413.311">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1393.561" height="413.311" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_2" data-name="Scroll Group 2" clip-path="url(#clip-path)" style="isolation: isolate">
+    <text id="ticketbos" transform="translate(0 394.311)" fill="#707070" font-size="322" font-family="HarabaraMaisBold-HarabaraMaisBold, Harabara Mais Demo" font-weight="700"><tspan x="0" y="0">ticket</tspan><tspan y="0" fill="#0ba2c7">bos</tspan></text>
+    <g id="Group_5" data-name="Group 5" transform="translate(1025.54 -183.353)">
+      <path id="Path_13" data-name="Path 13" d="M0,68.8,68.561,10.706l71,58.091L0,194.137Z" transform="translate(228.46 172.647)" fill="#0e6a8d"/>
+      <path id="Path_14" data-name="Path 14" d="M96.932-51.09V69.217l-73.525-54.4Z" transform="translate(271.074 297.567)" fill="#0ba2c7"/>
+    </g>
+  </g>
+</svg>
