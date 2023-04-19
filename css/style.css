@@ -2209,6 +2209,7 @@ a[href*='tel'], a[href*='mailto'] {
 .box-client {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	opacity: .4;
 }
 
