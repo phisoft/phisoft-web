@@ -1577,9 +1577,10 @@ p.rights {
 /** @group Components */
 /** @section Typography */
 body {
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 1.6;
+	/* font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+	font-family: "Poppins", sans-serif;
+	font-size: 16px !important;
+	line-height: 1.4;
 	font-weight: 400;
 	color: #696969;
 	background-color: #ffffff;
@@ -1921,7 +1922,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .box-counter-main {
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;	
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 1.1;
@@ -5176,7 +5177,7 @@ html:not(.lt-ie10) .not-animated {
     }
   }
   .preloader-text {
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;	
 	font-size: 20px;
 	letter-spacing: 12px;
 }
@@ -5571,7 +5572,7 @@ html.tablet .ui-to-top {
 	display: inline-block;
 	padding: 37px 0;
 	color: #696969;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.4;
 	transition: .25s;
 }
@@ -6878,7 +6879,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-search-results-live .search-quick-result {
 	padding-left: 15px;
 	padding-right: 15px;
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 30px;
@@ -6909,7 +6910,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-search-results-live .search-title {
 	position: relative;
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;	
 	font-size: 14px;
 	font-weight: 700;
 	color: #333333;
@@ -6930,7 +6931,7 @@ html.rd-navbar-fixed-linked .page {
 	z-index: 0;
 	display: block;
 	padding: 8px;
-	font-family: "Heebo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Poppins', sans-serif;	
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 0.1em;
@@ -8084,3 +8085,25 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	height: 4px;
 	background-color: #e79d9d;
 }
+
+.section-intro-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+/* Add some content at the bottom of the video/page */
+.cons {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+  }
