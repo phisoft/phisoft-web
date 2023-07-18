@@ -58,6 +58,10 @@
  */
 /** @group Base */
 /** @section Reset Styles*/
+.white {
+	color: #ffffff !important;
+}
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -1716,6 +1720,7 @@ mark,
 @media (min-width: 768px) {
 	.lead {
 		font-size: 24px;
+		width: 80%;
 	}
 }
 
@@ -2927,6 +2932,55 @@ a.icon-primary-lighter:hover {
 	font-size: 20px;
 	border-radius: 50%;
 	background-color: #860000;
+	box-shadow: 5px 9px 20px rgba(33, 0, 150, 0.2);
+	transition: all 0.3s ease-in-out;
+	transform: translate(-50%, -50%);
+}
+
+/* secondary */
+
+.icon-fill-secondary {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	color: #d11212;
+	box-shadow: 5px 9px 20px rgba(33, 0, 150, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.icon-fill-secondary-halo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	box-shadow: 5px 9px 20px rgba(33, 0, 150, 0.2);
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-fill-secondary-halo::before {
+	color: #ffffff;
+	z-index: 1;
+}
+
+.icon-fill-secondary-halo::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+	background-color: #ffffff;
 	box-shadow: 5px 9px 20px rgba(33, 0, 150, 0.2);
 	transition: all 0.3s ease-in-out;
 	transform: translate(-50%, -50%);
