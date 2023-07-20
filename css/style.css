@@ -1472,6 +1472,7 @@ html [class*='section-'].section-bottom-0 {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	height: 100vh;
 }
 
 @media (max-width: 1199.98px) {
@@ -1715,6 +1716,13 @@ mark,
 	font-size: 20px;
 	line-height: 1.6;
 	font-weight: 400;
+}
+
+.content-para {
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: 400;
+	padding-top: 50px;
 }
 
 @media (min-width: 768px) {
@@ -8152,12 +8160,108 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	z-index: -1;
 }
 
-/* Add some content at the bottom of the video/page */
-.cons {
-	position: fixed;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-  }
+.header-title {
+	color: #ebebeb;
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.header-desc {
+	color:rgba(255, 255, 255, 0.742);
+	font-size: 24px;
+}
+
+.title-bg {
+	color: #000;
+	opacity: .03;
+	font-size: 175px;
+}
+
+.title-top {
+	margin-top: 10%;
+	margin-left: 35px;
+	font-size: 40px !important;
+}
+
+@media (max-width: 1440px) {
+	.title-bg {
+		font-size: 155px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header-title {
+		font-size: 40px;
+		margin-top: 20%;
+	}
+
+	.header-desc {
+		font-size: 20px;
+	}
+
+	.title-bg {
+		font-size: 135px;
+	}
+
+	.content-para {
+		font-size: 16px;
+		font-weight: 300;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-title {
+		font-size: 35px;
+		margin-top: 50%;
+	}
+
+	.title-bg {
+		font-size: 120px;
+	}
+
+	.title-top {
+		margin-top: 7%;
+		font-size: 30px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.header-title {
+		font-size: 30px;
+		margin-top:70%;
+	}
+
+	.header-desc {
+		font-size: 18px;
+		width: 70%;
+	}
+
+	.title-bg {
+		font-size: 120px;
+	}
+}
+
+@media (max-width: 566px) {
+	.header-desc {
+		width: 80%;
+	}
+
+	.title-bg {
+		font-size: 65px;
+	}
+
+	.title-top {
+		margin-top: 8%;
+		margin-left: 10px;
+		font-size: 25px !important;
+	}
+
+	.content-para {
+		padding-top: 20px;
+	}
+
+}
+
+
+
+
