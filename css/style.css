@@ -295,7 +295,7 @@ h2 + .h5,
 		margin-top: 40px;
 	}
 	* + .btn-link-creative {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 	.row + .row-lg {
 		margin-top: 60px;
@@ -1425,8 +1425,16 @@ html [class*='section-'].section-bottom-0 {
 	background-color: #ffffff;
 }
 
+.bg-default-2 {
+	background-color: #f6f9fa;
+}
+
 .bg-default:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
 	padding-top: 0;
+}
+
+.bg-default-2:not([style*="background-"]) + .bg-default:not([style*="background-"]) {
+	/* padding-top: 0; */
 }
 
 .bg-gray-100 {
@@ -2259,22 +2267,13 @@ a[href*='tel'], a[href*='mailto'] {
 
 .box-card-header {
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
+    align-items: center;
 	padding-bottom: 25px;
-}
-
-.box-card-title {
-	margin-left: 15px;
 }
 
 * + .box-card-title {
 	margin-top: 0;
-}
-
-@media (min-width: 768px) {
-	.box-card-title {
-		margin-left: 30px;
-	}
 }
 
 .box-card-number {
@@ -2331,13 +2330,13 @@ a[href*='tel'], a[href*='mailto'] {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-	background-color: #ffffff;
+	background-color: transparent;
 }
 
 .box-card-back {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff;
+	background-color: #f6f9fa;
 }
 
 .box-card-title + * {
@@ -2350,7 +2349,9 @@ a[href*='tel'], a[href*='mailto'] {
 
 @media (min-width: 768px) {
 	.box-card-front, .box-card-back {
-		padding: 50px;
+		padding: 35px;
+		border: 1px solid #ECECEC;
+		margin: 10px;
 	}
 }
 
@@ -2360,16 +2361,16 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .desktop .box-card-back {
-	transform: rotateY(180deg);
+	transform: scale(1, 1);
 }
 
 .desktop .box-card-body:hover .box-card-front {
-	transform: rotateY(180deg);
+	transform: scale(1, 1);
 	box-shadow: 10px 10px 80px rgba(0, 6, 69, 0.08);
 }
 
 .desktop .box-card-body:hover .box-card-back {
-	transform: rotateY(360deg);
+	transform: scale(1, 1);
 	box-shadow: 10px 10px 80px rgba(0, 6, 69, 0.08);
 }
 
@@ -8183,6 +8184,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-size: 40px !important;
 }
 
+.bg-img-logo {
+	max-width: 500px;
+	right: 5%;
+	bottom: 0;
+  }
+
 @media (max-width: 1440px) {
 	.title-bg {
 		font-size: 155px;
@@ -8262,6 +8269,11 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 }
 
+.icon-service {
+	margin-top: 0;
+	font-style: normal;
+	font-size: 50px;
+}
 
 
 
