@@ -290,12 +290,18 @@ h2 + .h5,
 	margin-top: 40px;
 }
 
+.top-right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 @media (min-width: 768px) {
 	* + .btn {
 		margin-top: 40px;
 	}
 	* + .btn-link-creative {
-		margin-top: 20px;
+		margin-top: 0;
 	}
 	.row + .row-lg {
 		margin-top: 60px;
@@ -2293,7 +2299,7 @@ a[href*='tel'], a[href*='mailto'] {
 	flex-grow: 1;
 	padding-top: 25px;
 	border-top: 1px solid #E0E1EB;
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 1.6;
 	margin-top: 0;
 }
@@ -2316,8 +2322,8 @@ a[href*='tel'], a[href*='mailto'] {
 	padding: 20px;
 	transition: .6s;
 	backface-visibility: hidden;
-	border-radius: 10px;
 	will-change: transform;
+	border: 1px solid #ECECEC;
 }
 
 .box-card-front {
@@ -5277,23 +5283,24 @@ html:not(.lt-ie10) .not-animated {
 	right: 15px;
 	bottom: 15px;
 	z-index: 100;
-	width: 55px;
-	height: 55px;
-	border-radius: 10px;
+	width: 35px;
+	height: 50px;
+	border-radius: 20px;
 	font-size: 20px;
-	line-height: 51px;
+	line-height: 50px;
 	color: #ffffff;
-	background: #860000;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
 	transition: .45s all ease-in-out;
 	transform: translate3d(0, 100px, 0);
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 5px 9px 20px rgba(33, 0, 150, 0.2);
 }
 
 .ui-to-top:hover {
 	color: #ffffff;
-	background: #111111;
+	background: rgba(231, 157, 157, 0.5);
 	text-decoration: none;
 }
 
@@ -8178,6 +8185,12 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	font-size: 175px;
 }
 
+.title-services {
+	color: #000;
+	opacity: .15;
+	font-size: 60px;
+}
+
 .title-top {
 	margin-top: 10%;
 	margin-left: 35px;
@@ -8185,9 +8198,13 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .bg-img-logo {
-	max-width: 500px;
+	max-width: 650px;
 	right: 5%;
 	bottom: 0;
+	top: -300px;
+	margin-right: -400px;
+	/* left: 150px;
+	top: -220px; */
   }
 
 @media (max-width: 1440px) {
@@ -8270,7 +8287,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 }
 
 .icon-service {
-	margin-top: 0;
+	margin: 0 0 0 15px;
 	font-style: normal;
 	font-size: 50px;
 }
