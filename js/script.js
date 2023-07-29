@@ -1239,10 +1239,12 @@
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 1500,
+			autoplaySpeed: 0,
+			speed: 7000,
 			arrows: false,
 			dots: false,
 			pauseOnHover: false,
+			cssEase: 'linear',
 			responsive: [{
 				breakpoint: 768,
 				settings: {
