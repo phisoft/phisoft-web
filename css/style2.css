@@ -8485,4 +8485,5 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 .box-decor {
     background-color: #02a8da;
+	width: 100px;
 }
