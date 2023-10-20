@@ -2370,6 +2370,7 @@ a[href*='tel'], a[href*='mailto'] {
 	background-color: transparent;
 	border-radius: 20px;
 	padding: 30px;
+	margin-top: -20px;
 }
 
 
@@ -2431,7 +2432,7 @@ a[href*='tel'], a[href*='mailto'] {
 	}
 
 	.box-card-front, .box-card-benefit {
-		padding: 20px;
+		padding: 20px 20px 0 20px;
 	}
 }
 
@@ -5398,7 +5399,7 @@ html:not(.lt-ie10) .not-animated {
 	border-radius: 20px;
 	font-size: 20px;
 	line-height: 50px;
-	color: #ffffff;
+	color: #a7a7a7;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
@@ -5415,7 +5416,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .ui-to-top:focus {
-	color: #ffffff;
+	color: #a7a7a7;
 }
 
 .ui-to-top.active {
@@ -8411,8 +8412,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	margin: 0 0 0 15px;
 	font-style: normal;
 	font-size: 40px;
-	background: #e0e0e0;
-	padding: 30px;
+	background: #ffffff;
+	padding: 25px 30px;
 	border-radius: 100%;
 	z-index: 1;
 }
