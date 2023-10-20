@@ -17,11 +17,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-[class*='fa-']:before {
+/* [class*='fa-']:before {
 	font-weight: 400;
 	font-family: 'FontAwesome';
-	color: #860000;
-}
+	color: green;
+} */
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {

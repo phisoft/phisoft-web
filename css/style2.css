@@ -2278,6 +2278,12 @@ a[href*='tel'], a[href*='mailto'] {
 	padding-bottom: 25px;
 }
 
+.box-card-centre {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
 * + .box-card-title {
 	margin-top: 0;
 }
@@ -2329,7 +2335,6 @@ a[href*='tel'], a[href*='mailto'] {
 .box-card-front, .box-card-help {
 	width: 100%;
 	height: 100%;
-	padding: 20px;
 	transition: .6s;
 	backface-visibility: hidden;
 	will-change: transform;
@@ -2362,7 +2367,36 @@ a[href*='tel'], a[href*='mailto'] {
 .box-card-help {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffffff;
+	background-color: transparent;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+
+
+.bg-help {
+	background-image: linear-gradient(to right bottom, #860000, #780020, #600830, #451634, #2b1a2d, #2b1a2d, #2b1a2d, #2b1a2d, #451634, #600830, #780020, #860000);
+	/* padding: 50px 30px;
+	border-radius: 50px; */
+}
+
+/* @media (max-width: 1200px) {
+	.bg-help {
+		border-radius: 0;
+		width: 1000px;
+		padding: 0px;
+	}
+
+	.section-help .container {
+		max-width: 2000px;
+		padding: 0;
+	}
+} */
+
+
+.box-card-benefit {
+	display: flex;
+	flex-direction: column;
 }
 
 .box-card-title + * {
@@ -2377,6 +2411,10 @@ a[href*='tel'], a[href*='mailto'] {
 	transform: rotateY(360deg);
 }
 
+.box-card-benefit {
+	transform: rotateY(360deg);
+}
+
 
 @media (min-width: 768px) {
 	.box-card-front, .box-card-back {
@@ -2388,7 +2426,12 @@ a[href*='tel'], a[href*='mailto'] {
     .box-card-front, .box-card-help {
 		padding: 35px;
 		border: 1px solid #ECECEC;
-		margin: 10px;
+		margin: -20px 20px 20px 20px;
+
+	}
+
+	.box-card-front, .box-card-benefit {
+		padding: 20px;
 	}
 }
 
@@ -4671,7 +4714,7 @@ html img.quote-light-image {
 
 .header-help {
 	text-align: center;
-	padding: 0;
+	padding:100px 0 0 0;
 }
 
 
@@ -8356,13 +8399,33 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	.content-para {
 		padding-top: 20px;
 	}
-
 }
 
 .icon-service {
 	margin: 0 0 0 15px;
 	font-style: normal;
 	font-size: 50px;
+}
+
+.icon-benefit {
+	margin: 0 0 0 15px;
+	font-style: normal;
+	font-size: 40px;
+	background: #e0e0e0;
+	padding: 30px;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.box-benefit {
+	background-color: transparent;
+	text-align: center;
+	padding: 35px 25px;
+	margin-top: -20px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 80px rgba(0, 6, 69, 0.08);
+	display: flex;
+	flex-direction: column;
 }
 
 /* slider css */
@@ -8486,4 +8549,33 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 .box-decor {
     background-color: #02a8da;
 	width: 100px;
+}
+
+.icon-container {
+	width: 115px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: 31px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.color-primary {
+	color: #860000;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+	.box-benefit {
+		width: 550px;
+	}
+
+	.box-card-benefit {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 700px;
+	}
 }
