@@ -7428,10 +7428,13 @@ html.rd-navbar-fixed-linked .page {
 	vertical-align: middle;
 }
 
-.tabs-corporate .nav-link:hover,
+.tabs-corporate .nav-link:hover {
+	background-color: yellow !important;
+}
+
 .tabs-corporate .nav-link.active {
 	color: #ffffff;
-	background: #860000;
+	background: #008631;
 	border-color: transparent;
 }
 
