@@ -1,0 +1,78 @@
+/*=============================================
+=        19. Instagram Css            =
+=============================================*/
+.instagram-feed-thumb {
+    overflow: hidden;
+    margin: -10px;
+}
+
+.instagram-image {
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: '';
+        background: rgba(0, 0, 0, 0.3);
+        left: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+    &::before {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+        font-family: "Font Awesome 5 Pro";
+        content: '\f004';
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        z-index: 3;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    @media #{$desktop-device}{
+        width: 25%;
+    }
+    @media #{$tablet-device}{
+        width: 25%;
+    }
+    @media #{$large-mobile}{
+        width: 33.333%;
+    }
+    @media #{$small-mobile}{
+        width: 50%;
+    }
+    img {
+        width: 100%;
+    }
+    &:hover {
+        &::after { 
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
