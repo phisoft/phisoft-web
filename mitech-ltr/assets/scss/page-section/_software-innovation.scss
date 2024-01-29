@@ -1,0 +1,108 @@
+.software-innovation-hero-text {
+    .sub-heading {
+        text-transform: uppercase;
+        color: #C2C2C2;
+        line-height: 28px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    h3 {
+        color: rgb(0, 91, 193);
+        line-height: 40px;
+        font-weight: 700;
+        font-size: 40px;
+        transform-origin: 50% 50%;
+        @media #{$tablet-device}{
+            line-height: 40px;
+            font-size: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    h1 {
+        color: rgb(0, 91, 193);
+        line-height: 130px;
+        font-weight: 700;
+        font-size: 120px;
+        @media #{$desktop-device}{
+            font-size: 90px; 
+        }
+        @media #{$tablet-device}{
+            font-size: 80px;
+            line-height: 70px;
+        }
+        @media #{$large-mobile}{
+            font-size: 64px;
+            line-height: 70px;
+        }
+    }
+    .info-heading {
+        color: rgb(42, 42, 42);
+        line-height: 32px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.software-innovation-hero-image {
+    margin-right: -20px;
+    margin-left: -230px;
+    @media #{$desktop-device} {
+        margin-left: -146px;
+    }
+    @media #{$tablet-device} {
+        margin-left: -146px;
+    }
+    @media #{$large-mobile} {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+}
+
+.software-innovation-about-bg {
+    background-image: url("../images/bg/soft-s2-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.software-innovation-video-box {
+   .video-link .ht-popup-video .video-button__two .video-play-icon::before {
+        border-left-color: #fff;
+    }
+    .video-link .ht-popup-video .video-button__two .video-play {
+        background: $theme-color--default;
+    }
+    .video-text {
+        color: $theme-color--default;
+    }
+    .video-button__two {
+        padding: 13px;
+        border: 3px solid rgba(8, 106, 216, 0.4);
+        border-radius: 50%;
+    }
+}
+
+.technology-service-bg {
+    background-color: #002fa6;
+    background-image: url("../images/bg/soft-s5-bg.webp");
+    background-repeat: no-repeat;
+    background-position: left center; 
+}
+.technology-service-area {
+    .text-infos {
+        max-width: 470px;
+        font-size: 18px;
+    }
+    .ht-btn--outline {
+        border-color: #fff;
+        color: #fff !important;
+        &:hover{
+            border-color: $theme-color--two;
+            background: $theme-color--two;
+            color: #fff !important;
+        }
+    }
+}

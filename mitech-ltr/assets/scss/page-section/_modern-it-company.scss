@@ -1,0 +1,118 @@
+/*=================================
+=       Modern It Company Css       =
+===================================*/
+.modern-it-company-top-area {
+    background-image: url("../images/bg/bg-gird-pattern-repeat-alt.webp");
+    
+    background-repeat: repeat;
+}
+.modern-it-company-hero {
+    position: relative;
+    margin-bottom: 200px;
+    @media #{$desktop-device} {
+        margin-bottom: 0px;
+    }
+    @media #{$large-mobile, $tablet-device} {
+        margin-bottom: 30px;
+    }
+    
+}
+.modern-it-company-form-wrap {
+    max-width: 550px;
+}
+@media (min-width: 1200px){
+    .modern-it-company-hero-image {
+        position: absolute;
+        top: 176px;
+        right: 10px;
+    }
+}
+.modern-it-company-hero-image {
+    text-align: right;
+    margin: auto;
+    margin-top: 60px;
+    @media #{$desktop-device} {
+        text-align: center;
+    }
+}
+.modern-it-company-hero-text {
+    h1 {
+        font-size: 65px;
+        line-height: 1.2;
+        @media #{$desktop-device}{
+            font-size: 46px; 
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 34px;
+        }
+    }
+    .sort-dec {
+        margin-top: 30px;
+    }
+    .book-box {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        position: relative;
+        .image {
+            position: absolute;
+            top: -30px;
+            left: -80px;
+        } 
+        @media #{$large-mobile, $tablet-device} {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        @media #{$desktop-device} {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    .book-text {
+        max-width: 340px;
+        @media #{$large-mobile, $tablet-device} {
+            max-width: 100%;
+        }
+    }
+}
+.modern-it-company-testimonial-bg {
+    background-image: url("../images/patterns/home-reputable-success-about-shape.webp");
+    background-repeat: no-repeat;
+    background-position: left 44px bottom 40px;
+}
+
+.success-stories-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 58px 80px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #f6f2ed;
+    background-image: url("../images/bg/home-reputable-success-section-story-bg.webp");
+    background-repeat: no-repeat;
+    background-position: right top;
+    @media #{$large-mobile} {
+        padding: 58px 40px;
+        flex-direction: column;
+        .heading {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.modern-it-newsletters-wrap {
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 40px 35px;
+    .contact-inner {
+        input {
+            background-color: #fff;
+        }
+    }
+}
