@@ -4329,7 +4329,7 @@ ul.footer-widget__horizontal-list li {
   padding: 0 36px;
   text-align: center;
   color: #ffffff;
-  background: #086AD8;
+  background: #8B0000;
   border-width: 1px;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -4337,7 +4337,7 @@ ul.footer-widget__horizontal-list li {
 }
 .ht-btn:hover, .ht-btn:active, .ht-btn:focus {
   color: #ffffff;
-  background-image: #086AD8;
+  background-image: #8B0000;
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -11530,11 +11530,11 @@ blockquote {
 =         35. Infotechno Css        =
 ===================================*/
 .infotechno-bg {
-  background: rgb(244, 239, 233) none repeat scroll 0% 0%;
+  background: rgb(241, 241, 241) none repeat scroll 0% 0%;
 }
 
 .infotechno-hero-text h6 {
-  color: #086AD8;
+  color: #8B0000;
   font-weight: 500;
   margin-bottom: 20px;
 }
