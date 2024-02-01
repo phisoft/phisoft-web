@@ -6737,6 +6737,22 @@ ul.footer-widget__horizontal-list li {
 /*=============================================
 =            16. Brand Logo Css             =
 =============================================*/
+.box-client {
+  display: inline-block;
+  position: relative;
+}
+
+.box-client img {
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%) sepia(100%) saturate(0%) hue-rotate(0) brightness(100%) contrast(100%);
+}
+
+.box-client:hover img {
+  opacity: 1;
+  filter: none;
+}
+
 .brand-logo-slider__one .brand-logo-slider__container {
   padding: 15px 0;
 }
