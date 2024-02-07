@@ -268,11 +268,11 @@ ul {
     Default Class
 */
 .text-color-primary {
-  color: #8B0000;
+  color: #8B0000 !important;
 }
 
 .text-color-secondary {
-  color: #696969;
+  color: #696969 !important;
 }
 
 .text-black {
@@ -5678,6 +5678,24 @@ ul.footer-widget__horizontal-list li {
   -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
           box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
 }
+
+.circle-arrow a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background: #696969;
+}
+.circle-arrow a {
+  background: #8B0000;
+}
+
 .ht-box-images.style-01 .circle-arrow {
   position: absolute;
   left: 50%;
@@ -5688,6 +5706,7 @@ ul.footer-widget__horizontal-list li {
   height: 56px;
   width: 56px;
 }
+
 .ht-box-images.style-01 .circle-arrow .middle-dot {
   pointer-events: none;
   content: "";
@@ -7572,6 +7591,38 @@ ol {
 /*========================================
 =        21. Video Popup Css            =
 ==========================================*/
+.video-header{
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
+  position: relative;
+}
+
+.video-header-div{
+  position: relative;
+  height: 40vh
+}
+
+.video-header-grad{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: transparent linear-gradient(258deg,#000000 0%,#263238 100%) 0% 0% no-repeat;
+  opacity: .5;
+}
+
+.video-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .single-popup-wrap {
   position: relative;
 }
@@ -14116,6 +14167,15 @@ blockquote {
 .machine-learning-mark-text {
   max-width: 370px;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: #696969;
+  padding-left: 16px;
+  border-left: 2px solid #8B0000;
+}
+
+.list-marked {
+  max-width: 370px;
   font-weight: 400;
   line-height: 1.67;
   color: #696969;
