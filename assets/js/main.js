@@ -971,6 +971,50 @@
         });
     }
 
+    /*=============================================
+                Initialize Header Footer          
+    =============================================*/
+
+    //     // Function to include header.html
+    // function includeHeader() {
+    //     const headerContainer = document.getElementById("header-container");
+    
+    //     if (headerContainer) {
+    //       fetch("header.html")
+    //         .then((response) => response.text())
+    //         .then((html) => {
+    //           headerContainer.innerHTML = html;
+    
+    //           initializeHeader();
+    //         })
+    //         .catch((error) => console.error("Error fetching header.html:", error));
+    //     }
+    //   }
+    
+    // Function to include footer.html
+    function includeFooter() {
+        const footerContainer = document.getElementById("footer-container");
+    
+        if (footerContainer) {
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((html) => {
+            footerContainer.innerHTML = html;
+            // Call your other functions or event listeners here if needed
+            initializeFooter();
+            })
+            .catch((error) => console.error("Error fetching footer.html:", error));
+        }
+    }
+    
+    // Function to initialize footer-related functionality
+    function initializeFooter() {
+        // Add footer-related initialization here
+    }
+    
+    // Include header and footer
+    // includeHeader();
+    includeFooter();
     
     /*=============================================
     =            circle progress active            =
