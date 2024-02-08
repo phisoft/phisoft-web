@@ -5371,6 +5371,16 @@ ul.footer-widget__horizontal-list li {
 /*=============================================
 =              13. Box Icon Css              =
 =============================================*/
+.single-svg-icon-box{
+  height: 100%;
+}
+
+.single-svg-icon-box .icon-box-wrap{
+  height: 90%;
+  align-content: center;
+  display: grid;
+}
+
 .ht-box-icon.style-01 .icon-box-wrap {
   padding: 36px 10px 26px;
   border-radius: 5px;
@@ -5413,9 +5423,17 @@ ul.footer-widget__horizontal-list li {
   -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
           box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
 }
+
+.feature-btn {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .ht-box-icon.style-01 .feature-btn a {
   color: #8B0000;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 .ht-box-icon.style-01 .feature-btn a:hover {
   color: #696969;
