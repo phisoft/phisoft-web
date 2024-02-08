@@ -975,21 +975,21 @@
                 Initialize Header Footer          
     =============================================*/
 
-    //     // Function to include header.html
-    // function includeHeader() {
-    //     const headerContainer = document.getElementById("header-container");
+     // Function to include navbar.html
+    function includeHeader() {
+    const navbarContainer = document.getElementById("navbar-container");
     
-    //     if (headerContainer) {
-    //       fetch("header.html")
-    //         .then((response) => response.text())
-    //         .then((html) => {
-    //           headerContainer.innerHTML = html;
+    if (navbarContainer) {
+        fetch("navbar.html")
+            .then((response) => response.text())
+            .then((html) => {
+            navbarContainer.innerHTML = html;
     
-    //           initializeHeader();
-    //         })
-    //         .catch((error) => console.error("Error fetching header.html:", error));
-    //     }
-    //   }
+            initializeNavbar();
+            })
+            .catch((error) => console.error("Error fetching navbar.html:", error));
+        }
+    }
     
     // Function to include footer.html
     function includeFooter() {
@@ -1006,14 +1006,14 @@
             .catch((error) => console.error("Error fetching footer.html:", error));
         }
     }
-    
+
     // Function to initialize footer-related functionality
     function initializeFooter() {
         // Add footer-related initialization here
     }
     
     // Include header and footer
-    // includeHeader();
+    includeHeader();
     includeFooter();
     
     /*=============================================
