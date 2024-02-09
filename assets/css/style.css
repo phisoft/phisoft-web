@@ -5853,7 +5853,7 @@ ul.footer-widget__horizontal-list li {
           transform: translateY(-5px);
 }
 .ht-box-images.style-03:hover .content .heading {
-  color: #8B0000;
+  color: #8b0000;
 }
 .ht-box-images.style-04 {
   -webkit-box-shadow: 0 0 30px rgba(51, 51, 51, 0.05);
@@ -10487,6 +10487,7 @@ ol {
   border-radius: 5px;
   padding: 3px 20px;
   height: 56px;
+  border-color: #8B0000 ;
 }
 .contact-inner textarea {
   height: 150px;
