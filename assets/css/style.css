@@ -4113,13 +4113,18 @@ input[type=checkbox] {
 .social-group__list .ht-social-networks.tilte-style .social-link::before {
   color: #ccc;
 }
-
 .copyright-text {
   display: inline-block;
 }
 @media only screen and (max-width: 767px) {
   .copyright-text {
     margin-bottom: 15px;
+  }
+  .footer-area{
+    text-align: center;
+  }
+  .footer-md-details{
+    flex-direction: column;
   }
 }
 
@@ -8801,7 +8806,7 @@ ol {
   font-size: 30px;
 }
 .ht-social-networks.flat-round .item, .ht-social-networks.solid-rounded-icon .item {
-  margin: 8px;
+  margin-right: 8px;
 }
 .ht-social-networks.flat-round .social-link, .ht-social-networks.solid-rounded-icon .social-link {
   font-size: 18px;
@@ -10495,6 +10500,7 @@ ol {
 }
 .contact-inner select {
   color: #777;
+  border-color: #8B0000;
 }
 
 .infotechno-contact-us-bg {
