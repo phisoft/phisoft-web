@@ -312,7 +312,7 @@ ul {
 }
 
 .sub-heading {
-  color: #6d70a6;
+  color: #696969;
 }
 
 .black-bg {
@@ -4116,6 +4116,7 @@ input[type=checkbox] {
 .copyright-text {
   display: inline-block;
 }
+
 @media only screen and (max-width: 767px) {
   .copyright-text {
     margin-bottom: 15px;
@@ -5167,14 +5168,10 @@ ul.footer-widget__horizontal-list li {
   margin-bottom: 10px;
 }
 .fun-fact--one .fun-fact__count {
-  font-size: 64px;
-  font-weight: 600;
   line-height: 1.41;
   color: #8B0000;
 }
 .fun-fact--one .fun-fact__text {
-  font-size: 16px;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #696969;
@@ -8965,6 +8962,10 @@ ol {
   border-radius: 5px;
 }
 
+.tab-content-inner {
+  height: 80vh;
+}
+
 .tab-content-inner .text {
   font-size: 18px;
   font-size: 18px;
@@ -12748,10 +12749,30 @@ blockquote {
 =      40. About Us pages Css           =
 =======================================*/
 .about-us-bg {
-  background-image: url(../images/bg/contact-us-01-hero-bg.webp);
+  background-image: url(../images/banners/phisoft-web-about-us.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.about-us-hero-text{
+  max-width: 680px;
+  width: 100%;
+  float: right;
+}
+
+.about-us-hero-text{
+  max-width: 680px;
+  width: 100%;
+  float: right;
+}
+
+.tab__item .nav-link:hover {
+  color: #8B0000;
+}
+
+.card .card-header{
+  padding: 5px 20px;
 }
 
 .banner-space {
@@ -13299,6 +13320,10 @@ blockquote {
   position: relative;
 }
 
+.redraw-images img {
+  max-width: 150px;
+}
+
 @media only screen and (max-width: 767px) {
   .redraw-images img {
     max-width: 160px;
@@ -13312,7 +13337,7 @@ blockquote {
 
 .redrow-1 {
   overflow: hidden;
-  top: -205%;
+  top: -130%;
   position: absolute;
   left: 10%;
 }
@@ -13330,7 +13355,7 @@ blockquote {
 .redrow-2 {
   position: absolute;
   left: 40%;
-  top: -150%;
+  top: -100%;
 }
 @media only screen and (max-width: 767px) {
   .redrow-2 {
@@ -13339,13 +13364,13 @@ blockquote {
 }
 
 .redrow-3 {
-  top: -205%;
+  top: -125%;
   position: absolute;
   right: 10%;
 }
 @media only screen and (max-width: 767px) {
   .redrow-3 {
-    top: -150%;
+    top: -125%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -14407,6 +14432,12 @@ blockquote {
 
 .service-right{
   display: flex;
+}
+
+.icon-rate{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 800px) {
