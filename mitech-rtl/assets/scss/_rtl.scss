@@ -1,0 +1,394 @@
+// RTL ALL CSS  
+
+[dir="rtl"] {
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 800;
+    }
+    select  {
+        background: #f8f8f8 url(../images/icons/selector-icon.webp) no-repeat center left 20px;  
+    }
+    select:focus  {
+        background: #f8f8f8 url(../images/icons/selector-icon.webp) no-repeat center left 20px !important;  
+    }
+    .service-hero-text .service-solution-form-wrap select:focus {
+        background: #086ad8 url(../images/icons/selector-icon.webp) no-repeat center left 20px !important;
+    }
+    .scroll-top {
+        left: 30px;
+        right: inherit;
+    }
+    .top-bar-wrap .top-bar-right .top-bar-info .info-item .info-icon {
+        margin-left: 5px;
+    }
+    .header-search-form.default-search .search-form-top {
+        border-right: 1px solid #eee;
+        border-left: none;
+    }
+    .top-message a {
+        font-weight: 700;
+    }
+    .header-bottom-left-wrap .navigation-menu > ul > li:first-child {
+        margin: 0 0px 0 0;
+    }
+    .submenu {
+        left: auto;
+        @media #{$laptop-device} {
+            left: 0;
+            right: auto;
+        } 
+        .submenu {
+            top: 0px;
+            left: 100% !important;
+            left: 0;
+        }
+        &.left {
+            right: 0;
+        }
+    }
+    .mobile-navigation-icon {
+        
+        @media #{$tablet-device} {
+            margin-left: 0px;
+            margin-right: 30px;
+        } 
+    }
+    .hero-popup-video {
+        margin-right: 20px;
+    }
+    .video-play {
+        span {
+            margin-right: 5px;
+        }
+    }
+    .ht-list.style-auto-numbered-02 .title {
+        padding-right: 35px;
+    }
+    .faq-custom-col {
+        float: left;
+        @media #{$large-mobile , $tablet-device}{
+            float: inherit;
+        }
+    }
+    .faq-wrapper .card-header h5 button {
+        text-align: right;
+    }
+    .faq-wrapper .card-header h5 button span {
+        left: 35px;
+        text-align: left;
+    }
+    .viewo-text-wrap .video-text {
+        margin-left: 0;
+        margin-right: 59px;
+    }
+    .processing-hero-images  {
+        margin-right: -130px;
+        margin-left: -200px;
+        @media #{$laptop-device}{
+            margin-left: 0;
+            margin-right: -80px;
+        }
+        @media #{$desktop-device}{
+            margin-right: -80px;
+            margin-left: 0px;
+        }
+        @media #{$tablet-device}{
+            margin-right: -50px;
+            margin-left: 0px;
+        }
+    }
+    .software-innovation-hero-image {
+        margin-right: -20px;
+        margin-left: -230px;
+        @media #{$laptop-device}{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        @media #{$desktop-device}{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        @media #{$tablet-device}{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        @media #{$large-mobile}{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+    .mobile-menu-overlay__body .offcanvas-navigation > ul > li.has-children .menu-expand, .page-oppen-off-sidebar__body .offcanvas-navigation > ul > li.has-children .menu-expand {
+        left: 0;
+        right: auto;
+    }
+    .header.overflow-hidden {
+        overflow: hidden !important;
+        @media #{$large-mobile}{
+            overflow: inherit !important;
+        }
+    }
+    .ht-box-images.style-02 .image-box-wrap .box-image {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    .testimonial-slider__media {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    .conact-us-wrap-one .heading {
+        padding-right: 34px;
+        padding-left: 0;
+        &::before {
+            left: auto;
+            right: 0;
+        }
+    }
+    // 
+    .infotechno-hero-text {
+        float: left;
+        padding-left: 30px;
+        @media #{$large-mobile}{
+            float: inherit;
+        }
+    }
+    .hero-button .video-text {
+        margin-left: 0px;
+        margin-right: 35px;
+    }
+    .ht-box-icon.style-02 .icon-box-wrap {
+        .icon {
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+        .content {
+            text-align: right;
+        }
+    }
+    .check-list {
+        .list-item {
+            padding-left: 0px;
+            padding-right: 32px;
+            &::before {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+    .ht-box-images.style-08 .image-box-wrap .box-image {
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+    .sider-title-button-box .ht-btn {
+        margin-right: 0px;
+        margin-left: 15px;
+    }
+    .contact-info-three .location-text-button .button-icon {
+        margin-right: 0px;
+        margin-left: 14px;
+    }
+    .pricing-table-one .pricing-table__list {
+        text-align: right;
+    }
+    .pricing-table-one .pricing-table__list li{
+        padding: 7px 31px 7px 0;
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+    .single-blog-lg-list .post-blog-thumbnail {
+        margin-right: 0;
+        margin-left: 29px;
+    }
+    .single-blog-lg-list {
+        border-right: 1px solid #ededed;
+        border-left: none;
+        padding: 20px 30px 20px 0px;
+    }
+    .post-blog-thumbnail .post-meta .post-author img {
+        margin-right: 0px;
+        margin-left: 6px;
+    }
+    .ht-box-images.style-05 .image-box-wrap .box-image .hover-images {
+        right: 0;
+        left: auto;
+    }
+    .modern-number-01 span.mark-text {
+        margin: 0 5px -5px 5px;
+    }
+    .cybersecurity-hero-text {
+        float: left;
+        padding-right: 110px;
+        @media #{$tablet-device}{
+            padding-left: 0px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 0;
+            float: inherit;
+            margin: 60px auto 0px;
+            text-align: center;
+        }
+    }
+    .top-info-slider__container .info-item {
+        border-left: none;
+    }
+    .modern-it-company-hero-image {
+        text-align: left;
+        @media #{$desktop-device} {
+            text-align: center;
+        }
+    }
+    .fun-fact--four .icon {
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .fun-fact--four .fun-fact-text {
+        text-align: right;
+    }
+    .talk-message-box .message-icon {
+        right: -35px;
+    }
+    .ht-box-icon.style-04 .icon-box-wrap .icon {
+        left: 30px;
+        right: auto;
+    }
+    .swiper-pagination-machine {
+        right: 0;
+        left: auto;
+    }
+    .machine-learning-mark-text {
+        padding-left: 0px;
+        padding-right: 16px;
+        border-right: 2px solid #086ad8;
+        border-left: none;
+    }
+    .conact-us-wrap-three{
+        &::before {
+            right: 0;
+        }
+        .heading,
+        .section-sub-title {
+            padding-left: 0;
+            padding-right: 34px;
+        }
+    } 
+    .resources-left-box {
+        float: left;
+    }
+    .delivering-optimal-wrap .list-item {
+        padding-left: 0;
+        padding-right: 40px;
+    }
+    .delivering-optimal-wrap .marker::before {
+        right: 0;
+    }
+    .about-button {
+        text-align: left;
+    }
+    .progress-charts .progress .progress-bar span.percent-label {
+        left: -20px;
+        right: auto;
+    }
+    .progress-charts .progress .progress-bar::after, 
+    .progress-charts .progress .progress-bar::before {
+        left: -17px;
+        right: auto;
+    }
+    .progress-charts .progress .progress-bar::before {
+        left: -31px !important;
+        right: auto !important;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: right;
+        padding-left: 0.5rem;
+        padding-right: 0;
+    }
+    .ht-timeline.style-01 .timeline-col .inner {
+        text-align: left;
+    }
+    .ht-timeline.style-01 .item:nth-child(2n+1) .timeline-feature > .inner {
+        text-align: right;
+    }
+    .faq-two-wrapper .card-header h5 button {
+        text-align: right;
+    }
+    .faq-two-wrapper .card-header h5 button span {
+        right: 0px;
+    }
+    .ht-plans-menu .tab__item:first-child a {
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .ht-plans-menu .tab__item:last-child a {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+    }
+    .circle-list .list-item {
+        padding-right: 14px;
+        padding-left: 0;
+        &::before {
+            left: auto;
+            right: 0;
+        }
+    }
+    .feature-list-progress__info {
+        margin-right: 40px;
+        margin-left: 0px;
+    }
+    .ht-social-networks.icon-tilte .link-icon {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        margin: 6px;
+    }
+    .portfolio-details-table td:last-child {
+        text-align: left;
+    }
+    .portfolio-details-table td:first-child {
+        text-align: right;
+    }
+    .ht-problem-solution .item .problem,
+    .ht-problem-solution .item .solution {
+        padding-left: 0;
+        padding-right: 32px;
+        &::before {
+            right: 0;
+        }
+    }
+    .portfolio-nav-links {
+        position: relative;
+    }
+    .portfolio-nav-links .nav-list .next {
+        text-align: left;
+    }
+    .entry-post-share .share-media {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .single-blog-item .post-info .post-meta .post-author .avatar-96 ,
+    .single-blog-item .post-info .post-meta .post-date .meta-icon, 
+    .single-blog-item .post-info .post-meta .post-view .meta-icon {
+        margin-left: 6px;
+        margin-right: 0;
+    }
+    .widget-blog-recent-post ul li a {
+        padding: 16px 30px 16px 0px;
+        &::before,
+        &::after {
+            content: "\f30b";
+            right: 0;
+            left: auto;
+        }
+    }
+    .comment-list .comment-author {
+        float: right;
+    }
+    .comment-list .comment-content {
+        margin-right: 100px;
+        margin-left: 0;
+    }
+}
