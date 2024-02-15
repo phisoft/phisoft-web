@@ -6479,7 +6479,12 @@ ul.footer-widget__horizontal-list li {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  height: 80%;
 }
+.images-midea{
+  height: 100%;
+}
+
 .box-large-image__midea .images-midea {
   text-align: center;
 }
@@ -6490,6 +6495,7 @@ ul.footer-widget__horizontal-list li {
   -o-transition: transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  height: 100%;
 }
 .box-large-image__midea .images-midea::after {
   content: "";
@@ -11696,7 +11702,7 @@ blockquote {
 }
 
 .infotechno-video-bg {
-  background-image: url(../images/bg/home-infotechno-video-intro-bg.webp);
+  background-image: url(../images/gallery/360-consulting.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
