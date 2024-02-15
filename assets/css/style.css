@@ -10868,6 +10868,11 @@ ol {
 /*=====================================
 =        34. Blog Pages Css           =
 ======================================*/
+.solution-img{
+  width: auto;
+  height: 60%;
+  box-shadow: 10px 40px 80px rgba(0, 6, 69, 0.08) !important;
+}
 .single-blog-item.lg-blog-item {
   margin-bottom: 50px;
   padding-bottom: 50px;
