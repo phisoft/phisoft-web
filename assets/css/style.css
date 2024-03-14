@@ -11642,8 +11642,18 @@ blockquote {
 =         35. Infotechno Css        =
 ===================================*/
 .infotechno-bg {
-  background: rgb(241, 241, 241) none repeat scroll 0% 0%;
+  background-image: url(../images/gallery/top-4.png);
+  padding: 190px 0;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
+
+/* .infotechno-bg.filtered {
+  filter: brightness(80%) saturate(100%) grayscale(100%) opacity(50%);
+  transform: scaleX(-1);
+} */
 
 .infotechno-hero-text h6 {
   color: #8B0000;
