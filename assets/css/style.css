@@ -12679,7 +12679,6 @@ blockquote {
 =============================================*/
 .cybersecurity-hero {
   overflow: hidden;
-  background: #F6FAFE;
 }
 
 .cybersecurity-hero-text {
@@ -13963,7 +13962,7 @@ blockquote {
           justify-content: center;
   padding: 58px 80px;
   border-radius: 5px;
-  background-color: #f6f2ed;
+  background-color: #fff5f6;
   background-image: url("../images/bg/home-reputable-success-section-story-bg.webp");
   background-repeat: no-repeat;
   background-position: right top;
