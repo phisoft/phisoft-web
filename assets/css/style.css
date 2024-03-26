@@ -839,6 +839,10 @@ input[type=checkbox] {
 {
     color:white;
 }
+.mobile-navbar .list-group-item i
+{
+    padding-left: 0.5rem;
+}
 
 /*=============================================
 =                - Preloader                =
