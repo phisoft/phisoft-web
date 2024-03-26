@@ -13130,15 +13130,27 @@ blockquote {
 @media only screen and (max-width: 767px) {
   .ht-simple-job-listing .item {
     padding: 30px;
+    margin-bottom: 35px;
   }
-  .ht-simple-job-listing .item .job-description {
-    margin-top: 15px;
+  .ht-simple-job-listing .item .job-description .separator-list-wrap {
+    margin-top: 30px;
   }
   .ht-simple-job-listing .item .job-button {
     margin-top: 20px;
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .ht-simple-job-listing .item {
+    padding: 0px;
+  }
+  .ht-simple-job-listing .item .job-description {
+    margin-top: 0px;
+  }
+  .ht-simple-job-listing .item .job-button {
+    margin-top: 10px;
+  }
+}
 /*=======================================
 =       41. Single Smart Vision Css         =
 ========================================*/
