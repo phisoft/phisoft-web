@@ -829,6 +829,31 @@ input[type=checkbox] {
 }
 
 /*=============================================
+=                - Mobile Nav               =
+=============================================*/
+
+.mobile-navbar .list-group-item
+{
+    background-color: #8B0000;
+    color:white;
+    font-weight: 500;
+    border: none;
+}
+.mobile-navbar .list-group-item a:hover
+{
+    color:white;
+}
+.mobile-navbar .list-group-item i
+{
+    padding-left: 0.5rem;
+}
+@media (min-width: 1201px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+/*=============================================
 =                - Preloader                =
 =============================================*/
 .preloader-active {
