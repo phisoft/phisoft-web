@@ -843,6 +843,11 @@ input[type=checkbox] {
 {
     padding-left: 0.5rem;
 }
+@media (min-width: 1201px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
 
 /*=============================================
 =                - Preloader                =
