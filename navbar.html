@@ -1,16 +1,19 @@
-<div class="header-area header-area--default">   
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-area--default">
+
         <!-- Header Top Wrap Start -->
         <div class="header-top-wrap border-bottom">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="text-center top-message"><a href="careers.html#career-apply-now">LHDN E-Invoicing:</a> Ready to integrate your existing invoicing to lhdn e-invoicing?</p>
+                        <p class="text-center top-message"><a href="#">LHDN E-Invoicing:</a> Ready to integrate your existing invoicing to lhdn e-invoicing?</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Header Top Wrap End -->
-        
+
         <!-- Header Bottom Wrap Start -->
         <div class="header-bottom-wrap header-sticky">
             <div class="container-fluid">
@@ -21,7 +24,7 @@
                             <!-- brand logo -->
                             <div class="header__logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo/phisoft-logo.png" aria-label="Mitech Logo" width="160" height="48" class="img-fluid" alt="">
+                                    <img src="assets/images/logo/phisoft-logo.png" aria-label="Phisoft Logo" width="160" height="48" class="img-fluid" alt="">
                                 </a>
                             </div>
 
@@ -33,24 +36,37 @@
                                             <!-- navigation menu -->
                                             <div class="header__navigation d-none d-xl-block">
                                                 <nav class="navigation-menu primary--menu">
+
                                                     <ul>
-                                                        <li class="rd-nav-item">
-                                                            <a href="index.html"><span>Home</span></a> 
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="index.html"><span>Home</span></a> 
+                                                            </li>
                                                         </li>
-                                                        <li class="rd-nav-item">
-                                                            <a href="about-us.html"><span>About us</span></a>
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="about-us.html"><span>About us</span></a>
+                                                            </li>
                                                         </li>
-                                                        <li class="rd-nav-item">
-                                                            <a href="it-services.html"><span>Services</span></a>
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="it-services.html"><span>Services</span></a>
+                                                            </li>
                                                         </li>
-                                                        <li class="rd-nav-item">
-                                                            <a href="our-solutions.html"><span>Solutions</span></a>
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="careers.html"><span>Careers</span></a>
+                                                            </li>
                                                         </li>
-                                                        <li class="rd-nav-item">
-                                                            <a href="careers.html"><span>Careers</span></a>
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="our-solutions.html"><span>Solutions</span></a>
+                                                            </li>
                                                         </li>
-                                                        <li class="rd-nav-item">
-                                                            <a href="contact-us.html"><span>Contacts</span></a>
+                                                        <li class="has-children">
+                                                            <li class="rd-nav-item">
+                                                                <a href="contact-us.html"><span>Contacts</span></a>
+                                                            </li>
                                                         </li>
                                                     </ul>
                                                 </nav>
@@ -58,41 +74,16 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <!-- header right box -->
                             <div class="header-right-box">
-                                <div class="header-right-inner" id="hidden-icon-wrapper">
-
-                                    <!-- language-menu -->
-                                    <div class="language-menu">
-                                        <ul>
-                                            <li>
-                                                <ul class="ls-sub-menu">
-                                                    <li class="">
-                                                        <a href="#" class="">
-                                                            <img class="ls-flag" src="assets/images/flags/fr.webp" alt="en" title="Français"><span class="wpml-ls-native">Français</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" class="">
-                                                            <img class="wpml-ls-flag" src="assets/images/flags/de.webp" alt="de" title="Deutsch"><span class="wpml-ls-native">Deutsch</span>
-                                                        </a>
-                                                    </li>
-
-                                                </ul>
-
-                                            </li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
 
                                 <!-- mobile menu -->
-                                <a class="mobile-navigation-icon d-block d-xl-none" data-bs-toggle="collapse" href="#collapseNav" role="button" aria-expanded="false" aria-controls="collapseNav">
+                                <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
                                     <i></i>
-                                </a>
+                                </div>
                                 <!-- hidden icons menu -->
                                 <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
                                     <a href="javascript:void(0)">
@@ -108,14 +99,57 @@
         </div>
         <!-- Header Bottom Wrap End -->
 
-</div>
+    </div>
+    <!--====================  End of header area  ====================-->
 
-<div class="collapse" id="collapseNav">
-    <ul class="list-group mobile-navbar text-end list-group-flush">
-        <li class="list-group-item"><a href="about-us.html">About us<i class="fa fa-building" aria-hidden="true"></i></a></li>
-        <li class="list-group-item"><a href="it-services.html">Services<i class="fa fa-cogs" aria-hidden="true"></i></a></li>
-        <li class="list-group-item"><a href="our-solutions.html">Solutions<i class="fa fa-terminal" aria-hidden="true"></i></a></li>
-        <li class="list-group-item"><a href="careers.html">Careers<i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
-        <li class="list-group-item"><a href="contact-us.html">Contacts<i class="fa fa-phone" aria-hidden="true"></i></a></li>
-    </ul>
-</div>
+        <!--====================  mobile menu overlay ====================-->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-overlay__inner">
+                <div class="mobile-menu-overlay__header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-8">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/phisoft-logo.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-4">
+                                <!-- mobile menu content -->
+                                <div class="mobile-menu-content text-end">
+                                    <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-overlay__body">
+                    <nav class="offcanvas-navigation">
+                        <ul>
+                            <li class="has-children">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="has-children">
+                                <a href="about-us.html"><span>About us</span></a>
+                            </li>
+                            <li class="has-children">
+                                <a href="it-services.html"><span>Services</span></a>
+                            </li>
+                            <li class="has-children">
+                                <a href="our-solutions.html"><span>Solutions</span></a>
+                            </li>
+                            <li class="has-children">
+                                <a href="careers.html"><span>Careers</span></a>
+                            </li>
+                            <li class="has-children">
+                                <a href="contact-us.html"><span>Contacts</span></a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of mobile menu overlay  ====================-->
