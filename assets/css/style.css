@@ -3612,7 +3612,7 @@ input[type=checkbox] {
   height: 100%;
   float: right;
   cursor: default;
-  background: #8B0000;
+  background: #FFFFFFCF;
   -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -3633,7 +3633,7 @@ input[type=checkbox] {
           transform: translateX(0%);
 }
 .mobile-menu-overlay__header, .page-oppen-off-sidebar__header {
-  background-color: #ffffff;
+  background-color: #FFFFFF80;
   padding: 15px 0;
 }
 .mobile-menu-overlay__header .mobile-navigation-close-icon, .page-oppen-off-sidebar__header .mobile-navigation-close-icon {
@@ -3699,7 +3699,7 @@ input[type=checkbox] {
 }
 .mobile-menu-overlay__body .offcanvas-navigation > ul > li > a, .page-oppen-off-sidebar__body .offcanvas-navigation > ul > li > a {
   display: block;
-  color: #ffffff;
+  color: #333333;
   padding-top: 18px;
   padding-bottom: 18px;
   font-size: 16px;
