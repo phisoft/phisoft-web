@@ -176,26 +176,24 @@
 
                         <div class="col-lg-6 col-lg-6">
                             <div class="contact-form-wrap">
-
-                                <!-- <form id="contact-form" action="http://whizthemes.com/mail-php/jowel/mitech/php/mail.php" method="post"> -->
-                                <form id="contact-form" action="assets/php/mail.php" method="post">
+                                <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
                                     <div class="contact-form">
                                         <div class="contact-input">
                                             <div class="contact-inner">
-                                                <input name="con_name" type="text" placeholder="Name *" required>
+                                                <input class="demo-input" id="name" name="con_name" type="text" placeholder="Name *" required>
                                             </div>
                                             <div class="contact-inner">
-                                                <input name="con_email" type="email" placeholder="Email *" required>
+                                                <input class="demo-input" id="email" name="con_email" type="email" placeholder="Email *" required>
                                             </div>
                                         </div>
                                         <div class="contact-inner">
-                                            <input name="con_subject" type="text" placeholder="Subject *" required>
+                                            <input class="demo-input" id="subject" name="con_subject" type="text" placeholder="Subject *" required>
                                         </div>
                                         <div class="contact-inner contact-message">
-                                            <textarea name="con_message" placeholder="Please describe what you need." required></textarea>
+                                            <textarea class="demo-input" id="message" name="con_message" placeholder="Please describe what you need." required></textarea>
                                         </div>
                                         <div class="submit-btn mt-20">
-                                            <button class="ht-btn ht-btn-md" type="submit">Send message</button>
+                                            <button onclick="sendEmail();" class="ht-btn ht-btn-md" type="button">Send message</button>
                                             <p class="form-messege"></p>
                                         </div>
                                     </div>
@@ -429,6 +427,45 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail() {
+			if (validateForm()) {
+				Email.send({
+					Host: "smtp.elasticemail.com",
+					Username: "phisoft.marketing@gmail.com",
+					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
+					To: 'hello@phisoft.my',
+					From: "phisoft.marketing@gmail.com",
+					Subject: "PHISOFT Contact Form Submission",
+					Body: "Name: " + document.getElementById("name").value +
+						"<br> Email: " + document.getElementById("email").value +
+						"<br> Subject: " + document.getElementById("subject").value +
+						"<br> Message: " + document.getElementById("message").value
+				}).then(
+					message => alert("Message successfully sent.")
+				);
+			} else {
+				alert("Please fill in all required fields.");
+			}
+		}
+	
+		function validateForm() {
+			var isValid = true;
+			var inputs = document.getElementsByClassName('demo-input');
+			for (var i = 0; i < inputs.length; i++) {
+				if (!inputs[i].value) {
+					isValid = false;
+					inputs[i].classList.add('is-invalid');
+				} else {
+					inputs[i].classList.remove('is-invalid');
+				}
+			}
+			return isValid;
+		}
+	</script>
 
 </body>
 
