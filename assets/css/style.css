@@ -11678,9 +11678,10 @@ blockquote {
 ===================================*/
 .infotechno-bg {
   /* background: rgb(241, 241, 241) none repeat scroll 0% 0%; */
-  background-image: url(../images/gallery/top-2.png);
+  background-image: url(../images/gallery/top-61.jpg);
   padding: 190px 0;
   background-position-x: 50%;
+  background-position-y: center;
 }
 
 /* .infotechno-bg.filtered {
