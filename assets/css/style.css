@@ -3145,9 +3145,11 @@ input[type=checkbox] {
 .navigation-menu--text_white > ul > li:hover > a > span, .navigation-menu--text_white > ul > li.active > a > span {
   color: #ffffff;
 }
-
 .header-bottom-left-wrap .navigation-menu > ul > li:first-child {
   margin: 0 24px 0 0;
+}
+.header-bottom-left-wrap .navigation-menu > ul > li{
+  width: max-content;
 }
 
 /*===================================
