@@ -4102,6 +4102,25 @@ input[type=checkbox] {
     position: static;
   }
 }
+.footer-widget__container {
+  display: flex;
+}
+
+.footer-widget__column {
+  flex: 1;
+}
+
+.footer-widget__list {
+  list-style: none;
+  padding: 0;
+}
+
+.hover-style-link {
+  text-decoration: none;
+  color: #000; /* Change color as needed */
+}
+
+
 
 .footer-widget-wrapper {
   margin-bottom: -35px;
