@@ -10182,6 +10182,7 @@ ol {
 .projects-wrap.style-01 .content .text {
   color: #696969;
   margin-top: 13px;
+  text-align: justify;
 }
 .projects-wrap.style-01 .content .box-projects-arrow {
   position: absolute;
