@@ -10140,18 +10140,22 @@ ol {
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-
 .projects-slider__container .projects-wrap.style-01 {
   display: block;
+}
+.project-box{
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  overflow: visible !important;
 }
 .projects-slider__container .projects-wrap.style-01 .projects-image-box {
   margin: 20px 15px 35px;
 }
-
 .projects-wrap.style-01 {
   display: block;
 }
-.projects-wrap.style-01 .projects-image-box {
+.projects-wrap.style-01 .projects-image-box, 
+.project-box {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -10270,7 +10274,8 @@ ol {
   bottom: 10px;
   left: 10px;
 }
-.projects-wrap.style-3 .content {
+.projects-wrap.style-3 .content,
+.project-box .content {
   padding: 10px 0px 15px;
 }
 .projects-wrap.style-3 .content .heading {
@@ -10908,8 +10913,8 @@ ol {
 =        34. Blog Pages Css           =
 ======================================*/
 .solution-img{
-  width: auto;
-  height: 60%;
+  width: 100%;
+  height: auto;
   box-shadow: 10px 40px 80px rgba(0, 6, 69, 0.08) !important;
 }
 .single-blog-item.lg-blog-item {
@@ -11101,6 +11106,7 @@ ol {
 @media only screen and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .post-list-wrapper .post-feature {
     margin-right: 0px;
+    margin-block-end: 1rem;
   }
 }
 .post-list-wrapper .post-info {
