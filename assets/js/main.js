@@ -976,18 +976,20 @@
     =============================================*/
 
      // Function to include navbar.html
-    function includeHeader() {
-    const navbarContainer = document.getElementById("navbar-container");
-    
-    if (navbarContainer) {
-        fetch("navbar.html")
-            .then((response) => response.text())
-            .then((html) => {
-            navbarContainer.innerHTML = html;
-    
-            initializeNavbar();
-            })
-            .catch((error) => console.error("Error fetching navbar.html:", error));
+     function includeHeader() {
+        const navbarContainer = document.getElementById("navbar-container");
+        
+        const initializeNavbar = () => {};
+        
+        if (navbarContainer) {
+            fetch("navbar.html")
+                .then((response) => response.text())
+                .then((html) => {
+                    navbarContainer.innerHTML = html;
+
+                    initializeNavbar();
+                })
+                .catch((error) => console.error("Error fetching navbar.html:", error));
         }
     }
     
