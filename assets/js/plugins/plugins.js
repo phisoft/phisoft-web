@@ -3,18 +3,21 @@
     Ajax Mail js
 ======================================*/
 $(function() {
-    const contactForm = $("#contact-form"),
-        formMessages = $('.form-messege');
+    const contactForm = $("#contact-form");
+    const formMessages = $('.form-messege');
+
     contactForm.validate({
         submitHandler: function(form){
             $.ajax({
                 type: 'POST',
-                url: form.action,
+                url: 'https://send.bah.my/aGVsbG9AcGhpc29mdC5teQ==',
                 data: $(form).serialize()
             })
             .done(function (response) {
-                console.log(response)
-                formMessages.removeClass('error text-danger').addClass('success text-success mt-3').text(response);
+                console.log(response, 'form', form)
+                formMessages
+                    .removeClass('error text-danger').addClass('success text-success mt-3')
+                    .text('Message sent. We will get back to you as soon as possible. Thank you.');
                 // Clear the form.
                 form.reset()
             })

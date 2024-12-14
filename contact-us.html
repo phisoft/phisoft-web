@@ -162,7 +162,7 @@
     <!--====================  End of header area  ====================-->
 
     <div id="main-wrapper">
-        <div id="contact-form" class="site-wrapper-reveal cybersecurity-hero processing-hero-bg__color">
+        <div id="contact-form-container" class="site-wrapper-reveal cybersecurity-hero processing-hero-bg__color">
             <!--====================  Contact us Section Start ====================-->
             <div class="contact-us-section-wrappaer section-space--pt_100 section-space--pb_70">
                 <div class="container">
@@ -176,24 +176,24 @@
 
                         <div class="col-lg-6 col-lg-6">
                             <div class="contact-form-wrap">
-                                <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+                                <form id="contact-form" action="https://send.bah.my/aGVsbG9AcGhpc29mdC5teQ==" enctype="application/x-www-form-urlencoded" method="POST">
                                     <div class="contact-form">
                                         <div class="contact-input">
                                             <div class="contact-inner">
-                                                <input class="demo-input" id="name" name="con_name" type="text" placeholder="Name *" required>
+                                                <input class="demo-input" id="name" name="name" type="text" placeholder="Name *" required>
                                             </div>
                                             <div class="contact-inner">
-                                                <input class="demo-input" id="email" name="con_email" type="email" placeholder="Email *" required>
+                                                <input class="demo-input" id="email" name="email" type="email" placeholder="Email *" required>
                                             </div>
                                         </div>
                                         <div class="contact-inner">
-                                            <input class="demo-input" id="subject" name="con_subject" type="text" placeholder="Subject *" required>
+                                            <input class="demo-input" id="subject" name="subject" value="Contact Form Submission via Phisoft.my" type="hidden" placeholder="Subject *" required>
                                         </div>
                                         <div class="contact-inner contact-message">
-                                            <textarea class="demo-input" id="message" name="con_message" placeholder="Please describe what you need." required></textarea>
+                                            <textarea class="demo-input" id="message" name="message" placeholder="Please describe what you need." required></textarea>
                                         </div>
                                         <div class="submit-btn mt-20">
-                                            <button onclick="sendEmail();" class="ht-btn ht-btn-md" type="button">Send message</button>
+                                            <button class="ht-btn ht-btn-md" type="submit">Send message</button>
                                             <p class="form-messege"></p>
                                         </div>
                                     </div>
@@ -423,33 +423,16 @@
 
     <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
 
-    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
-    <!-- SMTP JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script>
 		function sendEmail() {
 			if (validateForm()) {
-				Email.send({
-					Host: "smtp.elasticemail.com",
-					Username: "phisoft.marketing@gmail.com",
-					Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-					To: 'hello@phisoft.my',
-					From: "phisoft.marketing@gmail.com",
-					Subject: "PHISOFT Contact Form Submission",
-					Body: "Name: " + document.getElementById("name").value +
-						"<br> Email: " + document.getElementById("email").value +
-						"<br> Subject: " + document.getElementById("subject").value +
-						"<br> Message: " + document.getElementById("message").value
-				}).then(
-					message => alert("Message successfully sent.")
-				);
-			} else {
-				alert("Please fill in all required fields.");
-			}
+                return true
+            }
 		}
 	
 		function validateForm() {
