@@ -12348,6 +12348,41 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
 }
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .service-hero-space {
     height: 670px;
@@ -12837,6 +12872,72 @@ blockquote {
   padding-top: 195px;
   padding-bottom: 204px;
 }
+.vision-collage-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 40px;
+}
+
+.vision-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.vision-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.step-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.step-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.08);
+}
+
+.step-box .icon {
+  font-size: 32px;
+  color: #dc3545; 
+}
+
+.step-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.mission-steps .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-space {
     padding-top: 120px;
