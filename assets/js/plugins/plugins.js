@@ -14,7 +14,7 @@ $(function() {
                 data: $(form).serialize()
             })
             .done(function (response) {
-                console.log(response, 'form', form)
+                console.log(response, '####TEST', form)
                 formMessages
                     .removeClass('error text-danger').addClass('success text-success mt-3')
                     .text('Message sent. We will get back to you as soon as possible. Thank you.');
