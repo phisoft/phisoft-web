@@ -43,6 +43,8 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -189,83 +191,274 @@
                 <img class="img-fluid pe-img-03 animation_images two wow fadeInDown" src="assets/images/hero/mitech-landing-main-slider-slide-01-image-03.webp" width="360" height="435" alt="keyboard">
             </div> -->
             <!--====================  Services Hero End ====================-->
+
         <!--==================== Services Hero Start ====================-->
-        <section class="services-hero-section position-relative section-space--ptb_120 text-white"
+        <section class="services-hero-section position-relative text-white d-flex align-items-center"
                 style="
                 background-image: url('assets/images/about-us/tech.webp');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                min-height: 90vh;
+                overflow: hidden;
                 ">
-        <div class="overlay" style="
-                position: absolute;
-                top: 0; left: 0;
-                width: 100%; height: 100%;
-                background-color: rgba(255, 255, 255, 0.2); 
-                z-index: 1;
-        "></div>
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(255, 255, 255, 0.15); z-index: 1;"></div>
 
         <div class="container position-relative" style="z-index: 2;">
-            <div class="row align-items-center justify-content-center text-center">
+            <div class="row justify-content-center">
             <div class="col-lg-10">
-                <h6 class="section-sub-title text-uppercase text-color-primary mb-3">What We Do</h6>
-                <h1 class="display-4 fw-bold mb-4">
-                <span class="text-color-primary">Transform</span> Your Business<br/>with the <span class="text-color-primary">Right Technology</span>
+                <h6 class="section-sub-title text-uppercase fw-semibold text-color-primary mb-3 tracking-wide"
+                    style="letter-spacing: 2px;">
+                What We Do
+                </h6>
+                <h1 class="display-3 fw-bold mb-4 lh-sm hero-headline">
+                <span class="text-color-primary">Transform</span> Your Business<br>
+                with the <span class="text-color-primary">Right Technology</span>
                 </h1>
-                <a href="#web-dev" class="btn btn-danger btn-lg">Explore Our Services</a>
+                <a href="#overview-cards" class="btn btn-outline-none btn-lg">Explore Our Services</a>
             </div>
             </div>
         </div>
         </section>
         <!--==================== Services Hero End ====================-->
-        <!--=========== Overview: All-in-One Flip Cards ==========-->
-        <section id="overview-cards" class="container section-space--pt_80 section-space--pb_80">
-        <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-9">
-            <h2 class="heading text-color-primary">All-in-One Digital Solutions</h2>
-            <p class="lead text-muted mt-3">
-                One team, one platform — everything from websites to cloud, ERP to integration. Discover what we can build together.
-            </p>
+        <!--=========== Flip Cards ==========-->
+        <section id="overview-cards" class="container section-space--pt_100 section-space--pb_80">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-9">
+                    <h2 class="display-5 fw-bold text-color-primary mb-3 reveal-text">All-in-One Digital Solutions</h2>
+                    <p class="lead text-muted reveal-text delay-1">
+                        From websites to cloud systems, ERP to custom mobile apps — our team builds scalable solutions that power your growth.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="row g-4">
-            <!-- Flip Card -->
+            <div class="row g-4">
+            <!-- Web Development -->
             <div class="col-md-4">
-            <div class="flip-card">
+                <div class="flip-card">
                 <div class="flip-card-inner">
-                <div class="flip-card-front">
+                    <div class="flip-card-front">
                     <img src="assets/images/services/service1.png" alt="Web Dev" class="img-fluid rounded">
                     <h5 class="mt-3 text-center">Web Development</h5>
-                </div>
-                <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
                     <div>
-                    <h5>Responsive, fast, and SEO-optimized websites tailored to your brand.</h5>
+                        <h5>Responsive, fast, and SEO-optimized websites tailored to your brand.</h5>
                     </div>
                     <a href="#web-dev" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
                 </div>
                 </div>
             </div>
-            </div>
-            
+
+            <!-- ERP System -->
             <div class="col-md-4">
-            <div class="flip-card">
+                <div class="flip-card">
                 <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="assets/images/services/service5.png" alt="ERP" class="img-fluid rounded">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service5.png" alt="ERP" class="img-fluid rounded service-img">
                     <h5 class="mt-3 text-center">ERP System</h5>
-                </div>
-                <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
                     <div>
-                    <h5>Streamline operations, automate tasks, and manage business smarter.</h5>
+                        <h5>Streamline operations, automate tasks, and manage business smarter.</h5>
                     </div>
                     <a href="#erp" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
                 </div>
                 </div>
             </div>
+
+            <!-- Mobile App Development -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service2.png" alt="Mobile App" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center">Mobile App Development</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Build engaging Android & iOS apps that drive user growth and loyalty.</h5>
+                    </div>
+                    <a href="#mobile-app" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
+            <!-- Software Consultation -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service7.png" alt="Consultation" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center">Software Consultation</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Expert insights to align tech strategies with business goals.</h5>
+                    </div>
+                    <a href="#software-consultation" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service8.png" alt="Cloud" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center">Cloud Solutions</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Scalable cloud infrastructure for flexibility and cost-efficiency.</h5>
+                    </div>
+                    <a href="#cloud-solution" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- IT Support & Maintenance -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/services/service9.jpg" alt="IT Support" class="img-fluid rounded service-img">
+                        <h5 class="mt-3 text-center">IT Support & Maintenance</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Ongoing support to keep your systems optimized, secure, and running.</h5>
+                    </div>
+                    <a href="#it-support" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
         </section>
+
+  <!--====================  brand logo slider area ====================-->
+            <div class="brand-logo-slider-area section-space--ptb_60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- brand logo slider -->
+                            <div class="brand-logo-slider__container-area">
+                                <div class="swiper-container brand-logo-slider__container">
+                                    <div class="swiper-wrapper brand-logo-slider__one">
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-permaipoly.png" alt="logo-permaipoly" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-phidental.png" alt="logo-phidental" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-primecare.png" alt="logo-primecare" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-evergold.png" alt="logo-evergold" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-enersun.png" alt="logo-enersun" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-sj.png" alt="logo-sj" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-sls.png" alt="logo-sls" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-mazak.png" alt="logo-mazak" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-angkasa.png" alt="logo-angkasa" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-zzas.png" alt="logo-zzas" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-edulife.png" alt="logo-edulife" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ketara.png" alt="logo-ketara" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-kee.png" alt="logo-kee" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-idsmed.png" alt="logo-idsmed" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-wongsim.png" alt="logo-wongsim" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-didi.png" alt="logo-didi" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ryco.png" alt="logo-ryco" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ums-investment.png" alt="logo-ums-investment" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ums.png" alt="logo-ums" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====================  End of brand logo slider area  ====================-->
+    
         <!--=========== Services: Mobile App Development ==========-->
         <section id="mobile-dev" class="container section-space--pt_100 section-space--pb_40">
         <div class="row justify-content-center text-center mb-5">
@@ -537,92 +730,171 @@
             </div>
         </div>
         </section>
-        <!--=========== Services: Software Consultation ==========-->
+       <!--=========== Services: Software Consultation ==========-->
         <section id="software-consultation" class="container section-space--pt_100 section-space--pb_40">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8">
-            <h2 class="heading text-color-primary">Software Consultation</h2>
+            <h2 class="heading">
+                <span class="text-color-primary">Software Consultation</span>
+            </h2>
             <p class="lead text-muted mt-3">
-                Expert guidance to transform your technology vision into scalable, impactful digital solutions.
+                Expert guidance to align your business with impactful digital strategies and scalable software solutions.
             </p>
             </div>
         </div>
 
         <div class="row align-items-center">
-            <!-- Image -->
-            <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/services/service7.png" alt="Software Consultation" class="img-fluid border-radus-5 w-100">
-            <div class="mt-4">
-                <ul class="list-marked">
-                <li>Technology Consulting & Software Assessment</li>
-                <li>Software Development Consulting</li>
-                <li>Architecture Review & Redesign</li>
-                <li>Legacy Software Modernization</li>
-                </ul>
+            <!-- Text -->
+            <div class="col-lg-6">
+            <div class="row g-4">
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-lightbulb text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Technology Strategy</h5>
+                    <p class="text-muted small">Align tech with business goals efficiently.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-layer-group text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Architecture Design</h5>
+                    <p class="text-muted small">Optimize or redesign your software stack.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-tools text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Legacy Modernization</h5>
+                    <p class="text-muted small">Upgrade old systems without disruption.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-user-cog text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Development Advisory</h5>
+                    <p class="text-muted small">Support across the software lifecycle.</p>
+                </div>
+                </div>
             </div>
             </div>
 
-            <!-- Content -->
-            <div class="col-lg-5 ms-auto">
-            <div class="machine-learning-about-content">
-                <h4 class="mb-3">Create a Digital Revolution</h4>
-                <p style="text-align: justify;">
-                Every business has its unique challenges. With our extensive IT consulting experience and proven credentials, we help you overcome them through strategic digital solutions.
-                </p>
-                <p style="text-align: justify;">
-                From software audits to end-to-end consultancy, we enable automation, modernization, and competitive edge across your operations — all backed by expert insight.
-                </p>
-            </div>
+            <!-- Image -->
+            <div class="col-lg-6">
+            <img src="assets/images/services/service7.png" alt="Software Consultation" class="img-fluid rounded">
             </div>
         </div>
         </section>
+
+
         <!--=========== Services: Cloud Solution ==========-->
-        <section id="cloud-solution" class="container section-space--pt_100 section-space--pb_100">
+        <section id="cloud-solution" class="container section-space--pt_100 section-space--pb_40">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8">
-            <h2 class="heading text-color-primary">Cloud Solution</h2>
+            <h2 class="heading">
+                <span class="text-color-primary">Cloud Solution</span>
+            </h2>
             <p class="lead text-muted mt-3">
-                Scalable, secure, and cost-efficient cloud technologies that power modern businesses.
+                Scalable, secure, and cost-efficient cloud technologies designed to elevate your digital infrastructure.
             </p>
             </div>
         </div>
 
         <div class="row align-items-center">
-            <!-- Content -->
-            <div class="col-lg-5 mt-3">
-            <div class="machine-learning-about-content">
-                <h4 class="mb-3">Accelerate Business Performance</h4>
-                <p style="text-align: justify;">
-                We offer tailored Software-as-a-Service (SaaS) solutions and cloud-native migrations to meet the demands of fast-paced digital enterprises.
-                </p>
-                <p style="text-align: justify;">
-                From replatforming to full cloud architecture transformations, our services enable cost savings, enhanced performance, and real-time accessibility — with scalability at their core.
-                </p>
+            <!-- Features -->
+            <div class="col-lg-6">
+            <div class="row g-4">
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-cloud-upload-alt text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Cloud Migration</h5>
+                    <p class="text-muted small">Seamlessly transition to scalable cloud platforms.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-cogs text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Cloud-Native Apps</h5>
+                    <p class="text-muted small">Modern, efficient solutions built for the cloud.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-lock text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Security & Compliance</h5>
+                    <p class="text-muted small">End-to-end encryption and reliable cloud security.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-chart-line text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Cost Efficiency</h5>
+                    <p class="text-muted small">Reduce IT overhead with flexible cloud scaling.</p>
+                </div>
+                </div>
             </div>
             </div>
 
-            <!-- Image + Features -->
-            <div class="col-lg-6 ms-auto">
-            <img src="assets/images/services/service8.png" alt="Cloud Solutions" class="img-fluid border-radus-5 w-100">
-            <div class="mt-4 row">
-                <div class="col-md-6">
-                <ul class="list-marked">
-                    <li>Enhanced Customer Experiences</li>
-                    <li>Customizable & Secure Environments</li>
-                </ul>
-                </div>
-                <div class="col-md-6">
-                <ul class="list-marked">
-                    <li>Real-time Scalability</li>
-                    <li>Cost-effective Maintenance</li>
-                </ul>
-                </div>
-            </div>
+            <!-- Image -->
+            <div class="col-lg-6">
+            <img src="assets/images/services/service8.png" alt="Cloud Solution" class="img-fluid rounded">
             </div>
         </div>
         </section>
 
+        <!--=========== Services: IT Support & Maintenance ==========-->
+        <section id="it-support" class="container section-space--pt_100 section-space--pb_40">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+            <h2 class="heading">
+                <span class="text-color-primary">IT Support & Maintenance</span>
+            </h2>
+            <p class="lead text-muted mt-3">
+                Keep your systems running smoothly with proactive IT support and ongoing maintenance from a team you can trust.
+            </p>
+            </div>
+        </div>
 
+        <div class="row align-items-center">
+            <!-- Features -->
+            <div class="col-lg-6">
+            <div class="row g-4">
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-tools text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Ongoing Maintenance</h5>
+                    <p class="text-muted small">Regular updates, patches, and performance checks.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">System Protection</h5>
+                    <p class="text-muted small">Minimized downtime with fast issue resolution and security focus.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-headset text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Reliable Support</h5>
+                    <p class="text-muted small">Expert helpdesk team available when you need it.</p>
+                </div>
+                </div>
+                <div class="col-6">
+                <div class="feature-box">
+                    <i class="fas fa-chart-pie text-color-primary fs-2 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Performance Insights</h5>
+                    <p class="text-muted small">Proactive monitoring to keep systems optimized.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6">
+            <img src="assets/images/services/service9.jpg" alt="IT Support & Maintenance" class="img-fluid rounded">
+            </div>
+        </div>
+        </section>
 
             <!--=========== Services Details Start ==========-->
             <div class="machine-learning-about-company-area section-space--pt_40 ">
@@ -1172,6 +1444,84 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- GSAP + ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".flip-card").forEach((card, i) => {
+        ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+        onEnter: () => card.classList.add("in-view"),
+        onLeaveBack: () => card.classList.remove("in-view")
+        });
+
+        gsap.fromTo(card, 
+        { y: 50, scale: 0.9, opacity: 0 },
+        {
+            y: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power3.out",
+            delay: i * 0.1,
+            scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+            }
+        }
+        );
+    });
+    window.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero-headline", {
+        y: 60,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power4.out",
+        delay: 0.3
+    });
+
+    gsap.from(".section-sub-title", {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.1
+    });
+
+    gsap.from(".btn-danger", {
+        y: 20,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.5
+    });
+    });
+    gsap.utils.toArray(".reveal-text").forEach((el, i) => {
+    gsap.from(el, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: i * 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        }
+    });
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </body>
 

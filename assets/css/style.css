@@ -12328,6 +12328,27 @@ blockquote {
 /*=================================
 =       38. Service Home Css        =
 ==================================*/
+.service-img {
+  height: 300px;
+  object-fit: cover;
+}
+.flip-card {
+  transform: translateY(50px) scale(0.9);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.flip-card.in-view {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.flip-card:hover {
+  transform: scale(1.05) rotateX(0deg) !important;
+  z-index: 20;
+} 
 .service-hero-bg {
   background-color: transparent;
   background-repeat: no-repeat;
