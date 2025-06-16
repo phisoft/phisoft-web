@@ -5407,6 +5407,100 @@ ul.footer-widget__horizontal-list li {
     display: inherit;
   }
 }
+/*======================================
+=         Innovation Hub             =
+=======================================*/
+ .innovation-hub-section {
+    padding: 100px 20px;
+    background: url('../images/bg/bg-innovation.jpg') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-attachment: fixed; 
+    
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .intro h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .intro p {
+    font-size: 18px;
+    color: white;
+    max-width: 700px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+  }
+
+  .hub-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .hub-card {
+    padding: 30px;
+    background: #222222;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.4s ease;
+  }
+
+  .hub-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .hub-card h3 {
+    font-size: 22px;
+    color: #fff;
+    margin: 20px 0 10px;
+  }
+
+  .hub-card p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.6;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-circle img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(1.2);
+  }
+
+  @media (min-width: 768px) {
+    .hub-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
 
 /*=============================================
 =              13. Box Icon Css              =
@@ -12383,25 +12477,31 @@ blockquote {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-.flip-card-front,
-.flip-card-back {
+.flip-card-front {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid #e0e0e0;
+  border: none;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #1e1e1e; 
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-.flip-card-front {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   transform: rotateY(180deg);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {

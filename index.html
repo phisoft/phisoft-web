@@ -43,7 +43,7 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
 </head>
 
 <body>
@@ -324,6 +324,54 @@
                 </div>
             </div>
             <!--====================  End of brand logo slider area  ====================-->
+            <!-- ========== Innovation Hub Section ========== -->
+            <section id="innovation-hub" class="innovation-hub-section">
+            <div class="container">
+                <div class="intro">
+                <h2 class=" text-color-primary">Innovation Hub</h2>
+                <p>
+                    At PhiSoft’s Innovation Hub, we bring ideas to life through collaboration and research.  
+                    This is where technology meets creativity to solve tomorrow’s problems today.
+                </p>
+                </div>
+
+                <div class="hub-cards">
+                <div class="hub-card" id="card-rnd">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/microscope.svg " alt="Handshake Icon" />
+                    </div>
+                    <h3>Research & Development</h3>
+                    <p>
+                    Our R&D team explores AI, blockchain, and IoT to build prototypes and validate innovations.  
+                    We help clients stay ahead with cutting-edge solutions.
+                    </p>
+                </div>
+
+                <div class="hub-card" id="card-co">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/handshake.svg" alt="Collaboration Icon" />
+                    </div>
+                    <h3>Co-Creation & Collaboration</h3>
+                    <p>
+                    We innovate together partnering through workshops and agile sprints  
+                    to co-create software that matches your vision and drives results.
+                    </p>
+                </div>
+
+                <div class="hub-card" id="card-leadership">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/rocket.svg" alt="Tech Leadership Icon" />
+                    </div>
+                    <h3>Tech Leadership</h3>
+                    <p>
+                    Our experts guide your digital roadmap with insights and strategies,  
+                    empowering your business to lead with confidence and innovation.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </section>
+
             <!--===========  feature-images-wrapper  Start =============-->
             <div class="feature-images-wrapper bg-gray section-space--ptb_100">
                 <div class="container">
@@ -837,6 +885,54 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- AOS CSS -->
+    <script>AOS.init();</script>
+
+    <!-- GSAP + ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".intro h2", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+        trigger: ".intro h2",
+        start: "top 80%",
+        }
+    });
+
+    gsap.from(".intro p", {
+        y: 40,
+        opacity: 0,
+        delay: 0.2,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+        trigger: ".intro p",
+        start: "top 80%",
+        }
+    });
+
+    gsap.from(".hub-card", {
+        yPercent: 20, 
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+        trigger: ".hub-cards",
+        start: "top 85%",
+        markers: false,
+        },
+    });
+    </script>
+
+    
 
 </body>
 
