@@ -43,7 +43,7 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    
 </head>
 
 <body>
@@ -164,12 +164,13 @@
     <div id="main-wrapper">
         <div class="site-wrapper-reveal">
             <!--============ Infotechno Hero Start ============-->
-            <div class="infotechno-hero infotechno-bg">
+            <!-- <div class="infotechno-hero infotechno-bg">
                 <div class="container-fluid">
-                    <div class="row align-items-center"><!--baseline-->
+                    <div class="row align-items-center">
                         <div class="col-lg-6 col-md-6">
                             <div class="infotechno-hero-text  wow move-up">
-                                <h1 class="text-white font-weight--regular fw-lighter mb-15">Leading<br>Business Forward</h1>
+                                <h1 class="text-white font-weight--regular fw-lighter mb-15">Partner Hub<br>for Innovation</h1>
+                                <h6 class="text-white font-weight--regular fw-lighter mb-15">Empowering businesses through collaborative technology solutions</h6>
                                 <div class="hero-button  mt-30">
                                     <a href="#contact-us-section" class="font-weight--regular ht-btn ht-btn-md">Get in Touch</a>
                                 </div>
@@ -177,7 +178,39 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+           <section class="home-hero-section position-relative text-white d-flex align-items-center"
+            style="
+                background-image: url('assets/images/bg/home-bg-2.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 90vh;
+                overflow: hidden;
+            ">
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"
+                style="background-color: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-3 fw-bold mb-4 lh-sm hero-headline" data-aos="fade-up" data-aos-delay="200">
+                            <span class="text-color-primary">Partner Hub</span> <span class="text-white">for Innovation</span>
+                        </h1>
+                        <p class="lead mb-4" style="max-width: 800px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="300">
+                        Empowering businesses through collaborative technology solutions
+                        </p>
+                        <a href="contact-us.html" class="btn btn-primary btn-lg mt-3 mx-3" data-aos="fade-up" data-aos-delay="400">
+                            Get Started
+                        </a>
+
+                        <a href="it-services.html" class="btn btn-secondary btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">
+                            Explore Our Services
+                        </a>
+                    </div>
+                </div>
             </div>
+        </section>
             <!--============ Infotechno Hero End ============-->
             <!--====================  brand logo slider area ====================-->
             <div class="brand-logo-slider-area section-space--ptb_60">
@@ -293,6 +326,53 @@
                 </div>
             </div>
             <!--====================  End of brand logo slider area  ====================-->
+            <!-- ========== Innovation Hub Section ========== -->
+            <section id="innovation-hub" class="innovation-hub-section">
+            <div class="container">
+                <div class="intro">
+                <h2 class=" text-color-primary">Innovation Hub</h2>
+                <p>
+                    Phi Software Sdn. Bhd. is a leading technology partner dedicated to driving your business forward. For over a decade, we have helped companies transform and thrive by co-creating tailored software, mobile, and enterprise solutions. With a focus on partnership and innovation, we deliver secure and scalable digital systems that unlock efficiency and growth.
+                </p>
+                </div>
+
+                <div class="hub-cards">
+                <div class="hub-card" id="card-rnd">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/microscope.svg " alt="Handshake Icon" />
+                    </div>
+                    <h3>Research & Development</h3>
+                    <p>
+                    Our R&D team explores AI, blockchain, and IoT to build prototypes and validate innovations.  
+                    We help clients stay ahead with cutting-edge solutions.
+                    </p>
+                </div>
+
+                <div class="hub-card" id="card-co">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/handshake.svg" alt="Collaboration Icon" />
+                    </div>
+                    <h3>Co-Creation & Collaboration</h3>
+                    <p>
+                    We innovate together partnering through workshops and agile sprints  
+                    to co-create software that matches your vision and drives results.
+                    </p>
+                </div>
+
+                <div class="hub-card" id="card-leadership">
+                    <div class="icon-circle">
+                    <img src="./assets/images/icons/rocket.svg" alt="Tech Leadership Icon" />
+                    </div>
+                    <h3>Tech Leadership</h3>
+                    <p>
+                    Our experts guide your digital roadmap with insights and strategies,  
+                    empowering your business to lead with confidence and innovation.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </section>
+
             <!--===========  feature-images-wrapper  Start =============-->
             <div class="feature-images-wrapper bg-gray section-space--ptb_100">
                 <div class="container">
@@ -669,7 +749,7 @@
                                 <div class="conact-us-wrap-one">
                                     <h3 class="heading">Tell us about your <span class="text-color-primary">project</span></h3>
 
-                                    <div class="sub-heading">We’d like to hear from you. Brief us on your enquiry and we'll get back to you soon.</div>
+                                    <div class="sub-heading">Challenges are just opportunities in disguise. Contact us to learn how we can partner with you to innovate and succeed in the digital era. </div>
 
                                 </div>
                             </div>
@@ -806,6 +886,54 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- AOS CSS -->
+    <script>AOS.init();</script>
+
+    <!-- GSAP + ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".intro h2", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+        trigger: ".intro h2",
+        start: "top 80%",
+        }
+    });
+
+    gsap.from(".intro p", {
+        y: 40,
+        opacity: 0,
+        delay: 0.2,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+        trigger: ".intro p",
+        start: "top 80%",
+        }
+    });
+
+    gsap.from(".hub-card", {
+        yPercent: 20, 
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+        trigger: ".hub-cards",
+        start: "top 85%",
+        markers: false,
+        },
+    });
+    </script>
+
+    
 
 </body>
 

@@ -742,6 +742,10 @@ input[type=checkbox] {
   margin-bottom: 0;
 }
 
+.redwaw-dec {
+  padding: 0 50px;
+}
+
 /*===================================
     - Breadvrumb  
 =================================*/
@@ -5407,6 +5411,100 @@ ul.footer-widget__horizontal-list li {
     display: inherit;
   }
 }
+/*======================================
+=         Innovation Hub             =
+=======================================*/
+ .innovation-hub-section {
+    padding: 100px 20px;
+    background: url('../images/bg/bg-innovation.jpg') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-attachment: fixed; 
+    
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .intro h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .intro p {
+    font-size: 18px;
+    color: white;
+    margin: 20px auto 0;
+    padding: 0 80px;
+    line-height: 1.6;
+  }
+
+  .hub-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .hub-card {
+    padding: 30px;
+    background: #222222;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.4s ease;
+  }
+
+  .hub-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .hub-card h3 {
+    font-size: 22px;
+    color: #fff;
+    margin: 20px 0 10px;
+  }
+
+  .hub-card p {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.6;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-circle img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(1.2);
+  }
+
+  @media (min-width: 768px) {
+    .hub-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
 
 /*=============================================
 =              13. Box Icon Css              =
@@ -5535,6 +5633,7 @@ ul.footer-widget__horizontal-list li {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 25px rgba(0,0,0,0.08);
 }
 .ht-box-icon.style-03 .icon-box-wrap .content-header {
   display: -webkit-box;
@@ -12328,6 +12427,27 @@ blockquote {
 /*=================================
 =       38. Service Home Css        =
 ==================================*/
+.service-img {
+  height: 300px;
+  object-fit: cover;
+}
+.flip-card {
+  transform: translateY(50px) scale(0.9);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.flip-card.in-view {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.flip-card:hover {
+  transform: scale(1.05) rotateX(0deg) !important;
+  z-index: 20;
+} 
 .service-hero-bg {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -12347,6 +12467,47 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1e1e1e; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transform: rotateY(180deg);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .service-hero-space {
@@ -12837,6 +12998,72 @@ blockquote {
   padding-top: 195px;
   padding-bottom: 204px;
 }
+.vision-collage-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 40px;
+}
+
+.vision-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.vision-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.step-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.step-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.08);
+}
+
+.step-box .icon {
+  font-size: 32px;
+  color: #dc3545; 
+}
+
+.step-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.mission-steps .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-space {
     padding-top: 120px;

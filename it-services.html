@@ -43,6 +43,8 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -163,7 +165,7 @@
 
     
     <div id="main-wrapper">
-        <div class="site-wrapper-reveal">
+        
 
             <!--====================  Services Hero Start ====================-->
             <!-- <div class="preview-hero-area position-relative section-space--ptb_120" style="height: 60vh !important; padding: 20px 0;">
@@ -188,18 +190,289 @@
                 <img class="img-fluid pe-img-02 animation_images two wow fadeInDown" src="assets/images/hero/mitech-landing-main-slider-slide-01-image-02.webp" width="119" height="184" alt="mouse">
                 <img class="img-fluid pe-img-03 animation_images two wow fadeInDown" src="assets/images/hero/mitech-landing-main-slider-slide-01-image-03.webp" width="360" height="435" alt="keyboard">
             </div> -->
-                
             <!--====================  Services Hero End ====================-->
+
+        <!--==================== Services Hero Start ====================-->
+        <section class="services-hero-section position-relative text-white d-flex align-items-center"
+                style="
+                background-image: url('assets/images/about-us/tech.webp');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height: 90vh;
+                overflow: hidden;
+                ">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(255, 255, 255, 0.15); z-index: 1;"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h6 class="section-sub-title text-uppercase fw-semibold text-color-primary mb-3 tracking-wide"
+                    style="letter-spacing: 2px;">
+                What We Do
+                </h6>
+                <h1 class="display-3 fw-bold mb-4 lh-sm hero-headline">
+                <span class="text-color-primary">Transform</span> Your Business<br>
+                with the <span class="text-color-primary">Right Technology</span>
+                </h1>
+                <a href="#overview-cards" class="btn btn-outline-none btn-lg">Explore Our Services</a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!--==================== Services Hero End ====================-->
+        <!--=========== Flip Cards ==========-->
+        <div class="site-wrapper-reveal" style="background: #222222;">
+        <section id="overview-cards" class="container section-space--pt_100 section-space--pb_80 ">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-9">
+                    <h2 class="display-5 fw-bold text-white mb-3 reveal-text">All-in-One Digital Solutions</h2>
+                    <p class="lead text-white reveal-text delay-1">
+                        We offer a comprehensive suite of IT services designed to fuel innovation and support your business goals. Our experts become an extension of your team, delivering solutions that transform how you operate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+            <!-- IT Outsourcing -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service11.png" alt="Consultation" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center text-white">IT Outsourcing</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Reliable IT outsourcing for faster growth and project success.</h5>
+                    </div>
+                    <a href="#software-consultation" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service1.png" alt="Web Dev" class="img-fluid rounded">
+                    <h5 class="mt-3 text-center text-white">Software Development</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Secure, scalable, and user-focused software solutions.</h5>
+                    </div>
+                    <a href="#mobile-dev" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service2.png" alt="Mobile App" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center text-white">Mobile Application Development</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Build engaging Android & iOS apps that drive user growth and loyalty.</h5>
+                    </div>
+                    <a href="#mobile-app" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- ERP System -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service10.png" alt="ERP" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center text-white">ERP Integration</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Streamline operations, automate tasks, and manage business smarter.</h5>
+                    </div>
+                    <a href="#erp-management" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="assets/images/services/service8.png" alt="Cloud" class="img-fluid rounded service-img">
+                    <h5 class="mt-3 text-center text-white">Cloud Solutions</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Scalable cloud infrastructure for flexibility and cost-efficiency.</h5>
+                    </div>
+                    <a href="#cloud-solution" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- IT Support & Maintenance -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="assets/images/services/service9.jpg" alt="IT Support" class="img-fluid rounded service-img">
+                        <h5 class="mt-3 text-center text-white">IT Support & Maintenance</h5>
+                    </div>
+                    <div class="flip-card-back d-flex flex-column justify-content-between p-4">
+                    <div>
+                        <h5>Ongoing support to keep your systems optimized, secure, and running.</h5>
+                    </div>
+                    <a href="#it-support" class="btn btn-sm btn-primary mt-2 align-self-start">Explore More</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        
+
+  <!--====================  brand logo slider area ====================-->
+            <div class="brand-logo-slider-area section-space--ptb_60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- brand logo slider -->
+                            <div class="brand-logo-slider__container-area">
+                                <div class="swiper-container brand-logo-slider__container">
+                                    <div class="swiper-wrapper brand-logo-slider__one">
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-permaipoly.png" alt="logo-permaipoly" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-phidental.png" alt="logo-phidental" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-primecare.png" alt="logo-primecare" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-evergold.png" alt="logo-evergold" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-enersun.png" alt="logo-enersun" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-sj.png" alt="logo-sj" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-sls.png" alt="logo-sls" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-mazak.png" alt="logo-mazak" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-angkasa.png" alt="logo-angkasa" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-zzas.png" alt="logo-zzas" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-edulife.png" alt="logo-edulife" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ketara.png" alt="logo-ketara" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-kee.png" alt="logo-kee" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-idsmed.png" alt="logo-idsmed" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-wongsim.png" alt="logo-wongsim" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-didi.png" alt="logo-didi" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ryco.png" alt="logo-ryco" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ums-investment.png" alt="logo-ums-investment" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide brand-logo brand-logo--slider">
+                                            <a class="box-client" href="#">
+                                                <img src="assets/images/brand-logo/logo-ums.png" alt="logo-ums" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====================  End of brand logo slider area  ====================-->
 
             <!--=========== Services Details Start ==========-->
             <div class="machine-learning-about-company-area section-space--pt_40 ">
-                <!--=========== Services : Web Development & Hosting ==========-->
+                
+                <!--=========== Services : IT Outsourcing ==========-->
                 <div id="web-dev" class="container section-space--pt_100 section-space--pb_40 ">
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- section-title-wrap Start -->
                             <div class="section-title-wrap text-center section-space--mb_60">
-                                <h2 class="heading"><span class="text-color-primary">Discover our products and services offerings</span></h2>
+                                <h2 class="heading"><span class="text-color-primary">Explore Our Services</span></h2>
                             </div>
                             <!-- section-title-wrap Start -->
                         </div>
@@ -208,19 +481,18 @@
 
                         <div class="col-lg-6">
                             <div class="image-inner-video-section">
-                                <img class="img-fluid border-radus-5" src="assets/images/services/service1.png" alt="" style="width: 100%;">
+                                <img class="img-fluid border-radus-5" src="assets/images/services/service11.png" alt="" style="width: 100%;">
                                 <div class="mt-30 row">
                                     <div class="col-xl-6 col-md-12">
                                         <ul class="list-marked">
-                                            <li>Hosting Setup and Management</li>
-                                            <li>Frontend Development</li>
-                                            <li>Backend Development</li>
+                                            <li>Project-Based Development</li>
+                                            <li>Application Maintenance & Support</li>
                                         </ul>
                                     </div>
                                     <div class="col-xl-6 col-md-12">
                                         <ul class="list-marked">
-                                            <li>System Integration</li>
-                                            <li>Cloud Managed Services</li>
+                                            <li>QA & Testing Services</li>
+                                            <li>Project-Based Development</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -229,11 +501,84 @@
                         <div class="col-lg-5 ms-auto mt-30">
                             <div class="machine-learning-about-content">
                                 <div class="section-title mb-20">
-                                    <h4>Choosing us you choose a business success</h4>
+                                    <h4>IT Outsourcing</h4>
                                     <p class="dec-text mt-20" style="text-align: justify;">
-                                        We provide website development together with reliable 
-                                        and secure web hosting service. Phi Software offers development of powerful, 
-                                        one-of-a-kind software intended to meet customers' unique demands.
+                                        Our IT outsourcing services connect you with skilled software engineers and IT professionals. 
+                                        By extending your team with our experts, you gain the flexibility to scale projects efficiently 
+                                        without the overhead. We handle project management, development, and maintenance, so you can focus 
+                                        on core business objectives with peace of mind. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                
+                
+                <!--=========== Services : Software Development ==========-->
+                <div id="mobile-dev" class="container section-space--pt_100 section-space--pb_40 ">
+                    <div class="row service-right">                        
+                        <div class="col-lg-5 mt-30">
+                            <div class="machine-learning-about-content">
+                                <div class="section-title mb-20">
+                                    <h4>Software Development</h4>
+                                    <p class="dec-text mt-20" style="text-align: justify;"> 
+                                        We create custom software solutions from concept to deployment. Using best practices in design, agile development, and quality assurance, we build applications that are secure, user-friendly, and tailored to your needs. Whether you need a complex enterprise system or a streamlined internal tool, we optimize every process to achieve your business goals and ensure a strong return on investment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6  ms-auto">
+                            <div class="image-inner-video-section">
+                                <img class="img-fluid border-radus-5" src="assets/images/services/service1.png" alt="" style="width: 100%;">
+                                <div class="mt-30 row">
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Hosting Setup and Management</li>
+                                            <li>System Integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Frontend Development</li>
+                                            <li>Backend Development</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--=========== Services : Mobile Application Development ==========-->
+                <div id="web-dev" class="container section-space--pt_100 section-space--pb_40 ">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="image-inner-video-section">
+                                <img class="img-fluid border-radus-5" src="assets/images/services/service2.png" alt="" style="width: 100%;">
+                                <div class="mt-30 row">
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Frontend Development</li>
+                                            <li>Backend Development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Payment Gateways</li>
+                                            <li>Push Notifications</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ms-auto mt-30">
+                            <div class="machine-learning-about-content">
+                                <div class="section-title mb-20">
+                                    <h4>Mobile Application Development</h4>
+                                    <p class="dec-text mt-20" style="text-align: justify;">
+                                        Our mobile app development team turns your ideas into engaging apps for iOS and Android. We leverage the latest frameworks (such as Flutter and native tools) to deliver seamless, high-performance applications that connect you with customers and employees on the go. From prototyping to launch, we guide you through each step to create mobile solutions that drive growth.
                                     </p>
                                 </div>
                             </div>
@@ -241,71 +586,44 @@
                     </div>
                 </div>    
 
-                        <!--=========== Services : Mobile Application Development ==========-->
-                        <div id="mobile-dev" class="container section-space--pt_100 section-space--pb_40 ">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- section-title-wrap Start -->
-                                    <div class="section-title-wrap text-center section-space--mb_30">
-                                        <h2 class="heading text-color-primary font-weight--reguler ">Mobile Application Development </h2>
-                                    </div>
-                                    <!-- section-title-wrap Start -->
+                <!--=========== Services : ERP Integration ==========-->
+                <div id="mobile-dev" class="container section-space--pt_100 section-space--pb_40 ">
+                    <div class="row service-right">                        
+                        <div class="col-lg-5 mt-30">
+                            <div class="machine-learning-about-content">
+                                <div class="section-title mb-20">
+                                    <h4>ERP Integration</h4>
+                                    <p class="dec-text mt-20" style="text-align: justify;"> 
+                                        Integrating your business systems is key to innovation. We specialize in implementing and integrating ERP (Enterprise Resource Planning) solutions that unify finance, operations, inventory, and more. By customizing ERP systems to your processes, we help you achieve end-to-end visibility and real-time insights. The result is improved efficiency, data-driven decisions, and a streamlined operation that can scale with your company. 
+                                    </p>
                                 </div>
                             </div>
-                            <div class="row service-right">                        
-                                <div class="col-lg-5 mt-30">
-                                    <div class="machine-learning-about-content">
-                                        <div class="section-title mb-20">
-                                            <h4>Delivering Quality Apps</h4>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                Want to build a social network, an e-commerce store, or something more complex? 
-                                                We develop your app for multiple platforms.
-                                                We provide consulting and mobile app development services for different platforms and various industries
-                                                connecting people and businesses across a variety of mobile devices.
-                                            </p>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                Phi Software is a company that provides services related to mobile app development to support your
-                                                business necessities. Consult us today to enjoy the advantages which brings you cooperation with our
-                                                company.
-                                            </p>
-                                        </div>
+                        </div>
+                        <div class="col-lg-6  ms-auto">
+                            <div class="image-inner-video-section">
+                                <img class="img-fluid border-radus-5" src="assets/images/services/service10.png" alt="" style="width: 100%;">
+                                <div class="mt-30 row">
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Real-time Insights</li>
+                                            <li>Future-proof Platform</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6 col-md-12">
+                                        <ul class="list-marked">
+                                            <li>Customer-friendly Licensing</li>
+                                            <li>System Integration</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-6  ms-auto">
-                                    <div class="image-inner-video-section">
-                                        <img class="img-fluid border-radus-5" src="assets/images/services/service2.png" alt="" style="width: 100%;">
-                                        <div class="mt-30 row">
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Live Tracking</li>
-                                                    <li>Payment Gateways</li>
-                                                    <li>End to End Encryption</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Push Notifications</li>
-                                                    <li>System Integration</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
-                <!--=========== Services : Document Management System ==========-->
-                <div id="doc-management" class="container section-space--pt_100 section-space--pb_40 ">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- section-title-wrap Start -->
-                            <div class="section-title-wrap text-center section-space--mb_30">
-                                <h2 class="heading text-color-primary font-weight--reguler ">Document Management System </h2>
-                            </div>
-                            <!-- section-title-wrap Start -->
-                        </div>
                     </div>
+                </div>
+
+                <!--=========== Services : IT Support & Maintenance ==========-->
+                <div id="doc-management" class="container section-space--pt_100 section-space--pb_40 ">
                     <div class="row">                        
                         <div class="col-lg-6">
                             <div class="image-inner-video-section">
@@ -313,15 +631,14 @@
                                 <div class="mt-30 row">
                                     <div class="col-xl-6 col-md-12">
                                         <ul class="list-marked">
-                                            <li>Automated Retention</li>
-                                            <li>Efficient Approval Workflow</li>
-                                            <li>Audit Trail of Evidence</li>
+                                            <li>Performance Optimization</li>
+                                            <li>Bug Fixes & Issue Resolution</li>
                                         </ul>
                                     </div>
                                     <div class="col-xl-6 col-md-12">
                                         <ul class="list-marked">
-                                            <li>Push Notifications</li>
-                                            <li>Mobile Friendly</li>
+                                            <li>Proactive System Monitoring</li>
+                                            <li>Software Updates & Patch Management</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -330,264 +647,15 @@
                         <div class="col-lg-5 ms-auto mt-30">
                             <div class="machine-learning-about-content">
                                 <div class="section-title mb-20">
-                                    <h4>Manage Documents to the Highest Standards</h4>
+                                    <h4>IT Support & Maintenance</h4>
                                     <p class="dec-text mt-20" style="text-align: justify;"> 
-                                        We help company organise business records and automate business process and reporting. 
-                                        Build your documentation processing breakdown structure, store and revision control 
-                                        your data, and link to your documentation with the help of our experts. 
-                                    </p>
-                                    <p class="dec-text mt-20" style="text-align: justify;"> 
-                                        We present solutions that satisfy customers’ needs much more precisely than any off-the-shelf product. 
+                                        After deployment, our job continues. We offer reliable IT support and maintenance to ensure your technology keeps running smoothly. Our dedicated team provides proactive monitoring, regular updates, and prompt troubleshooting. You’ll have the confidence that critical systems are protected and optimized, minimizing downtime and letting your team stay productive.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                        <!--=========== Services : ERP Management System ==========-->
-                        <div id="erp-management" class="container section-space--pt_100 section-space--pb_40 ">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- section-title-wrap Start -->
-                                    <div class="section-title-wrap text-center section-space--mb_30">
-                                        <h2 class="heading text-color-primary font-weight--reguler ">ERP Management System </h2>
-                                    </div>
-                                    <!-- section-title-wrap Start -->
-                                </div>
-                            </div>
-                            <div class="row service-right ">                        
-                                <div class="col-lg-5">
-                                    <div class="machine-learning-about-content">
-                                        <div class="section-title mt-20 mb-20">
-                                            <h4>Take Control of Your Business</h4>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                We help company manage their day-to-day business through customised ERP solutions. 
-                                                From smaller distribution businesses needing inventory efficiencies, to larger 
-                                                manufacturing businesses needing mass-scale project traceability, Phi Software 
-                                                offers ERP solutions to fit your business size and needs. 
-                                            </p>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                Streamline your business to thrive in the digital company with improved efficiency 
-                                                in your workflow. See how our ERP solutions can heko your business. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 ms-auto">
-                                    <div class="image-inner-video-section">
-                                        <img class="img-fluid border-radus-5" src="assets/images/services/service4.png" alt="" style="width: 100%;">
-                                        <div class="mt-30 row">
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Real-time Insights</li>
-                                                    <li>Future-proof Platform</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Customer-friendly Licensing</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                <!--=========== Services : Asset Management System ==========-->
-                <div id="asset-management" class="container section-space--pt_100 section-space--pb_40 ">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- section-title-wrap Start -->
-                            <div class="section-title-wrap text-center section-space--mb_30">
-                                <h2 class="heading text-color-primary font-weight--reguler ">Asset Management System</h2>
-                            </div>
-                            <!-- section-title-wrap Start -->
-                        </div>
-                    </div>
-                    <div class="row">                        
-                        <div class="col-lg-6">
-                            <div class="image-inner-video-section">
-                                <img class="img-fluid border-radus-5" src="assets/images/services/service5.png" alt="" style="width: 100%;">
-                                <div class="mt-30 row">
-                                    <div class="col-xl-6 col-md-12">
-                                        <ul class="list-marked">
-                                            <li>Real-time Inventory Alerts</li>
-                                            <li>File Scanning & Storage</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xl-6 col-md-12">
-                                        <ul class="list-marked">
-                                            <li>Audit Trail of Evidence</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 ms-auto mt-30">
-                            <div class="machine-learning-about-content">
-                                <div class="section-title mb-20">
-                                    <h4>Become a High Performance Fulfillment Centre</h4>
-                                    <p class="dec-text mt-20" style="text-align: justify;"> 
-                                        We tailor-made an asset tracking software to help companies get control over their assets. 
-                                    </p>
-                                    <p class="dec-text mt-20" style="text-align: justify;"> 
-                                        We offer a complete asset management solution including a highly customizable portal, 
-                                        the analysis of your data and a constant support to make sure you get the best out of 
-                                        your assets. Our service is flexible, reliabe, and intuitive for fast and easy 
-                                        customization of your solution. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                
-                        <!--=========== Services : Software Integration ==========-->
-                        <div id="software-integration" class="container section-space--pt_100 section-space--pb_40 ">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- section-title-wrap Start -->
-                                    <div class="section-title-wrap text-center section-space--mb_30">
-                                        <h2 class="heading text-color-primary font-weight--reguler ">Software Integration</h2>
-                                    </div>
-                                    <!-- section-title-wrap Start -->
-                                </div>
-                            </div>
-                            <div class="row service-right">                        
-                                <div class="col-lg-5 mt-30">
-                                    <div class="machine-learning-about-content">
-                                        <div class="section-title mb-20">
-                                            <h4>Realiable Software Integration Performance</h4>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                We do third party software integration including payment gateway integration, 
-                                                dropbox integration, google gapi, Facebook and accounting softwares.
-                                            </p>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                When a company adopts a new technology or business process, they face many 
-                                                challenges between their current applications and systems and the complicated 
-                                                software implementation process. Our industry-specific software engineers 
-                                                handle all of your challenging integration and implementation obstacles, 
-                                                including architectural design, testing, debugging, and execution.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6  ms-auto">
-                                    <div class="image-inner-video-section">
-                                        <img class="img-fluid border-radus-5" src="assets/images/services/service6.png" alt="" style="width: 100%;">
-                                        <div class="mt-30 row">
-                                            <div class="col-xl-12 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Real-time Data Access for Organisation</li>
-                                                    <li>Connects on-premises, Cloud, and Multicloud Environments</li>
-                                                    <li>Modern Integration at an Afforadble Price</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                <!--=========== Services : Software Consultation ==========-->
-                <div id="software-consultation" class="container section-space--pt_100 section-space--pb_40 ">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- section-title-wrap Start -->
-                            <div class="section-title-wrap text-center section-space--mb_30">
-                                <h2 class="heading text-color-primary font-weight--reguler ">Software Consultation</h2>
-                            </div>
-                            <!-- section-title-wrap Start -->
-                        </div>
-                    </div>
-                    <div class="row">                        
-                        <div class="col-lg-6">
-                            <div class="image-inner-video-section">
-                                <img class="img-fluid border-radus-5" src="assets/images/services/service7.png" alt="" style="width: 100%;">
-                                <div class="mt-30 row">
-                                    <div class="col-xl-12 col-md-12">
-                                        <ul class="list-marked">
-                                            <li>Technology Consulting, Software Assessment</li>
-                                            <li>Software Development Consulting</li>
-                                            <li>Software Architecture Assessment & Redesign</li>
-                                            <li>Software Modernization</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 ms-auto mt-30">
-                            <div class="machine-learning-about-content">
-                                <div class="section-title mb-20">
-                                    <h4>Create Digital Revolution</h4>
-                                    <p class="dec-text mt-20" style="text-align: justify;"> 
-                                        Every business faces its own unique challenges. But even the toughest and 
-                                        most complex of these can be successfully addressed with our IT consulting 
-                                        services, given the right experience and the appropriate credentials. 
-                                        Take benefits from our expertise for an end-to-end software consultancy. 
-                                        Get the best IT consulting services and create a competitive business 
-                                        transformation that automates your business functionalities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                        <!--=========== Services : Cloud Solution ==========-->
-                        <div id="cloud-solution" class="container section-space--pt_100 section-space--pb_100 ">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- section-title-wrap Start -->
-                                    <div class="section-title-wrap text-center section-space--mb_30">
-                                        <h2 class="heading text-color-primary font-weight--reguler ">Cloud Solution</h2>
-                                    </div>
-                                    <!-- section-title-wrap Start -->
-                                </div>
-                            </div>
-                            <div class="row service-right ">                        
-                                <div class="col-lg-5 mt-30">
-                                    <div class="machine-learning-about-content">
-                                        <div class="section-title mb-20">
-                                            <h4>Accelerating Performance</h4>
-                                            <p class="dec-text mt-20" style="text-align: justify;"> 
-                                                We manage a range of software as services software tailored for specific 
-                                                industry. Living in the fast-paced digital era, information technology 
-                                                influences all walks of our lives. Cloud services like replatforming or 
-                                                migrating to cloud-native application architectures offer advanced 
-                                                technology, cost savings, scalability and real-time accessibility. 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6  ms-auto">
-                                    <div class="image-inner-video-section">
-                                        <img class="img-fluid border-radus-5" src="assets/images/services/service8.png" alt="" style="width: 100%;">
-                                        <div class="mt-30 row">
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Enhanced Customer Experiences</li>
-                                                    <li>Customize & Secure Environment</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xl-6 col-md-12">
-                                                <ul class="list-marked">
-                                                    <li>Real-time Changes</li>
-                                                    <li>Cost-effective Maintenance</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div> 
-
             </div><!--=========== Services Details Area End ==========-->
 
 
@@ -739,6 +807,84 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- GSAP + ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".flip-card").forEach((card, i) => {
+        ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+        onEnter: () => card.classList.add("in-view"),
+        onLeaveBack: () => card.classList.remove("in-view")
+        });
+
+        gsap.fromTo(card, 
+        { y: 50, scale: 0.9, opacity: 0 },
+        {
+            y: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power3.out",
+            delay: i * 0.1,
+            scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+            }
+        }
+        );
+    });
+    window.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero-headline", {
+        y: 60,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power4.out",
+        delay: 0.3
+    });
+
+    gsap.from(".section-sub-title", {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.1
+    });
+
+    gsap.from(".btn-danger", {
+        y: 20,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.5
+    });
+    });
+    gsap.utils.toArray(".reveal-text").forEach((el, i) => {
+    gsap.from(el, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: i * 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        }
+    });
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </body>
 
