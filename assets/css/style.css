@@ -742,6 +742,10 @@ input[type=checkbox] {
   margin-bottom: 0;
 }
 
+.redwaw-dec {
+  padding: 0 50px;
+}
+
 /*===================================
     - Breadvrumb  
 =================================*/
@@ -5441,8 +5445,8 @@ ul.footer-widget__horizontal-list li {
   .intro p {
     font-size: 18px;
     color: white;
-    max-width: 700px;
     margin: 20px auto 0;
+    padding: 0 80px;
     line-height: 1.6;
   }
 
@@ -5629,6 +5633,7 @@ ul.footer-widget__horizontal-list li {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 25px rgba(0,0,0,0.08);
 }
 .ht-box-icon.style-03 .icon-box-wrap .content-header {
   display: -webkit-box;
