@@ -10,7 +10,8 @@ $(function() {
         submitHandler: function(form){
             $.ajax({
                 type: 'POST',
-                url: 'https://n8n-staging.bah.my/webhook-test/crm-contact',
+                // url: 'https://n8n-staging.bah.my/webhook-test/crm-contact',
+                url: 'https://send.bah.my/aGVsbG9AcGhpc29mdC5teQ==',
                 data: $(form).serialize()
             })
             .done(function (response) {
