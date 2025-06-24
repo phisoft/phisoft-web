@@ -161,48 +161,61 @@
     </div>
     <!--====================  End of header area  ====================-->
 
-    <div id="main-wrapper">
-        <div id="contact-form-container" class="site-wrapper-reveal cybersecurity-hero processing-hero-bg__color">
-            <!--====================  Contact us Section Start ====================-->
-            <div class="contact-us-section-wrappaer section-space--pt_100 section-space--pb_70">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-lg-6">
-                            <div class="conact-us-wrap-one mb-30">
-                                <h3 class="heading">Ready to partner for<span class="text-color-primary"> innovation?</span></h3>
-                                <div class="sub-heading">We’re here to help you move forward.</div>
-                            </div>
+<div id="main-wrapper">
+    <div id="contact-form-container" class="site-wrapper-reveal cybersecurity-hero processing-hero-bg__color">
+        <!--====================  Contact us Section Start ====================-->
+        <div class="contact-us-section-wrappaer section-space--pt_100 section-space--pb_70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-lg-6">
+                        <div class="conact-us-wrap-one mb-30">
+                            <h3 class="heading">Ready to partner for<span class="text-color-primary"> innovation?</span></h3>
+                            <div class="sub-heading">We’re here to help you move forward.</div>
                         </div>
+                    </div>
 
-                        <div class="col-lg-6 col-lg-6">
-                            <div class="contact-form-wrap">
-                                    <form id="contact-form" action="https://n8n-staging.bah.my/webhook-test/crm-contact" enctype="application/x-www-form-urlencoded" method="POST">                                    <div class="contact-form">
-                                        <div class="contact-input">
-                                            <div class="contact-inner">
-                                                <input class="demo-input" id="name" name="name" type="text" placeholder="Name *" required>
-                                            </div>
-                                            <div class="contact-inner">
-                                                <input class="demo-input" id="email" name="email" type="email" placeholder="Email *" required>
-                                            </div>
+                    <div class="col-lg-6 col-lg-6">
+                        <div class="contact-form-wrap">
+                            <form id="contact-form" action="https://n8n-staging.bah.my/webhook-test/crm-contact" enctype="multipart/form-data" method="POST">
+                                <div class="contact-form">
+                                    <div class="contact-input">
+                                        <div class="contact-inner">
+                                            <input class="demo-input" id="name" name="name" type="text" placeholder="Name *" required>
                                         </div>
                                         <div class="contact-inner">
-                                            <input class="demo-input" id="subject" name="subject" value="Contact Form Submission via Phisoft.my" type="hidden" placeholder="Subject *" required>
+                                            <input class="demo-input" id="email" name="email" type="email" placeholder="Email *" required>
                                         </div>
-                                        <div class="contact-inner contact-message">
-                                            <textarea class="demo-input" id="message" name="message" placeholder="Please describe what you need." required></textarea>
+                                        <div class="contact-inner">
+                                            <input class="demo-input" id="phone" name="phone" type="text" placeholder="Phone Number *">
                                         </div>
-                                        <div class="submit-btn mt-20">
-                                            <button class="ht-btn ht-btn-md" type="submit">Send message</button>
-                                            <p class="form-messege"></p>
+                                        <div class="contact-inner">
+                                            <input class="demo-input" id="company" name="company" type="text" placeholder="Company Name">
+                                        </div>
+                                        <div class="contact-inner w-100">
+                                            <input class="demo-input w-100" id="attachment" name="attachment" type="file">
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="contact-inner">
+                                        <input class="demo-input" id="subject" name="subject" value="Contact Form Submission via Phisoft.my" type="hidden" placeholder="Subject *" required>
+                                    </div>
+                                    <div class="contact-inner contact-message">
+                                        <textarea class="demo-input" id="message" name="message" placeholder="Please describe what you need." required></textarea>
+                                    </div>
+                                    <div class="submit-btn mt-20">
+                                        <button class="ht-btn ht-btn-md" type="submit">Send message</button>
+                                        <p class="form-messege"></p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--====================  Contact us Section End  ====================-->
+        </div>
+        <!--====================  Contact us Section End  ====================-->
+    </div>
+</div>
+
 
             <!--====================  Contact us info Start ====================-->
             <div class="contact-us-info-wrappaer section-space--pb_70">
