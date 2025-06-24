@@ -443,35 +443,43 @@
         function validateForm() {
             let isValid = true;
             const inputs = document.getElementsByClassName('demo-input');
+    
             for (let i = 0; i < inputs.length; i++) {
-                if (!inputs[i].value.trim()) {
+                const input = inputs[i];
+                const isRequired = input.hasAttribute('required');
+    
+                if (isRequired && !input.value.trim()) {
                     isValid = false;
-                    inputs[i].classList.add('is-invalid');
+                    input.classList.add('is-invalid');
                 } else {
-                    inputs[i].classList.remove('is-invalid');
+                    input.classList.remove('is-invalid');
                 }
             }
             return isValid;
         }
     
         document.getElementById("contact-forms").addEventListener("submit", function(e) {
-            e.preventDefault(); // Always prevent default form submission
+            e.preventDefault(); // prevent normal form submission
     
             if (!validateForm()) {
-                return; // Don't continue if validation fails
+                return;
             }
     
             const form = e.target;
-            const data = new URLSearchParams(new FormData(form));
+            const formData = new FormData(form); // handles file upload automatically
     
             fetch(form.action, {
                 method: form.method,
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: data,
+                body: formData,
             })
-            .then(response => response.json())
+            .then(response => {
+                // if n8n returns a JSON response
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.includes("application/json")) {
+                    return response.json();
+                }
+                return response.text(); // fallback
+            })
             .then(result => {
                 alert("Thank you! Your message has been sent.");
                 form.reset();
@@ -482,6 +490,7 @@
             });
         });
     </script>
+    
     
 
 </body>
