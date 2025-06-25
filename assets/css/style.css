@@ -10630,6 +10630,8 @@ ol {
   background-image: url(../images/bg/mitech-home-services-contact-bg.webp);
   background-repeat: no-repeat;
   background-position: left bottom;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .processing-contact-us-bg {
@@ -11044,6 +11046,19 @@ ol {
 .conact-us-wrap-one.managed-it .heading {
   line-height: 1.67;
   font-weight: 800;
+}
+
+.contact-icon-large {
+  font-size: 30px;
+}
+
+.contact-heading {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: 500px;
+  letter-spacing: 2px;
+  line-height: 1.78;
+  font-family: "Inter", sans-serif;
 }
 
 /*=====================================
