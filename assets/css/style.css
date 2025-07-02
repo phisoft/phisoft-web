@@ -2247,7 +2247,6 @@ input[type=checkbox] {
 =============================================*/
 .header-area {
   position: relative;
-  z-index: 9;
 }
 .header-area .is-sticky {
   position: fixed;
