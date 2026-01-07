@@ -467,9 +467,9 @@
                                         style="background: #f8f9fa; border: 2px dashed #ddd; border-radius: 8px; padding: 40px 30px; margin-bottom: 30px;">
                                         <h4 class="mb-3">To apply for a position, please send your application directly
                                             to:</h4>
-                                        <a href="mailto:hello@phisoft.my" class="ht-btn ht-btn-md email-link"
+                                        <a href="mailto:hr@phisoft.my" class="ht-btn ht-btn-md email-link"
                                             style="font-size: 24px; margin: 20px 0;">
-                                            <i class="fa fa-envelope me-2"></i>hello@phisoft.my
+                                        <i class="fa fa-envelope me-2"></i>hr@phisoft.my
                                         </a>
                                     </div>
 
@@ -611,58 +611,6 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-    <!-- SMTP JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            if (validateForm()) {
-                var fileInput = document.getElementById('resume');
-                var file = fileInput.files[0];
-                var reader = new FileReader();
-                reader.onload = function(event) {
-                    var attachment = event.target.result.split(',')[1];
-                    Email.send({
-                        Host: "smtp.elasticemail.com",
-                        Username: "phisoft.marketing@gmail.com",
-                        Password: "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-                        To: 'hello@phisoft.my',
-                        From: "phisoft.marketing@gmail.com",
-                        Subject: "PHISOFT Careers Contact Form Submission",
-                        Body: "Name: " + document.getElementById("name").value +
-                            "<br> Email: " + document.getElementById("email").value +
-                            "<br> Position: " + document.getElementById("Visiting").value,
-                        Attachments: [
-                            {
-                                name: file.name,
-                                data: attachment
-                            }
-                        ]
-                    }).then(
-                        message => alert("Message successfully sent.")
-                    );
-                };
-                reader.readAsDataURL(file);
-            } else {
-                alert("Please fill in all required fields.");
-            }
-        }
-
-        function validateForm() {
-            var isValid = true;
-            var inputs = document.getElementsByClassName('demo-input');
-            for (var i = 0; i < inputs.length; i++) {
-                if (!inputs[i].value) {
-                    isValid = false;
-                    inputs[i].classList.add('is-invalid');
-                } else {
-                    inputs[i].classList.remove('is-invalid');
-                }
-            }
-            return isValid;
-        }
-    </script>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
