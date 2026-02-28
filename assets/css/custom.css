@@ -724,7 +724,8 @@ textarea:focus {
   box-shadow: 0 18px 36px rgba(59, 130, 246, 0.16);
 }
 
-.home-v2-service i {
-  color: #d35a66;
+.home-v2-service i,
+.home-v2-feature i {
+  color: #000000;
   display: block;
 }
