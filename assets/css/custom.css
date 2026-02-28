@@ -513,8 +513,8 @@ textarea:focus {
 }
 
 .home-v2 section {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .home-v2 .container {
