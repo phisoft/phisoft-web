@@ -613,11 +613,24 @@ textarea:focus {
 }
 
 .home-v2-logo {
-  max-height: 36px;
+  max-height: 43px;
   width: auto;
   object-fit: contain;
   filter: grayscale(0.1);
   opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .home-v2-logo {
+    max-height: 100px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .home-v2-logo {
+    max-height: 80px;
+  }
 }
 
 .home-v2-service a {
@@ -728,4 +741,31 @@ textarea:focus {
 .home-v2-feature i {
   color: #000000;
   display: block;
+}
+
+.logo-grid {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Mobile: 2 per row */
+@media (max-width: 767px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet: 3 per row */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop & above: 5 per row */
+@media (min-width: 992px) {
+    .logo-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
