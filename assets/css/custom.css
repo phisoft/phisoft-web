@@ -620,6 +620,19 @@ textarea:focus {
   opacity: 0.9;
 }
 
+@media (max-width: 991px) {
+  .home-v2-logo {
+    max-height: 100px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .home-v2-logo {
+    max-height: 80px;
+  }
+}
+
 .home-v2-service a {
   font-weight: 700;
   color: #4f46e5;
