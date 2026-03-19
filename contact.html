@@ -133,6 +133,7 @@
                                     </div>
                                     <div class="col-12">
                                         <input class="demo-input w-100" id="subject" name="subject" value="Contact Form Submission via Phisoft.my" type="hidden">
+                                        <input id="success_url" name="success_url" type="hidden" value="https://www.phisoft.my/thank-you.html">
                                         <textarea class="demo-input w-100" id="message" name="message" placeholder="Please describe what you need." required></textarea>
                                     </div>
                                     <div class="col-12">
@@ -198,54 +199,6 @@
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        (function () {
-            const form = document.getElementById('contact-forms');
-            if (!form) return;
-
-            const endpoint = 'https://send.bah.my/phisoft';
-            form.setAttribute('action', endpoint);
-            form.setAttribute('method', 'POST');
-
-            form.addEventListener('submit', async function (event) {
-                event.preventDefault();
-                event.stopPropagation();
-                if (event.stopImmediatePropagation) {
-                    event.stopImmediatePropagation();
-                }
-
-                const submitButton = form.querySelector('button[type="submit"]');
-                const originalText = submitButton ? submitButton.textContent : '';
-                if (submitButton) {
-                    submitButton.disabled = true;
-                    submitButton.textContent = 'Sending...';
-                }
-
-                try {
-                    const formData = new FormData(form);
-                    const response = await fetch(endpoint, {
-                        method: 'POST',
-                        body: formData
-                    });
-
-                    if (!response.ok) {
-                        throw new Error('Request failed with status ' + response.status);
-                    }
-
-                    alert('Message sent successfully.');
-                    form.reset();
-                } catch (error) {
-                    console.error('Contact form submission failed:', error);
-                    alert('Failed to send message. Please try again.');
-                } finally {
-                    if (submitButton) {
-                        submitButton.disabled = false;
-                        submitButton.textContent = originalText || 'Send message';
-                    }
-                }
-            }, true);
-        })();
-    </script>
 
 </body>
 </html>
