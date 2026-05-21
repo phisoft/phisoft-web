@@ -4,40 +4,34 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://www.phisoft.my/</loc>
+  <loc>https://phisoft.my/</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.phisoft.my/index.html</loc>
+  <loc>https://phisoft.my/about.html</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.phisoft.my/about.html</loc>
+  <loc>https://phisoft.my/services.html</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.phisoft.my/services.html</loc>
+  <loc>https://phisoft.my/careers.html</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.phisoft.my/careers.html</loc>
+  <loc>https://phisoft.my/solutions.html</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.phisoft.my/solutions.html</loc>
-  <lastmod>2026-02-20T19:10:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.phisoft.my/contact.html</loc>
+  <loc>https://phisoft.my/contact.html</loc>
   <lastmod>2026-02-20T19:10:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>

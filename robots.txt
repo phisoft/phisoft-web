@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.phisoft.my/sitemap.xml
+Sitemap: https://phisoft.my/sitemap.xml
