@@ -671,6 +671,47 @@ textarea:focus {
     .section-title-wrapper {
         margin-bottom: 1.5rem;
     }
+
+    /* mobile nav */
+    .navbar-toggler {
+        border: 0;
+        padding: 0.4rem;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 3px rgba(186, 28, 12, 0.15);
+    }
+
+    .navbar-collapse {
+        padding: 1rem 0 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.7rem 0;
+        font-weight: 600;
+        border-radius: 0.5rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: var(--brand-primary);
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link[aria-current="page"] {
+        background: rgba(186, 28, 12, 0.06);
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .nav-contact-btn {
+        margin-top: 0.75rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.65rem 1rem;
+    }
 }
 
 @media (max-width: 576px) {
