@@ -29,6 +29,107 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Preserve all original styling - only update hero background */
+        .home-v2-feature {
+            display: flex;
+            flex-direction: column;
+            height: 100% !important;
+        }
+        .home-v2-feature p {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+        .home-v2-feature a {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+        #solutions-grid > [class*="col-"] {
+            transition: all 0.2s ease;
+        }
+        .solution-badge.is-erp {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+        .solution-badge.is-mobile {
+            background: #dcfce7;
+            color: #15803d;
+        }
+        .solution-filter-bar .solution-filter-btn.active {
+            background: #600000;
+            border-color: #600000;
+            color: white;
+        }
+        
+        /* New minimalist hero background - clean, modern, subtle */
+        .home-v2-hero {
+            position: relative;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+            isolation: isolate;
+            overflow: hidden;
+        }
+        
+        /* Subtle abstract shapes for minimalist elegance */
+        .home-v2-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(96, 0, 0, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 90% 70%, rgba(96, 0, 0, 0.02) 0%, transparent 45%),
+                repeating-linear-gradient(45deg, rgba(96, 0, 0, 0.01) 0px, rgba(96, 0, 0, 0.01) 1px, transparent 1px, transparent 24px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        /* Subtle floating orbs - minimalist touch */
+        .home-v2-hero::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(96, 0, 0, 0.04) 0%, transparent 70%);
+            bottom: -100px;
+            right: -100px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .home-v2-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .home-v2-hero h1 {
+            color: #1a1a2e;
+        }
+        
+        .home-v2-hero .lead {
+            color: #4a5568;
+        }
+        
+        .home-v2-hero .section-sub-title {
+            color: #600000;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        /* Keep responsive adjustments */
+        @media (max-width: 768px) {
+            .home-v2-hero::after {
+                width: 200px;
+                height: 200px;
+                bottom: -50px;
+                right: -50px;
+            }
+        }
+    </style>
+    
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -102,13 +203,14 @@
     </header>
 
     <main id="main-content">
-        <section class="home-v2-hero text-white" style="background-image: radial-gradient(circle at 14% 18%, rgba(186, 230, 253, 0.52), transparent 42%), radial-gradient(circle at 86% 20%, rgba(125, 211, 252, 0.44), transparent 40%), radial-gradient(circle at 52% 85%, rgba(45, 212, 191, 0.32), transparent 46%), linear-gradient(135deg, rgba(37, 99, 235, 0.68), rgba(14, 116, 144, 0.58)), url('assets/images/bg/soft-s5-bg.webp'); background-size: cover; background-position: center 30%;">
-            <div class="container py-5 py-lg-6">
+        <!-- Updated Hero Section with Minimalist Background - Added AOS animation -->
+        <section class="home-v2-hero text-white py-5" style="min-height: 380px;" data-aos="fade-up">
+            <div class="container py-4 py-lg-5">
                 <div class="row justify-content-center text-center gy-4">
                     <div class="col-lg-9">
-                        <p class="section-sub-title mb-2 text-white">Our solutions</p>
-                        <h1 class="display-4 fw-bold mb-3">Business Application & ERP Solutions for Sabah and Malaysia Companies</h1>
-                        <p class="lead mb-0">From accounting and payment integrations to custom business platforms, Phisoft delivers practical ERP-ready solutions that streamline operations.</p>
+                        <p class="section-sub-title mb-2 text-uppercase small fw-semibold" style="color: #600000; letter-spacing: 1.5px;">Our solutions</p>
+                        <h1 class="display-4 fw-bold mb-3" style="color: #1a1a2e;">Business Application &amp; ERP Solutions for Sabah and Malaysia Companies</h1>
+                        <p class="lead mb-0" style="color: #600000; max-width: 720px; margin-left: auto; margin-right: auto;">From accounting and payment integrations to custom business platforms, Phisoft delivers practical ERP-ready solutions that streamline operations.</p>
                     </div>
                 </div>
             </div>
@@ -175,18 +277,148 @@
                     <button class="btn btn-sm solution-filter-btn" data-filter="industry">Industry &amp; Services</button>
                 </div>
                 <div class="row g-4" id="solutions-grid">
-                    <div class="col-md-6 col-lg-4"><article data-category="erp" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/kertasdms.webp" class="img-fluid me-2" alt="KertasDMS" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-erp">DMS</span> KertasDMS</h3></div><p class="mb-2">Document digitization, centralized storage, and workflow transparency.</p><a href="https://www.kertasdms.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/linkexpres.webp" class="img-fluid me-2" alt="LinkExpres" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">Logistics</span> LinkExpres</h3></div><p class="mb-2">Order, inventory, and logistics process optimization across supply chains.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="erp" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/8planner.webp" class="img-fluid me-2" alt="8planner" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-erp">Planning</span> 8planner</h3></div><p class="mb-2">Operational scheduling and reporting support for admin-heavy teams.</p><a href="https://www.8planner.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/roompillow.webp" class="img-fluid me-2" alt="RoompillowPMS" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">Hospitality</span> RoompillowPMS</h3></div><p class="mb-2">Hospitality management to improve guest experience and team coordination.</p></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="mobile" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/toursbloom.webp" class="img-fluid me-2" alt="Toursbloom" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-mobile">Travel</span> Toursbloom</h3></div><p class="mb-2">Tour package creation and supplier coordination in real time.</p><a href="https://www.toursbloom.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="erp" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/assetsware.webp" class="img-fluid me-2" alt="Assetsware" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-erp">Assets</span> Assetsware</h3></div><p class="mb-2">Fixed asset tracking with reliable data for operational and audit reporting.</p><a href="https://www.assetsware.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/dentallink.webp" class="img-fluid me-2" alt="Dentallink" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">Healthcare</span> Dentallink</h3></div><p class="mb-2">Dental practice software to streamline clinic operations and oversight.</p><a href="https://www.dentallinkapp.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/jurismanager.webp" class="img-fluid me-2" alt="Juris Manager" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">Legal</span> Juris Manager</h3></div><p class="mb-2">All-in-one legal firm management for cases, schedules, and documentation.</p><a href="https://www.jurismanager.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="mobile" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/nunukragang.webp" class="img-fluid me-2" alt="Nunukragang" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-mobile">Culture</span> Nunukragang</h3></div><p class="mb-2">Collaborative online dictionary platform for indigenous language preservation.</p><a href="https://www.nunukragang.org/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/gourbanbus.webp" class="img-fluid me-2" alt="Gourbanbus" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">Transport</span> Gourbanbus</h3></div><p class="mb-2">Public transport experience platform with QR-enabled GPS access.</p><a href="https://www.gourbanbus.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="mobile" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/ticketbos.webp" class="img-fluid me-2" alt="TicketBos" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge is-mobile">Tourism</span> TicketBos</h3></div><p class="mb-2">Ticket business operating system designed for tourism scalability.</p><a href="https://www.ticketbos.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
-                    <div class="col-md-6 col-lg-4"><article data-category="industry" class="home-v2-feature h-100 p-4"><div class="d-flex align-items-center mb-2"><img src="assets/images/solutions/complainbos.webp" class="img-fluid me-2" alt="ComplainBos" style="max-height:32px;" width="32" height="32" loading="lazy"><h3 class="h5 mb-0"><span class="solution-badge">CRM</span> ComplainBos</h3></div><p class="mb-2">Complaint lifecycle management to strengthen customer satisfaction.</p><a href="https://www.complainbos.com/" target="_blank" rel="noopener">Visit site &rarr;</a></article></div>
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/kertasdms.webp" class="img-fluid me-2" alt="KertasDMS" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">DMS</span> KertasDMS</h3>
+                            </div>
+                            <p class="mb-2">Document digitization, centralized storage, and workflow transparency.</p>
+                            <a href="https://www.kertasdms.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/linkexpres.webp" class="img-fluid me-2" alt="LinkExpres" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Logistics</span> LinkExpres</h3>
+                            </div>
+                            <p class="mb-2">Order, inventory, and logistics process optimization across supply chains.</p>
+                            <div style="display: block; height: 0; visibility: hidden;"></div>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/8planner.webp" class="img-fluid me-2" alt="8planner" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">Planning</span> 8planner</h3>
+                            </div>
+                            <p class="mb-2">Operational scheduling and reporting support for admin-heavy teams.</p>
+                            <a href="https://www.8planner.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/roompillow.webp" class="img-fluid me-2" alt="RoompillowPMS" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Hospitality</span> RoompillowPMS</h3>
+                            </div>
+                            <p class="mb-2">Hospitality management to improve guest experience and team coordination.</p>
+                            <div style="display: block; height: 0; visibility: hidden;"></div>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/toursbloom.webp" class="img-fluid me-2" alt="Toursbloom" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">Travel</span> Toursbloom</h3>
+                            </div>
+                            <p class="mb-2">Tour package creation and supplier coordination in real time.</p>
+                            <a href="https://www.toursbloom.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/assetsware.webp" class="img-fluid me-2" alt="Assetsware" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">Assets</span> Assetsware</h3>
+                            </div>
+                            <p class="mb-2">Fixed asset tracking with reliable data for operational and audit reporting.</p>
+                            <a href="https://www.assetsware.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/dentallink.webp" class="img-fluid me-2" alt="Dentallink" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Healthcare</span> Dentallink</h3>
+                            </div>
+                            <p class="mb-2">Dental practice software to streamline clinic operations and oversight.</p>
+                            <a href="https://www.dentallinkapp.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/jurismanager.webp" class="img-fluid me-2" alt="Juris Manager" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Legal</span> Juris Manager</h3>
+                            </div>
+                            <p class="mb-2">All-in-one legal firm management for cases, schedules, and documentation.</p>
+                            <a href="https://www.jurismanager.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/nunukragang.webp" class="img-fluid me-2" alt="Nunukragang" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">Culture</span> Nunukragang</h3>
+                            </div>
+                            <p class="mb-2">Collaborative online dictionary platform for indigenous language preservation.</p>
+                            <a href="https://www.nunukragang.org/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/gourbanbus.webp" class="img-fluid me-2" alt="Gourbanbus" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Transport</span> Gourbanbus</h3>
+                            </div>
+                            <p class="mb-2">Public transport experience platform with QR-enabled GPS access.</p>
+                            <a href="https://www.gourbanbus.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/ticketbos.webp" class="img-fluid me-2" alt="TicketBos" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">Tourism</span> TicketBos</h3>
+                            </div>
+                            <p class="mb-2">Ticket business operating system designed for tourism scalability.</p>
+                            <a href="https://www.ticketbos.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/complainbos.webp" class="img-fluid me-2" alt="ComplainBos" style="max-height:32px;" width="32" height="32" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">CRM</span> ComplainBos</h3>
+                            </div>
+                            <p class="mb-2">Complaint lifecycle management to strengthen customer satisfaction.</p>
+                            <a href="https://www.complainbos.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/solutions/queuebos.webp" class="img-fluid me-2" alt="QueueBos" style="max-height:70px;" width="70" height="70" loading="lazy">
+                                <h3 class="h5 mb-0"><span class="solution-badge">Complaint</span> QueueBos</h3>
+                            </div>
+                            <p class="mb-2">Complaint lifecycle management to strengthen customer satisfaction.</p>
+                            <a href="https://www.queuebos.com/" target="_blank" rel="noopener">Visit site &rarr;</a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -208,81 +440,79 @@
         </section>
     </main>
 
-        <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper bg-gray">
-            <div class="footer-area section-space--ptb_80">
-                <div class="container">
-                    <div class="row g-4 footer-widget-wrapper">
-                        <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
-                            <h2 class="footer-widget__title h6 mb-30"> Main Office </h2>
-                            <ul class="footer-widget__list">
-                                <li><address>H-08-10, Aeropod Commercial Square,<br>
-                                    Jalan Aeropod Off Jalan Kepayan,<br>
-                                    88200 Kota Kinabalu,
-                                    Sabah, MY.</address></li>
-                                <li class="footer-action-list">
-                                    <a href="https://maps.app.goo.gl/1wLmkALdSxdKTd9KA" class="footer-action-link text-color-primary">
-                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                        <span>Open Map</span>
+    <!--====================  footer area ====================-->
+    <div class="footer-area-wrapper bg-gray">
+        <div class="footer-area section-space--ptb_80">
+            <div class="container">
+                <div class="row g-4 footer-widget-wrapper">
+                    <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
+                        <h2 class="footer-widget__title h6 mb-30"> Main Office </h2>
+                        <ul class="footer-widget__list">
+                            <li><address>H-08-10, Aeropod Commercial Square,<br>
+                                Jalan Aeropod Off Jalan Kepayan,<br>
+                                88200 Kota Kinabalu,
+                                Sabah, MY.</address></li>
+                            <li class="footer-action-list">
+                                <a href="https://maps.app.goo.gl/1wLmkALdSxdKTd9KA" class="footer-action-link text-color-primary">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>Open Map</span>
+                                </a>
+                                <a href="mailto:hello@phisoft.my" class="footer-action-link">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>hello@phisoft.my</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
+                        <h2 class="footer-widget__title h6 mb-30"> IOT R&amp;D Office </h2>
+                        <ul class="footer-widget__list">
+                            <li><address>H-03-09, Aeropod Commercial Square,<br>
+                                Jalan Aeropod Off Jalan Kepayan,<br>
+                                88200 Kota Kinabalu,
+                                Sabah, MY.</address></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
+                        <h2 class="footer-widget__title h6 mb-30">Business Hours</h2>
+                        <ul class="footer-widget__list">
+                            <p>Monday to Friday <br> 9:00 AM to 5:00 PM</p>
+                        </ul>
+                        <h2 class="footer-widget__title h6 mb-30 mt-4">Follow Us</h2>
+                        <div>
+                            <ul class="list ht-social-networks solid-rounded-icon">
+                                <li class="item">
+                                    <a href="https://facebook.com/phisoft.my/" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-facebook-f link-icon"></i>
                                     </a>
-                                    <a href="mailto:hello@phisoft.my" class="footer-action-link">
-                                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                                        <span>hello@phisoft.my</span>
+                                </li>
+                                <li class="item">
+                                    <a href="https://instagram.com/phisoft.my" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-instagram link-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://www.linkedin.com/company/phisoft-my/mycompany/" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-linkedin link-icon"></i>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
-                            <h2 class="footer-widget__title h6 mb-30"> IOT R&amp;D Office </h2>
-                            <ul class="footer-widget__list">
-                                <li><address>H-03-09, Aeropod Commercial Square,<br>
-                                    Jalan Aeropod Off Jalan Kepayan,<br>
-                                    88200 Kota Kinabalu,
-                                    Sabah, MY.</address></li>
-                            </ul>
-                        </div>
-                                                <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
-                            <h2 class="footer-widget__title h6 mb-30">Business Hours</h2>
-                            <ul class="footer-widget__list">
-                                <p>Monday to Friday <br> 9:00 AM to 5:00 PM</p>
-                            </ul>
-                            <h2 class="footer-widget__title h6 mb-30 mt-4">Follow Us</h2>
-                            <div>
-                                    <ul class="list ht-social-networks solid-rounded-icon">
-                                        <li class="item">
-                                            <a href="https://facebook.com/phisoft.my/" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
-                                                <i class="fab fa-facebook-f link-icon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="https://instagram.com/phisoft.my" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
-                                                <i class="fab fa-instagram link-icon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="item">
-                                            <a href="https://www.linkedin.com/company/phisoft-my/mycompany/" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
-                                                <i class="fab fa-linkedin link-icon"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright-area section-space--pb_30">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12 text-center text-md-start">
-                            <p class="copyright-text">&copy;&nbsp; 2026 Phi Software Sdn Bhd ( 201701004025 1218190-P )</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer-copyright-area section-space--pb_30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center text-md-start">
+                        <p class="copyright-text">&copy;&nbsp; 2026 Phi Software Sdn Bhd ( 201701004025 1218190-P )</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--====================  End of footer area  ====================-->
-
 
     <a href="https://api.whatsapp.com/send?phone=60128669695&amp;text=Phi%20Software%20Web" class="whatsapp-container" target="_blank" rel="noopener noreferrer" aria-label="Chat with Phisoft on WhatsApp">
         <span class="whatsapp-label">WhatsApp</span>
@@ -295,7 +525,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const grid = document.getElementById('solutions-grid');
             if (!grid) return;
-            const cards = grid.querySelectorAll('[data-category]');
+            const cardColumns = Array.from(grid.children);
             const buttons = document.querySelectorAll('.solution-filter-btn');
 
             buttons.forEach(function (btn) {
@@ -304,11 +534,14 @@
                     btn.classList.add('active');
                     var filter = btn.getAttribute('data-filter');
 
-                    cards.forEach(function (card) {
-                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                            card.style.display = '';
+                    cardColumns.forEach(function (column) {
+                        const card = column.querySelector('[data-category]');
+                        if (!card) return;
+                        const category = card.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            column.style.display = '';
                         } else {
-                            card.style.display = 'none';
+                            column.style.display = 'none';
                         }
                     });
                 });
