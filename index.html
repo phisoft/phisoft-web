@@ -54,7 +54,7 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -143,19 +143,79 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html"
-                                    >Services</a
-                                >
+                            <li class="nav-item dropdown dropdown-mega-nav">
+                                <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <div class="dropdown-menu dropdown-mega">
+                                    <div class="dropdown-mega-grid">
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">Build</h6>
+                                            <p class="dropdown-mega-desc">Custom solutions from the ground up</p>
+                                            <a class="dropdown-item" href="services/build.html">Software Development</a>
+                                            <a class="dropdown-item" href="services/build.html">Mobile App Development</a>
+                                            <a class="dropdown-item" href="services/build.html">AI Automation</a>
+                                            <a class="dropdown-item" href="services/build.html">Blockchain Development</a>
+                                        </div>
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">Connect</h6>
+                                            <p class="dropdown-mega-desc">Unify your systems and data</p>
+                                            <a class="dropdown-item" href="services/connect.html">ERP Integration</a>
+                                            <a class="dropdown-item" href="services/connect.html">System Integration</a>
+                                            <a class="dropdown-item" href="services/connect.html">Business Intelligence</a>
+                                        </div>
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">Support</h6>
+                                            <p class="dropdown-mega-desc">Keep systems running smoothly</p>
+                                            <a class="dropdown-item" href="services/support.html">IT Outsourcing</a>
+                                            <a class="dropdown-item" href="services/support.html">Cloud Solutions</a>
+                                            <a class="dropdown-item" href="services/support.html">IT Support &amp; Maintenance</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="solutions.html"
-                                    >Solutions</a
-                                >
+                        <li class="nav-item dropdown dropdown-mega-nav">
+                                <a class="nav-link dropdown-toggle" href="solutions.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                                <div class="dropdown-menu dropdown-mega">
+                                    <div class="dropdown-mega-grid">
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">Integrations</h6>
+                                            <p class="dropdown-mega-desc">Connect with trusted platforms</p>
+                                            <a class="dropdown-item" href="solutions/integrations.html">YONO Payment</a>
+                                            <a class="dropdown-item" href="solutions/integrations.html">Touch 'n Go</a>
+                                            <a class="dropdown-item" href="solutions/integrations.html">AutoCount</a>
+                                            <a class="dropdown-item" href="solutions/integrations.html">SQL Accounting</a>
+                                            <a class="dropdown-item" href="solutions/integrations.html">LHDN E-Invoice</a>
+                                        </div>
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">Platforms</h6>
+                                            <p class="dropdown-mega-desc">Products built by Phisoft</p>
+                                            <a class="dropdown-item" href="solutions/platforms.html">KertasDMS</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">8planner</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">Assetsware</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">8planner</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">ComplainBos</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">QueueBos</a>
+                                            <a class="dropdown-item" href="solutions/platforms.html">TicketBos</a>
+                                        </div>
+                                        <div class="dropdown-mega-col">
+                                            <h6 class="dropdown-mega-heading">By Industry</h6>
+                                            <p class="dropdown-mega-desc">Tailored for your sector</p>
+                                            <a class="dropdown-item" href="solutions/industries.html">Dentallink &mdash; Healthcare</a>
+                                            <a class="dropdown-item" href="solutions/industries.html">Juris Manager &mdash; Legal</a>
+                                            <a class="dropdown-item" href="solutions/industries.html">Toursbloom &mdash; Travel</a>
+                                            <a class="dropdown-item" href="solutions/industries.html">Gourbanbus &mdash; Transport</a>
+                                            <a class="dropdown-item fw-bold" href="solutions/industries.html">View all &rarr;</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="careers.html"
                                     >Careers</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="insights.html"
+                                    >Insights</a
                                 >
                             </li>
                             <li class="nav-item ms-lg-2">
@@ -166,7 +226,7 @@
                                         class="fa-regular fa-envelope me-1"
                                         aria-hidden="true"
                                     ></i
-                                    ><span>Contact us</span></a
+                                    ><span>Get a Quote</span></a
                                 >
                             </li>
                         </ul>
@@ -451,117 +511,62 @@
         </main>
 
         <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper bg-gray">
-            <div class="footer-area section-space--ptb_80">
+        <div class="footer-area-wrapper">
+            <div class="footer-area">
                 <div class="container">
                     <div class="row g-4 footer-widget-wrapper">
                         <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
-                            <h2 class="footer-widget__title h6 mb-30">
-                                Main Office
-                            </h2>
+                            <h2 class="footer-widget__title h6 mb-30"> Main Office </h2>
                             <ul class="footer-widget__list">
-                                <li>
-                                    <address>
-                                        H-08-10, Aeropod Commercial Square,<br />
-                                        Jalan Aeropod Off Jalan Kepayan,<br />
-                                        88200 Kota Kinabalu, Sabah, MY.
-                                    </address>
-                                </li>
+                                <li><address>H-08-10, Aeropod Commercial Square,<br>
+                                    Jalan Aeropod Off Jalan Kepayan,<br>
+                                    88200 Kota Kinabalu,
+                                    Sabah, MY.</address></li>
                                 <li class="footer-action-list">
-                                    <a
-                                    href="https://maps.app.goo.gl/1wLmkALdSxdKTd9KA"
-                                    class="hover-style-link text-color-primary footer-action-link"
-                                    >
-                                        <i
-                                            class="fas fa-map-marker-alt"
-                                            aria-hidden="true"
-                                        ></i>
+                                    <a href="https://maps.app.goo.gl/1wLmkALdSxdKTd9KA" class="footer-action-link text-color-primary">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                         <span>Open Map</span>
                                     </a>
-                                    <a
-                                    href="mailto:hello@phisoft.my"
-                                    class="hover-style-link footer-action-link"
-                                    >
-                                        <i
-                                            class="fas fa-envelope"
-                                            aria-hidden="true"
-                                        ></i>
+                                    <a href="mailto:hello@phisoft.my" class="footer-action-link">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
                                         <span>hello@phisoft.my</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-4 footer-widget">
-                            <h2 class="footer-widget__title h6 mb-30">
-                                IOT R&amp;D Office
-                            </h2>
+                            <h2 class="footer-widget__title h6 mb-30"> IOT R&amp;D Office </h2>
                             <ul class="footer-widget__list">
-                                <li>
-                                    <address>
-                                        H-03-09, Aeropod Commercial Square,<br />
-                                        Jalan Aeropod Off Jalan Kepayan,<br />
-                                        88200 Kota Kinabalu, Sabah, MY.
-                                    </address>
-                                </li>
+                                <li><address>H-03-09, Aeropod Commercial Square,<br>
+                                    Jalan Aeropod Off Jalan Kepayan,<br>
+                                    88200 Kota Kinabalu,
+                                    Sabah, MY.</address></li>
                             </ul>
                         </div>
-                        <div
-                            class="col-sm-12 col-md-6 col-lg-4 footer-widget"
-                        >
-                            <h2 class="footer-widget__title h6 mb-30">
-                                Business Hours
-                            </h2>
+                        <div class="col-sm-12 col-md-6 col-lg-4 footer-widget">
+                            <h2 class="footer-widget__title h6 mb-30">Business Hours</h2>
                             <ul class="footer-widget__list">
-                                <p>
-                                    Monday to Friday <br />
-                                    9:00 AM to 5:00 PM
-                                </p>
+                                <p>Monday to Friday <br> 9:00 AM to 5:00 PM</p>
                             </ul>
-                            <h2 class="footer-widget__title h6 mb-30 mt-4">
-                                Follow Us
-                            </h2>
+                            <h2 class="footer-widget__title h6 mb-30 mt-4">Follow Us</h2>
                             <div>
-                                    <ul
-                                        class="list ht-social-networks solid-rounded-icon"
-                                    >
-                                        <li class="item">
-                                            <a
-                                        href="https://facebook.com/phisoft.my/"
-                                        target="_blank"
-                                        aria-label="Facebook"
-                                        class="social-link hint--bounce hint--top hint--primary"
-                                    >
-                                        <i
-                                            class="fab fa-facebook-f link-icon"
-                                        ></i>
-                                    </a>
-                                        </li>
-                                        <li class="item">
-                                            <a
-                                        href="https://instagram.com/phisoft.my"
-                                        target="_blank"
-                                        aria-label="Instagram"
-                                        class="social-link hint--bounce hint--top hint--primary"
-                                    >
-                                        <i
-                                            class="fab fa-instagram link-icon"
-                                        ></i>
-                                    </a>
-                                        </li>
-                                        <li class="item">
-                                            <a
-                                        href="https://www.linkedin.com/company/phisoft-my/mycompany/"
-                                        target="_blank"
-                                        aria-label="Linkedin"
-                                        class="social-link hint--bounce hint--top hint--primary"
-                                    >
-                                        <i
-                                            class="fab fa-linkedin link-icon"
-                                        ></i>
-                                    </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <ul class="list ht-social-networks solid-rounded-icon">
+                                    <li class="item">
+                                        <a href="https://facebook.com/phisoft.my/" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
+                                            <i class="fab fa-facebook-f link-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="https://instagram.com/phisoft.my" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
+                                            <i class="fab fa-instagram link-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="https://www.linkedin.com/company/phisoft-my/mycompany/" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
+                                            <i class="fab fa-linkedin link-icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -571,16 +576,13 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 text-center text-md-start">
-                            <p class="copyright-text">
-                                &copy;&nbsp; 2026 Phi Software Sdn Bhd (
-                                201701004025 1218190-P )
-                            </p>
+                            <p class="copyright-text">&copy;&nbsp; 2026 Phi Software Sdn Bhd ( 201701004025 1218190-P )</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--====================  End of footer area  ====================-->
+    <!--====================  End of footer area  ====================-->
 
         <a
             href="https://api.whatsapp.com/send?phone=60128669695&amp;text=Phi%20Software%20Web"
@@ -597,6 +599,6 @@
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
     </body>
 </html>
