@@ -469,7 +469,7 @@ textarea:focus {
 }
 
 .footer-widget__title {
-    color: #f1f5f9;
+    color: #ffffff !important;
     margin-bottom: 1rem !important;
     font-weight: 700;
     letter-spacing: 0.03em;
