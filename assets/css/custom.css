@@ -300,32 +300,34 @@ h6 {
 /* mobile hero CTA sizing */
 @media (max-width: 575.98px) {
     .hero-badge {
-        font-size: 0.68rem;
-        padding: 0.3rem 0.85rem;
-        margin-bottom: 1rem;
+        font-size: 0.65rem;
+        padding: 0.25rem 0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     .hero-headline {
-        font-size: clamp(1.75rem, 7vw, 2.25rem);
-        margin-bottom: 0.85rem;
+        font-size: clamp(1.6rem, 7vw, 2rem);
+        margin-bottom: 0.7rem;
     }
 
     .hero-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        padding: 0 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        padding: 0;
+        max-width: 100%;
     }
 
     .hero-btn {
-        padding: 0.6rem 1.25rem;
-        font-size: 0.95rem;
+        padding: 0.55rem 1rem;
+        font-size: 0.9rem;
         min-width: 0;
         width: 100%;
     }
 
     .hero-tagline {
-        margin-top: 1.25rem;
-        font-size: 0.7rem;
+        margin-top: 1rem;
+        font-size: 0.72rem;
+        gap: 0.5rem;
     }
 }
 
@@ -665,7 +667,7 @@ textarea:focus {
 
     #main-wrapper > * + *,
     .site-wrapper-reveal > * + * {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .section-title-wrap,
@@ -708,10 +710,11 @@ textarea:focus {
     }
 
     .nav-contact-btn {
-        margin-top: 0.75rem;
+        margin-top: 0.5rem;
         width: 100%;
         text-align: center;
         padding: 0.65rem 1rem;
+        font-size: 0.95rem;
     }
 
     /* service cards */
@@ -892,6 +895,13 @@ textarea:focus {
     }
 }
 
+/* hide hero art on small screens */
+@media (max-width: 768px) {
+    .hero-art {
+        opacity: 0.4;
+    }
+}
+
 /* ---- mobile: tighten wizard progress ---- */
 @media (max-width: 400px) {
     .wizard-step {
@@ -917,6 +927,20 @@ textarea:focus {
 
 @media (max-width: 575.98px) {
     .home-v2-service {
+        padding: 1.25rem !important;
+    }
+}
+
+/* reduce hero vertical padding on mobile */
+@media (max-width: 575.98px) {
+    .home-v2-hero .py-lg-6 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .home-v2 .home-v2-feature,
+    .home-v2 .home-v2-service,
+    .home-v2 .home-v2-cta {
         padding: 1.25rem !important;
     }
 }
@@ -1022,6 +1046,7 @@ textarea:focus {
 .home-v2-hero {
     position: relative;
     overflow: hidden;
+    isolation: isolate;
     background:
         radial-gradient(
             ellipse 90% 70% at 50% 0%,
@@ -1045,6 +1070,20 @@ textarea:focus {
             #f4f6f8 65%,
             #ffffff 100%
         );
+}
+
+.hero-art {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.hero-art svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* decorative abstract shapes */
