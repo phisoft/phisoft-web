@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css");
+
 :root {
     --brand-primary: #dc2626; /* vibrant red — logo anchor, buttons, links */
     --brand-primary-dark: #0f1117; /* near-black — headings, dark emphasis */
