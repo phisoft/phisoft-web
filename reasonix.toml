@@ -1,0 +1,2 @@
+[permissions]
+allow = ["Bash=echo \"=== page weights (KB) ===\"; for f in index.html about.html services.html solutions.html insights.html contact.html careers.html; do printf \"%-16s %s\\n\" \"$f\" \"$(( $(wc -c < $f) / 1024 ))KB\"; done; echo; echo \"=== image inventory ===\"; find assets/images -type f | head -40; echo; du -sh assets/images 2>/dev/null; echo; echo \"=== largest images ===\"; find assets/images -type f -exec ls -la {} \\; | sort -k5 -rn | head -12"]
