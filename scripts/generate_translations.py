@@ -1559,7 +1559,8 @@ def head_meta(html, page_rel, lang):
 
 
 def inject_switcher(html, base_dir, lang, page_rel):
-    """Add bottom-right language switcher in the footer-copyright row.
+    """Add a language switcher in the footer, directly below the office-hours
+    widget (before the social "Follow Us" widget heading).
 
     base_dir is the directory (relative to site root) the page sits in for
     the language being produced: language/ + page_dir for ms/zh, or just
@@ -1588,11 +1589,13 @@ def inject_switcher(html, base_dir, lang, page_rel):
         )
     switcher_html = '<div class="lang-switcher" aria-label="Language switcher">' + "".join(parts) + "</div>"
 
-    anchor = '<p class="copyright-text">&copy;&nbsp; 2026 Phi Software Sdn Bhd ( 201701004025 1218190-P )</p>'
+    # Insert the switcher as a sibling just below the office-hours widget, i.e.
+    # immediately before the whole Follow Us footer-widget heading element.
     if '<div class="lang-switcher"' in html:
         return html  # idempotent
-    if anchor in html:
-        html = html.replace(anchor, anchor + "\n                            " + switcher_html, 1)
+    m = re.search(r'\s*<h2 class="footer-widget__title h6 mb-30 mt-4">.*?</h2>', html, flags=re.S)
+    if m:
+        html = html[:m.start()] + "\n                            " + switcher_html + m.group(0) + html[m.end():]
     return html
 
 
