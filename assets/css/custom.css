@@ -1647,31 +1647,17 @@ textarea:focus {
     color: #ffffff;
 }
 
-/* ===== Language switcher (footer, bottom right) ===== */
-.footer-copyright-area {
-    position: relative;
-}
+/* ===== Language switcher (footer, below office hours) ===== */
 .lang-switcher {
-    position: absolute;
-    right: 1.25rem;
-    bottom: 50%;
-    transform: translateY(50%);
     display: inline-flex;
     align-items: center;
     gap: 0.125rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 999px;
     padding: 0.15rem 0.35rem;
     background: rgba(255, 255, 255, 0.04);
-}
-@media (max-width: 767.98px) {
-    .lang-switcher {
-        position: static;
-        right: auto;
-        bottom: auto;
-        transform: none;
-        margin: 0.75rem auto 0;
-    }
 }
 .lang-switch-link {
     font-size: 0.72rem;
