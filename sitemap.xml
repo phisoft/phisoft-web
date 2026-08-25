@@ -9,37 +9,107 @@
   <loc>https://phisoft.my/</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>1.00</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>1.00</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/about.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/about.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/about.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/services.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/services.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/services.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/solutions.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/solutions.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/contact.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/contact.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/contact.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/careers.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/careers.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/careers.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/insights.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/insights.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/404.html</loc>
   <lastmod>2026-08-21</lastmod>
@@ -49,32 +119,92 @@
   <loc>https://phisoft.my/services/build.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/services/build.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/services/build.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/services/connect.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/services/connect.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/services/connect.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/services/support.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/services/support.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/services/support.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/solutions/integrations.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/solutions/integrations.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions/integrations.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/solutions/platforms.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/solutions/platforms.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions/platforms.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/solutions/industries.html</loc>
   <lastmod>2026-08-21</lastmod>
   <priority>0.70</priority>
-</url>
+</url>  <url>
+    <loc>https://phisoft.my/ms/solutions/industries.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions/industries.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.70</priority>
+  </url>
+
 <url>
   <loc>https://phisoft.my/insights/ai-automation-for-smes.html</loc>
   <lastmod>2026-08-21</lastmod>
