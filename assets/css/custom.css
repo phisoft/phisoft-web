@@ -1648,29 +1648,29 @@ textarea:focus {
 }
 
 /* ===== Language switcher (footer, bottom right) ===== */
+.footer-copyright-area {
+    position: relative;
+}
 .lang-switcher {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 50%;
+    transform: translateY(50%);
     display: inline-flex;
     align-items: center;
     gap: 0.125rem;
-    margin-left: auto;
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 999px;
     padding: 0.15rem 0.35rem;
     background: rgba(255, 255, 255, 0.04);
 }
-.footer-copyright-area .row {
-    align-items: center;
-}
-.footer-copyright-area .col-12 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-@media (min-width: 768px) {
-    .footer-copyright-area .col-12 {
-        justify-content: space-between;
+@media (max-width: 767.98px) {
+    .lang-switcher {
+        position: static;
+        right: auto;
+        bottom: auto;
+        transform: none;
+        margin: 0.75rem auto 0;
     }
 }
 .lang-switch-link {
