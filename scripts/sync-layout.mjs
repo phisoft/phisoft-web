@@ -9,7 +9,7 @@ const footerTemplate = await readFile(new URL('../components/footer.html', impor
 
 function collectHtml(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    if (entry.name.startsWith('.') || entry.name === 'components') return [];
+    if (entry.name.startsWith('.') || entry.name === 'components' || entry.name === 'ms' || entry.name === 'zh') return [];
     const path = join(dir, entry.name);
     return entry.isDirectory() ? collectHtml(path) : entry.name.endsWith('.html') ? [path] : [];
   });

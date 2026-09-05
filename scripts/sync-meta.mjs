@@ -5,7 +5,7 @@ import { join } from 'node:path';
 const root = new URL('../', import.meta.url).pathname;
 function collect(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    if (entry.name.startsWith('.') || ['components', 'node_modules'].includes(entry.name)) return [];
+    if (entry.name.startsWith('.') || ['components', 'node_modules', 'ms', 'zh'].includes(entry.name)) return [];
     const path = join(dir, entry.name);
     return entry.isDirectory() ? collect(path) : entry.name.endsWith('.html') ? [path] : [];
   });

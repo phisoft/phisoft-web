@@ -5634,3 +5634,28 @@ html body .career-open-application {
 
 @media (max-width:1080px){ .cs-grid--main,.cs-grid--side{ grid-column: span 12; } }
 @media (max-width:640px){ .cs-grid--side{ grid-template-columns:1fr; } }
+
+/* =====================================================================
+   Homepage "Your IT team + Phisoft" partnership panel
+   ===================================================================== */
+.ai-partner-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.4rem;}
+.ai-partner-card{padding:1.5rem 1.6rem;border:1px solid var(--ai-border);border-radius:16px;background:#fff;}
+.ai-partner-card--alt{background:var(--ai-ink);border-color:transparent;}
+.ai-partner-chip{display:inline-block;margin-bottom:1.1rem;padding:.42rem .9rem;border-radius:999px;background:var(--ai-soft-teal);color:var(--ai-teal);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.ai-partner-card--alt .ai-partner-chip{background:rgba(121,208,215,.12);color:#79d0d7;}
+.ai-partner-card ul{margin:0;padding:0;list-style:none;}
+.ai-partner-card li{display:flex;gap:.85rem;padding:.65rem 0;border-top:1px solid var(--ai-border);}
+.ai-partner-card li:first-of-type{border-top:0;}
+.ai-partner-card li > i{color:var(--ai-teal);font-size:1.3rem;margin-top:.2rem;flex:none;}
+.ai-partner-card--alt li{border-color:rgba(255,255,255,.1);}
+.ai-partner-card--alt li > i{color:#79d0d7;}
+.ai-partner-card strong{color:var(--ai-ink);display:block;font-size:.95rem;}
+.ai-partner-card p{margin:0;color:var(--ai-muted);font-size:.86rem;}
+.ai-partner-card--alt strong{color:#fff;}
+.ai-partner-card--alt p{color:#c9d5dc;}
+@media (max-width:760px){.ai-partner-cols{grid-template-columns:1fr;}}
+
+/* Footer language switcher */
+.footer-lang{margin-top:1rem;display:flex;flex-direction:column;gap:.4rem;}
+.footer-lang__label{color:#c6d0d9;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;}
+.footer-lang__select{max-width:100%;padding:.5rem .8rem;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:#16243c;color:#fff;font-size:.88rem;}
