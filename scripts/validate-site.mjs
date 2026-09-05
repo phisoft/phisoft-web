@@ -59,10 +59,35 @@ for (const path of pages) {
   }
 }
 
+function collectLang(lang) {
+  const base = lang === 'en' ? root : join(root, lang);
+  if (!existsSync(base)) return [];
+  const res = [];
+  const walkDir = (d) => {
+    for (const entry of readdirSync(d, { withFileTypes: true })) {
+      if (entry.name.startsWith('.')) continue;
+      if (lang === 'en' && ['components', 'node_modules', 'ms', 'zh'].includes(entry.name)) continue;
+      const full = join(d, entry.name);
+      if (entry.isDirectory()) walkDir(full);
+      else if (entry.name.endsWith('.html')) res.push(full);
+    }
+  };
+  walkDir(base);
+  return res;
+}
+
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
-const sitemapUrls = [...sitemap.matchAll(/<loc>https:\/\/phisoft\.my\/(.*?)<\/loc>/g)].map((match) => match[1] || 'index.html');
-const expectedUrls = publicPages.map((path) => relative(root, path).split(sep).join('/'));
-for (const page of expectedUrls) if (!sitemapUrls.includes(page === 'index.html' ? 'index.html' : page)) errors.push(`sitemap: missing ${page}`);
+const sitemapLocs = [...sitemap.matchAll(/<loc>https:\/\/phisoft\.my\/([^<]*)<\/loc>/g)].map((m) => m[1]);
+const sitemapUrls = sitemapLocs.map((p) => (p && p.endsWith('/') ? p + 'index.html' : p)).map((p) => (p === '' ? 'index.html' : p));
+
+function publicPagesFor(lang) {
+  return collectLang(lang)
+    .filter((path) => !path.endsWith(`${sep}404.html`))
+    .map((path) => relative(root, path).split(sep).join('/'))
+    .map((p) => (p === 'index.html' || p.endsWith('/index.html') ? p : p));
+}
+const expectedUrls = [...publicPagesFor('en'), ...publicPagesFor('ms'), ...publicPagesFor('zh')];
+for (const page of expectedUrls) if (!sitemapUrls.includes(page)) errors.push(`sitemap: missing ${page}`);
 for (const url of sitemapUrls) if (!expectedUrls.includes(url)) errors.push(`sitemap: unknown ${url}`);
 if (new Set(sitemapUrls).size !== sitemapUrls.length) errors.push('sitemap: duplicate URLs');
 

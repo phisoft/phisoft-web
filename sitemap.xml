@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://phisoft.my/</loc>
     <lastmod>2026-09-05</lastmod>
@@ -11,14 +11,19 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/solutions.html</loc>
+    <loc>https://phisoft.my/ai-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/contact.html</loc>
+    <loc>https://phisoft.my/application-maintenance.html</loc>
     <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/automation.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://phisoft.my/careers.html</loc>
@@ -26,29 +31,49 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/insights.html</loc>
+    <loc>https://phisoft.my/case-studies.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/cloud-devops.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/contact.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/services/connect.html</loc>
+    <loc>https://phisoft.my/custom-software.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/solutions/integrations.html</loc>
+    <loc>https://phisoft.my/data-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/solutions/platforms.html</loc>
+    <loc>https://phisoft.my/engineering-partnership.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/engineering-team.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/solutions/industries.html</loc>
+    <loc>https://phisoft.my/innovation-rd.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/insights.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://phisoft.my/insights/ai-automation-for-smes.html</loc>
@@ -86,12 +111,7 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/ai-engineering.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/custom-software.html</loc>
+    <loc>https://phisoft.my/iot-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
@@ -106,44 +126,132 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://phisoft.my/ms/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/about.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/ai-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/application-maintenance.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/automation.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/careers.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/case-studies.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/cloud-devops.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/contact.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/custom-software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/data-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/engineering-partnership.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/engineering-team.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/innovation-rd.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/iot-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/legacy-modernisation.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/mobile-app-development.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/product-development.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/project-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/solutions.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/solutions/industries.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/solutions/platforms.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/specialist-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://phisoft.my/product-development.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/software.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/engineering-partnership.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/case-studies.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://phisoft.my/data-engineering.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://phisoft.my/automation.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/cloud-devops.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/iot-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
@@ -153,22 +261,162 @@
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://phisoft.my/services/connect.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/solutions.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/solutions/industries.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/solutions/integrations.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/solutions/platforms.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
     <loc>https://phisoft.my/specialist-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/application-maintenance.html</loc>
+    <loc>https://phisoft.my/zh/</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/innovation-rd.html</loc>
+    <loc>https://phisoft.my/zh/about.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/ai-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/application-maintenance.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/engineering-team.html</loc>
+    <loc>https://phisoft.my/zh/automation.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/careers.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/case-studies.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/cloud-devops.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/contact.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/custom-software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/data-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/engineering-partnership.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/engineering-team.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/innovation-rd.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/iot-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/legacy-modernisation.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/mobile-app-development.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/product-development.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/project-engineering.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions/industries.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/solutions/platforms.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/specialist-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
   </url>
