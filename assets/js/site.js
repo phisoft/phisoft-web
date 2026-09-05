@@ -9,19 +9,32 @@
 
 /* ---- footer language switcher (EN / BM / 中文) ---- */
 (function () {
-  var sel = document.getElementById('footer-lang');
-  if (!sel) return;
-  // current language: path contains /ms/ or /zh/ else en
+  var group = document.getElementById('footer-lang');
+  if (!group) return;
   var path = (window.location.pathname || '/').replace(/\/+/g, '/');
+  // current language: path contains /ms/ or /zh/ else en; strip the prefix
   var current = path.indexOf('/ms/') === 0 ? 'ms' : (path.indexOf('/zh/') === 0 ? 'zh' : 'en');
-  var file = path.split('/').pop() || 'index.html';
-  sel.value = current;
-  sel.addEventListener('change', function () {
-    var target;
-    if (sel.value === current) return;
-    if (sel.value === 'ms') target = '/ms/' + file;
-    else if (sel.value === 'zh') target = '/zh/' + file;
-    else target = '/' + file;  // English at site root
-    window.location.href = target;
-  });
+  var rest = path.replace(/^\/(ms|zh)\//, '/');
+  var opts = group.querySelectorAll('.footer-lang__opt');
+
+  // highlight the current language
+  for (var i = 0; i < opts.length; i++) {
+    if (opts[i].getAttribute('data-lang') === current) opts[i].classList.add('is-active');
+  }
+  // When JS is on, keep the reader on the same page across languages (sibling
+  // file). The plain href="/ms/" etc. remains the no-JS fallback (homepage).
+  function siblingPath(lang) {
+    if (lang === current) return null;
+    var prefix = lang === 'en' ? '' : '/' + lang;   // '' | '/ms' | '/zh'
+    // strip a trailing "/index.html" so the result uses the directory form when present
+    var r = rest !== '/' && /\/index\.html$/.test(rest) ? rest.replace(/\/index\.html$/, '/') : rest;
+    return prefix + r;
+  }
+  for (var j = 0; j < opts.length; j++) {
+    opts[j].addEventListener('click', function (e) {
+      var lang = this.getAttribute('data-lang');
+      var t = siblingPath(lang);
+      if (t) { e.preventDefault(); window.location.href = t; }
+    });
+  }
 })();

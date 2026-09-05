@@ -40,7 +40,11 @@ for (const path of pages) {
     if (/^(?:https?:|mailto:|tel:|#)/.test(href)) continue;
     const [pathWithQuery, fragment] = href.split('#');
     const pathname = pathWithQuery.split('?')[0];
-    const target = resolve(dirname(path), pathname || name);
+    // site-absolute links (e.g. "/ms/" or "/index.html") resolve from the repo root;
+    // relative links resolve from the page's own directory.
+    const target = pathname.startsWith('/')
+      ? resolve(process.cwd(), pathname.slice(1))
+      : resolve(dirname(path), pathname || name);
     if (!existsSync(target)) errors.push(`${name}: missing ${href}`);
     else if (fragment && !readFileSync(target, 'utf8').includes(`id="${fragment}"`)) errors.push(`${name}: missing anchor ${href}`);
   }
