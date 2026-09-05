@@ -5216,6 +5216,7 @@ select,
 .principles-grid { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 991.98px) { .principles-grid { grid-template-columns: repeat(2, 1fr); } .about-team-grid { grid-template-columns: 1fr; } }
 @media (max-width: 575.98px) { .principles-grid { grid-template-columns: 1fr; } .about-proof-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 479.98px) { .about-proof-grid { grid-template-columns: 1fr; } }
 
 /* Understand·Build·Support·Grow steps */
 .about-partnership { background: #fff !important; }
