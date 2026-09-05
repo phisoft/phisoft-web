@@ -1,0 +1,8 @@
+{
+  "name": "phisoft-web",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/sync-meta.mjs && node scripts/sync-layout.mjs && node scripts/validate-site.mjs",
+    "validate": "node scripts/validate-site.mjs"
+  }
+}
