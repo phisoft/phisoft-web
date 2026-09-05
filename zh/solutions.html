@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>软件解决方案、平台与集成 | Phisoft</title>
+    <meta name="description" content="Phisoft's ready-to-use software platforms, business integrations and industry tools built for Malaysian organisations from Sabah.">
+    <meta name="theme-color" content="#f5f7fa">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="canonical" href="https://phisoft.my/solutions.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Software Solutions, Platforms &amp; Integrations | Phisoft">
+    <meta property="og:description" content="Phisoft's ready-to-use software platforms, business integrations and industry tools built for Malaysian organisations from Sabah.">
+    <meta property="og:url" content="https://phisoft.my/solutions.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Software Solutions, Platforms &amp; Integrations | Phisoft">
+    <meta name="twitter:description" content="Phisoft's ready-to-use software platforms, business integrations and industry tools built for Malaysian organisations from Sabah.">
+    <meta property="og:image" content="https://phisoft.my/assets/images/logo/phisoft-logo.png">
+    <meta name="twitter:image" content="https://phisoft.my/assets/images/logo/phisoft-logo.png">
+    <link rel="alternate" hreflang="en-MY" href="https://phisoft.my/solutions.html">
+    <link rel="alternate" hreflang="x-default" href="https://phisoft.my/solutions.html">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Preserve all original styling - only update hero background */
+        .home-v2-feature {
+            display: flex;
+            flex-direction: column;
+            height: 100% !important;
+        }
+        .home-v2-feature p {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+        .home-v2-feature a {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+        #solutions-grid > [class*="col-"] {
+            transition: all 0.2s ease;
+        }
+        .solution-badge.is-erp {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+        .solution-badge.is-mobile {
+            background: #dcfce7;
+            color: #15803d;
+        }
+        .solution-filter-bar .solution-filter-btn.active {
+            background: #600000;
+            border-color: #600000;
+            color: white;
+        }
+
+        /* New minimalist hero background - clean, modern, subtle */
+        .home-v2-hero {
+            position: relative;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+            isolation: isolate;
+            overflow: hidden;
+        }
+
+        /* Subtle abstract shapes for minimalist elegance */
+        .home-v2-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(96, 0, 0, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 90% 70%, rgba(96, 0, 0, 0.02) 0%, transparent 45%),
+                repeating-linear-gradient(45deg, rgba(96, 0, 0, 0.01) 0px, rgba(96, 0, 0, 0.01) 1px, transparent 1px, transparent 24px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Subtle floating orbs - minimalist touch */
+        .home-v2-hero::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(96, 0, 0, 0.04) 0%, transparent 70%);
+            bottom: -100px;
+            right: -100px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .home-v2-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .home-v2-hero h1 {
+            color: #1a1a2e;
+        }
+
+        .home-v2-hero .lead {
+            color: #4a5568;
+        }
+
+        .home-v2-hero .section-sub-title {
+            color: #600000;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Keep responsive adjustments */
+        @media (max-width: 768px) {
+            .home-v2-hero::after {
+                width: 200px;
+                height: 200px;
+                bottom: -50px;
+                right: -50px;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Business Platforms and Industry Solutions",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Phisoft",
+                "areaServed": ["Sabah", "Malaysia"]
+            },
+            "serviceType": [
+                "ERP Solutions",
+                "Business Application Development",
+                "Custom Integration Services"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://phisoft.my/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Solutions",
+                    "item": "https://phisoft.my/solutions.html"
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body class="ai-page solutions-page">
+    <a class="visually-hidden-focusable home-v2-skip" href="#main-content">跳至主要内容</a>
+
+    <header class="ai-site-header sticky-top">
+  <nav class="navbar navbar-expand-xl" aria-label="Primary navigation">
+    <div class="container ai-nav-container">
+      <a class="navbar-brand" href="../index.html" aria-label="Phisoft home"><img src="../assets/images/logo/phisoft-logo.png" width="160" height="48" class="img-fluid" alt="Phisoft"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="primaryNav">
+        <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-1">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="../software.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">能力</a><ul class="dropdown-menu ai-nav-menu"><li><a class="dropdown-item" href="../software.html">软件工程</a></li><li><a class="dropdown-item" href="../mobile-app-development.html">移动应用工程</a></li><li><a class="dropdown-item" href="../services/connect.html">系统集成</a></li><li><a class="dropdown-item" href="../data-engineering.html">数据工程</a></li><li><a class="dropdown-item" href="../automation.html">自动化</a></li><li><a class="dropdown-item" href="../ai-engineering.html">AI 工程</a></li><li><a class="dropdown-item" href="../cloud-devops.html">云与 DevOps</a></li><li><a class="dropdown-item" href="../iot-engineering.html">物联网工程</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="../engineering-partnership.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">合作方式</a><ul class="dropdown-menu ai-nav-menu"><li><a class="dropdown-item" href="../engineering-partnership.html">专属工程团队</a></li><li><a class="dropdown-item" href="../project-engineering.html">项目工程</a></li><li><a class="dropdown-item" href="../specialist-engineering.html">专家工程</a></li><li><a class="dropdown-item" href="../application-maintenance.html">应用维护</a></li><li><a class="dropdown-item" href="../innovation-rd.html">创新与研发</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="../solutions.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">解决方案</a><ul class="dropdown-menu ai-nav-menu"><li><a class="dropdown-item" href="../solutions/integrations.html">集成</a></li><li><a class="dropdown-item" href="../solutions/platforms.html">产品</a></li><li><a class="dropdown-item" href="../solutions/industries.html">行业</a></li><li><a class="dropdown-item" href="../case-studies.html">案例研究</a></li></ul></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="../about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">公司</a><ul class="dropdown-menu ai-nav-menu"><li><a class="dropdown-item" href="../about.html">关于 Phisoft</a></li><li><a class="dropdown-item" href="../engineering-team.html">工程团队</a></li><li><a class="dropdown-item" href="../careers.html">招贤纳士</a></li><li><a class="dropdown-item" href="../contact.html">联系</a></li></ul></li>
+          <li class="nav-item ms-xl-2"><a class="btn btn-primary ai-nav-cta" href="../contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main id="main-content">
+        <section class="ai-page-hero"><div class="container"><div class="row align-items-center gy-5"><div class="col-lg-7">
+            <p class="ai-eyebrow">经实践验证的业务技术</p>
+            <h1>围绕真实运营打造的解决方案</h1>
+            <p class="ai-page-lead">选择经实践的 Phisoft 平台、连接您已在使用的系统，或将行业方案适配到您的工作流。我们会帮您从可运转的基础起步，并围绕所需业务结果逐步打磨。</p>
+            <div class="ai-page-actions"><a class="btn btn-primary btn-lg" href="../contact.html?intent=solution#contact-form">找到合适的解决方案<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a><a class="btn btn-outline-dark btn-lg" href="#solution-paths">探索解决方案</a></div>
+        </div><div class="col-lg-5"><div class="solutions-hero-orbit" aria-label="Phisoft solution paths"><strong>业务成果</strong><span><i class="ph-bold ph-circles-three-plus" aria-hidden="true"></i>平台</span><span><i class="ph-bold ph-plugs-connected" aria-hidden="true"></i>集成</span><span><i class="ph-bold ph-buildings" aria-hidden="true"></i>行业</span><small>构建 · 连接 · 由 Phisoft 支持</small></div></div></div></div></section>
+
+        <section class="ai-page-section solutions-path-section" id="solution-paths"><div class="container"><div class="row justify-content-between align-items-end mb-5 gy-3"><div class="col-lg-7"><p class="ai-eyebrow">选择您的起点</p><h2>站在正确的基础上，走得更快</h2></div><div class="col-lg-4"><p class="ai-page-lead mb-0">有些业务需要一个现成平台，另一些则需要特定集成或行业工作流。每一条路径都可配置、扩展，并由我们的工程团队提供支持。</p></div></div><div class="solutions-path-grid">
+            <a class="solutions-path-card solutions-path-card--featured" href="../solutions/platforms.html"><span>01</span><i class="ph-bold ph-layout" aria-hidden="true"></i><h3>开箱即用的平台</h3><p>部署经实践的产品，覆盖文档、排队、投诉、资产、规划与票务。</p><b>探索平台<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></b></a>
+            <a class="solutions-path-card" href="../solutions/integrations.html"><span>02</span><i class="ph-bold ph-plugs-connected" aria-hidden="true"></i><h3>业务集成</h3><p>将财务、支付、电子发票与运营系统连接为可靠工作流。</p><b>浏览集成<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></b></a>
+            <a class="solutions-path-card" href="../solutions/industries.html"><span>03</span><i class="ph-bold ph-buildings" aria-hidden="true"></i><h3>行业解决方案</h3><p>从贴合医疗健康、法律、酒店、物流与旅游实际场景的软件入手。</p><b>浏览行业<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></b></a>
+            <a class="solutions-path-card" href="../case-studies.html"><span>04</span><i class="ph-bold ph-files" aria-hidden="true"></i><h3>案例研究</h3><p>看看软件、集成与 AI 改进真实业务工作流的代表性方式。</p><b>浏览交付模式<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></b></a>
+        </div></div></section>
+
+        <section class="py-5 bg-white border-bottom">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <p class="ai-eyebrow">精选集成</p>
+                        <h2>将可信平台接入您的工作流</h2>
+                        <p class="ai-page-lead">把本地支付、财务与合规集成，纳入完整运营流程之中。</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="home-v2-service h-100 p-4">
+                            <img src="../assets/images/solutions/yono.webp" class="img-fluid mb-3" alt="YONO" style="max-height:64px;" loading="lazy" decoding="async">
+                            <h3 class="h5">Sabah Credit YONO 集成</h3>
+                            <p>经由可信任的本地网关简化支付，让交易更顺畅、更安全。</p>
+                            <a href="../solutions/integrations.html#payments">探索 YONO 集成 →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="home-v2-service h-100 p-4">
+                            <img src="../assets/images/solutions/tng.webp" class="img-fluid mb-3" alt="Touch n Go" style="max-height:64px;" loading="lazy" decoding="async">
+                            <h3 class="h5">Touch 'n Go 支付网关</h3>
+                            <p>支持无缝数字支付，顺应现代客户的结账偏好。</p>
+                            <a href="../solutions/integrations.html#payments">探索支付集成 →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="home-v2-service h-100 p-4">
+                            <img src="../assets/images/solutions/autocount.webp" class="img-fluid mb-3" alt="AutoCount" style="max-height:64px;" loading="lazy" decoding="async">
+                            <h3 class="h5">AutoCount 定制插件</h3>
+                            <p>以专业报表、自动化与流程对齐，扩展财务工作流。</p>
+                            <a href="../solutions/integrations.html#accounting">探索 AutoCount 集成 →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="home-v2-service h-100 p-4">
+                            <img src="../assets/images/solutions/sql.webp" class="img-fluid mb-3" alt="SQL Accounting" style="max-height:64px;" loading="lazy" decoding="async">
+                            <h3 class="h5">SQL Accounting 定制插件</h3>
+                            <p>自动化重复任务，解锁定制化的财务洞察，实现更智能的运营。</p>
+                            <a href="../solutions/integrations.html#accounting">探索 SQL Accounting 集成 →</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="home-v2-service h-100 p-4">
+                            <i class="ph-bold ph-receipt d-block mb-3 fs-1" aria-hidden="true"></i>
+                            <h3 class="h5">LHDN 电子发票集成</h3>
+                            <p>通过顺畅的 LHDN MyInvois 集成，让您的 ERP 与财务系统满足马来西亚电子发票合规要求。</p>
+                            <a href="../solutions/integrations.html#accounting">探索 MyInvois 集成 →</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <p class="ai-eyebrow">产品生态</p>
+                        <h2>为解决聚焦业务问题的经验证产品</h2>
+                        <p class="ai-page-lead">浏览 Phisoft 已构建的产品，覆盖文档管理、服务运营、资产、专业服务、旅游与交通等领域。</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="solutionFilterBtn">全部解决方案<span class="badge bg-secondary ms-2" id="solutionCount">13</span>
+                        </button>
+                        <ul class="dropdown-menu" id="solutionFilterDropdown">
+                            <li><button class="dropdown-item active" data-filter="all">全部解决方案</button></li>
+                            <li><button class="dropdown-item" data-filter="erp">数据与 ERP</button></li>
+                            <li><button class="dropdown-item" data-filter="mobile">移动与出行</button></li>
+                            <li><button class="dropdown-item" data-filter="industry">行业与服务</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-4" id="solutions-grid">
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/kertasdms.webp" class="img-fluid me-2" alt="KertasDMS" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">文档管理系统</span> KertasDMS</h3>
+                            </div>
+                            <p class="mb-2">文档数字化、集中存储与工作流透明化。</p>
+                            <a href="https://www.kertasdms.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/linkexpres.webp" class="img-fluid me-2" alt="LinkExpres" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">物流</span> LinkExpres</h3>
+                            </div>
+                            <p class="mb-2">跨供应链的订单、库存与物流流程优化。</p>
+                            <div style="display: block; height: 0; visibility: hidden;"></div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/8planner.webp" class="img-fluid me-2" alt="8planner" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">规划</span> 8planner</h3>
+                            </div>
+                            <p class="mb-2">服务行政事务繁重团队的排期与报表支持。</p>
+                            <a href="https://www.8planner.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/roompillow.webp" class="img-fluid me-2" alt="RoompillowPMS" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">酒店餐饮</span> RoompillowPMS</h3>
+                            </div>
+                            <p class="mb-2">酒店业管理系统，改善宾客体验与团队协作。</p>
+                            <div style="display: block; height: 0; visibility: hidden;"></div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/toursbloom.webp" class="img-fluid me-2" alt="Toursbloom" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">出行</span> Toursbloom</h3>
+                            </div>
+                            <p class="mb-2">旅游套餐创建与供应商实时协调。</p>
+                            <a href="https://www.toursbloom.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="erp" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/assetsware.webp" class="img-fluid me-2" alt="Assetsware" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-erp">资产</span> Assetsware</h3>
+                            </div>
+                            <p class="mb-2">固定资产追踪，为运营与审计报告提供可靠数据。</p>
+                            <a href="https://www.assetsware.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/dentallink.webp" class="img-fluid me-2" alt="Dentallink" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">医疗健康</span> Dentallink</h3>
+                            </div>
+                            <p class="mb-2">牙科诊所管理软件，简化诊所运营与监管。</p>
+                            <a href="https://www.dentallinkapp.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/jurismanager.webp" class="img-fluid me-2" alt="Juris Manager" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">法律</span> Juris Manager</h3>
+                            </div>
+                            <p class="mb-2">一站式律师事务所管理，覆盖案件、日程与文档。</p>
+                            <a href="https://www.jurismanager.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/nunukragang.webp" class="img-fluid me-2" alt="Nunukragang" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">文化</span> Nunukragang</h3>
+                            </div>
+                            <p class="mb-2">面向原住民语言保护的协作式在线词典平台。</p>
+                            <a href="https://www.nunukragang.org/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/gourbanbus.webp" class="img-fluid me-2" alt="Gourbanbus" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">交通</span> Gourbanbus</h3>
+                            </div>
+                            <p class="mb-2">公共交通体验平台，支持二维码 GPS 通行。</p>
+                            <a href="https://www.gourbanbus.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="mobile" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/ticketbos.webp" class="img-fluid me-2" alt="TicketBos" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge is-mobile">旅游</span> TicketBos</h3>
+                            </div>
+                            <p class="mb-2">为规模化旅游业务设计的票务运营操作系统。</p>
+                            <a href="https://www.ticketbos.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/complainbos.webp" class="img-fluid me-2" alt="ComplainBos" style="max-height:32px;" width="32" height="32" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">CRM</span> ComplainBos</h3>
+                            </div>
+                            <p class="mb-2">全生命周期投诉管理，提升客户满意度。</p>
+                            <a href="https://www.complainbos.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article data-category="industry" class="home-v2-feature h-100 p-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="../assets/images/solutions/queuebos.webp" class="img-fluid me-2" alt="QueueBos" style="max-height:70px;" width="70" height="70" loading="lazy" decoding="async">
+                                <h3 class="h5 mb-0"><span class="solution-badge">排队叫号</span> QueueBos</h3>
+                            </div>
+                            <p class="mb-2">面向服务柜台、诊所与政府单位的排队管理——减少等待时间，优化客流。</p>
+                            <a href="https://www.queuebos.com/" target="_blank" rel="noopener">访问官网 →</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-page-cta"><div class="container"><div class="row align-items-center gy-4"><div class="col-lg-8"><p class="ai-eyebrow">放心地做出选择</p><h2>找到通往可用解决方案的最短路径。</h2><p>告诉我们您想改进的工作流，我们将帮您判断是配置平台、连接现有系统，还是构建特定方案。</p></div><div class="col-lg-4 text-lg-end"><a class="btn btn-light btn-lg" href="../contact.html?intent=solution#contact-form">找到合适的解决方案<i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a></div></div></div></section>
+    </main>
+
+    <!--====================  footer area ====================-->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-area-wrapper">
+  <div class="footer-area">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-wordmark" href="../index.html" aria-label="Phisoft home">PHISOFT<span>.</span></a>
+          <p class="footer-brand__statement">内部 IT 团队的工程伙伴——构建、集成、现代化并改进支撑您业务的系统。</p>
+          <div class="footer-availability"><i aria-hidden="true"></i><span>创新伙伴中心</span></div>
+        </div>
+        <nav class="footer-widget" aria-label="Footer capabilities">
+          <p class="footer-widget__title">能力</p>
+          <ul class="footer-widget__list">
+            <li><a href="../software.html">软件工程</a></li>
+            <li><a href="../mobile-app-development.html">移动应用工程</a></li>
+            <li><a href="../services/connect.html">系统集成</a></li>
+            <li><a href="../data-engineering.html">数据工程</a></li>
+            <li><a href="../automation.html">自动化</a></li>
+            <li><a href="../ai-engineering.html">AI 工程</a></li>
+            <li><a href="../cloud-devops.html">云与 DevOps</a></li>
+            <li><a href="../iot-engineering.html">物联网工程</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-widget" aria-label="Footer solutions">
+          <p class="footer-widget__title">解决方案</p>
+          <ul class="footer-widget__list">
+            <li><a href="../solutions/integrations.html">集成</a></li>
+            <li><a href="../solutions/platforms.html">产品</a></li>
+            <li><a href="../solutions/industries.html">行业</a></li>
+            <li><a href="../case-studies.html">案例研究</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-widget" aria-label="Footer how we partner">
+          <p class="footer-widget__title">合作方式</p>
+          <ul class="footer-widget__list">
+            <li><a href="../engineering-partnership.html">专属团队</a></li>
+            <li><a href="../project-engineering.html">项目工程</a></li>
+            <li><a href="../specialist-engineering.html">专家工程</a></li>
+            <li><a href="../application-maintenance.html">应用维护</a></li>
+            <li><a href="../innovation-rd.html">创新与研发</a></li>
+          </ul>
+        </nav>
+        <div class="footer-widget footer-contact">
+          <p class="footer-widget__title">联系</p>
+          <address>H-08-10, Aeropod Commercial Square<br>Jalan Aeropod Off Jalan Kepayan<br>88200 Kota Kinabalu, Sabah</address>
+          <a href="mailto:sales@phisoft.my" class="footer-email"><span>sales@phisoft.my</span><i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a>
+          <div class="footer-lang"><span class="footer-lang__label">Language</span>
+  <select class="footer-lang__select" id="footer-lang" aria-label="Language / Bahasa / 语言">
+    <option value="en">English</option>
+    <option value="ms">Bahasa Melayu</option>
+    <option value="zh">中文</option>
+  </select>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright-area">
+    <div class="container footer-legal">
+      <p class="copyright-text">&copy; 2026 Phi Software Sdn Bhd <span>(201701004025 / 1218190-P)</span></p>
+      <p class="copyright-text footer-signoff">创新伙伴中心<i aria-hidden="true"></i> Sabah, Malaysia</p>
+    </div>
+  </div>
+</footer>
+<a href="https://api.whatsapp.com/send?phone=60128669695&amp;text=Phi%20Software%20Web" class="whatsapp-container" target="_blank" rel="noopener noreferrer" aria-label="Chat with Phisoft on WhatsApp"><span class="whatsapp-label">WhatsApp</span><span class="whatsapp-icon-circle"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></span></a>
+
+<nav class="mobile-contact-bar" aria-label="Quick contact">
+  <a href="../contact.html"><i class="ph-bold ph-chat-circle-dots" aria-hidden="true"></i><span>与我们交流</span></a>
+  <a href="https://api.whatsapp.com/send?phone=60128669695&amp;text=Phi%20Software%20Web" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-whatsapp-logo" aria-hidden="true"></i><span>WhatsApp</span></a>
+</nav>
+<script src="../assets/js/site.js" defer></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const grid = document.getElementById('solutions-grid');
+            if (!grid) return;
+            const cardColumns = Array.from(grid.children);
+            const filterBtn = document.getElementById('solutionFilterBtn');
+            const countBadge = document.getElementById('solutionCount');
+            const dropdownItems = document.querySelectorAll('#solutionFilterDropdown .dropdown-item');
+            function applyFilter(filter, label) {
+                dropdownItems.forEach(function (item) { item.classList.remove('active'); });
+                var activeItem = document.querySelector('#solutionFilterDropdown [data-filter="' + filter + '"]');
+                if (activeItem) activeItem.classList.add('active');
+                filterBtn.innerHTML = label + ' <span class="badge bg-secondary ms-2" id="solutionCount">-</span>';
+                var newBadge = filterBtn.querySelector('#solutionCount');
+                var visibleCount = 0;
+                cardColumns.forEach(function (column) {
+                    var card = column.querySelector('[data-category]');
+                    if (!card) return;
+                    var category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        column.style.display = '';
+                        visibleCount++;
+                    } else {
+                        column.style.display = 'none';
+                    }
+                });
+                if (newBadge) newBadge.textContent = visibleCount;
+            }
+            dropdownItems.forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var filter = this.getAttribute('data-filter');
+                    var label = this.textContent;
+                    applyFilter(filter, label);
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+</body>
+</html>
