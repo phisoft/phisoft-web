@@ -201,6 +201,41 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://phisoft.my/ms/insights/ai-automation-for-smes.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/custom-vs-off-the-shelf-software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/digitalization-challenges-malaysian-smes.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/erp-implementation-timeline.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/how-to-choose-it-outsourcing-partner.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/mobile-app-development-cost-malaysia.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/ms/insights/what-is-custom-erp-system.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
     <loc>https://phisoft.my/ms/iot-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
@@ -369,6 +404,41 @@
     <loc>https://phisoft.my/zh/insights.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/ai-automation-for-smes.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/custom-vs-off-the-shelf-software.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/digitalization-challenges-malaysian-smes.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/erp-implementation-timeline.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/how-to-choose-it-outsourcing-partner.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/mobile-app-development-cost-malaysia.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://phisoft.my/zh/insights/what-is-custom-erp-system.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://phisoft.my/zh/iot-engineering.html</loc>
