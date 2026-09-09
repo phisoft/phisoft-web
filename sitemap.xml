@@ -261,11 +261,6 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://phisoft.my/ms/services.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://phisoft.my/ms/services/connect.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
@@ -479,11 +474,6 @@
     <loc>https://phisoft.my/zh/project-engineering.html</loc>
     <lastmod>2026-09-05</lastmod>
     <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://phisoft.my/zh/services.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://phisoft.my/zh/services/connect.html</loc>
