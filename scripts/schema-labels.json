@@ -1,0 +1,11 @@
+{
+  "_comment": "Per-language labels for human-readable strings inside structured data. Used by scripts/seo.mjs when it localises JSON-LD on the translated pages. Page-level name/description are taken from scripts/seo-data.json instead, because they must match the page title exactly. Brand names (Phisoft, product names) are deliberately absent so they pass through.",
+  "Home": { "en": "Home", "ms": "Laman Utama", "zh": "首页" },
+  "Contact": { "en": "Contact", "ms": "Hubungi", "zh": "联系" },
+  "Contact Phisoft": { "en": "Contact Phisoft", "ms": "Hubungi Phisoft", "zh": "联系 Phisoft" },
+  "System Integration & Data Engineering Services": {
+    "en": "System Integration & Data Engineering Services",
+    "ms": "Perkhidmatan Integrasi Sistem & Kejuruteraan Data",
+    "zh": "系统集成与数据工程服务"
+  }
+}

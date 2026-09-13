@@ -72,8 +72,9 @@ for (const [page, perLang] of Object.entries(copy)) {
     // local asset ref is re-prefixed from the target page's depth (the English
     // source may already carry its own ../ prefix).
     out = out.replace(/((?:src|href)=")((?:\.\.\/)*)(assets\/)/g, (_m, attr, _dots, rest) => `${attr}${assetPrefix}${rest}`);
-    // Drop structured data: scripts/seo.mjs regenerates it per language.
-    out = out.replace(/[ \t]*<script type="application\/ld\+json">[\s\S]*?<\/script>\s*\n?/g, '');
+    // Structured data is kept, not stripped: scripts/seo.mjs localises each node
+    // in place (labels, page-level name/description, language-correct URLs) so a
+    // translated page keeps its own ContactPage / BreadcrumbList / Service nodes.
 
     const target = join(rootPath, lang, page);
     mkdirSync(dirname(target), { recursive: true });
