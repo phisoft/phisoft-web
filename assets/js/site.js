@@ -76,36 +76,38 @@
   panel.innerHTML = '<span>' + copy.lines[0] + '</span><strong>' + copy.lines[1] + '</strong><span>' + copy.lines[2] + '</span><b>' + copy.lines[3] + '</b>';
 })();
 
-/* ---- careers application form ----
-* Mirrors the contact form: same endpoint, same Turnstile widget. The status
-* messages are localised via data- attributes so the translated pages do not
-* carry English strings (as the contact page currently does).
-*/
+/* ---- forms with progressive enhancement ----
+ * Any form carrying data-sending/data-success/data-error gets a submitting state
+ * and localized status messages. The strings travel with the markup, so the
+ * translated pages no longer fall back to English. Used by the contact form and
+ * the careers application form; both post to the same endpoint with Turnstile.
+ */
 (function () {
-var form = document.querySelector('[data-application-form]');
-if (!form) return;
-var status = form.querySelector('#career-form-status');
-var submit = form.querySelector('button[type="submit"]');
-var setStatus = function (cls, text) {
-  if (!status) return;
-  status.className = 'small ' + cls;
-  status.textContent = text || '';
-};
-form.addEventListener('submit', async function (event) {
-  event.preventDefault();
-  if (!form.checkValidity()) { form.reportValidity(); return; }
-  setStatus('text-muted', form.dataset.sending);
-  if (submit) submit.disabled = true;
-  try {
-    var response = await fetch(form.action, { method: 'POST', body: new FormData(form) });
-    if (!response.ok) throw new Error('Request failed');
-    form.reset();
-    if (typeof turnstile !== 'undefined') turnstile.reset();
-    setStatus('text-success', form.dataset.success);
-  } catch (error) {
-    setStatus('text-danger', form.dataset.error);
-  } finally {
-    if (submit) submit.disabled = false;
-  }
-});
+  document.querySelectorAll('form[data-sending]').forEach(function (form) {
+    var status = form.querySelector('[data-form-status]');
+    var submit = form.querySelector('button[type="submit"]');
+    var setStatus = function (state, text) {
+      if (!status) return;
+      status.classList.remove('text-muted', 'text-success', 'text-danger');
+      if (state) status.classList.add(state);
+      status.textContent = text || '';
+    };
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      setStatus('text-muted', form.dataset.sending);
+      if (submit) submit.disabled = true;
+      try {
+        var response = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+        if (!response.ok) throw new Error('Request failed');
+        form.reset();
+        if (typeof turnstile !== 'undefined') turnstile.reset();
+        setStatus('text-success', form.dataset.success);
+      } catch (error) {
+        setStatus('text-danger', form.dataset.error);
+      } finally {
+        if (submit) submit.disabled = false;
+      }
+    });
+  });
 })();

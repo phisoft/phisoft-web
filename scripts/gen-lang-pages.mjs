@@ -25,7 +25,7 @@ const rootPath = new URL('../', import.meta.url).pathname;
 const copy = JSON.parse(readFileSync(join(rootPath, 'scripts/lang-copy.json'), 'utf8'));
 const BRANDS = new Set(['Phisoft', 'FeeCollec', 'QueueBos', '8planner', 'Assetsware', 'Dentallink', 'ComplainBos']);
 const LANGS = ['ms', 'zh'];
-const ATTRS = /(\s(?:alt|aria-label|title|placeholder)=")([^"]*)(")/g;
+const ATTRS = /(\s(?:alt|aria-label|title|placeholder|data-sending|data-success|data-error)=")([^"]*)(")/g;
 
 function makeTranslator(map) {
   const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -57,11 +57,17 @@ for (const [page, perLang] of Object.entries(copy)) {
     if (!map) continue;
     const translate = makeTranslator(map);
 
-    let out = source;
+    // Translate text nodes only, and never inside <script>/<style>: those hold
+    // machine identifiers (e.g. the contact wizard's ?intent -> data-value map),
+    // so translating them breaks behaviour in the translated pages. Attributes
+    // and asset paths below still apply everywhere, including the opening tags
+    // of script/style elements.
+    const segments = source.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>)/i);
+    let out = segments
+      .map((part, index) => (index % 2 === 1 ? part : part.replace(/(>)([^<]+)(<)/g, (_m, a, text, b) => `${a}${translate(text)}${b}`)))
+      .join('');
     // Human-facing attributes only.
     out = out.replace(ATTRS, (_m, a, v, b) => `${a}${translate(v)}${b}`);
-    // Text nodes only (between tags), so class/id/href are untouchable.
-    out = out.replace(/(>)([^<]+)(<)/g, (_m, a, text, b) => `${a}${translate(text)}${b}`);
     // Assets live at the repo root, not inside each language folder, so every
     // local asset ref is re-prefixed from the target page's depth (the English
     // source may already carry its own ../ prefix).

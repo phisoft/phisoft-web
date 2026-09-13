@@ -618,7 +618,10 @@
       "Attach Files": "Lampirkan Fail",
       "Optional &mdash; attach a brief, RFP, or supporting documents": "Pilihan &mdash; lampirkan ringkasan, RFP atau dokumen sokongan",
       "Send My Enquiry": "Hantar Pertanyaan Saya",
-      "By sending this request, you agree with your information being stored by us in relation to dealing with your enquiry.": "Dengan menghantar permintaan ini, anda bersetuju maklumat anda disimpan oleh kami bagi tujuan menangani pertanyaan anda."
+      "By sending this request, you agree with your information being stored by us in relation to dealing with your enquiry.": "Dengan menghantar permintaan ini, anda bersetuju maklumat anda disimpan oleh kami bagi tujuan menangani pertanyaan anda.",
+      "Sending your message...": "Menghantar mesej anda…",
+      "Message sent successfully. We will get back to you soon.": "Mesej berjaya dihantar. Kami akan menghubungi anda tidak lama lagi.",
+      "Unable to send message right now. Please try again later.": "Mesej tidak dapat dihantar sekarang. Sila cuba sebentar lagi."
     },
     "zh": {
       "Contact Phisoft": "联系 Phisoft",
@@ -685,7 +688,10 @@
       "Website": "网站",
       "Your full name": "您的姓名",
       "Your company": "您的公司",
-      "What takes too much time, requires too much manual work or is difficult with your current systems?": "哪些环节耗时过长、需要过多人工操作，或在现有系统下难以处理？"
+      "What takes too much time, requires too much manual work or is difficult with your current systems?": "哪些环节耗时过长、需要过多人工操作，或在现有系统下难以处理？",
+      "Sending your message...": "正在发送您的信息…",
+      "Message sent successfully. We will get back to you soon.": "信息已成功发送，我们会尽快回复您。",
+      "Unable to send message right now. Please try again later.": "当前无法发送信息，请稍后再试。"
     }
   },
   "cloud-devops.html": {

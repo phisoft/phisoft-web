@@ -105,7 +105,7 @@ for (const [lang, rel] of Object.entries(PAGES)) {
                     <button class="btn btn-primary btn-lg" type="submit">${copy.submitLabel}</button>
                     <p class="small text-muted mb-0">${copy.mailtoFallback.replace(roles.email, `<a href="mailto:${roles.email}">${roles.email}</a>`)}</p>
                 </div>
-                <div class="col-12"><p class="small text-muted mb-0" id="career-form-status" role="status" aria-live="polite"></p></div>
+                <div class="col-12"><p class="small mb-0" id="career-form-status" data-form-status role="status" aria-live="polite"></p></div>
             </form>`;
   // Marker-delimited so re-running cannot stack a second form into the page.
   const FORM_START = '<!--careers-form-->';
