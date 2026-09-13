@@ -75,3 +75,37 @@
   panel.classList.add(copy.className);
   panel.innerHTML = '<span>' + copy.lines[0] + '</span><strong>' + copy.lines[1] + '</strong><span>' + copy.lines[2] + '</span><b>' + copy.lines[3] + '</b>';
 })();
+
+/* ---- careers application form ----
+* Mirrors the contact form: same endpoint, same Turnstile widget. The status
+* messages are localised via data- attributes so the translated pages do not
+* carry English strings (as the contact page currently does).
+*/
+(function () {
+var form = document.querySelector('[data-application-form]');
+if (!form) return;
+var status = form.querySelector('#career-form-status');
+var submit = form.querySelector('button[type="submit"]');
+var setStatus = function (cls, text) {
+  if (!status) return;
+  status.className = 'small ' + cls;
+  status.textContent = text || '';
+};
+form.addEventListener('submit', async function (event) {
+  event.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  setStatus('text-muted', form.dataset.sending);
+  if (submit) submit.disabled = true;
+  try {
+    var response = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+    if (!response.ok) throw new Error('Request failed');
+    form.reset();
+    if (typeof turnstile !== 'undefined') turnstile.reset();
+    setStatus('text-success', form.dataset.success);
+  } catch (error) {
+    setStatus('text-danger', form.dataset.error);
+  } finally {
+    if (submit) submit.disabled = false;
+  }
+});
+})();

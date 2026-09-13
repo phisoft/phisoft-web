@@ -5216,3 +5216,39 @@ body.legacy-modern-page.contact-page > main > section.contact-hero::after {
    can reserve space before the image loads (CLS). Keep images proportional when
    CSS constrains width only. */
 img { height: auto; }
+
+/* In-page anchors: the shared header is sticky, so a jump target must clear it.
+   Without this, "Talk to us" -> contact.html#contact-form lands with the first
+   ~95px of the target (and of #main-content for the skip link) hidden behind
+   the header. scroll-padding applies to every anchor on every page at once. */
+html {
+    scroll-padding-top: 110px;
+}
+
+/* Careers: "hiring now" badge and the online application form. */
+.career-badge {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: .5rem;
+    padding: .2rem .65rem;
+    border-radius: 999px;
+    background: var(--ai-red);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+.career-form .form-label {
+    font-weight: 600;
+}
+
+/* Touch targets: footer link rows measure 21px tall with no padding, below the
+   24x24 minimum in WCAG 2.5.8. Give them a comfortable hit area on phones. */
+@media (max-width: 767.98px) {
+    .footer-widget__list a {
+        display: inline-block;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+}

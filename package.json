@@ -2,7 +2,7 @@
   "name": "phisoft-web",
   "private": true,
   "scripts": {
-    "build": "node scripts/gen-lang-pages.mjs && node scripts/sync-meta.mjs && node scripts/seo.mjs && node scripts/sync-layout.mjs && node scripts/fix-translation-links.mjs && node scripts/sync-assets.mjs && node scripts/sync-images.mjs && node scripts/sitemap.mjs && node scripts/sync-multilang-seo.mjs && node scripts/validate-site.mjs",
+    "build": "node scripts/gen-lang-pages.mjs && node scripts/sync-meta.mjs && node scripts/seo.mjs && node scripts/sync-careers.mjs && node scripts/sync-layout.mjs && node scripts/fix-translation-links.mjs && node scripts/sync-assets.mjs && node scripts/sync-images.mjs && node scripts/sitemap.mjs && node scripts/sync-multilang-seo.mjs && node scripts/validate-site.mjs",
     "validate": "node scripts/validate-site.mjs",
     "sitemap": "node scripts/sitemap.mjs"
   }

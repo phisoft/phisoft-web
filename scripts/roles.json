@@ -1,0 +1,93 @@
+{
+  "_comment": "Single source of truth for the careers page. scripts/sync-careers.mjs projects this onto careers.html, ms/careers.html and zh/careers.html: the open-roles counter, the hiring sentence, each role card's action button, the online application form, and JobPosting structured data. Nothing on the page is hand-counted any more - add a slug to `open` and the page follows.",
+  "email": "hr@phisoft.my",
+  "formEndpoint": "https://send.bah.my/phisoft",
+  "open": [],
+  "profiles": [
+    "system-analyst",
+    "business-development",
+    "assistant-manager-qa",
+    "project-manager",
+    "software-engineer-internship"
+  ],
+  "roleMeta": {
+    "_comment": "Required only once a slug is listed in `open`. JobPosting is emitted only for open roles that carry complete meta, so the page can never publish an incomplete posting.",
+    "system-analyst": {
+      "employmentType": "FULL_TIME",
+      "description": "Translate business requirements into clear system specifications and delivery-ready plans.",
+      "datePosted": "2026-09-14",
+      "validThrough": "2026-10-14"
+    }
+  },
+  "copy": {
+    "en": {
+      "openNote": "We are hiring for the roles below. Applications are reviewed within one business day.",
+      "closedNote": "We are not actively hiring right now. The roles below are the capabilities we commonly need. As openings arise we update them here — and we always welcome thoughtful open applications.",
+      "applyLabel": "Apply for this role",
+      "closedApplyLabel": "Application closed — register interest",
+      "hiringBadge": "Hiring now",
+      "applySubject": "Application",
+      "interestSubject": "Register interest",
+      "formTitle": "Apply online",
+      "formLead": "Send your CV and a short note. Everything goes straight to our hiring inbox.",
+      "fieldName": "Your name",
+      "fieldEmail": "Email",
+      "fieldPhone": "Phone",
+      "fieldRole": "Role",
+      "fieldMessage": "Short note",
+      "fieldCv": "CV (PDF or Word)",
+      "fieldRoleOther": "Something else",
+      "submitLabel": "Send application",
+      "sendingNote": "Sending your application…",
+      "successNote": "Application received. We will be in touch if there is a fit.",
+      "errorNote": "Could not send the application right now. Please email hr@phisoft.my instead.",
+      "mailtoFallback": "Prefer email? Send your CV to hr@phisoft.my"
+    },
+    "ms": {
+      "openNote": "Kami sedang mengambil pekerja untuk peranan di bawah. Permohonan disemak dalam masa satu hari bekerja.",
+      "closedNote": "Kami tidak sedang mengambil pekerja buat masa ini. Peranan di bawah ialah keupayaan yang biasa kami perlukan. Apabila peluang terbuka, kami akan mengemas kini di sini — dan kami sentiasa mengalu-alukan permohonan terbuka.",
+      "applyLabel": "Mohon peranan ini",
+      "closedApplyLabel": "Permohonan ditutup — daftar minat",
+      "hiringBadge": "Sedang mengambil pekerja",
+      "applySubject": "Permohonan",
+      "interestSubject": "Daftar minat",
+      "formTitle": "Mohon secara dalam talian",
+      "formLead": "Hantar CV anda dan nota ringkas. Semuanya terus ke peti masuk pengambilan kami.",
+      "fieldName": "Nama anda",
+      "fieldEmail": "E-mel",
+      "fieldPhone": "Telefon",
+      "fieldRole": "Peranan",
+      "fieldMessage": "Nota ringkas",
+      "fieldCv": "CV (PDF atau Word)",
+      "fieldRoleOther": "Perkara lain",
+      "submitLabel": "Hantar permohonan",
+      "sendingNote": "Menghantar permohonan anda…",
+      "successNote": "Permohonan diterima. Kami akan menghubungi anda jika ada kesesuaian.",
+      "errorNote": "Permohonan tidak dapat dihantar sekarang. Sila e-mel hr@phisoft.my.",
+      "mailtoFallback": "Lebih suka e-mel? Hantar CV anda ke hr@phisoft.my"
+    },
+    "zh": {
+      "openNote": "我们正在招聘以下职位。申请将在一个工作日内审阅。",
+      "closedNote": "我们目前没有在招聘。以下是我们常需要的岗位方向。一旦有职位空缺，我们会在这里更新——同时也始终欢迎自荐申请。",
+      "applyLabel": "申请该职位",
+      "closedApplyLabel": "申请已截止——登记意向",
+      "hiringBadge": "正在招聘",
+      "applySubject": "职位申请",
+      "interestSubject": "登记意向",
+      "formTitle": "在线申请",
+      "formLead": "请发送简历与简短说明，内容将直接进入我们的招聘邮箱。",
+      "fieldName": "您的姓名",
+      "fieldEmail": "电子邮箱",
+      "fieldPhone": "电话",
+      "fieldRole": "职位",
+      "fieldMessage": "简短说明",
+      "fieldCv": "简历（PDF 或 Word）",
+      "fieldRoleOther": "其他",
+      "submitLabel": "提交申请",
+      "sendingNote": "正在提交您的申请…",
+      "successNote": "申请已收到。如有合适机会，我们会与您联系。",
+      "errorNote": "当前无法提交申请，请改为发送邮件至 hr@phisoft.my。",
+      "mailtoFallback": "更习惯用邮件？请将简历发送至 hr@phisoft.my"
+    }
+  }
+}
