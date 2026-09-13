@@ -77,7 +77,7 @@ function collectLang(lang) {
 }
 
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
-const sitemapLocs = [...sitemap.matchAll(/<loc>https:\/\/phisoft\.my\/([^<]*)<\/loc>/g)].map((m) => m[1]);
+const sitemapLocs = [...sitemap.matchAll(/<loc>https:\/\/www\.phisoft\.my\/([^<]*)<\/loc>/g)].map((m) => m[1]);
 const sitemapUrls = sitemapLocs.map((p) => (p && p.endsWith('/') ? p + 'index.html' : p)).map((p) => (p === '' ? 'index.html' : p));
 
 function publicPagesFor(lang) {

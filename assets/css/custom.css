@@ -5935,3 +5935,8 @@ body.legacy-modern-page.contact-page > main > section.contact-hero::after {
   display:none !important;
   background:none !important;
 }
+
+/* Intrinsic width/height attributes are emitted for every <img> so the browser
+   can reserve space before the image loads (CLS). Keep images proportional when
+   CSS constrains width only. */
+img { height: auto; }

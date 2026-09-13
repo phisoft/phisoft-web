@@ -11,7 +11,7 @@ import { readdirSync, existsSync } from 'node:fs';
 import { join, sep } from 'node:path';
 
 const ROOT = new URL('../', import.meta.url).pathname;
-const BASE = 'https://phisoft.my';
+const BASE = 'https://www.phisoft.my';
 const LANGS = ['en', 'ms', 'zh'];
 const LOCALE = { en: 'en_MY', ms: 'ms_MY', zh: 'zh_CN' };
 const SLUG = { en: '', ms: 'ms/', zh: 'zh/' };

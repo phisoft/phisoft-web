@@ -1,0 +1,178 @@
+{
+  "_comment": "Single source of truth for per-page SEO metadata. Keyed by English-relative page path. Owned by scripts/seo.mjs which applies it to every language. Positioning: current SME-first voice (websites, mobile apps, practical AI), with technical keywords retained on capability pages. Keep titles under ~60 chars and descriptions under ~155.",
+  "index.html": {
+    "en": { "t": "Websites, Mobile Apps & AI for Malaysian Business | Phisoft", "d": "Phisoft builds websites, mobile apps and practical AI that help Malaysian businesses earn more enquiries, cut manual work and run better." },
+    "ms": { "t": "Laman Web, Apl Mudah Alih & AI Malaysia | Phisoft", "d": "Phisoft membina laman web, aplikasi mudah alih dan AI praktikal untuk membantu perniagaan Malaysia mendapat lebih banyak pertanyaan." },
+    "zh": { "t": "网站、移动应用与 AI 解决方案 马来西亚 | Phisoft", "d": "Phisoft 为马来西亚企业打造网站、移动应用与实用 AI，助您获得更多询盘、减少重复工作。" }
+  },
+  "about.html": {
+    "en": { "t": "About Phisoft | Product Development Partner in Sabah", "d": "Phisoft is a Kota Kinabalu software company building websites, apps and AI for Malaysian businesses on practical, accountable delivery." },
+    "ms": { "t": "Tentang Phisoft | Rakan Pembangunan Produk di Sabah", "d": "Phisoft ialah syarikat perisian di Kota Kinabalu yang membina laman web, aplikasi dan AI untuk perniagaan Malaysia." },
+    "zh": { "t": "关于 Phisoft | 沙巴产品开发伙伴", "d": "Phisoft 是一家位于亚庇的软件公司，为马来西亚企业打造网站、应用与 AI。" }
+  },
+  "contact.html": {
+    "en": { "t": "Talk to Phisoft | Websites, Apps & AI in Sabah", "d": "Tell us what your business needs to improve. Phisoft helps with websites, mobile apps, AI and the systems behind them." },
+    "ms": { "t": "Hubungi Phisoft | Laman Web, Apl & AI di Sabah", "d": "Beritahu kami apa yang perlu diperbaiki dalam perniagaan anda. Phisoft membantu dari segi laman web, aplikasi dan AI." },
+    "zh": { "t": "联系 Phisoft | 沙巴网站、应用与 AI 伙伴", "d": "告诉我们您的业务需要改进什么。Phisoft 在网站、移动应用与 AI 方面提供帮助。" }
+  },
+  "software.html": {
+    "en": { "t": "Business Software Built Around How You Work | Phisoft", "d": "Custom business software, ERP, CRM and portals built around your workflows by Phisoft's engineering team in Kota Kinabalu, Sabah." },
+    "ms": { "t": "Perisian Perniagaan Mengikut Cara Kerja Anda | Phisoft", "d": "Perisian perniagaan tersuai, ERP, CRM dan portal dibina mengikut aliran kerja anda oleh pasukan Phisoft di Kota Kinabalu." },
+    "zh": { "t": "围绕您的业务方式构建的企业软件 | Phisoft", "d": "由亚庇 Phisoft 工程团队按您的流程定制企业软件、ERP、CRM 与门户系统。" }
+  },
+  "product-development.html": {
+    "en": { "t": "Product Development & SaaS Partner Malaysia | Phisoft", "d": "Take a product from idea to working software — discovery, build, launch and improvement with a Malaysian product engineering team." },
+    "ms": { "t": "Pembangunan Produk & SaaS Malaysia | Phisoft", "d": "Bawa produk dari idea ke perisian yang berfungsi — penemuan, pembinaan, pelancaran dan penambahbaikan." },
+    "zh": { "t": "产品开发与 SaaS 建设 马来西亚 | Phisoft", "d": "从想法到可用产品——由马来西亚产品工程团队负责探索、构建、上线与改进。" }
+  },
+  "custom-software.html": {
+    "en": { "t": "Custom Business Software Malaysia | Phisoft", "d": "Software designed around your workflow — ERP, CRM, portals and internal tools built to fit how your team actually works." },
+    "ms": { "t": "Perisian Perniagaan Tersuai Malaysia | Phisoft", "d": "Perisian yang direka mengikut aliran kerja anda — ERP, CRM, portal dan alat dalaman yang sesuai dengan pasukan anda." },
+    "zh": { "t": "定制企业软件 马来西亚 | Phisoft", "d": "按您的业务流程设计软件——ERP、CRM、门户与内部工具，贴合团队实际工作方式。" }
+  },
+  "legacy-modernisation.html": {
+    "en": { "t": "Improve an Existing System | Legacy Modernisation", "d": "Stabilise, connect and extend important software without replacing everything. Legacy modernisation from Phisoft in Kota Kinabalu." },
+    "ms": { "t": "Tambah Baik Sistem Sedia Ada | Pemodenan Legacy", "d": "Stabilkan, sambungkan dan luaskan perisian penting tanpa menggantikan semuanya. Oleh Phisoft di Kota Kinabalu." },
+    "zh": { "t": "优化现有系统 | 遗留系统现代化 马来西亚", "d": "在不全部替换的前提下稳定、连接并扩展现有系统。由亚庇 Phisoft 提供。" }
+  },
+  "mobile-app-development.html": {
+    "en": { "t": "Mobile App Development Malaysia | iOS & Android | Phisoft", "d": "Apps for customers or staff that connect to the systems you already run — iOS, Android and cross-platform, built in Malaysia." },
+    "ms": { "t": "Pembangunan Aplikasi Mudah Alih Malaysia | Phisoft", "d": "Aplikasi untuk pelanggan atau pekerja yang bersambung dengan sistem sedia ada anda — iOS, Android dan merentas platform." },
+    "zh": { "t": "移动应用开发 马来西亚 | iOS 与 Android | Phisoft", "d": "面向客户或员工的移动应用，可对接您现有的系统——iOS、Android 与跨平台。" }
+  },
+  "ai-engineering.html": {
+    "en": { "t": "Practical AI & Automation for Business | Phisoft Malaysia", "d": "Put AI to work inside real business systems — document processing, knowledge systems and automation connected to your data and workflows." },
+    "ms": { "t": "AI & Automasi Praktikal untuk Perniagaan | Phisoft", "d": "Gunakan AI dalam sistem perniagaan sebenar — pemprosesan dokumen, sistem pengetahuan dan automasi bersambung dengan data anda." },
+    "zh": { "t": "实用 AI 与自动化 | Phisoft 马来西亚", "d": "让 AI 落地到真实业务系统——文档处理、知识系统与自动化，连接您的数据与流程。" }
+  },
+  "cloud-devops.html": {
+    "en": { "t": "Keep Systems Running: Managed Reliability | Phisoft", "d": "Monitoring, backups, security and cloud/DevOps so business-critical systems stay available, recoverable and improving." },
+    "ms": { "t": "Pastikan Sistem Berjalan: Kebolehpercayaan Terurus | Phisoft", "d": "Pemantauan, sandaran, keselamatan dan awan/DevOps supaya sistem penting kekal tersedia dan boleh dipulihkan." },
+    "zh": { "t": "保持系统稳定运行：托管可靠性 | Phisoft", "d": "监控、备份、安全与云/DevOps，让关键系统保持可用、可恢复并持续改进。" }
+  },
+  "data-engineering.html": {
+    "en": { "t": "Data Engineering & Reporting Malaysia | Phisoft", "d": "Connect fragmented data into reliable pipelines, warehousing and dashboards your team can actually use to make decisions." },
+    "ms": { "t": "Kejuruteraan Data & Laporan Malaysia | Phisoft", "d": "Satukan data berselerak menjadi saluran data, pergudangan dan papan pemuka yang boleh digunakan pasukan anda." },
+    "zh": { "t": "数据工程与报表 马来西亚 | Phisoft", "d": "把分散的数据整合为可靠的数据管道、数据仓库与看板，让团队真正用得上。" }
+  },
+  "automation.html": {
+    "en": { "t": "Reduce Manual Work: Business Automation | Phisoft", "d": "Automate repetitive work — approvals, documents, email and WhatsApp turned into reliable, traceable workflows." },
+    "ms": { "t": "Kurangkan Kerja Manual: Automasi Perniagaan | Phisoft", "d": "Automasikan kerja berulang — kelulusan, dokumen, e-mel dan WhatsApp dijadikan aliran kerja yang boleh dijejaki." },
+    "zh": { "t": "减少人工：业务流程自动化 马来西亚 | Phisoft", "d": "把重复工作自动化——审批、文档、邮件与 WhatsApp 变成可靠、可追溯的流程。" }
+  },
+  "iot-engineering.html": {
+    "en": { "t": "IoT & Sensor Engineering Malaysia | Phisoft", "d": "Connect the physical world to your systems — sensors, MQTT, LoRaWAN, gateways and monitoring built to last." },
+    "ms": { "t": "Kejuruteraan IoT & Sensor Malaysia | Phisoft", "d": "Sambungkan dunia fizikal dengan sistem anda — sensor, MQTT, LoRaWAN, get laluan dan pemantauan yang tahan lama." },
+    "zh": { "t": "物联网与传感器工程 马来西亚 | Phisoft", "d": "让物理世界接入您的系统——传感器、MQTT、LoRaWAN、网关与监控。" }
+  },
+  "solutions.html": {
+    "en": { "t": "Solutions, Platforms & Integrations | Phisoft", "d": "Ready platforms, business integrations and industry tools that connect accounting, payments, ERP and the systems you already have." },
+    "ms": { "t": "Penyelesaian, Platform & Integrasi | Phisoft", "d": "Platform sedia guna, integrasi dan alat industri yang menyambungkan perakaunan, pembayaran, ERP dan sistem sedia ada." },
+    "zh": { "t": "解决方案、平台与集成 | Phisoft", "d": "现成平台、业务集成与行业工具，连接会计、支付、ERP 与现有系统。" }
+  },
+  "solutions/integrations.html": {
+    "en": { "t": "Connect Accounting, Payments & ERP | Phisoft Malaysia", "d": "Link accounting, payments, ERP, e-invoice and third-party platforms so data moves by itself and your team stops re-keying." },
+    "ms": { "t": "Sambung Perakaunan, Pembayaran & ERP | Phisoft", "d": "Sambungkan perakaunan, pembayaran, ERP, e-invois dan platform pihak ketiga supaya data bergerak sendiri." },
+    "zh": { "t": "连接会计、支付与 ERP | Phisoft 马来西亚", "d": "对接会计、支付、ERP、电子发票与第三方平台，让数据自动流转，避免重复录入。" }
+  },
+  "solutions/platforms.html": {
+    "en": { "t": "Our Products | Software Built by Phisoft", "d": "Products drawn from real client delivery — FeeCollec, QueueBos, 8planner, Assetsware, Dentallink and ComplainBos." },
+    "ms": { "t": "Produk Kami | Perisian Dibina oleh Phisoft", "d": "Produk daripada projek pelanggan sebenar — FeeCollec, QueueBos, 8planner, Assetsware, Dentallink dan ComplainBos." },
+    "zh": { "t": "我们的产品 | Phisoft 自研软件", "d": "源自真实客户项目的产品——FeeCollec、QueueBos、8planner、Assetsware、Dentallink 与 ComplainBos。" }
+  },
+  "solutions/industries.html": {
+    "en": { "t": "Solutions by Industry | Phisoft Malaysia", "d": "How Phisoft applies websites, apps, integration and AI across education, retail, property, logistics and the public sector." },
+    "ms": { "t": "Penyelesaian Mengikut Industri | Phisoft", "d": "Bagaimana Phisoft menggunakan laman web, aplikasi, integrasi dan AI untuk pendidikan, runcit, hartanah dan logistik." },
+    "zh": { "t": "按行业划分的解决方案 | Phisoft", "d": "Phisoft 如何将网站、应用、集成与 AI 应用于教育、零售、地产、物流与公共领域。" }
+  },
+  "case-studies.html": {
+    "en": { "t": "Case Studies | Websites, Apps & Systems | Phisoft", "d": "See what Phisoft has built — websites, mobile apps, integrations and AI for organisations across Sabah and Malaysia." },
+    "ms": { "t": "Kajian Kes | Laman Web, Aplikasi & Sistem | Phisoft", "d": "Lihat apa yang telah dibina Phisoft — laman web, aplikasi, integrasi dan AI untuk organisasi di Sabah dan Malaysia." },
+    "zh": { "t": "案例研究 | 网站、应用与系统 | Phisoft", "d": "了解 Phisoft 的项目——为沙巴与马来西亚机构打造的网站、移动应用、集成与 AI。" }
+  },
+  "insights.html": {
+    "en": { "t": "Insights | Practical Software and AI Guides | Phisoft", "d": "Plain-language guides on websites, custom software, ERP, AI and outsourcing for Malaysian business owners and managers." },
+    "ms": { "t": "Wawasan | Panduan Perisian & AI | Phisoft", "d": "Panduan bahasa mudah tentang laman web, perisian tersuai, ERP, AI dan outsourcing untuk pemilik perniagaan Malaysia." },
+    "zh": { "t": "见解 | 实用软件与 AI 指南 | Phisoft", "d": "面向马来西亚企业主与管理者的网站、定制软件、ERP、AI 与外包实用指南。" }
+  },
+  "engineering-team.html": {
+    "en": { "t": "Meet the Phisoft Engineering Team | Kota Kinabalu", "d": "The people who build and support Phisoft projects — software, mobile, data, integration, automation and AI, based in Sabah." },
+    "ms": { "t": "Pasukan Kejuruteraan Phisoft | Kota Kinabalu", "d": "Pembina dan penyokong projek Phisoft — perisian, mudah alih, data, integrasi, automasi dan AI, berpangkalan di Sabah." },
+    "zh": { "t": "认识 Phisoft 工程团队 | 亚庇", "d": "Phisoft 项目的建设与支持团队——软件、移动、数据、集成、自动化与 AI，常驻沙巴。" }
+  },
+  "careers.html": {
+    "en": { "t": "Careers at Phisoft | Software Jobs in Sabah", "d": "Join a Kota Kinabalu team building websites, apps, integrations and AI for Malaysian businesses." },
+    "ms": { "t": "Kerjaya di Phisoft | Pekerjaan Perisian di Sabah", "d": "Sertai pasukan di Kota Kinabalu yang membina laman web, aplikasi, integrasi dan AI untuk perniagaan Malaysia." },
+    "zh": { "t": "Phisoft 招聘 | 沙巴软件职位", "d": "加入位于亚庇的团队，为马来西亚企业打造网站、应用、集成与 AI。" }
+  },
+  "engineering-partnership.html": {
+    "en": { "t": "Extend Your Team | Engineering Partnership | Phisoft", "d": "Add developers or a complete delivery team alongside your internal team, with Phisoft accountable for the outcome." },
+    "ms": { "t": "Luaskan Pasukan Anda | Perkongsian Kejuruteraan | Phisoft", "d": "Tambah pembangun atau pasukan penyampaian lengkap bersama pasukan dalaman anda, dengan Phisoft bertanggungjawab." },
+    "zh": { "t": "扩充团队 | 工程合作 | Phisoft", "d": "在内部团队之外增加开发人员或完整交付团队，由 Phisoft 对成果负责。" }
+  },
+  "project-engineering.html": {
+    "en": { "t": "Project Delivery: Defined Scope, One Team | Phisoft", "d": "A defined requirement and one accountable team — Phisoft designs, builds, tests and deploys software to plan." },
+    "ms": { "t": "Penyampaian Projek: Skop Jelas, Satu Pasukan | Phisoft", "d": "Keperluan yang jelas dan satu pasukan bertanggungjawab — Phisoft mereka bentuk, membina, menguji dan menyebarkan." },
+    "zh": { "t": "项目交付：明确范围，单一负责团队 | Phisoft", "d": "需求明确、单一负责团队——Phisoft 负责设计、开发、测试与上线。" }
+  },
+  "specialist-engineering.html": {
+    "en": { "t": "Specialist Skills on Demand | Data, AI, Mobile | Phisoft", "d": "Add focused expertise — data, AI, mobile, integration, DevOps or IoT — to an existing team for a defined period." },
+    "ms": { "t": "Kepakaran Khusus Mengikut Keperluan | Phisoft", "d": "Tambah kepakaran khusus — data, AI, mudah alih, integrasi, DevOps atau IoT — kepada pasukan sedia ada." },
+    "zh": { "t": "按需专家能力 | 数据、AI、移动 | Phisoft", "d": "为现有团队补充数据、AI、移动、集成、DevOps 或物联网方面的专项能力。" }
+  },
+  "application-maintenance.html": {
+    "en": { "t": "Application Maintenance & Support Malaysia | Phisoft", "d": "Keep important applications healthy — troubleshooting, upgrades, security patches and support from a team that knows the system." },
+    "ms": { "t": "Penyelenggaraan & Sokongan Aplikasi | Phisoft", "d": "Pastikan aplikasi penting sentiasa sihat — penyelesaian masalah, naik taraf, tampalan keselamatan dan sokongan." },
+    "zh": { "t": "应用维护与支持 马来西亚 | Phisoft", "d": "让关键应用保持健康——故障排查、升级、安全补丁与持续支持。" }
+  },
+  "innovation-rd.html": {
+    "en": { "t": "R&D, Prototypes & Proofs of Concept | Phisoft", "d": "Test a new idea before committing to a full build — research, prototypes and validation with a Malaysian engineering team." },
+    "ms": { "t": "R&D, Prototaip & Bukti Konsep | Phisoft", "d": "Uji idea baharu sebelum melabur sepenuhnya — penyelidikan, prototaip dan pengesahan bersama pasukan Malaysia." },
+    "zh": { "t": "研发、原型与概念验证 | Phisoft", "d": "在全面投入前验证新想法——由马来西亚工程团队进行调研、原型与验证。" }
+  },
+  "services/connect.html": {
+    "en": { "t": "System Integration: Connect Finance & Operations", "d": "Connect accounting, payments, ERP and legacy tools so data moves automatically and your team stops re-keying." },
+    "ms": { "t": "Integrasi Sistem: Sambung Kewangan & Operasi | Phisoft", "d": "Sambungkan perakaunan, pembayaran, ERP dan alat legacy supaya data bergerak automatik dan kerja berulang berhenti." },
+    "zh": { "t": "系统集成：连接财务与运营 | Phisoft", "d": "连接会计、支付、ERP 与遗留工具，让数据自动流转，避免重复录入。" }
+  },
+  "insights/ai-automation-for-smes.html": {
+    "en": { "t": "AI Automation for Malaysian SMEs | Phisoft Insights", "d": "Where AI automation pays off first in a small or mid-sized Malaysian business, and where it does not." },
+    "ms": { "t": "Automasi AI untuk PKS Malaysia | Wawasan Phisoft", "d": "Di mana automasi AI memberi pulangan terbaik untuk perniagaan kecil dan sederhana di Malaysia." },
+    "zh": { "t": "马来西亚中小企业的 AI 自动化 | Phisoft 见解", "d": "AI 自动化在马来西亚中小企业最先见效的环节，以及不适合的场景。" }
+  },
+  "insights/custom-vs-off-the-shelf-software.html": {
+    "en": { "t": "Custom vs Off-the-Shelf Software | Phisoft Insights", "d": "How Malaysian businesses should choose between custom software and packaged products, and what each really costs." },
+    "ms": { "t": "Perisian Tersuai vs Sedia Ada | Wawasan Phisoft", "d": "Cara perniagaan Malaysia memilih antara perisian tersuai dan produk siap, serta kos sebenar setiap pilihan." },
+    "zh": { "t": "定制软件与成品软件之比较 | Phisoft 见解", "d": "马来西亚企业如何在定制软件与成品软件之间选择，以及各自的真实成本。" }
+  },
+  "insights/digitalization-challenges-malaysian-smes.html": {
+    "en": { "t": "Digitalisation Challenges for Malaysian SMEs | Phisoft", "d": "The practical obstacles Malaysian SMEs hit when digitalising operations, and how to sequence the work." },
+    "ms": { "t": "Cabaran Pendigitalan PKS Malaysia | Phisoft", "d": "Halangan praktikal yang dihadapi PKS Malaysia semasa mendigitalkan operasi, dan cara menyusun keutamaan." },
+    "zh": { "t": "马来西亚中小企业数字化的挑战 | Phisoft", "d": "马来西亚中小企业在数字化过程中遇到的实际障碍，以及推进顺序。" }
+  },
+  "insights/erp-implementation-timeline.html": {
+    "en": { "t": "How Long Does ERP Implementation Take? | Phisoft", "d": "A realistic timeline for ERP implementation in a Malaysian business — phases, risks and what slows projects down." },
+    "ms": { "t": "Berapa Lama Pelaksanaan ERP? | Phisoft", "d": "Jangka masa realistik pelaksanaan ERP untuk perniagaan Malaysia — fasa, risiko dan punca kelewatan." },
+    "zh": { "t": "ERP 实施需要多久？| Phisoft", "d": "马来西亚企业 ERP 实施的现实时间表——阶段、风险与常见延误原因。" }
+  },
+  "insights/how-to-choose-it-outsourcing-partner.html": {
+    "en": { "t": "How to Choose a Software Partner | Phisoft Insights", "d": "What to check before appointing a software or IT partner in Malaysia — references, ownership, support and exit." },
+    "ms": { "t": "Cara Memilih Rakan Perisian | Wawasan Phisoft", "d": "Apa yang perlu diperiksa sebelum melantik rakan perisian atau IT di Malaysia — rujukan, pemilikan dan sokongan." },
+    "zh": { "t": "如何选择软件合作伙伴 | Phisoft 见解", "d": "在马来西亚选择软件或 IT 合作伙伴前应核查的事项——案例、产权、支持与退出。" }
+  },
+  "insights/mobile-app-development-cost-malaysia.html": {
+    "en": { "t": "What a Mobile App Costs in Malaysia | Phisoft Insights", "d": "What drives mobile app development cost in Malaysia, and how to scope a first release sensibly." },
+    "ms": { "t": "Kos Aplikasi Mudah Alih di Malaysia | Phisoft", "d": "Faktor yang menentukan kos pembangunan aplikasi mudah alih di Malaysia, dan cara menyediakan skop keluaran pertama." },
+    "zh": { "t": "马来西亚移动应用开发成本 | Phisoft 见解", "d": "决定马来西亚移动应用开发成本的因素，以及如何合理界定首发范围。" }
+  },
+  "insights/what-is-custom-erp-system.html": {
+    "en": { "t": "What Is a Custom ERP System? | Phisoft Insights", "d": "What a custom ERP system is, when it beats a packaged one, and how Malaysian businesses get there in stages." },
+    "ms": { "t": "Apa Itu Sistem ERP Tersuai? | Wawasan Phisoft", "d": "Apa itu sistem ERP tersuai, bila ia lebih baik daripada produk siap, dan cara beralih secara berperingkat." },
+    "zh": { "t": "什么是定制 ERP 系统？| Phisoft 见解", "d": "什么是定制 ERP、何时优于成品软件，以及马来西亚企业如何分阶段推进。" }
+  },
+  "404.html": {
+    "en": { "t": "Page Not Found | Phisoft", "d": "The page you are looking for could not be found. Let us help you get back on track." },
+    "ms": { "t": "Halaman Tidak Ditemui | Phisoft", "d": "Halaman yang anda cari tidak ditemui. Mari kami bantu anda kembali ke landasan." },
+    "zh": { "t": "页面未找到 | Phisoft", "d": "您查找的页面不存在。让我们帮您回到正轨。" }
+  }
+}

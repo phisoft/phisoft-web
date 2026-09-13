@@ -60,7 +60,7 @@ function stripChrome(html) {
   return html
     .replace(/<a\b(?=[^>]*class="whatsapp-container")[\s\S]*?<\/a>/g, '')
     .replace(/<nav\s+class="mobile-contact-bar"[\s\S]*?<\/nav>/g, '')
-    .replace(/<script\s+src="(?:\.\.\/)*assets\/js\/site\.js"[^>]*>\s*<\/script>/g, '')
+    .replace(/<script\s+src="(?:\.\.\/)*assets\/js\/site\.js(?:\?[^"]*)?"[^>]*>\s*<\/script>/g, '')
     .replace(/\n[ \t]*\n/g, '\n')
     .trim();
 }

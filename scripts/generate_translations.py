@@ -24,7 +24,7 @@ import sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # Site-relative canonical base for hreflang alternates
-BASE = "https://phisoft.my/"
+BASE = "https://www.phisoft.my/"
 
 # --------------------------------------------------------------------------- #
 # Shared translations: navigation, mega-menu, footer, common CTAs.

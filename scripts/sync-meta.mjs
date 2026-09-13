@@ -35,11 +35,11 @@ for (const path of collect(root)) {
     ['property="og:title"', `<meta property="og:title" content="${escapeAttribute(title)}">`],
     ['property="og:description"', `<meta property="og:description" content="${description}">`],
     ['property="og:url"', `<meta property="og:url" content="${canonical}">`],
-    ['property="og:image"', '<meta property="og:image" content="https://phisoft.my/assets/images/logo/phisoft-logo.png">'],
+    ['property="og:image"', '<meta property="og:image" content="https://www.phisoft.my/assets/images/logo/phisoft-logo.png">'],
     ['name="twitter:card"', '<meta name="twitter:card" content="summary">'],
     ['name="twitter:title"', `<meta name="twitter:title" content="${escapeAttribute(title)}">`],
     ['name="twitter:description"', `<meta name="twitter:description" content="${description}">`],
-    ['name="twitter:image"', '<meta name="twitter:image" content="https://phisoft.my/assets/images/logo/phisoft-logo.png">']
+    ['name="twitter:image"', '<meta name="twitter:image" content="https://www.phisoft.my/assets/images/logo/phisoft-logo.png">']
   ];
   for (const [needle, tag] of fields) {
     const escapedNeedle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
