@@ -38,3 +38,40 @@
     });
   }
 })();
+
+/* ---- service-page hero panels ----
+ * A single visual language is shared across service pages, but the panel copy
+ * must describe the specific outcome rather than repeat a generic capability list.
+ */
+(function () {
+  var fullPath = window.location.pathname || '';
+  if (/^\/(ms|zh)\//.test(fullPath)) return;
+  var path = fullPath.replace(/^.*\//, '');
+  var panels = {
+    'product-development.html': {
+      className: 'hero-panel--product',
+      lines: ['Product opportunity', 'Validate · Build · Launch', 'Real users · Real feedback', 'Improve what works']
+    },
+    'mobile-app-development.html': {
+      className: 'hero-panel--mobile',
+      lines: ['Customers & staff', 'Mobile experience', 'Secure APIs · Notifications', 'Connected operations']
+    },
+    'custom-software.html': {
+      className: 'hero-panel--custom',
+      lines: ['Your workflow', 'Custom business system', 'Data · Integration · Automation', 'One reliable way of working']
+    },
+    'legacy-modernisation.html': {
+      className: 'hero-panel--legacy',
+      lines: ['Existing software', 'Stabilise · Connect · Improve', 'Keep the knowledge that matters', 'Modernise in stages']
+    },
+    'software.html': {
+      className: 'hero-panel--software',
+      lines: ['Business outcome', 'Design · Build · Integrate', 'People · Process · Data', 'A dependable foundation']
+    }
+  };
+  var copy = panels[path];
+  var panel = document.querySelector('.ai-page-hero-panel');
+  if (!copy || !panel || panel.textContent.indexOf('Phisoft engineering') === -1) return;
+  panel.classList.add(copy.className);
+  panel.innerHTML = '<span>' + copy.lines[0] + '</span><strong>' + copy.lines[1] + '</strong><span>' + copy.lines[2] + '</span><b>' + copy.lines[3] + '</b>';
+})();
