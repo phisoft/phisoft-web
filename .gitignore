@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 
 .playwright-mcp/
+
+# Local agent/editor state (not project config)
+.reasonix/
+reasonix.toml
