@@ -71,9 +71,9 @@
     "zh": { "t": "解决方案、平台与集成 | Phisoft", "d": "现成平台、业务集成与行业工具，连接会计、支付、ERP 与现有系统。" }
   },
   "solutions/integrations.html": {
-    "en": { "t": "Connect Accounting, Payments & ERP | Phisoft Malaysia", "d": "Link accounting, payments, ERP, e-invoice and third-party platforms so data moves by itself and your team stops re-keying." },
-    "ms": { "t": "Sambung Perakaunan, Pembayaran & ERP | Phisoft", "d": "Sambungkan perakaunan, pembayaran, ERP, e-invois dan platform pihak ketiga supaya data bergerak sendiri." },
-    "zh": { "t": "连接会计、支付与 ERP | Phisoft 马来西亚", "d": "对接会计、支付、ERP、电子发票与第三方平台，让数据自动流转，避免重复录入。" }
+    "en": { "t": "Automate Sales, Payments & Accounting | Phisoft Malaysia", "d": "Connect sales, payments, inventory, e-Invoices and accounting so your team stops re-entering data and gains faster, more accurate information." },
+    "ms": { "t": "Automasi Jualan, Pembayaran & Perakaunan | Phisoft", "d": "Sambungkan jualan, pembayaran, inventori, e-Invois dan perakaunan supaya pasukan anda tidak lagi memasukkan data berulang kali." },
+    "zh": { "t": "销售、支付与会计自动化 | Phisoft 马来西亚", "d": "连接销售、支付、库存、电子发票与会计系统，避免重复录入并更快获得准确的信息。" }
   },
   "solutions/platforms.html": {
     "en": { "t": "Our Products | Software Built by Phisoft", "d": "Products drawn from real client delivery — FeeCollec, QueueBos, 8planner, Assetsware, Dentallink and ComplainBos." },
